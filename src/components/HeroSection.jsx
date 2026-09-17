@@ -14,9 +14,9 @@ export function HeroSection() {
       <div className="hero-background" style={{ backgroundImage: `url(${images.heroImage})` }} />
       <div className="container hero-content">
         <div className="hero-copy">
-          <p className="section-kicker section-kicker--light"><span /> Engineered Support Solutions</p>
-          <h1>Pipe Supports &amp; Hangers <strong>for Project Procurement</strong></h1>
-          <p className="hero-description">Trusted manufacturer of high-quality pipe supports, hangers and custom fabrication solutions for marine, industrial, oil &amp; gas, power and infrastructure projects worldwide.</p>
+          <p className="section-kicker section-kicker--light"><span /> ISO 9001: 2015 Accredited Organization</p>
+          <h1>Design &amp; Manufacturing of <strong>Hanger &amp; Support Systems</strong></h1>
+          <p className="hero-description">Complying with ANSI/ASME codes for pressure piping and MSS SP-58 standards. Delivering precision-engineered pipe hangers and support systems for critical industrial, marine, oil &amp; gas and power infrastructure projects worldwide.</p>
           <div className="hero-buttons">
             <a className="button button--orange" href="#products">Explore Our Products <span>→</span></a>
             <a className="button button--outline-light" href="#quote">Request a Quote <span>→</span></a>

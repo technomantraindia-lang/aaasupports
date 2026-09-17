@@ -1,7 +1,8 @@
 import heroImage from '../../assets/pipe-support-hero.png'
 import aboutImage from '../../assets/about-engineer.png'
+import aboutIndustrialImage from '../../assets/about-industrial-worker.png'
 
-export const images = { heroImage, aboutImage }
+export const images = { heroImage, aboutImage, aboutIndustrialImage }
 
 export const navItems = [
   { label: 'Home', href: '#home' },

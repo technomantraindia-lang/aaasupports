@@ -1,12 +1,10 @@
 import { Header } from './components/Header.jsx'
 import { HeroSection } from './components/HeroSection.jsx'
 import { IndustryStrip } from './components/IndustryStrip.jsx'
+import { TestimonialsSection } from './components/TestimonialsSection.jsx'
+import { FaqClientsSection } from './components/FaqClientsSection.jsx'
 import { AboutSection } from './components/AboutSection.jsx'
 import { ProductRange } from './components/ProductRange.jsx'
-import { WhyChooseUs } from './components/WhyChooseUs.jsx'
-import { ProjectsSection } from './components/ProjectsSection.jsx'
-import { PartnersStrip } from './components/PartnersStrip.jsx'
-import { QuoteSection } from './components/QuoteSection.jsx'
 import { Footer } from './components/Footer.jsx'
 
 function App() {
@@ -15,13 +13,11 @@ function App() {
       <Header />
       <main>
         <HeroSection />
-        <IndustryStrip />
         <AboutSection />
         <ProductRange />
-        <WhyChooseUs />
-        <ProjectsSection />
-        <PartnersStrip />
-        <QuoteSection />
+        <IndustryStrip />
+        <TestimonialsSection />
+        <FaqClientsSection />
       </main>
       <Footer />
     </>

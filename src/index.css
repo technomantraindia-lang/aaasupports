@@ -3568,6 +3568,11 @@ button { cursor: pointer; }
 }
 
 .footer-link-highlight {
+  color: #dbe7f2 !important;
+  font-weight: 550 !important;
+}
+
+.footer-link-highlight:hover {
   color: #ff9d5c !important;
   font-weight: 700 !important;
 }

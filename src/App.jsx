@@ -11,6 +11,7 @@ import { ContactPage } from './ContactPage.jsx'
 import { GalleryPage } from './GalleryPage.jsx'
 import { CertificationPage } from './CertificationPage.jsx'
 import { ClientsPage } from './ClientsPage.jsx'
+import { AboutPage } from './AboutPage.jsx'
 import { EnquiryModal } from './components/EnquiryModal.jsx'
 
 function currentPage() {
@@ -18,11 +19,13 @@ function currentPage() {
   const route = path.split('/').pop()
   const hash = window.location.hash
   if (hash === '#home') return 'home'
+  if (hash === '#about' || hash === '#about-us') return 'about'
   if (hash === '#gallery') return 'gallery'
   if (hash === '#certificates') return 'certificates'
   if (hash === '#clients') return 'clients'
   if (hash === '#contact') return 'contact'
   if (route === 'gallery') return 'gallery'
+  if (route === 'about') return 'about'
   if (route === 'certificates') return 'certificates'
   if (route === 'clients') return 'clients'
   if (route === 'contact') return 'contact'
@@ -67,8 +70,8 @@ function App() {
   }, [])
 
   return <>
-    <Header isContact={page === 'contact' || page === 'gallery' || page === 'certificates' || page === 'clients'} onRequestQuote={() => setIsEnquiryOpen(true)} />
-    <main>{page === 'gallery' ? <GalleryPage /> : page === 'certificates' ? <CertificationPage /> : page === 'clients' ? <ClientsPage /> : page === 'contact' ? <ContactPage hideContactFooter /> : <HomePage />}</main>
+    <Header isContact={page === 'contact' || page === 'gallery' || page === 'certificates' || page === 'clients' || page === 'about'} onRequestQuote={() => setIsEnquiryOpen(true)} />
+    <main>{page === 'gallery' ? <GalleryPage /> : page === 'certificates' ? <CertificationPage /> : page === 'clients' ? <ClientsPage /> : page === 'about' ? <AboutPage /> : page === 'contact' ? <ContactPage hideContactFooter /> : <HomePage />}</main>
     <Footer />
     <EnquiryModal open={isEnquiryOpen} onClose={() => setIsEnquiryOpen(false)} />
   </>

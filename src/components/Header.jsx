@@ -7,11 +7,13 @@ function currentPageHash() {
   const route = path.split('/').pop()
   const hash = window.location.hash
   if (hash === '#home') return '#home'
+  if (hash === '#about' || hash === '#about-us') return '#about'
   if (hash === '#gallery') return '#gallery'
   if (hash === '#certificates') return '#certificates'
   if (hash === '#clients') return '#clients'
   if (hash === '#contact') return '#contact'
   if (route === 'contact') return '#contact'
+  if (route === 'about') return '#about'
   if (route === 'gallery') return '#gallery'
   if (route === 'certificates') return '#certificates'
   if (route === 'clients') return '#clients'

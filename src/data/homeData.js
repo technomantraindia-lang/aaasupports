@@ -6,7 +6,7 @@ export const images = { heroImage, aboutImage, aboutIndustrialImage }
 
 export const navItems = [
   { label: 'Home', href: '#home' },
-  { label: 'About', href: '#about-us' },
+  { label: 'About', href: '#about' },
   { label: 'Products', href: '#products' },
   { label: 'Services', href: '#services' },
   { label: 'Gallery', href: '#gallery' },

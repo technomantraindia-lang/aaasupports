@@ -47,6 +47,27 @@ export function CertificationPage() {
     }
   }, [activeIndex])
 
+  useEffect(() => {
+    const page = document.querySelector('.certification-page')
+    if (!page || !('IntersectionObserver' in window)) return undefined
+
+    page.classList.add('certification-page--animated')
+    const revealItems = page.querySelectorAll('[data-cert-reveal]')
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return
+        entry.target.classList.add('is-visible')
+        observer.unobserve(entry.target)
+      })
+    }, { threshold: 0.14, rootMargin: '0px 0px -45px' })
+
+    revealItems.forEach((item) => observer.observe(item))
+    return () => {
+      observer.disconnect()
+      page.classList.remove('certification-page--animated')
+    }
+  }, [])
+
   return <div className="certification-page">
     <section className="contact-banner certification-banner" aria-label="Certificates and Awards banner" style={{ '--contact-banner-image': `url(${contactImage})` }}>
       <div className="contact-banner-overlay" />
@@ -62,13 +83,13 @@ export function CertificationPage() {
     </section>
 
     <main className="certification-main container">
-      <div className="certification-heading">
+      <div className="certification-heading" data-cert-reveal="section">
         <span className="certification-kicker"><b />Our Credentials</span>
         <h2>Recognised for <strong>Quality &amp; Excellence</strong></h2>
         <p>Explore our official certifications, registrations and awards that support the standards behind every AAA Supports solution.</p>
       </div>
 
-      <section className="certification-overview">
+      <section className="certification-overview" data-cert-reveal="section">
         <div className="certification-overview-copy">
           <span className="certification-overview-label">Built to meet higher standards</span>
           <h3>Confidence backed by <strong>proof.</strong></h3>
@@ -87,20 +108,20 @@ export function CertificationPage() {
         </button>
       </section>
 
-      <div className="certificates-list-heading">
+      <div className="certificates-list-heading" data-cert-reveal="section">
         <div><span className="certification-kicker"><b />Our Recognition</span><h3>Certificates <strong>&amp; Awards</strong></h3></div>
        
       </div>
 
       <div className="certificate-grid">
-        {certificates.map((certificate, index) => <article className="certificate-card" key={certificate.image} role="button" tabIndex="0" onClick={() => setActiveIndex(index)} onKeyDown={(event) => { if (event.key === 'Enter' || event.key === ' ') setActiveIndex(index) }}>
+        {certificates.map((certificate, index) => <article className="certificate-card" data-cert-reveal="card" key={certificate.image} role="button" tabIndex="0" onClick={() => setActiveIndex(index)} onKeyDown={(event) => { if (event.key === 'Enter' || event.key === ' ') setActiveIndex(index) }}>
           <div className="certificate-image-wrap"><img src={certificate.image} alt={certificate.alt} loading="lazy" /><span className="certificate-view">↗</span></div>
           <h3>{certificate.title}</h3>
           <span>View certificate</span>
         </article>)}
       </div>
 
-      <section className="certification-cta" style={{ backgroundImage: `linear-gradient(90deg, rgb(2 35 65 / 94%), rgb(2 35 65 / 70%)), url(${contactImage})` }}>
+      <section className="certification-cta" data-cert-reveal="section" style={{ backgroundImage: `linear-gradient(90deg, rgb(2 35 65 / 94%), rgb(2 35 65 / 70%)), url(${contactImage})` }}>
         <div><span className="certification-cta-kicker"><b />Let’s Work Together</span><h2>Built on <strong>Trust. Proven by Results.</strong></h2><p>Talk to our team about your next piping support requirement.</p></div>
         <a href="#contact">Contact Our Team <span>→</span></a>
       </section>

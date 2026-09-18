@@ -8276,3 +8276,109 @@ button { cursor: pointer; }
     margin-bottom: 28px;
   }
 }
+
+/* Certification page motion */
+.certification-page .certification-heading,
+.certification-page .certification-overview,
+.certification-page .certificates-list-heading,
+.certification-page .certification-cta {
+  animation: certification-fade-up .75s cubic-bezier(.2, .75, .25, 1) both;
+}
+
+.certification-page .certification-overview { animation-delay: .12s; }
+.certification-page .certificates-list-heading { animation-delay: .2s; }
+.certification-page .certification-cta { animation-delay: .25s; }
+
+.certification-page .certificate-card {
+  animation: certification-card-in .65s cubic-bezier(.2, .75, .25, 1) both;
+}
+
+.certification-page .certificate-card:nth-child(1) { animation-delay: .18s; }
+.certification-page .certificate-card:nth-child(2) { animation-delay: .24s; }
+.certification-page .certificate-card:nth-child(3) { animation-delay: .3s; }
+.certification-page .certificate-card:nth-child(4) { animation-delay: .36s; }
+.certification-page .certificate-card:nth-child(5) { animation-delay: .42s; }
+.certification-page .certificate-card:nth-child(6) { animation-delay: .48s; }
+.certification-page .certificate-card:nth-child(7) { animation-delay: .54s; }
+.certification-page .certificate-card:nth-child(8) { animation-delay: .6s; }
+.certification-page .certificate-card:nth-child(9) { animation-delay: .66s; }
+.certification-page .certificate-card:nth-child(10) { animation-delay: .72s; }
+
+.certification-page .certificate-card:hover .certificate-image-wrap img {
+  transform: scale(1.06);
+}
+
+.certification-page .featured-certificate:hover {
+  transform: translateY(-6px);
+}
+
+.certification-page .featured-certificate:hover .featured-certificate-image img {
+  transform: scale(1.04);
+}
+
+@keyframes certification-fade-up {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes certification-card-in {
+  from { opacity: 0; transform: translateY(28px) scale(.98); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .certification-page .certification-heading,
+  .certification-page .certification-overview,
+  .certification-page .certificates-list-heading,
+  .certification-page .certification-cta,
+  .certification-page .certificate-card {
+    animation: none;
+  }
+
+  .certification-page .featured-certificate:hover,
+  .certification-page .certificate-card:hover .certificate-image-wrap img,
+  .certification-page .featured-certificate:hover .featured-certificate-image img {
+    transform: none;
+  }
+}
+
+/* Trigger certification animations when sections enter the viewport */
+.certification-page--animated [data-cert-reveal] {
+  opacity: 0;
+  transform: translateY(24px);
+  animation: none !important;
+}
+
+.certification-page--animated [data-cert-reveal="card"] {
+  transform: translateY(28px) scale(.98);
+}
+
+.certification-page--animated [data-cert-reveal].is-visible {
+  opacity: 1;
+  transform: none;
+  animation: certification-fade-up .75s cubic-bezier(.2, .75, .25, 1) both !important;
+}
+
+.certification-page--animated [data-cert-reveal="card"].is-visible {
+  animation-name: certification-card-in !important;
+}
+
+.certification-page--animated .certificate-card.is-visible:nth-child(1) { animation-delay: .04s !important; }
+.certification-page--animated .certificate-card.is-visible:nth-child(2) { animation-delay: .1s !important; }
+.certification-page--animated .certificate-card.is-visible:nth-child(3) { animation-delay: .16s !important; }
+.certification-page--animated .certificate-card.is-visible:nth-child(4) { animation-delay: .22s !important; }
+.certification-page--animated .certificate-card.is-visible:nth-child(5) { animation-delay: .28s !important; }
+.certification-page--animated .certificate-card.is-visible:nth-child(6) { animation-delay: .34s !important; }
+.certification-page--animated .certificate-card.is-visible:nth-child(7) { animation-delay: .4s !important; }
+.certification-page--animated .certificate-card.is-visible:nth-child(8) { animation-delay: .46s !important; }
+.certification-page--animated .certificate-card.is-visible:nth-child(9) { animation-delay: .52s !important; }
+.certification-page--animated .certificate-card.is-visible:nth-child(10) { animation-delay: .58s !important; }
+
+@media (prefers-reduced-motion: reduce) {
+  .certification-page--animated [data-cert-reveal],
+  .certification-page--animated [data-cert-reveal].is-visible {
+    opacity: 1;
+    transform: none;
+    animation: none !important;
+  }
+}

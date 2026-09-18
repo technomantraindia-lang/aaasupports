@@ -10,8 +10,8 @@ export const navItems = [
   { label: 'Products', href: '#products' },
   { label: 'Services', href: '#services' },
   { label: 'Gallery', href: '#gallery' },
-  { label: 'Clients', href: '/clients' },
-  { label: 'Certificates & Awards', href: '/certificates' },
+  { label: 'Clients', href: '#clients' },
+  { label: 'Certificates & Awards', href: '#certificates' },
   { label: 'Contact', href: '#contact' },
 ]
 

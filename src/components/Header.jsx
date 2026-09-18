@@ -4,16 +4,17 @@ import { Logo } from './Logo.jsx'
 
 function currentPageHash() {
   const path = window.location.pathname.replace(/\/$/, '')
+  const route = path.split('/').pop()
   const hash = window.location.hash
   if (hash === '#home') return '#home'
   if (hash === '#gallery') return '#gallery'
   if (hash === '#certificates') return '#certificates'
   if (hash === '#clients') return '#clients'
   if (hash === '#contact') return '#contact'
-  if (path === '/contact') return '#contact'
-  if (path === '/gallery') return '#gallery'
-  if (path === '/certificates') return '#certificates'
-  if (path === '/clients') return '#clients'
+  if (route === 'contact') return '#contact'
+  if (route === 'gallery') return '#gallery'
+  if (route === 'certificates') return '#certificates'
+  if (route === 'clients') return '#clients'
   return hash || '#home'
 }
 

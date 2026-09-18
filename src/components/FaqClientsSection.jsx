@@ -155,7 +155,7 @@ export function FaqClientsSection() {
             <div>
               <h2>Trusted by <strong>Industry Leaders</strong></h2>
               <p>We are proud to partner with leading companies across the globe, delivering reliable pipe support solutions that power critical projects and infrastructure.</p>
-              <a className="home-clients-view-all" href="/clients">View All Clients <span>→</span></a>
+              <a className="home-clients-view-all" href="#clients">View All Clients <span>→</span></a>
             </div>
             <div className="clients-stats">
               {clientStats.map(([icon, value, label]) => (

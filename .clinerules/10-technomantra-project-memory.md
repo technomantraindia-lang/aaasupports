@@ -4,9 +4,9 @@
 
 - Workspace: AAA
 - Technology: React, Vite, Node.js/npm
-- Active file at refresh: None
-- Local code graph: 26 files · 38 edges · 0 matched flows
-- Refreshed: 2026-09-17T09:03:49.819Z
+- Active file at refresh: src/CertificationPage.jsx
+- Local code graph: 31 files · 46 edges · 0 matched flows
+- Refreshed: 2026-09-18T07:36:06.530Z
 
 ## Framework Intelligence (V4.7.8)
 - Profiles: react
@@ -36,8 +36,10 @@
 - src/components/SectionHeading.jsx
 
 ### React component symbols
-- src/App.jsx: App
-- src/components/AboutSection.jsx: AboutSection, AboutIcon
+- src/CertificationPage.jsx: CertificationPage
+- src/App.jsx: HomePage, App
+- src/ClientsPage.jsx: ClientsPage
+- src/components/AboutSection.jsx: AboutSection
 - src/components/FaqClientsSection.jsx: FaqClientsSection, MiniIcon
 - src/components/Footer.jsx: Footer, FooterIcon
 - src/components/Header.jsx: Header
@@ -53,6 +55,8 @@
 - src/components/SectionHeading.jsx: SectionHeading
 - src/components/TestimonialsSection.jsx: TestimonialsSection, QuoteIcon, TestimonialCard
 - src/components/WhyChooseUs.jsx: WhyChooseUs
+- src/ContactPage.jsx: ContactPage, Icon, Label, ContactCard
+- src/GalleryPage.jsx: GalleryPage
 
 ### React dependency / API chains
 - src/App.jsx: used by src/main.jsx · depends on src/components/Header.jsx, src/components/HeroSection.jsx, src/components/IndustryStrip.jsx, src/components/TestimonialsSection.jsx, src/components/FaqClientsSection.jsx, src/components/AboutSection.jsx
@@ -118,15 +122,17 @@
 - src/index.css <- src/main.jsx
 
 ## Recently edited files
-- None recorded yet
+- src/CertificationPage.jsx
 
 ## High-value project files
+- src/CertificationPage.jsx
 - index.html
 - package.json
 - README.md
 - src/components/testimonials/README.md
 - vite.config.js
 - src/App.jsx
+- src/ClientsPage.jsx
 - src/components/AboutSection.jsx
 - src/components/FaqClientsSection.jsx
 - src/components/Footer.jsx
@@ -147,7 +153,9 @@
 - src/components/testimonials/testimonials.js
 - src/components/TestimonialsSection.jsx
 - src/components/WhyChooseUs.jsx
+- src/ContactPage.jsx
 - src/data/homeData.js
+- src/GalleryPage.jsx
 - src/index.css
 - src/main.jsx
 - .clinerules/05-technomantra-execution-mode.md
@@ -163,3 +171,5 @@
 - .clinerules/15-technomantra-fast-coding-engine.md
 - .clinerules/90-technomantra-selected-agent.md
 - package-lock.json
+- scripts/remove-bg-precise.js
+- scripts/remove-bg.js

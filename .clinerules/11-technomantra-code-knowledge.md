@@ -2,10 +2,10 @@
 
 > Structural local index. Read current source before editing. Secrets are intentionally excluded.
 
-- Indexed source files: 26
-- Structural edges: 38
+- Indexed source files: 31
+- Structural edges: 46
 - Matched end-to-end flows: 0
-- Updated: 2026-09-17T09:03:49.818Z
+- Updated: 2026-09-18T07:36:06.502Z
 
 ## Dependency edges
 - IMPORT index.html -> src/main.jsx
@@ -42,19 +42,29 @@
 - REACT src/data/homeData.js: used by src/components/AboutSection.jsx, src/components/Footer.jsx, src/components/Header.jsx, src/components/HeroSection.jsx
 
 ## Database references
+- DB src/CertificationPage.jsx -> react, quality
 - DB vite.config.js -> vite
+- DB src/App.jsx -> react
+- DB src/ClientsPage.jsx -> react, our
+- DB src/components/AboutSection.jsx -> every
 - DB src/components/FaqClientsSection.jsx -> react
 - DB src/components/Header.jsx -> react
 - DB src/components/IndustryStrip.jsx -> react
-- DB src/components/TestimonialsSection.jsx -> react, consultation
+- DB src/components/TestimonialsSection.jsx -> react, design
+- DB src/ContactPage.jsx -> react, You
+- DB src/GalleryPage.jsx -> react
 - DB src/main.jsx -> react
+- DB scripts/remove-bg-precise.js -> sharp, fs, path, all
+- DB scripts/remove-bg.js -> sharp, fs, path, light, pure
 
 ## Symbols
-- SYMBOL src/App.jsx: App
-- SYMBOL src/components/AboutSection.jsx: AboutIcon, AboutSection
+- SYMBOL src/CertificationPage.jsx: CertificationPage, handleKeyDown
+- SYMBOL src/App.jsx: currentPage, HomePage, App, syncPage
+- SYMBOL src/ClientsPage.jsx: ClientsPage
+- SYMBOL src/components/AboutSection.jsx: AboutSection
 - SYMBOL src/components/FaqClientsSection.jsx: MiniIcon, FaqClientsSection
 - SYMBOL src/components/Footer.jsx: FooterIcon, Footer
-- SYMBOL src/components/Header.jsx: Header
+- SYMBOL src/components/Header.jsx: currentPageHash, Header, syncHash
 - SYMBOL src/components/HeroSection.jsx: HeroSection
 - SYMBOL src/components/Icon.jsx: Icon
 - SYMBOL src/components/IndustryStrip.jsx: IndustryIcon, IndustryStrip, moveCards, handlePointerDown, handlePointerMove, stopDragging
@@ -68,9 +78,12 @@
 - SYMBOL src/components/testimonials/testimonials.js: isMobile, totalItems, mobileStep, updateDots, move, goTo, renderDots, startAutoSlide, setup
 - SYMBOL src/components/TestimonialsSection.jsx: QuoteIcon, TestimonialCard, TestimonialsSection, update, measure
 - SYMBOL src/components/WhyChooseUs.jsx: WhyChooseUs
+- SYMBOL src/ContactPage.jsx: Icon, Label, ContactCard, ContactPage, handleSubmit
+- SYMBOL src/GalleryPage.jsx: GalleryPage, handleKeyDown
+- SYMBOL scripts/remove-bg-precise.js: removeBackgroundPrecise, isPixelBgColor, checkNeighbor, run
+- SYMBOL scripts/remove-bg.js: removeBackground, run, getPixel
 
 ## UI/style selectors
 - UI index.html: #root
 - UI src/components/testimonials/testimonials.css: .testimonials, #ff6a21, #fff, .container, .testimonials-bg, .testimonials-heading, .section-label, .testimonials-sub, .testimonial-trust, .testimonial-slider-wrap, .testimonial-slider, .testimonial-track, .testimonial-slide, .testimonial-card
 - UI src/components/testimonials/testimonials.html: #testimonials-heading, .testimonials, .testimonials-bg, .container, .section-heading, .testimonials-heading, .section-label, .testimonials-sub, .testimonial-slider-wrap, .testimonial-slider, .testimonial-track, .testimonial-slide, .testimonial-card, .testimonial-quote
-- UI src/index.css: #fff, #ff6419, #f2f8fd, .container, .site-header, #edf1f5, .header-inner, .brand, .brand-mark, #dceaf4, .brand-copy, .main-nav, .header-actions, .search-button

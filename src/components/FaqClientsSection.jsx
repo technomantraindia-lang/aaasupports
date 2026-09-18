@@ -48,12 +48,21 @@ const clientStats = [
   ['shield', '98%', 'Client Satisfaction'],
 ]
 
-const clientLogoModules = import.meta.glob('../../assets/client/*.{png,jpg,jpeg,webp}', {
+const clientLogoModules = import.meta.glob('../../assets/client/**/*.{png,jpg,jpeg,webp}', {
   eager: true,
   import: 'default',
 })
 
+const clientFolders = new Set([
+  'Refinery  Oil & Gas  Petrochemical Sector',
+  'Power Sector',
+  'Chemical, Fertilizer And Sugar Sector',
+  'Steel Sector',
+  'OEM  EPC',
+])
+
 const clientLogos = Object.entries(clientLogoModules)
+  .filter(([path]) => clientFolders.has(path.split('/').slice(-2, -1)[0]))
   .sort(([first], [second]) => first.localeCompare(second))
   .map(([path, src]) => ({
     name: path
@@ -146,6 +155,7 @@ export function FaqClientsSection() {
             <div>
               <h2>Trusted by <strong>Industry Leaders</strong></h2>
               <p>We are proud to partner with leading companies across the globe, delivering reliable pipe support solutions that power critical projects and infrastructure.</p>
+              <a className="home-clients-view-all" href="/clients">View All Clients <span>→</span></a>
             </div>
             <div className="clients-stats">
               {clientStats.map(([icon, value, label]) => (

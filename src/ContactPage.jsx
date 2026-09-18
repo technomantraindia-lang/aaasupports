@@ -1,0 +1,125 @@
+import { useState } from 'react'
+import contactImage from '../assets/contact.png'
+import footerImage from '../assets/pipe-support-hero.png'
+import logo from '../assets/logo.png'
+
+function Icon({ name, size = 28 }) {
+  const common = { width: size, height: size, viewBox: '0 0 24 24', fill: 'none', stroke: 'currentColor', strokeWidth: 1.8, strokeLinecap: 'round', strokeLinejoin: 'round', 'aria-hidden': true }
+
+  const paths = {
+    pin: <><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z" /><circle cx="12" cy="10" r="2.5" /></>,
+    phone: <><path d="M22 16.92v3a2 2 0 0 1-2.18 2A19.8 19.8 0 0 1 3 5.18 2 2 0 0 1 5 3h3a2 2 0 0 1 2 1.72c.1.75.28 1.48.55 2.18a2 2 0 0 1-.45 2.11L8.82 10.3a16 16 0 0 0 4.88 4.88l1.29-1.29a2 2 0 0 1 2.11-.45c.7.27 1.43.45 2.18.55A2 2 0 0 1 22 16.92Z" /></>,
+    mail: <><rect x="3" y="5" width="18" height="14" rx="1.5" /><path d="m3 7 9 6 9-6" /></>,
+    clock: <><circle cx="12" cy="12" r="9" /><path d="M12 7v5l3 2" /></>,
+    gear: <><path d="M12 2.8 13.4 5a7.5 7.5 0 0 1 2 .8l2.5-.5 1.5 1.5-.5 2.5c.35.62.62 1.28.8 2L21.9 12l-2.2 1.4a7.5 7.5 0 0 1-.8 2l.5 2.5-1.5 1.5-2.5-.5a7.5 7.5 0 0 1-2 .8L12 21.9l-1.4-2.2a7.5 7.5 0 0 1-2-.8l-2.5.5-1.5-1.5.5-2.5a7.5 7.5 0 0 1-.8-2L2.1 12l2.2-1.4a7.5 7.5 0 0 1 .8-2l-.5-2.5 1.5-1.5 2.5.5a7.5 7.5 0 0 1 2-.8L12 2.8Z" /><circle cx="12" cy="12" r="2.8" /></>,
+    support: <><path d="M4.5 13.5a7.5 7.5 0 0 1 15 0" /><path d="M4.5 13.5v3a2 2 0 0 0 2 2h1v-5h-3Zm15 0v3a2 2 0 0 1-2 2h-1v-5h3Z" /><path d="M8 18.5c.8 1.5 2.3 2.4 4 2.4h1.8" /></>,
+    target: <><circle cx="12" cy="12" r="8.5" /><circle cx="12" cy="12" r="4" /><circle cx="12" cy="12" r="1" /><path d="M12 1v2m0 18v2M1 12h2m18 0h2" /></>,
+    road: <><path d="m8 2-2 20M16 2l2 20M9.5 6h5M8.8 12h6.4M8 18h8" /></>,
+    globe: <><circle cx="12" cy="12" r="9" /><path d="M3 12h18M12 3c2.1 2.4 3.2 5.4 3.2 9s-1.1 6.6-3.2 9c-2.1-2.4-3.2-5.4-3.2-9S9.9 5.4 12 3Z" /></>,
+    people: <><circle cx="9" cy="8" r="3" /><circle cx="17" cy="9" r="2.5" /><path d="M3 20c.3-3.2 2.2-5 6-5s5.7 1.8 6 5M15 15.2c3.6-.2 5.5 1.4 6 4.8" /></>,
+    arrow: <path d="M5 12h13m-5-5 5 5-5 5" />,
+  }
+
+  return <svg {...common}>{paths[name]}</svg>
+}
+
+function Label({ children, icon }) {
+  return <div className="contact-kicker"><span />{icon ? <Icon name={icon} size={14} /> : null}<span className="contact-kicker-text">{children}</span></div>
+}
+
+const assurances = [
+  ['clock', 'Quick', 'Response'],
+  ['gear', 'Expert', 'Guidance'],
+  ['target', 'Customized', 'Solutions'],
+  ['support', 'Long-Term', 'Partnership'],
+]
+
+const benefits = [
+  ['pin', 'Strategic', 'Location'],
+  ['road', 'Easy', 'Accessibility'],
+  ['globe', 'Global', 'Business Support'],
+  ['people', 'Dedicated', 'Support Team'],
+]
+
+function ContactCard({ icon, title, children }) {
+  return <article className="contact-card">
+    <div className="contact-card-icon"><Icon name={icon} size={31} /></div>
+    <div className="contact-card-copy"><h3>{title}</h3><p>{children}</p></div>
+    <div className="contact-card-ghost"><Icon name={icon} size={74} /></div>
+  </article>
+}
+
+export function ContactPage({ hideContactFooter = false }) {
+  const [sent, setSent] = useState(false)
+
+  function handleSubmit(event) {
+    event.preventDefault()
+    setSent(true)
+  }
+
+  return <div className="contact-page">
+    <section className="contact-banner" aria-label="Contact Us banner" style={{ '--contact-banner-image': `url(${contactImage})` }}>
+      <div className="contact-banner-overlay" />
+      <div className="contact-banner-inner container">
+        <div className="contact-banner-copy">
+          <div className="contact-breadcrumb"><a href="#home">Home</a><span>/</span><strong>Contact Us</strong></div>
+          <h1>Contact <strong>Us</strong></h1>
+          <p>We are here to help you with the best solutions for SF₆ Gas Handling.<br className="desktop-break" /> Get in touch with our team for inquiries, support or business<br className="desktop-break" /> opportunities.</p>
+          <span className="contact-banner-rule" />
+          <div className="contact-banner-tagline">LET’S BUILD A SAFER<br />TOMORROW TOGETHER</div>
+        </div>
+      </div>
+    </section>
+
+    <main className="contact-main container">
+      <div className="contact-content-grid">
+        <div className="contact-left">
+          <ContactCard icon="pin" title="Office Location">Plot No: 189, GIDC Industrial Estate,<br />Por - Ramangamdi - 391243,<br />Dist : Vadodara, Gujarat - India.</ContactCard>
+          <ContactCard icon="phone" title="Contact Number"><a href="tel:+912652830444">+91-265-2830444</a><span className="card-separator" /> <a href="tel:+912652830445">+91-265-2830445</a></ContactCard>
+          <ContactCard icon="mail" title="Contact E-Mail"><a href="mailto:sales@aaasupports.com">sales@aaasupports.com</a></ContactCard>
+          <div className="map-frame">
+            <iframe title="AAA Supports location map" src="https://www.openstreetmap.org/export/embed.html?bbox=73.1700%2C22.2300%2C73.2700%2C22.3300&layer=mapnik&marker=22.2705%2C73.2149" />
+            <div className="map-label"><strong>AAA SUPPORTS PRIVATE LIMITED</strong><a href="https://www.openstreetmap.org/?mlat=22.2705&mlon=73.2149#map=14/22.2705/73.2149" target="_blank" rel="noreferrer">View larger map</a></div>
+          </div>
+        </div>
+
+        <section className="contact-form-panel">
+          <Label>Get In Touch</Label>
+          <h2>We’d Love to <strong>Hear From You</strong></h2>
+          <p className="form-intro">We know looking for the right Design, Engineering, and Manufacturing<br className="desktop-break" /> of Hanger and Supports Systems so giving us a suggestion- Kindly fill form &amp;<br className="desktop-break" /> Get more Details.</p>
+          <form id="contact-form" className="contact-form" onSubmit={handleSubmit}>
+            <label>Your Name <em>*</em><input required name="name" placeholder="Enter your name" /></label>
+            <label>Your Company<input name="company" placeholder="Enter company name" /></label>
+            <label>Your Email <em>*</em><input required type="email" name="email" placeholder="Enter your email" /></label>
+            <label>Your Phone <em>*</em><input required type="tel" name="phone" placeholder="Enter your phone number" /></label>
+            <label className="form-full">Message <em>*</em><textarea required name="message" placeholder="Tell us about your requirement..." /></label>
+            <button className="contact-submit" type="submit">{sent ? 'Message Sent' : 'Send Message'}<Icon name="arrow" size={20} /></button>
+            {sent ? <p className="form-success" role="status">Thank you — our team will get back to you shortly.</p> : null}
+          </form>
+        </section>
+      </div>
+
+      <div className="benefit-row">
+        {benefits.map(([icon, title, subtitle]) => <div className="benefit" key={title}><span className="benefit-icon"><Icon name={icon} size={37} /></span><b>{title}<br />{subtitle}</b></div>)}
+      </div>
+    </main>
+
+    <section className="contact-cta" style={{ '--contact-footer-image': `url(${footerImage})` }}>
+      <div className="contact-cta-overlay" />
+      <div className="contact-cta-inner container">
+        <div><Label>Let’s Connect</Label><h2>Together for a <strong>Stronger, Safer Tomorrow</strong></h2><p>Your reliable partner in pipe support solutions.</p></div>
+        <a className="contact-cta-button" href="#contact-form">Contact Our Team <Icon name="arrow" size={21} /></a>
+      </div>
+    </section>
+
+    {!hideContactFooter ? <footer className="contact-footer">
+      <div className="contact-footer-inner container">
+        <div><Icon name="pin" size={20} />Vadodara, Gujarat - India</div><i />
+        <div><Icon name="phone" size={19} />+91-265-2830444&nbsp;&nbsp;&nbsp; +91-265-2830445</div><i />
+        <div><Icon name="mail" size={19} />sales@aaasupports.com</div><i />
+        <span className="footer-tag">Supporting Progress Globally</span>
+        <img src={logo} alt="AAA Supports" />
+      </div>
+    </footer> : null}
+  </div>
+}

@@ -9,7 +9,10 @@ export const navItems = [
   { label: 'About', href: '#about-us' },
   { label: 'Products', href: '#products' },
   { label: 'Services', href: '#services' },
-  { label: 'Contact', href: '#quote' },
+  { label: 'Gallery', href: '#gallery' },
+  { label: 'Clients', href: '/clients' },
+  { label: 'Certificates & Awards', href: '/certificates' },
+  { label: 'Contact', href: '#contact' },
 ]
 
 export const industries = [

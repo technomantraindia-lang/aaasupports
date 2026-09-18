@@ -21,15 +21,18 @@ The extension refreshes this file automatically. Prefer its concise state over o
 - Framework: react
 - Developer mode: smart
 - Model mode: eco
-- Active file: src/components/testimonials/testimonials.html
+- Active file: src/CertificationPage.jsx
 - Objective: Current developer prompt in this workspace/window only.
 - Blocker: none
 - Next action: Inspect current prompt and workspace evidence before editing.
 
 ## Touched files in this capsule
+- src/CertificationPage.jsx
 - .gitignore
 
 ## Recent files in this workspace/window
+- src/CertificationPage.jsx
+- src/components/Header.jsx
 - src/components/testimonials/testimonials.html
 - .gitignore
 

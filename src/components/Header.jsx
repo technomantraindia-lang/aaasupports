@@ -13,6 +13,7 @@ function currentPageHash() {
   if (hash === '#clients') return '#clients'
   if (hash === '#contact') return '#contact'
   if (route === 'contact') return '#contact'
+  if (route === 'site-supervision') return '#services'
   if (route === 'about') return '#about'
   if (route === 'gallery') return '#gallery'
   if (route === 'certificates') return '#certificates'

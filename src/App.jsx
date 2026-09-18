@@ -12,6 +12,7 @@ import { GalleryPage } from './GalleryPage.jsx'
 import { CertificationPage } from './CertificationPage.jsx'
 import { ClientsPage } from './ClientsPage.jsx'
 import { AboutPage } from './AboutPage.jsx'
+import { SiteSupervisionPage } from './SiteSupervisionPage.jsx'
 import { EnquiryModal } from './components/EnquiryModal.jsx'
 
 function currentPage() {
@@ -29,6 +30,7 @@ function currentPage() {
   if (route === 'certificates') return 'certificates'
   if (route === 'clients') return 'clients'
   if (route === 'contact') return 'contact'
+  if (route === 'site-supervision') return 'site-supervision'
   return 'home'
 }
 
@@ -70,8 +72,8 @@ function App() {
   }, [])
 
   return <>
-    <Header isContact={page === 'contact' || page === 'gallery' || page === 'certificates' || page === 'clients' || page === 'about'} onRequestQuote={() => setIsEnquiryOpen(true)} />
-    <main>{page === 'gallery' ? <GalleryPage /> : page === 'certificates' ? <CertificationPage /> : page === 'clients' ? <ClientsPage /> : page === 'about' ? <AboutPage /> : page === 'contact' ? <ContactPage hideContactFooter /> : <HomePage />}</main>
+    <Header isContact={page === 'contact' || page === 'gallery' || page === 'certificates' || page === 'clients' || page === 'about' || page === 'site-supervision'} onRequestQuote={() => setIsEnquiryOpen(true)} />
+    <main>{page === 'gallery' ? <GalleryPage /> : page === 'certificates' ? <CertificationPage /> : page === 'clients' ? <ClientsPage /> : page === 'about' ? <AboutPage /> : page === 'contact' ? <ContactPage hideContactFooter /> : page === 'site-supervision' ? <SiteSupervisionPage /> : <HomePage />}</main>
     <Footer />
     <EnquiryModal open={isEnquiryOpen} onClose={() => setIsEnquiryOpen(false)} />
   </>

@@ -12,7 +12,7 @@ export const navItems = [
     label: 'Services',
     href: '#services',
     children: [
-      { label: 'Site Supervision', href: '#services' },
+      { label: 'Site Supervision', href: '/services/site-supervision' },
       { label: 'Designing of Pipe Supports', href: '#services' },
       { label: 'Pipe Stress Analysis Service', href: '#services' },
     ],

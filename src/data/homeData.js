@@ -8,7 +8,15 @@ export const navItems = [
   { label: 'Home', href: '#home' },
   { label: 'About', href: '#about' },
   { label: 'Products', href: '#products' },
-  { label: 'Services', href: '#services' },
+  {
+    label: 'Services',
+    href: '#services',
+    children: [
+      { label: 'Site Supervision', href: '#services' },
+      { label: 'Designing of Pipe Supports', href: '#services' },
+      { label: 'Pipe Stress Analysis Service', href: '#services' },
+    ],
+  },
   { label: 'Gallery', href: '#gallery' },
   { label: 'Clients', href: '#clients' },
   { label: 'Certificates & Awards', href: '#certificates' },

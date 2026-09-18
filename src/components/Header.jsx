@@ -24,6 +24,11 @@ export function Header({ isContact = false, onRequestQuote }) {
   const [isOpen, setIsOpen] = useState(false)
   const [activeHash, setActiveHash] = useState(currentPageHash)
 
+  const isActive = (href) => {
+    if (href === '#services') return activeHash === '#services'
+    return activeHash === href
+  }
+
   useEffect(() => {
     const syncHash = () => setActiveHash(currentPageHash())
     window.addEventListener('hashchange', syncHash)
@@ -39,9 +44,29 @@ export function Header({ isContact = false, onRequestQuote }) {
         </button>
         <nav className={`main-nav ${isOpen ? 'main-nav--open' : ''}`} aria-label="Primary navigation">
           {navItems.map((item) => (
-            <a className={activeHash === (item.href === '/certificates' ? '#certificates' : item.href === '/clients' ? '#clients' : item.href) ? 'active' : ''} href={item.href} key={item.label} onClick={() => setIsOpen(false)}>
-              {item.label}
-            </a>
+            item.children ? (
+              <div className={`nav-dropdown ${isActive(item.href) ? 'active' : ''}`} key={item.label}>
+                <a
+                  className="nav-dropdown-trigger"
+                  href={item.href}
+                  aria-haspopup="true"
+                  onClick={() => setIsOpen(false)}
+                >
+                  {item.label}<span className="nav-dropdown-caret" aria-hidden="true" />
+                </a>
+                <div className="nav-dropdown-menu">
+                  {item.children.map((child) => (
+                    <a href={child.href} key={child.label} onClick={() => setIsOpen(false)}>
+                      {child.label}
+                    </a>
+                  ))}
+                </div>
+              </div>
+            ) : (
+              <a className={isActive(item.href === '/certificates' ? '#certificates' : item.href === '/clients' ? '#clients' : item.href) ? 'active' : ''} href={item.href} key={item.label} onClick={() => setIsOpen(false)}>
+                {item.label}
+              </a>
+            )
           ))}
         </nav>
         <div className="header-actions">

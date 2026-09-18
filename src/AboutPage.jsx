@@ -1,6 +1,7 @@
 import contactImage from '../assets/contact.png'
 import aboutImage from '../assets/about-industrial-worker.png'
 import standardsImage from '../assets/pipe-support-hero.png'
+import { ValuedClientsSection } from './components/ValuedClientsSection.jsx'
 
 const aboutStats = [
   ['people', '10+', 'Years of Excellence'],
@@ -20,6 +21,21 @@ const qualityPromise = [
   ['gear', 'Quality Assurance', 'Quality Assurance & Quality Control Manuals are constantly in use and the organization operates quality management systems.'],
   ['testing', 'Testing & Inspection', 'In-house witness of TPI (if any) and outsource (duly approved by NABL) Laboratory Certified reports are used at a critical stage of testing.'],
   ['focus', 'Our Focus', 'Delivering reliable, safe and high-quality pipe support solutions for critical industries worldwide.'],
+]
+
+const whyChooseUs = [
+  ['clock', '15+', 'Years of', 'Experience'],
+  ['medal', 'Premium', 'Quality', 'Manufacturing'],
+  ['wrench', 'Tough', 'Reliable &', 'Construction'],
+  ['shield', 'Corrosion', 'Resistant', 'Materials'],
+  ['thumb', '100%', 'Client', 'Satisfaction'],
+  ['briefcase', 'Industry', 'Experts with', 'Deep Knowledge'],
+]
+
+const aboutValues = [
+  ['globe', 'orange', 'Our Vision', 'To be a trusted global leader in engineered pipe support systems, recognised for quality, innovation and dependable industrial solutions.'],
+  ['target', 'blue', 'Our Mission', 'To deliver high-quality, reliable and precisely engineered pipe hangers and support systems that protect performance and exceed customer expectations.'],
+  ['lock', 'slate', 'Our Commitment', 'To maintain strong manufacturing standards, transparent service and long-term partnerships with every customer we serve.'],
 ]
 
 function StatIcon({ type }) {
@@ -49,6 +65,21 @@ function QualityIcon({ type }) {
     focus: <><circle cx="12" cy="12" r="7.5" /><circle cx="12" cy="12" r="3" /><path d="M12 2v3M12 19v3M2 12h3m14 0h3M16 8l5-5" /><path d="m16 8 5-5" /></>,
   }
   return <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">{paths[type]}</svg>
+}
+
+function AboutValueIcon({ type }) {
+  const paths = {
+    clock: <><circle cx="12" cy="12" r="8.5" /><path d="M12 7v5l3 2" /></>,
+    medal: <><circle cx="12" cy="9" r="5" /><path d="m9.5 13-1 7 3.5-2 3.5 2-1-7" /></>,
+    wrench: <><path d="m14 6 4-3 3 3-3 4" /><path d="m13 11-8 8a2.1 2.1 0 0 0 3 3l8-8" /><path d="m11 9 4 4" /></>,
+    shield: <><path d="M12 3 20 6v5c0 5-3.3 8.4-8 10-4.7-1.6-8-5-8-10V6l8-3Z" /><path d="m8.5 12 2.2 2.2 4.8-5" /></>,
+    thumb: <><path d="M7 10v10H4V10h3Zm0 10h9.5a2 2 0 0 0 1.9-1.4l2-6A2 2 0 0 0 18.5 10H15l.7-3.1A2.4 2.4 0 0 0 13.4 4L9 10" /></>,
+    briefcase: <><rect x="3" y="7" width="18" height="13" rx="2" /><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 12h18M10 12v2h4v-2" /></>,
+    globe: <><circle cx="12" cy="12" r="9" /><path d="M3 12h18M12 3c2.1 2.4 3.2 5.4 3.2 9s-1.1 6.6-3.2 9c-2.1-2.4-3.2-5.4-3.2-9S9.9 5.4 12 3Z" /></>,
+    target: <><circle cx="12" cy="12" r="8.5" /><circle cx="12" cy="12" r="3" /><path d="M12 2v3M12 19v3M2 12h3m14 0h3" /></>,
+    lock: <><rect x="5" y="10" width="14" height="11" rx="2" /><path d="M8 10V7a4 4 0 0 1 8 0v3" /></>,
+  }
+  return <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">{paths[type]}</svg>
 }
 
 export function AboutPage() {
@@ -88,6 +119,35 @@ export function AboutPage() {
           <div className="about-story-stats" aria-label="AAA Supports achievements">
             {aboutStats.map(([icon, value, label]) => <div className="about-story-stat" key={label}><span className="about-story-stat-icon"><StatIcon type={icon} /></span><strong>{value}</strong><small>{label}</small></div>)}
           </div>
+        </div>
+      </section>
+
+      <section className="about-values-section" aria-labelledby="about-values-title">
+        <div className="about-values-heading">
+          <span className="about-values-kicker">Why Choose Us</span>
+          <h2 id="about-values-title">Dependable Engineering, <strong>Proven in the Field</strong></h2>
+          <p>Built on quality manufacturing, durable materials and responsive client support.</p>
+        </div>
+
+        <div className="about-values-highlights">
+          {whyChooseUs.map(([icon, value, lineOne, lineTwo]) => (
+            <article className="about-values-highlight" key={`${value}-${lineOne}`}>
+              <span className="about-values-highlight-icon"><AboutValueIcon type={icon} /></span>
+              <strong>{value}</strong>
+              <small>{lineOne}<br />{lineTwo}</small>
+            </article>
+          ))}
+        </div>
+
+        <div className="about-values-cards">
+          {aboutValues.map(([icon, tone, title, description]) => (
+            <article className={`about-values-card about-values-card--${tone}`} key={title}>
+              <span className="about-values-card-icon"><AboutValueIcon type={icon} /></span>
+              <h3>{title}</h3>
+              <i />
+              <p>{description}</p>
+            </article>
+          ))}
         </div>
       </section>
 
@@ -140,6 +200,18 @@ export function AboutPage() {
             </article>
           ))}
         </div>
+      </section>
+
+      <ValuedClientsSection />
+
+      <section className="about-partnership-cta" style={{ '--partnership-image': `url(${contactImage})` }} aria-labelledby="about-partnership-title">
+        <div className="about-partnership-overlay" />
+        <div className="about-partnership-copy">
+          <p className="about-partnership-kicker"><span />Let&apos;s Work Together</p>
+          <h2 id="about-partnership-title">Built on <strong>Trust. Proven by Results.</strong></h2>
+          <p>Talk to our team about your next piping support requirement.</p>
+        </div>
+        <a className="about-partnership-button" href="#contact">Contact Our Team <span aria-hidden="true">-&gt;</span></a>
       </section>
     </div>
   )

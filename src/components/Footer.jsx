@@ -4,11 +4,27 @@ import { images } from '../data/homeData.js'
 const footerGroups = [
   {
     title: 'Quick Links',
-    links: ['Home', 'About Us', 'Products', 'Industries', 'Projects', 'Resources', 'Contact Us'],
+    links: [
+      ['Home', '#home'],
+      ['About', '#about'],
+      ['Products', '#products'],
+      ['Services', '#services'],
+      ['Gallery', '#gallery'],
+      ['Clients', '#clients'],
+      ['Certificates & Awards', '#certificates'],
+      ['Contact', '#contact'],
+    ],
   },
   {
     title: 'Our Products',
-    links: ['Spring Supports', 'Pipe Hangers', 'Clamps & U-Bolts', 'Slides & Guides', 'Custom Fabrication', 'All Products'],
+    links: [
+      ['Spring Supports', '#products'],
+      ['Pipe Hangers', '#products'],
+      ['Clamps & U-Bolts', '#products'],
+      ['Slides & Guides', '#products'],
+      ['Custom Fabrication', '#products'],
+      ['All Products', '#products'],
+    ],
   },
 ]
 
@@ -86,10 +102,10 @@ export function Footer() {
           <div className="footer-link-group" key={group.title}>
             <h3>{group.title}</h3>
             <div className="footer-links-list">
-              {group.links.map((link) => (
-                <a href="#home" key={link} className={link === 'All Products' ? 'footer-link-highlight' : ''}>
+              {group.links.map(([label, href]) => (
+                <a href={href} key={label} className={label === 'All Products' ? 'footer-link-highlight' : ''}>
                   <span className="footer-link-arrow" aria-hidden="true">›</span>
-                  <span>{link}</span>
+                  <span>{label}</span>
                 </a>
               ))}
             </div>

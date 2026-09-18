@@ -10219,6 +10219,79 @@ button { cursor: pointer; }
   }
 }
 
+/* Keep the home CTA assurance badges on one line on larger screens. */
+@media (min-width: 701px) {
+  .client-cta-copy h2 {
+    white-space: nowrap;
+    font-size: clamp(32px, 3.05vw, 46px);
+    letter-spacing: -.01em;
+  }
+
+  .client-cta-assurances {
+    width: 100%;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .cta-assurance-pill {
+    flex: 0 0 auto;
+    padding-inline: 10px;
+    font-size: 12px;
+    white-space: nowrap;
+  }
+}
+
+@media (min-width: 1081px) {
+  .client-cta-card {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    grid-template-areas:
+      'badge action'
+      'heading action'
+      'description action'
+      'assurances assurances';
+    align-items: center;
+    row-gap: 12px;
+  }
+
+  .client-cta-copy {
+    display: contents;
+    max-width: none;
+  }
+
+  .client-cta-badge { grid-area: badge; justify-self: start; margin-bottom: 0; }
+  .client-cta-copy h2 { grid-area: heading; }
+  .client-cta-desc { grid-area: description; margin: 0; }
+  .client-cta-assurances {
+    grid-area: assurances;
+    justify-self: center;
+    margin-top: 18px;
+    margin-bottom: 8px;
+  }
+  .client-cta-action { grid-area: action; }
+}
+
+/* Pull the footer branding closer to the top divider. */
+.site-footer { padding-top: 12px; padding-bottom: 16px; }
+.site-footer .brand { margin-top: 18px; }
+.site-footer .footer-company > p { margin-top: 24px; }
+.site-footer .footer-link-group,
+.site-footer .footer-contact-panel { padding-top: 34px; }
+.site-footer .footer-industrial-image {
+  top: 0;
+  bottom: 0;
+  height: auto;
+}
+
+@media (max-width: 520px) {
+  .site-footer { padding-top: 8px; }
+  .site-footer .brand { margin-top: 12px; }
+  .site-footer .footer-company > p { margin-top: 20px; }
+  .site-footer .footer-link-group,
+  .site-footer .footer-contact-panel { padding-top: 24px; }
+}
+
 /* Hero trust ribbon */
 .hero-highlights {
   position: relative;
@@ -10323,4 +10396,59 @@ button { cursor: pointer; }
   .hero-highlight .icon { width: 38px; height: 38px; flex-basis: 38px; font-size: 17px; }
   .hero-highlight > span:not(.icon) { font-size: 12px; }
   .hero-highlight small { font-size: 9px; }
+}
+
+.footer-credit {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  margin: 0 auto;
+  padding: 14px 20px 2px;
+  border-top: 1px solid rgb(112 157 188 / 24%);
+  color: #8faabd;
+  font-size: 12px;
+  letter-spacing: .04em;
+  text-align: center;
+}
+
+.footer-credit strong {
+  color: var(--orange) !important;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.footer-credit i {
+  width: 1px;
+  height: 13px;
+  margin-inline: 4px;
+  background: rgb(143 170 189 / 55%);
+}
+
+/* Premium footer contact icons */
+.site-footer .footer-contact-item .footer-icon-badge {
+  width: 42px;
+  height: 42px;
+  flex-basis: 42px;
+  margin-top: 0;
+  border: 1px solid rgb(255 132 67 / 72%);
+  border-radius: 12px;
+  color: #ff9a5c;
+  background: linear-gradient(145deg, rgb(255 122 43 / 20%), rgb(5 42 66 / 78%));
+  box-shadow: inset 0 1px rgb(255 255 255 / 12%), 0 7px 16px rgb(0 0 0 / 22%);
+  transition: transform .25s ease, color .25s ease, background .25s ease, box-shadow .25s ease;
+}
+
+.site-footer .footer-contact-item .footer-icon-badge svg {
+  width: 19px;
+  height: 19px;
+}
+
+.site-footer .footer-contact-item:hover .footer-icon-badge {
+  color: #fff;
+  background: linear-gradient(145deg, #ff8439, #ed5b1b);
+  box-shadow: 0 9px 20px rgb(255 103 32 / 30%);
+  transform: translateY(-3px) rotate(-3deg);
 }

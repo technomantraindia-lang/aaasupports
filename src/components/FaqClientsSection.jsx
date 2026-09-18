@@ -237,16 +237,6 @@ export function FaqClientsSection() {
                   <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
                 </svg>
               </a>
-              <div className="client-cta-email-chip">
-                <span className="cta-email-label">Direct Sales Inquiries:</span>
-                <a href="mailto:sales@aaasupports.com" className="cta-email-link">
-                  <svg viewBox="0 0 20 20" fill="currentColor" width="14" height="14" aria-hidden="true">
-                    <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
-                    <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
-                  </svg>
-                  sales@aaasupports.com
-                </a>
-              </div>
             </div>
           </div>
         </div>

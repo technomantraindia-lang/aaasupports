@@ -111,8 +111,8 @@ export function AboutPage() {
           <div className="about-story-copy">
             <p className="about-story-kicker"><span />Welcome to <strong>AAA Supports Pvt. Ltd.</strong></p>
             <h2 id="about-story-title">Who <strong>We Are</strong></h2>
-            <p className="about-story-description">AAA Supports Pvt. Ltd. is an ISO 9001: 2015 accredited organization engaged in the Design, Engineering, and Manufacturing of Hanger and Supports Systems. In accordance with our stringent quality parameters, we comply with ANSI/ASME codes for pressure piping and MSS standards SP-58 for Pipe Supports.</p>
-            <p className="about-story-description">We recognize the requirements for quality assurance in the area in which we operate and are committed to an effective quality management system that ensures every requirement is met according to specification.</p>
+            <p className="about-story-description">AAA Supports Pvt. Ltd. is an ISO 9001:2015 accredited organization engaged in designing and manufacturing hanger and support systems. We comply with ANSI/ASME and MSS SP-58 standards.</p>
+            <p className="about-story-description">Our quality management system is supported by active Quality Assurance and Quality Control Manuals.</p>
             <a className="about-story-button" href="#contact">Learn More <span aria-hidden="true">-&gt;</span></a>
           </div>
 

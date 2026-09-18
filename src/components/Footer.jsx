@@ -135,6 +135,13 @@ export function Footer() {
         </div>
 
       </div>
+
+      <div className="footer-credit" aria-label="Website credit">
+        <span>Copyright © 2026</span>
+        <i aria-hidden="true" />
+        <span>Designed by</span>
+        <strong>Technomantra India</strong>
+      </div>
     </footer>
   )
 }

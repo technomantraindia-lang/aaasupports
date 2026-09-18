@@ -35,10 +35,10 @@ const assurances = [
 ]
 
 const benefits = [
-  ['pin', 'Strategic', 'Location'],
-  ['road', 'Easy', 'Accessibility'],
-  ['globe', 'Global', 'Business Support'],
-  ['people', 'Dedicated', 'Support Team'],
+  ['pin', 'Strategic Location', 'Well-connected for easy access'],
+  ['gear', 'Technical Assistance', 'Get expert service for your needs'],
+  ['globe', 'Global Support', 'Serving industries across regions'],
+  ['people', 'Dedicated Team', 'Always ready to help you'],
 ]
 
 function ContactCard({ icon, title, children }) {
@@ -86,13 +86,13 @@ export function ContactPage({ hideContactFooter = false }) {
         <section className="contact-form-panel">
           <Label>Get In Touch</Label>
           <h2>We’d Love to <strong>Hear From You</strong></h2>
-          <p className="form-intro">We know looking for the right Design, Engineering, and Manufacturing<br className="desktop-break" /> of Hanger and Supports Systems so giving us a suggestion- Kindly fill form &amp;<br className="desktop-break" /> Get more Details.</p>
+          <p className="form-intro">Tell us what you need in design, engineering, or manufacturing of hanger and support systems. Share your requirement and our team will get back to you shortly.</p>
           <form id="contact-form" className="contact-form" onSubmit={handleSubmit}>
-            <label>Your Name <em>*</em><input required name="name" placeholder="Enter your name" /></label>
-            <label>Your Company<input name="company" placeholder="Enter company name" /></label>
-            <label>Your Email <em>*</em><input required type="email" name="email" placeholder="Enter your email" /></label>
-            <label>Your Phone <em>*</em><input required type="tel" name="phone" placeholder="Enter your phone number" /></label>
-            <label className="form-full">Message <em>*</em><textarea required name="message" placeholder="Tell us about your requirement..." /></label>
+            <label><span>Your Name <em>*</em></span><input required name="name" placeholder="Enter your name" /></label>
+            <label><span>Your Company</span><input name="company" placeholder="Enter company name" /></label>
+            <label><span>Your Email <em>*</em></span><input required type="email" name="email" placeholder="Enter your email" /></label>
+            <label><span>Your Phone <em>*</em></span><input required type="tel" name="phone" placeholder="Enter your phone number" /></label>
+            <label className="form-full"><span>Message <em>*</em></span><textarea required name="message" placeholder="Tell us about your requirement..." /></label>
             <button className="contact-submit" type="submit">{sent ? 'Message Sent' : 'Send Message'}<Icon name="arrow" size={20} /></button>
             {sent ? <p className="form-success" role="status">Thank you — our team will get back to you shortly.</p> : null}
           </form>
@@ -100,7 +100,7 @@ export function ContactPage({ hideContactFooter = false }) {
       </div>
 
       <div className="benefit-row">
-        {benefits.map(([icon, title, subtitle]) => <div className="benefit" key={title}><span className="benefit-icon"><Icon name={icon} size={37} /></span><b>{title}<br />{subtitle}</b></div>)}
+        {benefits.map(([icon, title, subtitle]) => <div className={`benefit benefit--${icon}`} key={title}><span className="benefit-icon"><Icon name={icon} size={23} /></span><b><strong>{title}</strong><small>{subtitle}</small></b></div>)}
       </div>
     </main>
 

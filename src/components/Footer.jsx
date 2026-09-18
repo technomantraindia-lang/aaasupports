@@ -101,7 +101,7 @@ export function Footer() {
           <div className="footer-contact-list">
             <div className="footer-contact-item">
               <FooterIcon type="pin" />
-              <span>Plot No. 25A, GIDC Industrial Estate,<br />Ankleshwar, Gujarat, India</span>
+              <span>Plot No: 189, GIDC Industrial Estate,<br />Por - Ramangamdi - 391243,<br />Dist : Vadodara, Gujarat - India.</span>
             </div>
             <div className="footer-contact-item">
               <FooterIcon type="phone" />

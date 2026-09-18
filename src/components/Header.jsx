@@ -17,7 +17,7 @@ function currentPageHash() {
   return hash || '#home'
 }
 
-export function Header({ isContact = false }) {
+export function Header({ isContact = false, onRequestQuote }) {
   const [isOpen, setIsOpen] = useState(false)
   const [activeHash, setActiveHash] = useState(currentPageHash)
 
@@ -42,7 +42,7 @@ export function Header({ isContact = false }) {
           ))}
         </nav>
         <div className="header-actions">
-          <a className="button button--orange button--small" href="#quote">Request a Quote <span>→</span></a>
+          <button className="button button--orange button--small" type="button" onClick={onRequestQuote}>Request a Quote <span>→</span></button>
         </div>
       </div>
     </header>

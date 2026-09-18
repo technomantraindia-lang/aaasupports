@@ -11,6 +11,7 @@ import { ContactPage } from './ContactPage.jsx'
 import { GalleryPage } from './GalleryPage.jsx'
 import { CertificationPage } from './CertificationPage.jsx'
 import { ClientsPage } from './ClientsPage.jsx'
+import { EnquiryModal } from './components/EnquiryModal.jsx'
 
 function currentPage() {
   const path = window.location.pathname.replace(/\/$/, '')
@@ -40,6 +41,7 @@ function HomePage() {
 
 function App() {
   const [page, setPage] = useState(currentPage)
+  const [isEnquiryOpen, setIsEnquiryOpen] = useState(false)
 
   useEffect(() => {
     const syncPage = () => setPage(currentPage())
@@ -51,10 +53,23 @@ function App() {
     }
   }, [])
 
+  useEffect(() => {
+    const openEnquiryFromLink = (event) => {
+      const trigger = event.target.closest?.('a[href="#quote"], [data-open-enquiry]')
+      if (!trigger) return
+      event.preventDefault()
+      setIsEnquiryOpen(true)
+    }
+
+    document.addEventListener('click', openEnquiryFromLink)
+    return () => document.removeEventListener('click', openEnquiryFromLink)
+  }, [])
+
   return <>
-    <Header isContact={page === 'contact' || page === 'gallery' || page === 'certificates' || page === 'clients'} />
+    <Header isContact={page === 'contact' || page === 'gallery' || page === 'certificates' || page === 'clients'} onRequestQuote={() => setIsEnquiryOpen(true)} />
     <main>{page === 'gallery' ? <GalleryPage /> : page === 'certificates' ? <CertificationPage /> : page === 'clients' ? <ClientsPage /> : page === 'contact' ? <ContactPage hideContactFooter /> : <HomePage />}</main>
     <Footer />
+    <EnquiryModal open={isEnquiryOpen} onClose={() => setIsEnquiryOpen(false)} />
   </>
 }
 

@@ -88,7 +88,7 @@ export function CertificationPage() {
       </section>
 
       <div className="certificates-list-heading">
-        <div><span className="certification-kicker"><b />Our Recognition</span><h3>Certificates &amp; Awards</h3></div>
+        <div><span className="certification-kicker"><b />Our Recognition</span><h3>Certificates <strong>&amp; Awards</strong></h3></div>
        
       </div>
 

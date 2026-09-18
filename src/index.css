@@ -8266,6 +8266,10 @@ button { cursor: pointer; }
   line-height: .95;
 }
 
+.certification-page .certificates-list-heading h3 strong {
+  color: var(--contact-orange);
+}
+
 @media (max-width: 760px) {
   .certification-page .certificates-list-heading {
     margin-top: 54px;

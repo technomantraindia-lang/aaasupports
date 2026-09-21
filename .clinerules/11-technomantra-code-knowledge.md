@@ -5,7 +5,7 @@
 - Indexed source files: 39
 - Structural edges: 53
 - Matched end-to-end flows: 0
-- Updated: 2026-09-21T11:58:42.889Z
+- Updated: 2026-09-21T12:15:43.023Z
 
 ## Dependency edges
 - IMPORT index.html -> src/main.jsx

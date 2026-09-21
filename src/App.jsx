@@ -15,6 +15,7 @@ import { AboutPage } from './AboutPage.jsx'
 import { SiteSupervisionPage } from './SiteSupervisionPage.jsx'
 import { DesigningPipeSupportsPage } from './DesigningPipeSupportsPage.jsx'
 import { PipeStressAnalysisPage } from './PipeStressAnalysisPage.jsx'
+import { ProductsPage } from './ProductsPage.jsx'
 import { EnquiryModal } from './components/EnquiryModal.jsx'
 
 function currentPage() {
@@ -35,6 +36,7 @@ function currentPage() {
   if (route === 'site-supervision') return 'site-supervision'
   if (route === 'designing-of-pipe-supports' || route === 'custom-pipe-supports') return 'designing-pipe-supports'
   if (route === 'pipe-stress-analysis' || route === 'pipe-stress-analysis-service') return 'pipe-stress-analysis'
+  if (route === 'products') return 'products'
   return 'home'
 }
 
@@ -76,8 +78,8 @@ function App() {
   }, [])
 
   return <>
-    <Header isContact={page === 'contact' || page === 'gallery' || page === 'certificates' || page === 'clients' || page === 'about' || page === 'site-supervision' || page === 'designing-pipe-supports' || page === 'pipe-stress-analysis'} onRequestQuote={() => setIsEnquiryOpen(true)} />
-    <main>{page === 'gallery' ? <GalleryPage /> : page === 'certificates' ? <CertificationPage /> : page === 'clients' ? <ClientsPage /> : page === 'about' ? <AboutPage /> : page === 'contact' ? <ContactPage hideContactFooter /> : page === 'site-supervision' ? <SiteSupervisionPage /> : page === 'designing-pipe-supports' ? <DesigningPipeSupportsPage /> : page === 'pipe-stress-analysis' ? <PipeStressAnalysisPage /> : <HomePage />}</main>
+    <Header isContact={page === 'contact' || page === 'gallery' || page === 'certificates' || page === 'clients' || page === 'about' || page === 'site-supervision' || page === 'designing-pipe-supports' || page === 'pipe-stress-analysis' || page === 'products'} onRequestQuote={() => setIsEnquiryOpen(true)} />
+    <main>{page === 'gallery' ? <GalleryPage /> : page === 'certificates' ? <CertificationPage /> : page === 'clients' ? <ClientsPage /> : page === 'about' ? <AboutPage /> : page === 'contact' ? <ContactPage hideContactFooter /> : page === 'site-supervision' ? <SiteSupervisionPage /> : page === 'designing-pipe-supports' ? <DesigningPipeSupportsPage /> : page === 'pipe-stress-analysis' ? <PipeStressAnalysisPage /> : page === 'products' ? <ProductsPage /> : <HomePage />}</main>
     <Footer />
     <EnquiryModal open={isEnquiryOpen} onClose={() => setIsEnquiryOpen(false)} />
   </>

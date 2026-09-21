@@ -16,6 +16,7 @@ function currentPageHash() {
   if (route === 'site-supervision') return '#services'
   if (route === 'designing-of-pipe-supports' || route === 'custom-pipe-supports') return '#services'
   if (route === 'pipe-stress-analysis' || route === 'pipe-stress-analysis-service') return '#services'
+  if (route === 'products') return '/products'
   if (route === 'about') return '#about'
   if (route === 'gallery') return '#gallery'
   if (route === 'certificates') return '#certificates'
@@ -94,7 +95,7 @@ export function Header({ isContact = false, onRequestQuote }) {
                 </div>
               </div>
             ) : (
-              <a className={isActive(item.href === '/certificates' ? '#certificates' : item.href === '/clients' ? '#clients' : item.href) ? 'active' : ''} href={item.href} key={item.label} onClick={closeNavigation}>
+              <a className={isActive(item.href === '/certificates' ? '#certificates' : item.href === '/clients' ? '#clients' : item.href) ? 'active' : ''} href={item.href} key={item.label} onClick={(event) => navigateTo(event, item.href)}>
                 {item.label}
               </a>
             )

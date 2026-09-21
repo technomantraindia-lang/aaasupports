@@ -59,7 +59,7 @@ export function ProductRange() {
         </div>
 
         <div className="product-section-footer">
-          <a className="product-view-all-btn" href="#products">
+          <a className="product-view-all-btn" href="/products">
             <span>View All Products</span>
             <span className="product-btn-arrow" aria-hidden="true">
               <svg viewBox="0 0 20 20" fill="currentColor">

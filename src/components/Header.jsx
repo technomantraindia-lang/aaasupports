@@ -14,6 +14,8 @@ function currentPageHash() {
   if (hash === '#contact') return '#contact'
   if (route === 'contact') return '#contact'
   if (route === 'site-supervision') return '#services'
+  if (route === 'designing-of-pipe-supports' || route === 'custom-pipe-supports') return '#services'
+  if (route === 'pipe-stress-analysis' || route === 'pipe-stress-analysis-service') return '#services'
   if (route === 'about') return '#about'
   if (route === 'gallery') return '#gallery'
   if (route === 'certificates') return '#certificates'
@@ -23,6 +25,7 @@ function currentPageHash() {
 
 export function Header({ isContact = false, onRequestQuote }) {
   const [isOpen, setIsOpen] = useState(false)
+  const [isServicesOpen, setIsServicesOpen] = useState(false)
   const [activeHash, setActiveHash] = useState(currentPageHash)
 
   const isActive = (href) => {
@@ -30,10 +33,29 @@ export function Header({ isContact = false, onRequestQuote }) {
     return activeHash === href
   }
 
+  const closeNavigation = () => {
+    setIsOpen(false)
+    setIsServicesOpen(false)
+  }
+
+  const navigateTo = (event, href) => {
+    closeNavigation()
+    if (!href.startsWith('/')) return
+
+    event.preventDefault()
+    window.history.pushState({}, '', href)
+    window.dispatchEvent(new PopStateEvent('popstate'))
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }
+
   useEffect(() => {
     const syncHash = () => setActiveHash(currentPageHash())
     window.addEventListener('hashchange', syncHash)
-    return () => window.removeEventListener('hashchange', syncHash)
+    window.addEventListener('popstate', syncHash)
+    return () => {
+      window.removeEventListener('hashchange', syncHash)
+      window.removeEventListener('popstate', syncHash)
+    }
   }, [])
 
   return (
@@ -46,25 +68,33 @@ export function Header({ isContact = false, onRequestQuote }) {
         <nav className={`main-nav ${isOpen ? 'main-nav--open' : ''}`} aria-label="Primary navigation">
           {navItems.map((item) => (
             item.children ? (
-              <div className={`nav-dropdown ${isActive(item.href) ? 'active' : ''}`} key={item.label}>
+              <div className={`nav-dropdown ${isActive(item.href) ? 'active' : ''} ${isServicesOpen ? 'nav-dropdown--open' : ''}`} key={item.label}>
                 <a
                   className="nav-dropdown-trigger"
                   href={item.href}
                   aria-haspopup="true"
-                  onClick={() => setIsOpen(false)}
+                  onClick={(event) => {
+                    if (window.matchMedia('(max-width: 900px)').matches) {
+                      event.preventDefault()
+                      setIsServicesOpen((open) => !open)
+                      setIsOpen(true)
+                    } else {
+                      closeNavigation()
+                    }
+                  }}
                 >
                   {item.label}<span className="nav-dropdown-caret" aria-hidden="true" />
                 </a>
                 <div className="nav-dropdown-menu">
                   {item.children.map((child) => (
-                    <a href={child.href} key={child.label} onClick={() => setIsOpen(false)}>
+                    <a href={child.href} key={child.label} onClick={(event) => navigateTo(event, child.href)}>
                       {child.label}
                     </a>
                   ))}
                 </div>
               </div>
             ) : (
-              <a className={isActive(item.href === '/certificates' ? '#certificates' : item.href === '/clients' ? '#clients' : item.href) ? 'active' : ''} href={item.href} key={item.label} onClick={() => setIsOpen(false)}>
+              <a className={isActive(item.href === '/certificates' ? '#certificates' : item.href === '/clients' ? '#clients' : item.href) ? 'active' : ''} href={item.href} key={item.label} onClick={closeNavigation}>
                 {item.label}
               </a>
             )

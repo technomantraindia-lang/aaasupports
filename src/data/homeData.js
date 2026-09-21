@@ -13,8 +13,8 @@ export const navItems = [
     href: '#services',
     children: [
       { label: 'Site Supervision', href: '/services/site-supervision' },
-      { label: 'Designing of Pipe Supports', href: '#services' },
-      { label: 'Pipe Stress Analysis Service', href: '#services' },
+      { label: 'Designing of Pipe Supports', href: '/services/designing-of-pipe-supports' },
+      { label: 'Pipe Stress Analysis Service', href: '/services/pipe-stress-analysis' },
     ],
   },
   { label: 'Gallery', href: '#gallery' },

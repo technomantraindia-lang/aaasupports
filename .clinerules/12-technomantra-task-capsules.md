@@ -21,7 +21,7 @@ The extension refreshes this file automatically. Prefer its concise state over o
 - Framework: react
 - Developer mode: smart
 - Model mode: eco
-- Active file: src/CertificationPage.jsx
+- Active file: .gitignore
 - Objective: Current developer prompt in this workspace/window only.
 - Blocker: none
 - Next action: Inspect current prompt and workspace evidence before editing.
@@ -31,10 +31,10 @@ The extension refreshes this file automatically. Prefer its concise state over o
 - .gitignore
 
 ## Recent files in this workspace/window
+- .gitignore
 - src/CertificationPage.jsx
 - src/components/Header.jsx
 - src/components/testimonials/testimonials.html
-- .gitignore
 
 ## Hard rule
 If a file, goal, screenshot, terminal output, or decision is not connected to this capsule, do not use it for the current task.

@@ -20,7 +20,7 @@ const coreStandards = [
 const qualityPromise = [
   ['gear', 'Quality Assurance', 'Quality Assurance & Quality Control Manuals are constantly in use and the organization operates quality management systems.'],
   ['testing', 'Testing & Inspection', 'In-house witness of TPI (if any) and outsource (duly approved by NABL) Laboratory Certified reports are used at a critical stage of testing.'],
-  ['focus', 'Our Focus', 'Delivering reliable, safe and high-quality pipe support solutions for critical industries worldwide.'],
+  ['focus', 'Our Focus', 'To expand our presence across Engineering and Manufacturing while building profitable, sustainable and long-term customer and supplier relationships.'],
 ]
 
 const whyChooseUs = [
@@ -33,9 +33,9 @@ const whyChooseUs = [
 ]
 
 const aboutValues = [
-  ['globe', 'orange', 'Our Vision', 'To be a trusted global leader in engineered pipe support systems, recognised for quality, innovation and dependable industrial solutions.'],
-  ['target', 'blue', 'Our Mission', 'To deliver high-quality, reliable and precisely engineered pipe hangers and support systems that protect performance and exceed customer expectations.'],
-  ['lock', 'slate', 'Our Commitment', 'To maintain strong manufacturing standards, transparent service and long-term partnerships with every customer we serve.'],
+  ['globe', 'orange', 'Our Vision', 'To represent ourselves as an internationally acclaimed leading manufacturer of Spring Hanger & Support Systems, Special Structural Support Systems and Cryogenic Support Systems for critical pipeline applications.'],
+  ['target', 'blue', 'Our Mission', 'To acquire customers in Oil & Gas, Conventional Power and Nuclear Power for piping engineering, stress analysis, field services and commissioning activities, while building a proud global brand.'],
+  ['lock', 'slate', 'Our Commitment', 'To deliver unmatched customer solutions and services at site while nurturing profitable, sustainable and enjoyable long-term relationships with customers and suppliers.'],
 ]
 
 function StatIcon({ type }) {
@@ -111,8 +111,8 @@ export function AboutPage() {
           <div className="about-story-copy">
             <p className="about-story-kicker"><span />Welcome to <strong>AAA Supports Pvt. Ltd.</strong></p>
             <h2 id="about-story-title">Who <strong>We Are</strong></h2>
-            <p className="about-story-description">AAA Supports Pvt. Ltd. is an ISO 9001:2015 accredited organization engaged in designing and manufacturing hanger and support systems. We comply with ANSI/ASME and MSS SP-58 standards.</p>
-            <p className="about-story-description">Our quality management system is supported by active Quality Assurance and Quality Control Manuals.</p>
+            <p className="about-story-description">AAA Supports Pvt. Ltd. is a well-recognized and reputed Indian name in <strong>Pipe Supports &amp; Hangers</strong>, having served hundreds of customers across Oil &amp; Gas, Chemical &amp; Fertilizer, Steel and Power industries.</p>
+            <p className="about-story-description">Our ISO 9001:2015 accredited team delivers design, engineering and manufacturing solutions compliant with ANSI/ASME pressure piping codes and MSS SP-58 standards.</p>
             <a className="about-story-button" href="#contact">Learn More <span aria-hidden="true">-&gt;</span></a>
           </div>
 

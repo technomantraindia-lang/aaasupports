@@ -2,6 +2,23 @@ import { useEffect, useState } from 'react'
 import { navItems } from '../data/homeData.js'
 import { Logo } from './Logo.jsx'
 
+const productCategories = [
+  {
+    name: 'Primary Supports',
+    products: [
+      'Pipe Shoe / Saddles', 'Pipe Clamps', 'Trunnions', 'Rest Supports', 'Guide Shoe',
+      'Puff Supports', 'Fix Supports', 'Line Stops', 'Anchor', 'U Clamps / U Bolts',
+      'Foundation Bolts', 'Slide Supports', 'PTFE Slide Supports', 'Roller Supports',
+      'Variable Spring Hangers & Supports', 'Constant Spring Hangers & Supports',
+      'Rigid Hangers', 'Rigid Struts', 'Hydraulic Snubbers',
+    ],
+  },
+  {
+    name: 'Secondary Supports',
+    products: ['Structural Beams', 'Structural Columns', 'Structural Frames', 'Structural Members', 'Brackets'],
+  },
+]
+
 function currentPageHash() {
   const path = window.location.pathname.replace(/\/$/, '')
   const route = path.split('/').pop()
@@ -27,6 +44,8 @@ function currentPageHash() {
 export function Header({ isContact = false, onRequestQuote }) {
   const [isOpen, setIsOpen] = useState(false)
   const [isServicesOpen, setIsServicesOpen] = useState(false)
+  const [isProductsOpen, setIsProductsOpen] = useState(false)
+  const [activeProductCategory, setActiveProductCategory] = useState(null)
   const [activeHash, setActiveHash] = useState(currentPageHash)
 
   const isActive = (href) => {
@@ -37,6 +56,8 @@ export function Header({ isContact = false, onRequestQuote }) {
   const closeNavigation = () => {
     setIsOpen(false)
     setIsServicesOpen(false)
+    setIsProductsOpen(false)
+    setActiveProductCategory(null)
   }
 
   const navigateTo = (event, href) => {
@@ -59,6 +80,20 @@ export function Header({ isContact = false, onRequestQuote }) {
     }
   }, [])
 
+  useEffect(() => {
+    const closeDropdownsOnOutsideClick = (event) => {
+      if (!event.target.closest('.nav-dropdown')) {
+        setIsProductsOpen(false)
+        setIsServicesOpen(false)
+        setActiveProductCategory(null)
+        if (!event.target.closest('.site-header')) setIsOpen(false)
+      }
+    }
+
+    document.addEventListener('pointerdown', closeDropdownsOnOutsideClick)
+    return () => document.removeEventListener('pointerdown', closeDropdownsOnOutsideClick)
+  }, [])
+
   return (
     <header className={`site-header ${isContact ? 'site-header--contact' : ''}`} id="home">
       <div className="container header-inner">
@@ -68,8 +103,50 @@ export function Header({ isContact = false, onRequestQuote }) {
         </button>
         <nav className={`main-nav ${isOpen ? 'main-nav--open' : ''}`} aria-label="Primary navigation">
           {navItems.map((item) => (
-            item.children ? (
-              <div className={`nav-dropdown ${isActive(item.href) ? 'active' : ''} ${isServicesOpen ? 'nav-dropdown--open' : ''}`} key={item.label}>
+            item.label === 'Products' ? (
+              <div className={`nav-dropdown nav-products-dropdown ${isActive(item.href) ? 'active' : ''} ${isProductsOpen ? 'nav-dropdown--open' : ''}`} key={item.label} onMouseEnter={() => { if (!window.matchMedia('(max-width: 900px)').matches) setIsProductsOpen(true) }} onMouseLeave={() => { if (!window.matchMedia('(max-width: 900px)').matches) setIsProductsOpen(false) }}>
+                <a
+                  className="nav-dropdown-trigger"
+                  href={item.href}
+                  aria-haspopup="true"
+                  onClick={(event) => {
+                    if (window.matchMedia('(max-width: 900px)').matches) {
+                      event.preventDefault()
+                      setIsProductsOpen((open) => !open)
+                      setIsOpen(true)
+                    } else {
+                      navigateTo(event, item.href)
+                    }
+                  }}
+                >
+                  {item.label}<span className="nav-dropdown-caret" aria-hidden="true" />
+                </a>
+                <div className={`products-mega-menu ${activeProductCategory ? 'products-mega-menu--selected' : ''}`}>
+                  <div className="products-mega-categories">
+                    {productCategories.map((category) => (
+                      <button
+                        className={activeProductCategory === category.name ? 'active' : ''}
+                        type="button"
+                        key={category.name}
+                        onClick={() => setActiveProductCategory(category.name)}
+                      >
+                        <span>{category.name}</span><b aria-hidden="true">›</b>
+                      </button>
+                    ))}
+                  </div>
+                  {activeProductCategory && <div className="products-mega-products">
+                      <p>{activeProductCategory}</p>
+                      <div>
+                        {productCategories.find((category) => category.name === activeProductCategory).products.map((product) => (
+                          <a href="#quote" key={product} onClick={closeNavigation}>{product}</a>
+                        ))}
+                      </div>
+                      <a className="products-mega-view-all" href="/products" onClick={(event) => navigateTo(event, '/products')}>View All Products <span>→</span></a>
+                    </div>}
+                </div>
+              </div>
+            ) : item.children ? (
+              <div className={`nav-dropdown ${isActive(item.href) ? 'active' : ''} ${isServicesOpen ? 'nav-dropdown--open' : ''}`} key={item.label} onMouseEnter={() => { if (!window.matchMedia('(max-width: 900px)').matches) setIsServicesOpen(true) }} onMouseLeave={() => { if (!window.matchMedia('(max-width: 900px)').matches) setIsServicesOpen(false) }}>
                 <a
                   className="nav-dropdown-trigger"
                   href={item.href}

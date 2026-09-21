@@ -1,22 +1,61 @@
-import variableSpringSupports from '../assets/product-variable-spring-supports.png'
+import heroImage from '../assets/pipe-support-hero.png'
 import constantSpringHangers from '../assets/product-constant-spring-hangers.png'
 import constantSpringSupports from '../assets/product-constant-spring-supports.png'
-import pipeClampsUBolts from '../assets/product-pipe-clamps-u-bolts.png'
-import slidesGuides from '../assets/product-slides-guides.png'
 import customFabrication from '../assets/product-custom-fabrication.png'
 import marinePipeSupports from '../assets/product-marine-pipe-supports.png'
-import oilGasSolutions from '../assets/product-oil-gas-solutions.png'
-import heroImage from '../assets/pipe-support-hero.png'
+import pipeClampsUBolts from '../assets/product-pipe-clamps-u-bolts.png'
+import slidesGuides from '../assets/product-slides-guides.png'
+import variableSpringSupports from '../assets/product-variable-spring-supports.png'
 
-const categories = [
-  { name: 'Variable Spring Supports', description: 'Engineered for controlled movement, vibration reduction and reliable load management.', image: variableSpringSupports, tag: 'Load control' },
-  { name: 'Constant Spring Hangers', description: 'Reliable vertical support for piping systems with large thermal movement.', image: constantSpringHangers, tag: 'Vertical support' },
-  { name: 'Constant Spring Supports', description: 'Custom solutions for critical piping where consistent support travel matters.', image: constantSpringSupports, tag: 'Critical piping' },
-  { name: 'Pipe Clamps & U-Bolts', description: 'Durable high-performance clamping solutions for industrial piping applications.', image: pipeClampsUBolts, tag: 'Pipe restraint' },
-  { name: 'Slides & Guides', description: 'Designed for smooth thermal movement while keeping piping correctly aligned.', image: slidesGuides, tag: 'Movement control' },
-  { name: 'Custom Fabrication', description: 'Made-to-spec supports for complex layouts, unusual loads and brownfield projects.', image: customFabrication, tag: 'Project specific' },
-  { name: 'Marine Pipe Supports', description: 'Reliable support systems engineered for demanding marine and offshore environments.', image: marinePipeSupports, tag: 'Marine grade' },
-  { name: 'Oil & Gas Solutions', description: 'Built for critical industrial, power, refinery and infrastructure projects.', image: oilGasSolutions, tag: 'Heavy duty' },
+const productImageSet = {
+  clamps: pipeClampsUBolts,
+  spring: variableSpringSupports,
+  constant: constantSpringSupports,
+  hanger: constantSpringHangers,
+  slides: slidesGuides,
+  structure: customFabrication,
+  support: marinePipeSupports,
+}
+
+const categoryGroups = [
+  {
+    number: '01',
+    name: 'Primary Supports',
+    description: 'Load-bearing and movement-control components engineered for dependable primary pipe support.',
+    products: [
+      ['Pipe Shoe / Saddles', 'support'],
+      ['Pipe Clamps', 'clamps'],
+      ['Trunnions', 'clamps'],
+      ['Rest Supports', 'support'],
+      ['Guide Shoe', 'slides'],
+      ['Puff Supports', 'spring'],
+      ['Fix Supports', 'support'],
+      ['Line Stops', 'slides'],
+      ['Anchor', 'structure'],
+      ['U Clamps / U Bolts', 'clamps'],
+      ['Foundation Bolts', 'structure'],
+      ['Slide Supports', 'slides'],
+      ['PTFE Slide Supports', 'slides'],
+      ['Roller Supports', 'support'],
+      ['Variable Spring Hangers & Supports', 'spring'],
+      ['Constant Spring Hangers & Supports', 'constant'],
+      ['Rigid Hangers', 'hanger'],
+      ['Rigid Struts', 'structure'],
+      ['Hydraulic Snubbers', 'hanger'],
+    ],
+  },
+  {
+    number: '02',
+    name: 'Secondary Supports',
+    description: 'Structural support members and framing systems that provide stable load transfer and installation flexibility.',
+    products: [
+      ['Structural Beams', 'structure'],
+      ['Structural Columns', 'structure'],
+      ['Structural Frames', 'structure'],
+      ['Structural Members', 'support'],
+      ['Brackets', 'structure'],
+    ],
+  },
 ]
 
 function ArrowIcon() {
@@ -45,14 +84,19 @@ export function ProductsPage() {
           <div><p className="section-kicker"><span />Products</p><h2>Our <strong>Product Categories</strong></h2><p>Explore engineered pipe support systems for power, oil &amp; gas, marine, chemical and industrial applications.</p></div>
           <a className="products-page-brochure" href="#quote"><b>PDF</b><span><strong>Request Product Details</strong><small>Get catalogue &amp; datasheets</small></span><em>→</em></a>
         </div>
-        <div className="product-grid products-page-grid">
-          {categories.map((category, index) => <article className={`product-card product-card--${(index % 4) + 1}`} key={category.name}>
-            <div className="product-art"><img src={category.image} alt={category.name} /></div>
-            <div className="product-card-content">
-              <span className="products-page-card-tag">{category.tag}</span>
-              <h3>{category.name}</h3>
+        <div className="product-category-grid">
+          {categoryGroups.map((category) => <article className={`product-category-card product-category-card--${category.number}`} key={category.name}>
+            <div className="product-category-header">
+              <div className="product-category-title"><span className="product-category-number">{category.number}</span><h3>{category.name.split(' ')[0]} <strong>{category.name.split(' ').slice(1).join(' ')}</strong></h3></div>
               <p>{category.description}</p>
-              <a href="#quote" className="product-explore-link"><span>Enquire About Product</span><span className="product-explore-arrow"><ArrowIcon /></span></a>
+            </div>
+            <div className="product-category-body">
+              <div className="product-category-products">
+                {category.products.map(([product, imageKey]) => <a href="#quote" className="product-category-product" key={product}>
+                  <span className="product-category-product-art"><img src={productImageSet[imageKey]} alt="" /></span>
+                  <span className="product-category-product-info"><span className="product-category-product-name">{product}</span><span className="product-category-product-arrow"><ArrowIcon /></span></span>
+                </a>)}
+              </div>
             </div>
           </article>)}
         </div>

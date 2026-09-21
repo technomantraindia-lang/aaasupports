@@ -4,9 +4,9 @@
 
 - Workspace: AAA
 - Technology: React, Vite, Node.js/npm
-- Active file at refresh: src/CertificationPage.jsx
-- Local code graph: 35 files · 51 edges · 0 matched flows
-- Refreshed: 2026-09-21T03:10:51.712Z
+- Active file at refresh: None
+- Local code graph: 39 files · 53 edges · 0 matched flows
+- Refreshed: 2026-09-21T11:58:42.890Z
 
 ## Framework Intelligence (V4.7.8)
 - Profiles: react
@@ -55,11 +55,15 @@
 - src/components/ProjectsSection.jsx: ProjectsSection
 - src/components/QuoteSection.jsx: QuoteSection
 - src/components/SectionHeading.jsx: SectionHeading
+- src/components/ServicesSection.jsx: ServicesSection, ServiceIcon
 - src/components/TestimonialsSection.jsx: TestimonialsSection, QuoteIcon, TestimonialCard
 - src/components/ValuedClientsSection.jsx: ValuedClientsSection, MiniIcon
 - src/components/WhyChooseUs.jsx: WhyChooseUs
 - src/ContactPage.jsx: ContactPage, Icon, Label, ContactCard
+- src/DesigningPipeSupportsPage.jsx: DesigningPipeSupportsPage, CheckIcon, ServiceKicker, ServiceVisual
 - src/GalleryPage.jsx: GalleryPage
+- src/PipeStressAnalysisPage.jsx: PipeStressAnalysisPage, CheckIcon, ServiceKicker, ServiceVisual
+- src/ProductsPage.jsx: ProductsPage, ArrowIcon
 - src/SiteSupervisionPage.jsx: SiteSupervisionPage, CheckIcon, ServiceKicker, ServiceVisual
 
 ### React dependency / API chains
@@ -67,7 +71,7 @@
 - src/App.jsx: used by src/main.jsx · depends on src/components/Header.jsx, src/components/HeroSection.jsx, src/components/IndustryStrip.jsx, src/components/TestimonialsSection.jsx, src/components/FaqClientsSection.jsx, src/components/AboutSection.jsx
 - src/components/AboutSection.jsx: used by src/App.jsx, src/components/index.js
 - src/components/FaqClientsSection.jsx: used by src/App.jsx
-- src/components/Footer.jsx: used by src/App.jsx, src/components/index.js · depends on src/components/Logo.jsx
+- src/components/Footer.jsx: used by src/components/index.js · depends on src/components/Logo.jsx
 - src/components/Header.jsx: used by src/App.jsx, src/components/index.js · depends on src/components/Logo.jsx
 - src/components/HeroSection.jsx: used by src/App.jsx, src/components/index.js · depends on src/components/Icon.jsx
 - src/components/Icon.jsx: used by src/components/HeroSection.jsx
@@ -79,6 +83,7 @@
 - src/components/ProductRange.jsx: used by src/App.jsx, src/components/index.js
 - src/components/ProjectsSection.jsx: depends on src/components/SectionHeading.jsx
 - src/components/SectionHeading.jsx: used by src/components/ProjectsSection.jsx, src/components/WhyChooseUs.jsx
+- src/components/ServicesSection.jsx: used by src/App.jsx
 - src/components/TestimonialsSection.jsx: used by src/App.jsx · depends on src/components/testimonials/testimonials.css
 - src/components/ValuedClientsSection.jsx: used by src/AboutPage.jsx
 - src/components/WhyChooseUs.jsx: depends on src/components/SectionHeading.jsx
@@ -95,7 +100,7 @@
 
 ### Local dependency hints
 - src/AboutPage.jsx -> src/components/ValuedClientsSection.jsx
-- src/App.jsx -> src/components/Header.jsx, src/components/HeroSection.jsx, src/components/IndustryStrip.jsx, src/components/TestimonialsSection.jsx, src/components/FaqClientsSection.jsx, src/components/AboutSection.jsx, src/components/ProductRange.jsx, src/components/Footer.jsx
+- src/App.jsx -> src/components/Header.jsx, src/components/HeroSection.jsx, src/components/IndustryStrip.jsx, src/components/TestimonialsSection.jsx, src/components/FaqClientsSection.jsx, src/components/AboutSection.jsx, src/components/ProductRange.jsx, src/components/ServicesSection.jsx
 - src/components/AboutSection.jsx -> src/data/homeData.js
 - src/components/Footer.jsx -> src/components/Logo.jsx, src/data/homeData.js
 - src/components/Header.jsx -> src/data/homeData.js, src/components/Logo.jsx
@@ -103,7 +108,6 @@
 - src/components/index.js -> src/components/AboutSection.jsx, src/components/Footer.jsx, src/components/Header.jsx, src/components/HeroSection.jsx, src/components/IndustryStrip.jsx, src/components/PartnersStrip.jsx, src/components/MetricsBar.jsx, src/components/ProductRange.jsx
 - src/components/MetricsBar.jsx -> src/data/homeData.js
 - src/components/PartnersStrip.jsx -> src/data/homeData.js
-- src/components/ProductRange.jsx -> src/data/homeData.js
 - src/components/ProjectsSection.jsx -> src/data/homeData.js, src/components/SectionHeading.jsx
 - src/components/TestimonialsSection.jsx -> src/components/testimonials/testimonials.css
 - src/components/WhyChooseUs.jsx -> src/components/SectionHeading.jsx, src/data/homeData.js
@@ -118,10 +122,11 @@
 - src/components/FaqClientsSection.jsx <- src/App.jsx
 - src/components/AboutSection.jsx <- src/App.jsx, src/components/index.js
 - src/components/ProductRange.jsx <- src/App.jsx, src/components/index.js
-- src/components/Footer.jsx <- src/App.jsx, src/components/index.js
-- src/data/homeData.js <- src/components/AboutSection.jsx, src/components/Footer.jsx, src/components/Header.jsx, src/components/HeroSection.jsx, src/components/MetricsBar.jsx, src/components/PartnersStrip.jsx, src/components/ProductRange.jsx, src/components/ProjectsSection.jsx
+- src/components/ServicesSection.jsx <- src/App.jsx
+- src/data/homeData.js <- src/components/AboutSection.jsx, src/components/Footer.jsx, src/components/Header.jsx, src/components/HeroSection.jsx, src/components/MetricsBar.jsx, src/components/PartnersStrip.jsx, src/components/ProjectsSection.jsx, src/components/WhyChooseUs.jsx
 - src/components/Logo.jsx <- src/components/Footer.jsx, src/components/Header.jsx
 - src/components/Icon.jsx <- src/components/HeroSection.jsx
+- src/components/Footer.jsx <- src/components/index.js
 - src/components/PartnersStrip.jsx <- src/components/index.js
 - src/components/MetricsBar.jsx <- src/components/index.js
 - src/components/SectionHeading.jsx <- src/components/ProjectsSection.jsx, src/components/WhyChooseUs.jsx
@@ -158,6 +163,7 @@
 - src/components/ProjectsSection.jsx
 - src/components/QuoteSection.jsx
 - src/components/SectionHeading.jsx
+- src/components/ServicesSection.jsx
 - src/components/testimonials/testimonials.css
 - src/components/testimonials/testimonials.html
 - src/components/testimonials/testimonials.js
@@ -166,9 +172,12 @@
 - src/components/WhyChooseUs.jsx
 - src/ContactPage.jsx
 - src/data/homeData.js
+- src/DesigningPipeSupportsPage.jsx
 - src/GalleryPage.jsx
 - src/index.css
 - src/main.jsx
+- src/PipeStressAnalysisPage.jsx
+- src/ProductsPage.jsx
 - src/SiteSupervisionPage.jsx
 - .clinerules/05-technomantra-execution-mode.md
 - .clinerules/06-technomantra-developer-mode.md
@@ -185,3 +194,4 @@
 - package-lock.json
 - scripts/remove-bg-precise.js
 - scripts/remove-bg.js
+- vercel.json

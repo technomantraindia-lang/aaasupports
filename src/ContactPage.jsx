@@ -74,8 +74,8 @@ export function ContactPage({ hideContactFooter = false }) {
     <main className="contact-main container">
       <div className="contact-content-grid">
         <div className="contact-left">
-          <ContactCard icon="pin" title="Office Location">Plot No: 189, GIDC Industrial Estate,<br />Por - Ramangamdi - 391243,<br />Dist : Vadodara, Gujarat - India.</ContactCard>
-          <ContactCard icon="phone" title="Contact Number"><a href="tel:+912652830444">+91-265-2830444</a><span className="card-separator" /> <a href="tel:+912652830445">+91-265-2830445</a></ContactCard>
+          <ContactCard icon="pin" title="Registered Office & Works">Survey No. 517/1, Fofaliya Village Road,<br />Nana Fofaliya, Taluka Dabhoi,<br />Dist. Vadodara - 391210, Gujarat, India.</ContactCard>
+          <ContactCard icon="phone" title="Contact Number"><a href="tel:+912652830444">+91-265 2830 444/5</a><span className="card-separator" /> <a href="tel:+918460722294">084607 22294</a></ContactCard>
           <ContactCard icon="mail" title="Contact E-Mail"><a href="mailto:sales@aaasupports.com">sales@aaasupports.com</a></ContactCard>
           <div className="map-frame">
             <iframe title="AAA Supports location map" src="https://www.openstreetmap.org/export/embed.html?bbox=73.1700%2C22.2300%2C73.2700%2C22.3300&layer=mapnik&marker=22.2705%2C73.2149" />
@@ -114,8 +114,8 @@ export function ContactPage({ hideContactFooter = false }) {
 
     {!hideContactFooter ? <footer className="contact-footer">
       <div className="contact-footer-inner container">
-        <div><Icon name="pin" size={20} />Vadodara, Gujarat - India</div><i />
-        <div><Icon name="phone" size={19} />+91-265-2830444&nbsp;&nbsp;&nbsp; +91-265-2830445</div><i />
+        <div className="contact-footer-address"><Icon name="pin" size={20} /><span>Survey No. 517/1, Fofaliya Village Road,<br />Nana Fofaliya, Taluka Dabhoi,<br />Dist. Vadodara - 391210, Gujarat, India.</span></div><i />
+        <div><Icon name="phone" size={19} /><span>+91-265 2830 444/5,<br />084607 22294</span></div><i />
         <div><Icon name="mail" size={19} />sales@aaasupports.com</div><i />
         <span className="footer-tag">Supporting Progress Globally</span>
         <img src={logo} alt="AAA Supports" />

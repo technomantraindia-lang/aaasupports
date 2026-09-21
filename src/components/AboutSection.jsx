@@ -98,11 +98,11 @@ export function AboutSection() {
             {/* Clean Narrative Text Block */}
             <div className="about-editorial-text">
               <p className="about-editorial-lead">
-                <strong>AAA Supports Pvt. Ltd.</strong> is an <strong>ISO 9001: 2015 accredited organization</strong> engaged in the Design, Engineering, and Manufacturing of Hanger and Supports Systems. In accordance with our stringent quality parameters we comply with the following standards: <strong>ANSI/ASME codes for pressure Piping</strong> and <strong>MSS standards SP-58 for Pipe Supports</strong>. We strive to embed quality into every product that is designed, engineered, and manufactured at AAA Supports Pvt. Ltd.
+                <strong>AAA Supports Pvt. Ltd.</strong> is a well-recognized Indian name in <strong>Pipe Supports &amp; Hangers</strong>, having served hundreds of customers across Oil &amp; Gas, Chemical &amp; Fertilizer, Steel and Power industries. Our ability to deliver practical, site-ready solutions builds trusted partnerships and repeat business.
               </p>
 
               <p className="about-editorial-body">
-                We recognize the requirements for quality assurance in the area in which we operate and therefore we have committed ourselves to the establishment of an effective quality management system to ensure that all requirements are met according to the specification. <strong>Quality Assurance &amp; Quality Control Manuals</strong> are constantly in use and the organization operates comprehensive quality management systems.
+                We are an <strong>ISO 9001: 2015 accredited organization</strong> engaged in the Design, Engineering, and Manufacturing of hanger and support systems. We comply with <strong>ANSI/ASME codes for pressure piping</strong> and <strong>MSS SP-58 standards</strong>, with Quality Assurance &amp; Quality Control Manuals actively used throughout our operations.
               </p>
             </div>
 

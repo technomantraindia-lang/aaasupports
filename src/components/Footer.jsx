@@ -117,11 +117,11 @@ export function Footer() {
           <div className="footer-contact-list">
             <div className="footer-contact-item">
               <FooterIcon type="pin" />
-              <span>Plot No: 189, GIDC Industrial Estate,<br />Por - Ramangamdi - 391243,<br />Dist : Vadodara, Gujarat - India.</span>
+              <span>Survey No. 517/1, Fofaliya Village Road,<br />Nana Fofaliya, Taluka Dabhoi,<br />Dist. Vadodara - 391210, Gujarat, India.</span>
             </div>
             <div className="footer-contact-item">
               <FooterIcon type="phone" />
-              <a href="tel:+919876543210">+91 98765 43210</a>
+              <span className="footer-phone-numbers"><a href="tel:+912652830444">+91-265 2830 444/5,</a><br /><a href="tel:+918460722294">084607 22294</a></span>
             </div>
             <div className="footer-contact-item">
               <FooterIcon type="mail" />

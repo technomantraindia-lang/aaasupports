@@ -6,6 +6,7 @@ import { TestimonialsSection } from './components/TestimonialsSection.jsx'
 import { FaqClientsSection } from './components/FaqClientsSection.jsx'
 import { AboutSection } from './components/AboutSection.jsx'
 import { ProductRange } from './components/ProductRange.jsx'
+import { ServicesSection } from './components/ServicesSection.jsx'
 import { Footer } from './components/Footer.jsx'
 import { ContactPage } from './ContactPage.jsx'
 import { GalleryPage } from './GalleryPage.jsx'
@@ -45,6 +46,7 @@ function HomePage() {
     <HeroSection />
     <AboutSection />
     <ProductRange />
+    <ServicesSection />
     <IndustryStrip />
     <TestimonialsSection />
     <FaqClientsSection />

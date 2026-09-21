@@ -1,29 +1,17 @@
-import { products } from '../data/homeData.js'
 import variableSpringSupports from '../../assets/product-variable-spring-supports.png'
-import constantSpringHangers from '../../assets/product-constant-spring-hangers.png'
 import constantSpringSupports from '../../assets/product-constant-spring-supports.png'
 import pipeClampsUBolts from '../../assets/product-pipe-clamps-u-bolts.png'
-import slidesGuides from '../../assets/product-slides-guides.png'
-import customFabrication from '../../assets/product-custom-fabrication.png'
-import marinePipeSupports from '../../assets/product-marine-pipe-supports.png'
-import oilGasSolutions from '../../assets/product-oil-gas-solutions.png'
 
 const productImages = [
   variableSpringSupports,
-  constantSpringHangers,
   constantSpringSupports,
   pipeClampsUBolts,
-  slidesGuides,
-  customFabrication,
-  marinePipeSupports,
-  oilGasSolutions,
 ]
 
 const catalogueProducts = [
-  ...products,
-  { name: 'Custom Fabrication', description: 'Made-to-spec supports for complex project requirements.' },
-  { name: 'Marine Pipe Supports', description: 'Reliable systems engineered for demanding marine environments.' },
-  { name: 'Oil & Gas Solutions', description: 'Built for critical industrial, power and infrastructure projects.' },
+  { name: 'Primary Supports', description: 'Engineered primary support systems for reliable load management.' },
+  { name: 'Secondary Supports', description: 'Dependable secondary supports for stable and controlled piping.' },
+  { name: 'Pipe Fittings, Flanges & Piping Spools', description: 'Precision-fabricated components for complete piping systems.' },
 ]
 
 export function ProductRange() {

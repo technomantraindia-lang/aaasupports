@@ -3,15 +3,22 @@ import oilGasImage from '../assets/industry-oil-gas.png'
 import chemicalImage from '../assets/industry-industrial.png'
 import waterImage from '../assets/industry-infrastructure.png'
 import marineImage from '../assets/industry-marine.png'
+import psa1Image from '../assets/pipe stress analysis services/PSA_1.jpg'
+import psa2Image from '../assets/pipe stress analysis services/PSA_2.jpg'
+import psa3Image from '../assets/pipe stress analysis services/PSA_3.jpg'
+import psa4Image from '../assets/pipe stress analysis services/PSA_4.jpg'
+import psa5Image from '../assets/pipe stress analysis services/PSA_5.jpg'
+import psa6Image from '../assets/pipe stress analysis services/PSA_6.jpg'
+import serviceImage from '../assets/pipe stress analysis services/Service.jpg'
 
 const images = {
-  banner: 'https://aaasupports.com/wp-content/uploads/2025/08/PSA_4-min.jpg',
-  overview: 'https://aaasupports.com/wp-content/uploads/2025/08/PSA_2-min.jpg',
-  analysis: 'https://aaasupports.com/wp-content/uploads/2025/08/PSA_3-min.jpg',
-  support: 'https://aaasupports.com/wp-content/uploads/2025/08/PSA_1-min.jpg',
-  deliverables: 'https://aaasupports.com/wp-content/uploads/2025/08/PSA_6-min.jpg',
-  detail: 'https://aaasupports.com/wp-content/uploads/2025/08/PSA_5-min-1.png',
-  cta: 'https://aaasupports.com/wp-content/uploads/2025/02/04.webp',
+  banner: serviceImage,
+  overview: psa1Image,
+  analysis: psa2Image,
+  support: psa5Image,
+  deliverables: psa3Image,
+  detail: psa6Image,
+  cta: psa4Image,
 }
 
 const riskPoints = [
@@ -21,11 +28,12 @@ const riskPoints = [
 ]
 
 const services = [
-  'Comprehensive static and dynamic analysis using CAESAR II, AutoPIPE and Rohr2.',
+  'Comprehensive static and dynamic analysis using CAESAR II, with engineering checks for safe and reliable operation.',
   'Nozzle load evaluation for pumps, compressors, exchangers and tanks.',
-  'Pipe support design with springs, snubbers, guides and restraints.',
+  'Pipe support design for variable and constant spring hangers, snubbers, guides and restraints.',
   'Seismic and wind checks, including response spectrum and time history analysis.',
   'Vibration and fatigue studies for FIV, AIV and water hammer concerns.',
+  'Failure investigations to identify root causes and recommend corrective measures.',
 ]
 
 const process = [
@@ -37,11 +45,13 @@ const process = [
 ]
 
 const deliverables = [
-  'Stress analysis reports with a clear compliance summary.',
-  'Nozzle load comparison with vendor allowables.',
-  'Variable and constant spring hanger datasheets.',
+  'Piping stress analysis reports with a clear compliance summary.',
+  'Equipment nozzle load reports for pumps, compressors, heat exchangers and tanks.',
+  'Variable and constant spring hanger support datasheets.',
   'Hot and cold load settings for spring supports.',
-  'Tagged drawings and material take-offs (MTO).',
+  'Static and dynamic load case analysis of piping systems in compliance with ASME.',
+  'Stress isometric drawings and stress mark-ups of the piping system.',
+  'Support load summary for engineering coordination and installation.',
 ]
 
 const industries = [
@@ -49,7 +59,7 @@ const industries = [
   ['Power', 'Thermal, renewable and critical power facilities', powerImage],
   ['Chemicals', 'Complex and high-temperature process lines', chemicalImage],
   ['Water', 'Treatment, desalination and utility systems', waterImage],
-  ['Pharma & Metals', 'Precision and heavy-duty plant applications', marineImage],
+  ['Metals & Pharmaceuticals', 'Precision and heavy-duty plant applications', marineImage],
 ]
 
 function CheckIcon() {
@@ -90,11 +100,17 @@ export function PipeStressAnalysisPage() {
         <div className="service-overview-copy">
           <ServiceKicker>Pipe stress analysis services</ServiceKicker>
           <h2>Design Piping That <strong>Performs Safely</strong></h2>
-          <p>At AAA Supports, we make sure your piping systems perform safely and efficiently without costly failures or downtime.</p>
-          <p>Our engineers evaluate thermal expansion, pressure, vibration, seismic loads and wind forces to turn complex piping data into practical site-ready decisions.</p>
+          <p>At <strong>AAA Supports Pvt. Ltd.</strong>, we specialize in professional pipe stress analysis for process and utility piping across Oil &amp; Gas, Power, Chemicals, Water, Metals and Pharmaceuticals.</p>
+          <p>Our goal is simple: to make your piping systems perform safely and efficiently—without costly failures or downtime. We evaluate thermal expansion, pressure, vibration, seismic loads and wind forces, then turn the results into practical and constructible site-ready decisions.</p>
           <a className="service-button" href="#quote">Discuss Your Piping System <span>→</span></a>
         </div>
         <ServiceVisual image={images.overview} label="Engineering Confidence Before Construction" alt="Pipe stress analysis and piping engineering" className="service-overview-visual" />
+      </section>
+
+      <section className="service-section-intro container">
+        <ServiceKicker>Why pipe stress analysis matters</ServiceKicker>
+        <h2>Protect Your Piping <strong>Before Problems Start</strong></h2>
+        <p>Thermal expansion, pressure, vibration, seismic loads and wind forces can create excessive equipment loads, cracks, leaks, fatigue failures and costly downtime when they are not assessed early.</p>
       </section>
 
       <section className="service-benefits container" aria-label="Why pipe stress analysis matters">
@@ -145,7 +161,7 @@ export function PipeStressAnalysisPage() {
         <div className="service-findings-copy">
           <ServiceKicker>Why choose AAA Supports?</ServiceKicker>
           <h2>Analysis That Works <strong>in the Real Plant</strong></h2>
-          <ul className="service-check-list">{['Experience across Oil & Gas, Power, Chemicals, Water, Pharma and more.', 'Dedicated engineers with strong technical backgrounds.', 'Practical designs that are code-compliant and constructible.', 'End-to-end support from design to installation and troubleshooting.'].map((item) => <li key={item}><CheckIcon />{item}</li>)}</ul>
+          <ul className="service-check-list">{['Experience across Oil & Gas, Power, Chemicals, Water, Pharma and more.', 'In-house engineers with strong technical backgrounds and practical plant experience.', 'Practical solutions that are code-compliant, constructible and ready for site coordination.', 'End-to-end support from design to installation, troubleshooting and corrective action.'].map((item) => <li key={item}><CheckIcon />{item}</li>)}</ul>
         </div>
         <ServiceVisual image={images.detail} label="Practical. Constructible. Reliable." alt="AAA Supports pipe stress analysis team" />
       </section>
@@ -157,7 +173,7 @@ export function PipeStressAnalysisPage() {
       </section>
 
       <section className="service-cta" style={{ '--service-cta-image': `url(${images.cta})` }}>
-        <div className="service-cta-inner container"><div><ServiceKicker>Make your piping safer</ServiceKicker><h2>Let’s Make Your System <strong>Perform Better</strong></h2><p>Share your piping data, drawings or project brief with our stress analysis team.</p></div><a className="service-button" href="#quote">Talk to Our Team <span>→</span></a></div>
+        <div className="service-cta-inner container"><div><ServiceKicker>Make your piping safer</ServiceKicker><h2>Let&apos;s Make Your System <strong>Perform Better</strong></h2><p>Share your piping data, drawings or project brief with our stress analysis team.</p></div><a className="service-button" href="#quote">Talk to Our Team <span>→</span></a></div>
       </section>
     </div>
   </div>

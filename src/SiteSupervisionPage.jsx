@@ -37,7 +37,7 @@ const industries = [
   ['Refineries & Petrochemical', 'Critical process and utility systems', refineryImage],
   ['Fertilizers & Chemicals', 'High-temperature process applications', chemicalImage],
   ['Water & Desalination', 'Reliable support for treatment plants', waterImage],
-  ['Marine & Offshore', 'Support systems for demanding environments', marineImage],
+  ['Pharma & Food Processing', 'Hygienic and precision plant environments', marineImage],
 ]
 
 function CheckIcon() {
@@ -61,9 +61,9 @@ export function SiteSupervisionPage() {
       <div className="service-banner-overlay" />
       <div className="service-banner-inner container">
         <div className="service-banner-copy">
-          <div className="service-breadcrumb"><a href="#home">Home</a><span>/</span><a href="#services">Services</a><span>/</span><strong>Site Supervision</strong></div>
-          <h1>Site <strong>Supervision</strong></h1>
-          <h2>Health Inspection of Spring Hangers &amp; Pipe Supports</h2>
+          <div className="service-breadcrumb"><a href="#home">Home</a><span>/</span><a href="#services">Services</a><span>/</span><strong>Spring Hanger Health Inspection</strong></div>
+          <h1>Spring Hanger <strong>Health Inspection</strong></h1>
+          <h2>For Safer, More Reliable Piping Systems</h2>
           <p>Keeping your piping systems safe, reliable and stress-free with practical field inspection and engineering guidance.</p>
           <div className="service-banner-points">
             {['Safe Operations', 'Reliable Performance', 'Extended Equipment Life'].map((point) => <span key={point}><b>✓</b>{point}</span>)}
@@ -79,18 +79,25 @@ export function SiteSupervisionPage() {
           <ServiceKicker>Overview</ServiceKicker>
           <h2>Keeping Critical Systems <strong>Running Safely</strong></h2>
           <p>Spring hangers and pipe supports are critical for the smooth operation of any plant. Over time, they can shift, corrode, seize up, or simply go out of calibration.</p>
-          <p>Our site supervision service helps identify problems early, restore proper settings and keep your plant running safely and efficiently.</p>
+          <p>That is why AAA Supports Pvt. Ltd. offers on-site health inspection services for installed spring hangers and pipe supports. Our team identifies problems early, restores proper settings and keeps your plant running safely and efficiently.</p>
           <a className="service-button" href="#service-quote">Enquire About Site Supervision <span>→</span></a>
         </div>
         <ServiceVisual image={inspectionImage} label="Small Checks. Big Safety. Always." className="service-overview-visual" />
       </section>
 
-      <section className="service-benefits container" aria-label="Inspection benefits">
+      <section className="service-section-intro container">
+        <ServiceKicker>Why regular inspections matter</ServiceKicker>
+        <h2>Small Checks. <strong>Big Safety.</strong></h2>
+        <p>Regular inspection helps prevent overloaded piping, equipment damage and unexpected shutdowns while keeping support settings aligned with design intent and applicable ASME, API and IBR guidelines.</p>
+      </section>
+
+      <section className="service-benefits service-benefits--four container" aria-label="Inspection benefits">
         {[
           ['✦', 'Safety First', 'Faulty supports can overload piping and nozzles, leading to serious risks.'],
           ['◌', 'Extend Equipment Life', 'Healthy supports reduce vibration and stress on pipes, turbines and vessels.'],
           ['✓', 'Stay Compliant', 'Our checks follow ASME, API and applicable project guidelines.'],
         ].map(([icon, title, text]) => <article className="service-benefit" key={title}><b>{icon}</b><div><h3>{title}</h3><p>{text}</p></div></article>)}
+        <article className="service-benefit"><b>→</b><div><h3>Save Costs</h3><p>Preventing failures is far cheaper than unplanned shutdowns and emergency maintenance.</p></div></article>
       </section>
 
       <section className="service-detail service-detail--blue">
@@ -134,6 +141,15 @@ export function SiteSupervisionPage() {
         <div className="service-process-grid">
           {process.map(([number, title, text]) => <article key={number}><b>{number}</b><h3>{title}</h3><p>{text}</p></article>)}
         </div>
+      </section>
+
+      <section className="service-findings container design-partner-section">
+        <div className="service-findings-copy">
+          <ServiceKicker>Why work with AAA Supports?</ServiceKicker>
+          <h2>Inspection Backed by <strong>Engineering Expertise</strong></h2>
+          <ul className="service-check-list">{['Specialist engineers for spring hanger design, inspection and troubleshooting.', 'Equipment knowledge from designing and supplying spring hangers and pipe supports.', 'Many inspections can be completed while your plant is still running.', 'Support beyond inspection: adjustment, recalibration and replacement guidance.'].map((item) => <li key={item}><CheckIcon />{item}</li>)}</ul>
+        </div>
+        <ServiceVisual image={workerImage} label="Inspect. Recalibrate. Restore Confidence." />
       </section>
 
       <section className="service-industries container">

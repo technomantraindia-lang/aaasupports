@@ -17,6 +17,10 @@ const productCategories = [
     name: 'Secondary Supports',
     products: ['Structural Beams', 'Structural Columns', 'Structural Frames', 'Structural Members', 'Brackets'],
   },
+  {
+    name: 'Pipe Fittings, Flanges & Piping Spools',
+    products: ['Pipe Fittings', 'Flanges', 'Piping Spools'],
+  },
 ]
 
 function currentPageHash() {

@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import contactImage from '../assets/contact.png'
 
-const galleryFiles = import.meta.glob('../assets/gallery/*.{jpg,png}', {
+const galleryFiles = import.meta.glob('../assets/gallery/*.{jpg,jpeg,png}', {
   eager: true,
   query: '?url',
   import: 'default',

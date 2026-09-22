@@ -3,6 +3,8 @@ import contactImage from '../assets/contact.png'
 import footerImage from '../assets/pipe-support-hero.png'
 import logo from '../assets/logo.png'
 
+const officeMapUrl = 'https://maps.app.goo.gl/2Y6i7Bhrg9CFADeR6'
+
 function Icon({ name, size = 28 }) {
   const common = { width: size, height: size, viewBox: '0 0 24 24', fill: 'none', stroke: 'currentColor', strokeWidth: 1.8, strokeLinecap: 'round', strokeLinejoin: 'round', 'aria-hidden': true }
 
@@ -74,12 +76,12 @@ export function ContactPage({ hideContactFooter = false }) {
     <main className="contact-main container">
       <div className="contact-content-grid">
         <div className="contact-left">
-          <ContactCard icon="pin" title="Registered Office & Works">Survey No. 517/1, Fofaliya Village Road,<br />Nana Fofaliya, Taluka Dabhoi,<br />Dist. Vadodara - 391210, Gujarat, India.</ContactCard>
+          <ContactCard icon="pin" title="Registered Office & Works"><a href={officeMapUrl} target="_blank" rel="noreferrer">Survey No. 517/1, Fofaliya Village Road,<br />Nana Fofaliya, Taluka Dabhoi,<br />Dist. Vadodara - 391210, Gujarat, India.</a></ContactCard>
           <ContactCard icon="phone" title="Contact Number"><a href="tel:+912652830444">+91-265 2830 444/5</a><span className="card-separator" /> <a href="tel:+918460722294">084607 22294</a></ContactCard>
           <ContactCard icon="mail" title="Contact E-Mail"><a href="mailto:sales@aaasupports.com">sales@aaasupports.com</a></ContactCard>
           <div className="map-frame">
             <iframe title="AAA Supports location map" src="https://www.openstreetmap.org/export/embed.html?bbox=73.1700%2C22.2300%2C73.2700%2C22.3300&layer=mapnik&marker=22.2705%2C73.2149" />
-            <div className="map-label"><strong>AAA SUPPORTS PRIVATE LIMITED</strong><a href="https://www.openstreetmap.org/?mlat=22.2705&mlon=73.2149#map=14/22.2705/73.2149" target="_blank" rel="noreferrer">View larger map</a></div>
+            <div className="map-label"><strong>AAA SUPPORTS PRIVATE LIMITED</strong><a href={officeMapUrl} target="_blank" rel="noreferrer">Open in Google Maps</a></div>
           </div>
         </div>
 
@@ -114,7 +116,7 @@ export function ContactPage({ hideContactFooter = false }) {
 
     {!hideContactFooter ? <footer className="contact-footer">
       <div className="contact-footer-inner container">
-        <div className="contact-footer-address"><Icon name="pin" size={20} /><span>Survey No. 517/1, Fofaliya Village Road,<br />Nana Fofaliya, Taluka Dabhoi,<br />Dist. Vadodara - 391210, Gujarat, India.</span></div><i />
+        <div className="contact-footer-address"><Icon name="pin" size={20} /><a href={officeMapUrl} target="_blank" rel="noreferrer">Survey No. 517/1, Fofaliya Village Road,<br />Nana Fofaliya, Taluka Dabhoi,<br />Dist. Vadodara - 391210, Gujarat, India.</a></div><i />
         <div><Icon name="phone" size={19} /><span>+91-265 2830 444/5,<br />084607 22294</span></div><i />
         <div><Icon name="mail" size={19} />sales@aaasupports.com</div><i />
         <span className="footer-tag">Supporting Progress Globally</span>

@@ -1,20 +1,26 @@
+import ps1Image from '../assets/designed/PS1.jpg'
+import ps2Image from '../assets/designed/PS2.jpg'
+import ps3Image from '../assets/designed/PS3.jpg'
+import ps4Image from '../assets/designed/PS4.jpg'
+
 const images = {
-  banner: 'https://aaasupports.com/wp-content/uploads/2025/08/PS2.jpg',
-  custom: 'https://aaasupports.com/wp-content/uploads/2025/08/PS3.jpg',
-  engineering: 'https://aaasupports.com/wp-content/uploads/2025/08/PS1.jpg',
-  supports: 'https://aaasupports.com/wp-content/uploads/2025/08/PS4.jpg',
-  manufacturing: 'https://aaasupports.com/wp-content/uploads/2025/08/Untitled-1-35.jpg',
-  process: 'https://aaasupports.com/wp-content/uploads/2025/08/Untitled-1-36.jpg',
-  quality: 'https://aaasupports.com/wp-content/uploads/2025/08/Untitled-1-37.jpg',
-  qualityDetail: 'https://aaasupports.com/wp-content/uploads/2025/08/Untitled-1-38.jpg',
-  vshE: 'https://aaasupports.com/wp-content/uploads/2025/08/Untitled-1-39.jpg',
-  vshF: 'https://aaasupports.com/wp-content/uploads/2025/08/Frame-52-1.png',
+  banner: ps4Image,
+  custom: ps1Image,
+  engineering: ps2Image,
+  supports: ps3Image,
+  manufacturing: ps4Image,
+  process: ps2Image,
+  quality: ps1Image,
+  qualityDetail: ps4Image,
+  vshE: ps3Image,
+  vshF: ps1Image,
 }
 
 const benefits = [
   ['+', 'Fit for purpose', 'Designed around your exact pipe size, load, movement and operating conditions.'],
   ['◉', 'Reliable performance', 'Reduce stress on piping and connected equipment with the right support configuration.'],
-  ['✓', 'Built to last', 'The right materials and finishes for temperature, corrosion and environmental challenges.'],
+  ['✓', 'Flexibility', 'Custom solutions for space-restricted layouts, unusual routing and brownfield tie-ins.'],
+  ['◆', 'Built to last', 'The right materials and finishes for temperature, corrosion and environmental challenges.'],
 ]
 
 const engineeringPoints = [
@@ -29,6 +35,7 @@ const supportTypes = [
   'Snubbers, sway braces and shock arrestors.',
   'Sliding, roller and sliding plate supports.',
   'Insulated and cryogenic pipe supports.',
+  'Structural steel frames, brackets and racks.',
 ]
 
 const manufacturingPoints = [
@@ -52,6 +59,7 @@ const industries = [
   ['Chemicals & Fertilizers', 'High-temperature process applications', images.engineering],
   ['Water & Desalination', 'Reliable support for treatment plants', images.supports],
   ['Metals, Mining & Cement', 'Heavy-duty support for demanding operations', images.manufacturing],
+  ['Pharmaceuticals & Food', 'Hygienic and precision plant applications', images.quality],
 ]
 
 function CheckIcon() {
@@ -75,8 +83,8 @@ export function DesigningPipeSupportsPage() {
       <div className="service-banner-overlay" />
       <div className="service-banner-inner container">
         <div className="service-banner-copy">
-          <div className="service-breadcrumb"><a href="#home">Home</a><span>/</span><a href="#services">Services</a><span>/</span><strong>Designing of Pipe Supports</strong></div>
-          <h1>Designing of <strong>Pipe Supports</strong></h1>
+          <div className="service-breadcrumb"><a href="#home">Home</a><span>/</span><a href="#services">Services</a><span>/</span><strong>Custom Pipe Supports</strong></div>
+          <h1>Custom Pipe <strong>Supports</strong></h1>
           <h2>Custom Supports — Designed &amp; Manufactured by AAA Supports</h2>
           <p>Tailor-made support systems for extreme temperatures, heavy loads, seismic conditions and space-restricted layouts.</p>
           <div className="service-banner-points">
@@ -93,13 +101,19 @@ export function DesigningPipeSupportsPage() {
           <ServiceKicker>Custom pipe supports</ServiceKicker>
           <h2>Support Systems <strong>Built for Your Plant</strong></h2>
           <p>Every plant has unique piping challenges—whether it is extreme temperature, heavy loads, seismic conditions or limited space. Standard off-the-shelf supports do not always provide the right fit.</p>
-          <p>AAA Supports designs and manufactures custom pipe supports built specifically for your project, from the first calculation through final documentation.</p>
+          <p>AAA Supports Pvt. Ltd. designs and manufactures custom pipe supports built specifically for your project, from the first calculation through final documentation.</p>
           <a className="service-button" href="#quote">Discuss Your Requirement <span>→</span></a>
         </div>
-        <ServiceVisual image={images.custom} label="Custom Fit. Engineered Performance." alt="Custom blue pipe supports" className="service-overview-visual" />
+        <ServiceVisual image={images.custom} label="Custom Fit. Engineered Performance." alt="Custom blue pipe supports" className="service-overview-visual custom-support-overview-visual" />
       </section>
 
-      <section className="service-benefits container" aria-label="Benefits of custom pipe supports">
+      <section className="service-section-intro container">
+        <ServiceKicker>Why choose custom pipe supports?</ServiceKicker>
+        <h2>Engineered for the <strong>Exact Plant Condition</strong></h2>
+        <p>Custom support systems improve fit, reliability, flexibility and service life where standard supports cannot meet the project requirement.</p>
+      </section>
+
+      <section className="service-benefits service-benefits--four container" aria-label="Benefits of custom pipe supports">
         {benefits.map(([icon, title, text]) => <article className="service-benefit" key={title}><b>{icon}</b><div><h3>{title}</h3><p>{text}</p></div></article>)}
       </section>
 
@@ -156,10 +170,19 @@ export function DesigningPipeSupportsPage() {
         <ServiceVisual image={images.quality} label="Every Detail Matters." alt="Quality inspection of pipe supports" />
       </section>
 
+      <section className="service-findings container design-partner-section">
+        <div className="service-findings-copy">
+          <ServiceKicker>Why partner with AAA Supports?</ServiceKicker>
+          <h2>Complete Support <strong>From Design to Site</strong></h2>
+          <ul className="service-check-list">{['Complete package: design, engineering and manufacturing under one roof.', 'Proven track record serving major EPCs and plant owners across industries.', 'Speed and flexibility for urgent and brownfield project requirements.', 'After-sales support for installation guidance, adjustment and maintenance.'].map((item) => <li key={item}><CheckIcon />{item}</li>)}</ul>
+        </div>
+        <ServiceVisual image={images.qualityDetail} label="One Partner. Complete Responsibility." alt="AAA Supports custom pipe support manufacturing facility" />
+      </section>
+
       <section className="service-industries container">
         <ServiceKicker>Industries we serve</ServiceKicker>
         <h2>Experience Across <strong>Critical Sectors</strong></h2>
-        <div className="service-industry-grid">{industries.map(([title, text, image]) => <article key={title}><img src={image} alt="" loading="lazy" /><h3>{title}</h3><p>{text}</p></article>)}</div>
+        <div className="service-industry-grid service-industry-grid--six">{industries.map(([title, text, image]) => <article key={title}><img src={image} alt={title} loading="lazy" /><h3>{title}</h3><p>{text}</p></article>)}</div>
       </section>
 
       <section className="service-cta" style={{ '--service-cta-image': `url(${images.qualityDetail})` }}>

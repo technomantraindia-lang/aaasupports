@@ -5,7 +5,7 @@
 - Indexed source files: 39
 - Structural edges: 53
 - Matched end-to-end flows: 0
-- Updated: 2026-09-21T12:15:43.023Z
+- Updated: 2026-09-22T03:50:32.910Z
 
 ## Dependency edges
 - IMPORT index.html -> src/main.jsx
@@ -55,7 +55,7 @@
 - DB src/components/IndustryStrip.jsx -> react
 - DB src/components/TestimonialsSection.jsx -> react, design
 - DB src/ContactPage.jsx -> react, You
-- DB src/DesigningPipeSupportsPage.jsx -> the, Calculation, Brief
+- DB src/DesigningPipeSupportsPage.jsx -> the, Calculation, Brief, Design
 - DB src/GalleryPage.jsx -> react
 - DB src/main.jsx -> react
 - DB src/PipeStressAnalysisPage.jsx -> practical, the, Analysis, Input, design

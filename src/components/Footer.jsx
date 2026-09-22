@@ -1,6 +1,8 @@
 import { Logo } from './Logo.jsx'
 import { images } from '../data/homeData.js'
 
+const officeMapUrl = 'https://maps.app.goo.gl/2Y6i7Bhrg9CFADeR6'
+
 const footerGroups = [
   {
     title: 'Quick Links',
@@ -18,12 +20,10 @@ const footerGroups = [
   {
     title: 'Our Products',
     links: [
-      ['Spring Supports', '#products'],
-      ['Pipe Hangers', '#products'],
-      ['Clamps & U-Bolts', '#products'],
-      ['Slides & Guides', '#products'],
-      ['Custom Fabrication', '#products'],
-      ['All Products', '#products'],
+      ['Primary Supports', '/products'],
+      ['Secondary Supports', '/products'],
+      ['Pipe Fittings, Flanges & Piping Spools', '/products'],
+      ['All Products', '/products'],
     ],
   },
 ]
@@ -117,7 +117,7 @@ export function Footer() {
           <div className="footer-contact-list">
             <div className="footer-contact-item">
               <FooterIcon type="pin" />
-              <span>Survey No. 517/1, Fofaliya Village Road,<br />Nana Fofaliya, Taluka Dabhoi,<br />Dist. Vadodara - 391210, Gujarat, India.</span>
+              <a href={officeMapUrl} target="_blank" rel="noreferrer">Survey No. 517/1, Fofaliya Village Road,<br />Nana Fofaliya, Taluka Dabhoi,<br />Dist. Vadodara - 391210, Gujarat, India.</a>
             </div>
             <div className="footer-contact-item">
               <FooterIcon type="phone" />

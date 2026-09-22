@@ -4,6 +4,7 @@ import constantSpringSupports from '../assets/product-constant-spring-supports.p
 import customFabrication from '../assets/product-custom-fabrication.png'
 import marinePipeSupports from '../assets/product-marine-pipe-supports.png'
 import pipeClampsUBolts from '../assets/product-pipe-clamps-u-bolts.png'
+import oilGasSolutions from '../assets/product-oil-gas-solutions.png'
 import slidesGuides from '../assets/product-slides-guides.png'
 import variableSpringSupports from '../assets/product-variable-spring-supports.png'
 
@@ -15,6 +16,7 @@ const productImageSet = {
   slides: slidesGuides,
   structure: customFabrication,
   support: marinePipeSupports,
+  spools: oilGasSolutions,
 }
 
 const categoryGroups = [
@@ -54,6 +56,16 @@ const categoryGroups = [
       ['Structural Frames', 'structure'],
       ['Structural Members', 'support'],
       ['Brackets', 'structure'],
+    ],
+  },
+  {
+    number: '03',
+    name: 'Pipe Fittings, Flanges & Piping Spools',
+    description: 'Precision-fabricated components for complete piping systems, engineered for dependable fit-up and installation.',
+    products: [
+      ['Pipe Fittings', 'clamps'],
+      ['Flanges', 'structure'],
+      ['Piping Spools', 'spools'],
     ],
   },
 ]

@@ -74,6 +74,14 @@ export function Header({ isContact = false, onRequestQuote }) {
     window.scrollTo({ top: 0, behavior: 'smooth' })
   }
 
+  const navigateToHomeSection = (event, href) => {
+    event.preventDefault()
+    closeNavigation()
+    window.history.pushState({}, '', `/${href}`)
+    window.dispatchEvent(new PopStateEvent('popstate'))
+    window.setTimeout(() => document.querySelector(href)?.scrollIntoView({ behavior: 'smooth', block: 'start' }), 0)
+  }
+
   useEffect(() => {
     const syncHash = () => setActiveHash(currentPageHash())
     window.addEventListener('hashchange', syncHash)
@@ -151,22 +159,10 @@ export function Header({ isContact = false, onRequestQuote }) {
               </div>
             ) : item.children ? (
               <div className={`nav-dropdown ${isActive(item.href) ? 'active' : ''} ${isServicesOpen ? 'nav-dropdown--open' : ''}`} key={item.label} onMouseEnter={() => { if (!window.matchMedia('(max-width: 900px)').matches) setIsServicesOpen(true) }} onMouseLeave={() => { if (!window.matchMedia('(max-width: 900px)').matches) setIsServicesOpen(false) }}>
-                <a
-                  className="nav-dropdown-trigger"
-                  href={item.href}
-                  aria-haspopup="true"
-                  onClick={(event) => {
-                    if (window.matchMedia('(max-width: 900px)').matches) {
-                      event.preventDefault()
-                      setIsServicesOpen((open) => !open)
-                      setIsOpen(true)
-                    } else {
-                      closeNavigation()
-                    }
-                  }}
-                >
-                  {item.label}<span className="nav-dropdown-caret" aria-hidden="true" />
-                </a>
+                <div className="nav-dropdown-trigger-row">
+                  <a className="nav-dropdown-trigger" href={item.href} aria-haspopup="true" onClick={(event) => navigateToHomeSection(event, item.href)}>{item.label}</a>
+                  <button className="nav-dropdown-toggle" type="button" aria-label={`Open ${item.label} menu`} aria-expanded={isServicesOpen} onClick={() => { setIsServicesOpen((open) => !open); setIsOpen(true) }}><span className="nav-dropdown-caret" aria-hidden="true" /></button>
+                </div>
                 <div className="nav-dropdown-menu">
                   {item.children.map((child) => (
                     <a href={child.href} key={child.label} onClick={(event) => navigateTo(event, child.href)}>

@@ -2,9 +2,12 @@ import ps1Image from '../assets/designed/PS1.jpg'
 import ps2Image from '../assets/designed/PS2.jpg'
 import ps3Image from '../assets/designed/PS3.jpg'
 import ps4Image from '../assets/designed/PS4.jpg'
+import designBannerImage from '../assets/designed/designd-bannera.png'
+import { useRef } from 'react'
+import { useServiceReveal } from './hooks/useServiceReveal.js'
 
 const images = {
-  banner: ps4Image,
+  banner: designBannerImage,
   custom: ps1Image,
   engineering: ps2Image,
   supports: ps3Image,
@@ -78,7 +81,10 @@ function ServiceVisual({ image, label, alt = 'Custom pipe support designed and m
 }
 
 export function DesigningPipeSupportsPage() {
-  return <div className="service-page">
+  const serviceRef = useRef(null)
+  useServiceReveal(serviceRef)
+
+  return <div className="service-page" ref={serviceRef}>
     <section className="service-banner" style={{ '--service-banner-image': `url(${images.banner})` }}>
       <div className="service-banner-overlay" />
       <div className="service-banner-inner container">

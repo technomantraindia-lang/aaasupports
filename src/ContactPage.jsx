@@ -1,9 +1,18 @@
-import { useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import contactImage from '../assets/contact.png'
 import footerImage from '../assets/pipe-support-hero.png'
 import logo from '../assets/logo.png'
+import companyProfilePdf from '../assets/pdf/AAA Supports - Company Profile.pdf'
+import productCataloguePdf from '../assets/pdf/AAA Supports - Product_Catalouge.pdf'
+import serviceGuidePdf from '../assets/pdf/AAA Supports - Service Guide.pdf'
 
 const officeMapUrl = 'https://maps.app.goo.gl/2Y6i7Bhrg9CFADeR6'
+
+const downloadablePdfs = [
+  ['Company Profile', companyProfilePdf, 'AAA Supports - Company Profile.pdf'],
+  ['Product Catalogue', productCataloguePdf, 'AAA Supports - Product Catalogue.pdf'],
+  ['Service Guide', serviceGuidePdf, 'AAA Supports - Service Guide.pdf'],
+]
 
 function Icon({ name, size = 28 }) {
   const common = { width: size, height: size, viewBox: '0 0 24 24', fill: 'none', stroke: 'currentColor', strokeWidth: 1.8, strokeLinecap: 'round', strokeLinejoin: 'round', 'aria-hidden': true }
@@ -53,13 +62,61 @@ function ContactCard({ icon, title, children }) {
 
 export function ContactPage({ hideContactFooter = false }) {
   const [sent, setSent] = useState(false)
+  const contactRef = useRef(null)
+
+  useEffect(() => {
+    const page = contactRef.current
+    if (!page) return undefined
+
+    const sections = [
+      page.querySelector('.contact-banner'),
+      page.querySelector('.contact-main'),
+      page.querySelector('.contact-cta'),
+      page.querySelector('.contact-footer'),
+    ].filter(Boolean)
+    const items = [...page.querySelectorAll([
+      '.contact-banner-copy',
+      '.contact-left',
+      '.contact-form-panel',
+      '.benefit',
+      '.contact-cta-inner > div',
+      '.contact-cta-button',
+      '.contact-footer-inner > *',
+    ].join(','))]
+    const directions = ['contact-reveal-left', 'contact-reveal-up', 'contact-reveal-right', 'contact-reveal-down']
+
+    sections.forEach((section) => section.classList.add('contact-reveal-section'))
+    items.forEach((item, index) => {
+      item.classList.add('contact-reveal-item', directions[index % directions.length])
+      item.style.setProperty('--contact-item-order', index % 6)
+    })
+
+    const revealTargets = [...sections, ...items]
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)')
+    if (reducedMotion.matches || !('IntersectionObserver' in window)) {
+      revealTargets.forEach((target) => target.classList.add('is-contact-visible'))
+      return undefined
+    }
+
+    const observer = new IntersectionObserver((entries, currentObserver) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return
+        entry.target.classList.add('is-contact-visible')
+        currentObserver.unobserve(entry.target)
+      })
+    }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' })
+
+    revealTargets.forEach((target) => observer.observe(target))
+    return () => observer.disconnect()
+  }, [])
 
   function handleSubmit(event) {
     event.preventDefault()
+    event.currentTarget.reset()
     setSent(true)
   }
 
-  return <div className="contact-page">
+  return <div className="contact-page" ref={contactRef}>
     <section className="contact-banner" aria-label="Contact Us banner" style={{ '--contact-banner-image': `url(${contactImage})` }}>
       <div className="contact-banner-overlay" />
       <div className="contact-banner-inner container">
@@ -97,6 +154,15 @@ export function ContactPage({ hideContactFooter = false }) {
             <label className="form-full"><span>Message <em>*</em></span><textarea required name="message" placeholder="Tell us about your requirement..." /></label>
             <button className="contact-submit" type="submit">{sent ? 'Message Sent' : 'Send Message'}<Icon name="arrow" size={20} /></button>
             {sent ? <p className="form-success" role="status">Thank you — our team will get back to you shortly.</p> : null}
+            {sent ? <div className="contact-downloads" aria-label="Download company PDFs">
+              <div className="contact-downloads-heading"><strong>Download Our PDFs</strong><span>Explore our company, products and services.</span></div>
+              <div className="contact-download-grid">
+                {downloadablePdfs.map(([label, file, filename]) => <a className="contact-download-card" href={file} download={filename} key={label}>
+                  <span className="contact-download-icon" aria-hidden="true">PDF</span>
+                  <span><strong>{label}</strong><small>Download PDF <b>↓</b></small></span>
+                </a>)}
+              </div>
+            </div> : null}
           </form>
         </section>
       </div>

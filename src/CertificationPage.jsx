@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import contactImage from '../assets/contact.png'
 
 const certificateFiles = import.meta.glob('../assets/certification/*.{jpg,jpeg,png}', {
@@ -33,6 +33,7 @@ const featuredCertificate = certificates.find(({ title }) => title.includes('ISO
 
 export function CertificationPage() {
   const [activeIndex, setActiveIndex] = useState(null)
+  const certificationRef = useRef(null)
 
   useEffect(() => {
     if (activeIndex === null) return undefined
@@ -50,11 +51,16 @@ export function CertificationPage() {
   }, [activeIndex])
 
   useEffect(() => {
-    const page = document.querySelector('.certification-page')
+    const page = certificationRef.current
     if (!page || !('IntersectionObserver' in window)) return undefined
 
     page.classList.add('certification-page--animated')
     const revealItems = page.querySelectorAll('[data-cert-reveal]')
+    const directions = ['cert-reveal-left', 'cert-reveal-up', 'cert-reveal-right', 'cert-reveal-down']
+    revealItems.forEach((item, index) => {
+      item.classList.add('cert-page-reveal-item', directions[index % directions.length])
+      item.style.setProperty('--cert-item-order', index % 6)
+    })
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (!entry.isIntersecting) return
@@ -70,7 +76,7 @@ export function CertificationPage() {
     }
   }, [])
 
-  return <div className="certification-page">
+  return <div className="certification-page" ref={certificationRef}>
     <section className="contact-banner certification-banner" aria-label="Certificates and Awards banner" style={{ '--contact-banner-image': `url(${contactImage})` }}>
       <div className="contact-banner-overlay" />
       <div className="contact-banner-inner container">

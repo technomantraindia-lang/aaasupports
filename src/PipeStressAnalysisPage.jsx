@@ -10,6 +10,8 @@ import psa4Image from '../assets/pipe stress analysis services/PSA_4.jpg'
 import psa5Image from '../assets/pipe stress analysis services/PSA_5.jpg'
 import psa6Image from '../assets/pipe stress analysis services/PSA_6.jpg'
 import serviceImage from '../assets/pipe stress analysis services/Service.jpg'
+import { useRef } from 'react'
+import { useServiceReveal } from './hooks/useServiceReveal.js'
 
 const images = {
   banner: serviceImage,
@@ -78,7 +80,10 @@ function ServiceVisual({ image, label, alt = 'Pipe stress analysis engineering b
 }
 
 export function PipeStressAnalysisPage() {
-  return <div className="service-page">
+  const serviceRef = useRef(null)
+  useServiceReveal(serviceRef)
+
+  return <div className="service-page" ref={serviceRef}>
     <section className="service-banner" style={{ '--service-banner-image': `url(${images.banner})` }}>
       <div className="service-banner-overlay" />
       <div className="service-banner-inner container">

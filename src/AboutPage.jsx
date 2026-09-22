@@ -1,3 +1,4 @@
+import { useEffect, useRef } from 'react'
 import contactImage from '../assets/contact.png'
 import aboutImage from '../assets/about-industrial-worker.png'
 import standardsImage from '../assets/pipe-support-hero.png'
@@ -83,8 +84,69 @@ function AboutValueIcon({ type }) {
 }
 
 export function AboutPage() {
+  const aboutRef = useRef(null)
+
+  useEffect(() => {
+    const page = aboutRef.current
+    if (!page) return undefined
+
+    const sections = [...page.querySelectorAll(':scope > section:not(.about-banner)')]
+    const items = [...page.querySelectorAll([
+      '.about-story-visual',
+      '.about-story-copy',
+      '.about-story-stat',
+      '.about-values-heading',
+      '.about-values-highlight',
+      '.about-values-card',
+      '.about-standards-heading',
+      '.about-standard-card',
+      '.about-quality-visual',
+      '.about-quality-item',
+      '.clients-header',
+      '.about-partnership-copy',
+      '.about-partnership-button',
+    ].join(','))]
+    const leftItems = page.querySelectorAll([
+      '.about-story-visual',
+      '.about-standards-heading',
+      '.about-quality-visual',
+      '.about-partnership-copy',
+    ].join(','))
+    const rightItems = page.querySelectorAll([
+      '.about-story-copy',
+      '.about-quality-item:nth-child(even)',
+      '.about-partnership-button',
+    ].join(','))
+
+    sections.forEach((section) => section.classList.add('about-reveal-section'))
+    items.forEach((item, index) => {
+      item.classList.add('about-reveal-item')
+      item.style.setProperty('--about-item-order', index % 5)
+    })
+    leftItems.forEach((item) => item.classList.add('about-reveal-left'))
+    rightItems.forEach((item) => item.classList.add('about-reveal-right'))
+
+    const revealTargets = [...sections, ...items]
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)')
+    if (reducedMotion.matches || !('IntersectionObserver' in window)) {
+      revealTargets.forEach((target) => target.classList.add('is-about-visible'))
+      return undefined
+    }
+
+    const observer = new IntersectionObserver((entries, currentObserver) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return
+        entry.target.classList.add('is-about-visible')
+        currentObserver.unobserve(entry.target)
+      })
+    }, { threshold: 0.12, rootMargin: '0px 0px -9% 0px' })
+
+    revealTargets.forEach((target) => observer.observe(target))
+    return () => observer.disconnect()
+  }, [])
+
   return (
-    <div className="about-page">
+    <div className="about-page" ref={aboutRef}>
       <section className="contact-banner about-banner" aria-label="About AAA Supports" style={{ '--contact-banner-image': `url(${contactImage})` }}>
         <div className="contact-banner-overlay" />
         <div className="contact-banner-inner container">

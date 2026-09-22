@@ -7,6 +7,8 @@ import powerImage from '../assets/industry-power.png'
 import chemicalImage from '../assets/industry-oil-gas.png'
 import waterImage from '../assets/industry-infrastructure.png'
 import marineImage from '../assets/industry-marine.png'
+import { useRef } from 'react'
+import { useServiceReveal } from './hooks/useServiceReveal.js'
 
 const inspectionPoints = [
   ['01', 'Visual checks', 'Spotting corrosion, cracks, missing bolts or stuck springs.'],
@@ -56,7 +58,10 @@ function ServiceVisual({ image, label, className = '' }) {
 }
 
 export function SiteSupervisionPage() {
-  return <div className="service-page">
+  const serviceRef = useRef(null)
+  useServiceReveal(serviceRef)
+
+  return <div className="service-page" ref={serviceRef}>
     <section className="service-banner" style={{ '--service-banner-image': `url(${bannerImage})` }}>
       <div className="service-banner-overlay" />
       <div className="service-banner-inner container">

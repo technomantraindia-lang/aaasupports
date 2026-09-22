@@ -1,3 +1,4 @@
+import { useEffect, useRef } from 'react'
 import heroImage from '../assets/pipe-support-hero.png'
 import constantSpringHangers from '../assets/product-constant-spring-hangers.png'
 import constantSpringSupports from '../assets/product-constant-spring-supports.png'
@@ -75,7 +76,53 @@ function ArrowIcon() {
 }
 
 export function ProductsPage() {
-  return <div className="products-page">
+  const productsRef = useRef(null)
+
+  useEffect(() => {
+    const page = productsRef.current
+    if (!page) return undefined
+
+    const sections = [...page.querySelectorAll(':scope > section')]
+    const items = [...page.querySelectorAll([
+      '.products-page-hero-copy',
+      '.products-page-note',
+      '.products-page-heading',
+      '.products-page-brochure',
+      '.product-category-card',
+      '.product-category-product',
+      '.products-page-promise .container > div',
+      '.products-page-cta-inner > div',
+      '.products-page-cta-button',
+    ].join(','))]
+    const directionClasses = ['products-reveal-left', 'products-reveal-up', 'products-reveal-right', 'products-reveal-down']
+
+    sections.forEach((section) => section.classList.add('products-reveal-section'))
+    items.forEach((item, index) => {
+      item.classList.add('products-reveal-item')
+      item.style.setProperty('--products-item-order', index % 6)
+      item.classList.add(directionClasses[index % directionClasses.length])
+    })
+
+    const revealTargets = [...sections, ...items]
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)')
+    if (reducedMotion.matches || !('IntersectionObserver' in window)) {
+      revealTargets.forEach((target) => target.classList.add('is-products-visible'))
+      return undefined
+    }
+
+    const observer = new IntersectionObserver((entries, currentObserver) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return
+        entry.target.classList.add('is-products-visible')
+        currentObserver.unobserve(entry.target)
+      })
+    }, { threshold: 0.1, rootMargin: '0px 0px -8% 0px' })
+
+    revealTargets.forEach((target) => observer.observe(target))
+    return () => observer.disconnect()
+  }, [])
+
+  return <div className="products-page" ref={productsRef}>
     <section className="products-page-hero" style={{ '--products-hero-image': `url(${heroImage})` }}>
       <div className="products-page-hero-overlay" />
       <div className="container products-page-hero-inner">

@@ -5,8 +5,8 @@
 - Workspace: AAA
 - Technology: React, Vite, Node.js/npm
 - Active file at refresh: None
-- Local code graph: 39 files · 53 edges · 0 matched flows
-- Refreshed: 2026-09-22T03:50:32.913Z
+- Local code graph: 40 files · 61 edges · 0 matched flows
+- Refreshed: 2026-09-22T05:10:01.161Z
 
 ## Framework Intelligence (V4.7.8)
 - Profiles: react
@@ -88,6 +88,9 @@
 - src/components/ValuedClientsSection.jsx: used by src/AboutPage.jsx
 - src/components/WhyChooseUs.jsx: depends on src/components/SectionHeading.jsx
 - src/data/homeData.js: used by src/components/AboutSection.jsx, src/components/Footer.jsx, src/components/Header.jsx, src/components/HeroSection.jsx
+- src/DesigningPipeSupportsPage.jsx: depends on src/hooks/useServiceReveal.js
+- src/hooks/useServiceReveal.js: used by src/DesigningPipeSupportsPage.jsx, src/SiteSupervisionPage.jsx
+- src/SiteSupervisionPage.jsx: depends on src/hooks/useServiceReveal.js
 
 ### Styles
 - src/components/testimonials/testimonials.css
@@ -111,7 +114,9 @@
 - src/components/ProjectsSection.jsx -> src/data/homeData.js, src/components/SectionHeading.jsx
 - src/components/TestimonialsSection.jsx -> src/components/testimonials/testimonials.css
 - src/components/WhyChooseUs.jsx -> src/components/SectionHeading.jsx, src/data/homeData.js
+- src/DesigningPipeSupportsPage.jsx -> src/hooks/useServiceReveal.js
 - src/main.jsx -> src/App.jsx, src/index.css
+- src/SiteSupervisionPage.jsx -> src/hooks/useServiceReveal.js
 
 ### Reverse dependency hints
 - src/components/ValuedClientsSection.jsx <- src/AboutPage.jsx
@@ -131,6 +136,7 @@
 - src/components/MetricsBar.jsx <- src/components/index.js
 - src/components/SectionHeading.jsx <- src/components/ProjectsSection.jsx, src/components/WhyChooseUs.jsx
 - src/components/testimonials/testimonials.css <- src/components/TestimonialsSection.jsx
+- src/hooks/useServiceReveal.js <- src/DesigningPipeSupportsPage.jsx, src/SiteSupervisionPage.jsx
 - src/App.jsx <- src/main.jsx
 - src/index.css <- src/main.jsx
 
@@ -174,6 +180,7 @@
 - src/data/homeData.js
 - src/DesigningPipeSupportsPage.jsx
 - src/GalleryPage.jsx
+- src/hooks/useServiceReveal.js
 - src/index.css
 - src/main.jsx
 - src/PipeStressAnalysisPage.jsx

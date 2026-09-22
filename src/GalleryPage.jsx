@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import contactImage from '../assets/contact.png'
 
 const galleryFiles = import.meta.glob('../assets/gallery/*.{jpg,jpeg,png}', {
@@ -31,6 +31,40 @@ const galleryItems = Object.entries(galleryFiles)
 
 export function GalleryPage() {
   const [activeIndex, setActiveIndex] = useState(null)
+  const galleryRef = useRef(null)
+
+  useEffect(() => {
+    const page = galleryRef.current
+    if (!page) return undefined
+
+    const sections = [page.querySelector('.gallery-banner'), page.querySelector('.gallery-cta')].filter(Boolean)
+    const items = [...page.querySelectorAll('.gallery-banner-copy, .gallery-card, .gallery-cta > div, .gallery-cta > a')]
+    const directions = ['gallery-reveal-left', 'gallery-reveal-up', 'gallery-reveal-right', 'gallery-reveal-down']
+
+    sections.forEach((section) => section.classList.add('gallery-reveal-section'))
+    items.forEach((item, index) => {
+      item.classList.add('gallery-reveal-item', directions[index % directions.length])
+      item.style.setProperty('--gallery-item-order', index % 6)
+    })
+
+    const revealTargets = [...sections, ...items]
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)')
+    if (reducedMotion.matches || !('IntersectionObserver' in window)) {
+      revealTargets.forEach((target) => target.classList.add('is-gallery-visible'))
+      return undefined
+    }
+
+    const observer = new IntersectionObserver((entries, currentObserver) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return
+        entry.target.classList.add('is-gallery-visible')
+        currentObserver.unobserve(entry.target)
+      })
+    }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' })
+
+    revealTargets.forEach((target) => observer.observe(target))
+    return () => observer.disconnect()
+  }, [])
 
   useEffect(() => {
     if (activeIndex === null) return undefined
@@ -47,7 +81,7 @@ export function GalleryPage() {
     }
   }, [activeIndex])
 
-  return <div className="gallery-page">
+  return <div className="gallery-page" ref={galleryRef}>
     <section className="contact-banner gallery-banner" aria-label="Gallery banner" style={{ '--contact-banner-image': `url(${contactImage})` }}>
       <div className="contact-banner-overlay" />
       <div className="contact-banner-inner container">

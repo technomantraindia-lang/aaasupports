@@ -2,10 +2,10 @@
 
 > Structural local index. Read current source before editing. Secrets are intentionally excluded.
 
-- Indexed source files: 39
-- Structural edges: 53
+- Indexed source files: 40
+- Structural edges: 61
 - Matched end-to-end flows: 0
-- Updated: 2026-09-22T03:50:32.910Z
+- Updated: 2026-09-22T05:10:01.160Z
 
 ## Dependency edges
 - IMPORT index.html -> src/main.jsx
@@ -21,7 +21,10 @@
 - IMPORT src/components/ProjectsSection.jsx -> src/data/homeData.js, src/components/SectionHeading.jsx
 - IMPORT src/components/TestimonialsSection.jsx -> src/components/testimonials/testimonials.css
 - IMPORT src/components/WhyChooseUs.jsx -> src/components/SectionHeading.jsx, src/data/homeData.js
+- IMPORT src/DesigningPipeSupportsPage.jsx -> src/hooks/useServiceReveal.js
 - IMPORT src/main.jsx -> src/App.jsx, src/index.css
+- IMPORT src/PipeStressAnalysisPage.jsx -> src/hooks/useServiceReveal.js
+- IMPORT src/SiteSupervisionPage.jsx -> src/hooks/useServiceReveal.js
 - REACT src/AboutPage.jsx: depends on src/components/ValuedClientsSection.jsx
 - REACT src/App.jsx: used by src/main.jsx · depends on src/components/Header.jsx, src/components/HeroSection.jsx, src/components/IndustryStrip.jsx, src/components/TestimonialsSection.jsx, src/components/FaqClientsSection.jsx, src/components/AboutSection.jsx
 - REACT src/components/AboutSection.jsx: used by src/App.jsx, src/components/index.js
@@ -43,10 +46,14 @@
 - REACT src/components/ValuedClientsSection.jsx: used by src/AboutPage.jsx
 - REACT src/components/WhyChooseUs.jsx: depends on src/components/SectionHeading.jsx
 - REACT src/data/homeData.js: used by src/components/AboutSection.jsx, src/components/Footer.jsx, src/components/Header.jsx, src/components/HeroSection.jsx
+- REACT src/DesigningPipeSupportsPage.jsx: depends on src/hooks/useServiceReveal.js
+- REACT src/hooks/useServiceReveal.js: used by src/DesigningPipeSupportsPage.jsx, src/SiteSupervisionPage.jsx
+- REACT src/SiteSupervisionPage.jsx: depends on src/hooks/useServiceReveal.js
 
 ## Database references
 - DB src/CertificationPage.jsx -> react, quality
 - DB vite.config.js -> vite
+- DB src/AboutPage.jsx -> react
 - DB src/App.jsx -> react
 - DB src/ClientsPage.jsx -> react, our
 - DB src/components/EnquiryModal.jsx -> react
@@ -55,12 +62,13 @@
 - DB src/components/IndustryStrip.jsx -> react
 - DB src/components/TestimonialsSection.jsx -> react, design
 - DB src/ContactPage.jsx -> react, You
-- DB src/DesigningPipeSupportsPage.jsx -> the, Calculation, Brief, Design
+- DB src/DesigningPipeSupportsPage.jsx -> react, the, Calculation, Brief, Design
 - DB src/GalleryPage.jsx -> react
+- DB src/hooks/useServiceReveal.js -> react
 - DB src/main.jsx -> react
-- DB src/PipeStressAnalysisPage.jsx -> practical, the, Analysis, Input, design
-- DB src/ProductsPage.jsx -> spring
-- DB src/SiteSupervisionPage.jsx -> us
+- DB src/PipeStressAnalysisPage.jsx -> react, practical, the, Analysis, Input, design
+- DB src/ProductsPage.jsx -> react, spring
+- DB src/SiteSupervisionPage.jsx -> react, us, designing
 - DB scripts/remove-bg-precise.js -> sharp, fs, path, all
 - DB scripts/remove-bg.js -> sharp, fs, path, light, pure
 
@@ -92,6 +100,7 @@
 - SYMBOL src/ContactPage.jsx: Icon, Label, ContactCard, ContactPage, handleSubmit
 - SYMBOL src/DesigningPipeSupportsPage.jsx: CheckIcon, ServiceKicker, ServiceVisual, DesigningPipeSupportsPage
 - SYMBOL src/GalleryPage.jsx: GalleryPage, handleKeyDown
+- SYMBOL src/hooks/useServiceReveal.js: useServiceReveal
 - SYMBOL src/PipeStressAnalysisPage.jsx: CheckIcon, ServiceKicker, ServiceVisual, PipeStressAnalysisPage
 - SYMBOL src/ProductsPage.jsx: ArrowIcon, ProductsPage
 - SYMBOL src/SiteSupervisionPage.jsx: CheckIcon, ServiceKicker, ServiceVisual, SiteSupervisionPage

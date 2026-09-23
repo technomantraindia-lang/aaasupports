@@ -152,10 +152,15 @@ export function ProductsPage() {
             </div>
             <div className="product-category-body">
               <div className="product-category-products">
-                {category.products.map(([product, imageKey]) => <a href="#quote" className="product-category-product" key={product}>
-                  <span className="product-category-product-art"><img src={productImageSet[imageKey]} alt="" /></span>
-                  <span className="product-category-product-info"><span className="product-category-product-name">{product}</span><span className="product-category-product-arrow"><ArrowIcon /></span></span>
-                </a>)}
+                {category.products.map(([product, imageKey]) => {
+                  const slug = product.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')
+                  return (
+                    <a href={`#product-${slug}`} className="product-category-product" key={product}>
+                      <span className="product-category-product-art"><img src={productImageSet[imageKey]} alt="" /></span>
+                      <span className="product-category-product-info"><span className="product-category-product-name">{product}</span><span className="product-category-product-arrow"><ArrowIcon /></span></span>
+                    </a>
+                  )
+                })}
               </div>
             </div>
           </article>)}

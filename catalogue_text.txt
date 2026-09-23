@@ -1,0 +1,1946 @@
+Product 	Catalogue
+AAA 	Supports 	Pvt. 	Ltd.
+
+-- 1 of 68 --
+
+Table of Contents
+Introduction ........................................................................................... 1
+Variable Spring Supports ......................................................................... 3
+Variable Spring Supports Selection table .................................................. 6
+Dimensional details for variable spring support ........................................ 8
+Constant Spring Supports ...................................................................... 15
+Load Travel Selection chart for Constant Support .................................... 19
+Rigid Hanger & Rigid Struts .................................................................... 22
+Hydraulic Snubbers ............................................................................... 24
+Pipe Clamp, Riser Clamp & Pipe Holding Components ............................. 35
+Sliding Pipe Supports & Pipe Shoes ........................................................ 41
+Pipe Connecting Elements ..................................................................... 51
+Erection & Maintenance Manual Variable Spring Supports ...................... 57
+Erection & Maintenance Manual Constant Spring Supports ..................... 61
+Enquiry Sheet ....................................................................................... 65
+AAA SUPPORTS PVT. LTD.
+
+-- 2 of 68 --
+
+AAA Supports Pvt. Ltd.
+Product Catalogue
+1
+Page 1
+INTRODUCTION
+AAA Supports Pvt. Ltd. is specialized in the Design, Engineering and Manufacturing of Pipe support
+Equipment and Spring Hangers. Our comprehensive service includes supply of standard and non-
+standard pipe support components for application in the Oil and gas, Chemical & Fertilizer Industry, Steel
+and Power Sector in a wide range of materials and surface finish which suits the customer’s specific
+requirement.
+PRODUCT RANGE
+ VARIABLE SPRING HANGERS AND SUPPORTS
+ CONSTANT SPRING HANGERS AND SUPPORTS
+ RIGID STRUTS AND HANGERS
+ PIPE CLAMPS, & PIPE HOLDING COMPONENTS
+ ANCILLARY COMPONENES
+ PIPE SHOES
+ SLIDING PLATES
+ CRYOGENIC PIPE SUPPORTS
+STANDARDS
+AAA Supports Pvt. Ltd. strictly conforms to the requirements of the following international specifications.
+Design and dimensions are subjected to change due to continuous up gradation and improvement of our
+product.
+o ASME B 31.1 (POWER PIPING)
+o ASME B 31.3 (PETROLEUM REFINERY PIPING)
+o BS 1726
+o MSS SP-58 (PIPE HANGERS AND SUPPORTS- MATERIAL AND DESIGN)
+o MSS SP-69 (PIPE HANGERS AND SUPPORTS- SELECTION AND APPLICATION)
+o ASTM A 125
+o BS 3974 PART-I, PART-II, PART-III
+ORDERING INFORMATION
+Please provide following details to select spring support system.
+ Value of cold load or hot load (Kg or KN) in pipeline
+ Travel or movement (mm) and its direction towards cold load position to hot load position
+ Model or type of Hanger as shown ‘A’ to ‘G’/ ‘AH’ to ‘ FH’/ ‘AV’ to “ FV’
+ Type and size of attachment (if required)
+ Temperature of pipeline (if required)
+QUALITY CONTROL/ INSPECTION
+All springs are tested as per BS- 1726 Part- I/ ASTM A125. Each and every spring support is subjected to
+rigorous internal inspection at our end and also offered to our client/ inspection agency for final test,
+acceptance and its validation as per approved Quality Assurance Plan and Drawing. All relevant test
+certificates are provided for client authentication.
+AAA SUPPORTS PVT. LTD.
+
+-- 3 of 68 --
+
+AAA Supports Pvt. Ltd.
+Product Catalogue
+2
+Page 2
+PAINTING
+ Our Standard : Two coats of Zinc Chromate Red/ Grey Oxide primer IS: 2074 and one coat of
+finish enamel paint to IS-5: 1973
+ On Request : Spring to be PU/Neoprene rubber coating, casing and component to be hot dip
+galvanized to IS: 2629/A153/A123 except threaded portion. Threaded component shall be
+electro zinc coated to ASTM B633/B76, Epoxy Zinc phosphate primer & high build epoxy finish.
+MARKING
+Each and every Variable and Constant supports are fitted with a metallic load travel scale cum Name
+Plate on which all references are punched such as cold load, hot load, Travel, Support Tag No., Size etc.
+All items of ancillary equipment are clearly identified with Client’s Tag No.
+PACKING
+Each and every spring support and its ancillary equipment are properly packed in Wooden Box/Crate.
+Packing list shall description of all items included in the Box.
+GUARANTEE
+Each spring support /hanger assembly is guaranteed for a period of 18 month from the date of supply
+or 12 months from the date of commissioning, whichever is earlier. We shall replace with free of
+charges if any material, which owing to defect in raw materials or workmanship, fails within
+guaranteed period.
+INSTALLATION INSTRUCTION
+Fix the spring support in accordance with your pipeline drawing maintaining Tag No. (If required).
+Adjustment can be made by twisting Turnbuckle for hanging type or threaded load column pipe for
+bottom supported type, until it comes to the mark indicating the pre-setting cold load.
+All variable and constant spring supports are locked in cold/pre-set load. Variable spring supports are
+locked by side studs & nuts from either side for constant spring supports by a pin, both of which are
+indicated by an arrow mark. After application of the hydrostatic load and before the pipe line comes
+into operation, pre-set locking arrangement are to be removed to take care of thermal movement &
+pipe load.
+Height adjustment by twisting of turnbuckle or threaded load column pipe should not be made in
+loaded condition. Erection & pre-set removal instruction write up are pasted separately on variable
+and constant spring box.
+AAA SUPPORTS PVT. LTD.
+
+-- 4 of 68 --
+
+AAA Supports Pvt. Ltd.
+Product Catalogue
+3
+Page 3
+AAA SUPPORTS PVT. LTD.
+
+-- 5 of 68 --
+
+AAA Supports Pvt. Ltd.
+Product Catalogue
+4
+Page 4
+VARIABLE SPRING HANGERS AND SUPPORTS
+Variable Spring Supports are used where pipeline are under high pressure, high temperature and results
+in vertical movement. To allow vertical movement, the entire loads are taken care of by Variable Spring
+Supports in both the hot and cold position. The Variable Spring Supports are utilized to protect valuable
+Instrument, pipeline a critical component. The design of the Variable Spring Supports is based on loads,
+movements and models to suit the required position on pipelines and also depending on the weather
+condition.
+RANGE
+We offer three series prefixed VS1, VS2 & VS3 twenty-five spring sizes allow a range of load 8.2 kgs to
+27.43 tons. In all the series VS1, VS2 & VS3 provide travel 40mm, 80mm& 160mm respectively. It also
+takes 5 collinear displacements. We offer models such as A, B, C, D, E, F, G.
+VSH- A VSH- B VSH- C VSH- D VSH- E VSH- F
+SPECIAL RANGE/ DESIGN
+Apart from our standard design and product range, we undertake jobs specially
+designed by us to suit Client’s requirement. We offer PU or neoprene rubber
+coating on spring and epoxy painting/galvanizing to avoid corrosion.
+DESIGN PRINCIPLES
+Supports components are arranged in a series of load groups, the load within
+each load group is in strict accordance with the permissible load of the
+connecting thread. All supports have a strictly symmetrical shape; have single
+upper and lower load connection resulting a moment free load connection to
+the structure. The actual travel position of the hangers/supports can be read
+directly from the travel scale in mm in accordance with the actual travel. All
+hangers/supports can be blocked in installation position within a close raster.
+SUPPLY STANDARD
+All hangers/supports have a rivet on name plate with travel scale displaying
+series, size, type, hot load, cold load, travel and client’s tag no.
+VSH- G
+AAA SUPPORTS PVT. LTD.
+
+-- 6 of 68 --
+
+AAA Supports Pvt. Ltd.
+Product Catalogue
+5
+Page 5
+METHOD OF SELECTION (VARIABLE)
+Hot/Operating load = 2000 Kg
+Movement/Travel (Vertical) = 20 mm (UP)
+Maximum Load Variation (V) = 25%
+Using Selection Table
+Enter table at 2000 Kg. located in size 15 column
+( )
+From VS2 series of size 15, Spring Rate =13.0 Kg/mm
+Variability = = 13% (acceptable)
+Support selection = VS2 TYPE 15
+Cold pre-set load = (Hot load + movement* spring rate)
+= 2000+(20*13) =2260 kg
+VARIABLE SPRING HANGER- B TYPE VARIABLE SPRING HANGER- F TYPE
+VARIBALE SPRING SUPPORTS- BIG TON LOAD
+AAA SUPPORTS PVT. LTD.
+
+-- 7 of 68 --
+
+AAA Supports Pvt. Ltd.
+Product Catalogue
+6
+Page 6
+1 	2 	3 	4 	5 	6 	7 	8 	9 	10 	11 	12 	13 	14 	15 	16 	17 	18 	19 	20 	21 	22 	23 	24 	25
+7 	10 	22 	35 56.4 92 134 181 253 355 486 613 766 964 1116 1343 1588 2000 2781 3720 4674 6982 9775 11693 12911
+VS5 VS4 VS3 VS2 VS1 7.6 	11 23.6 37.6 60.2 97 140 191 266 371 507 639 799 1006 1168 1409 1674 2116 2931 3920 4934 7322 10195 12233 13571
+0 0 0 0 0 8.2 	12 25.2 40.2 64 102 147 200 278 387 528 665 832 1048 1220 1475 1760 2232 3081 4120 5194 7662 10615 12773 14231
+8 6 4 3 2 8.8 	13 26.8 42.8 67.8 107 154 209 290 403 548 691 865 1090 1272 1541 1846 2348 3231 4320 5454 8002 11035 13313 14891
+16 12 8 6 4 9.4 	14 28.4 45.4 71.6 112 161 218 303 419 569 717 898 1132 1324 1607 1932 2464 3381 4520 5714 8342 11455 13853 15551
+24 18 12 9 6 	10 	15 	30 	48 75.4 117 168 227 315 435 589 743 931 1174 1376 1673 2018 2580 3531 4720 5974 8682 11875 14393 16211
+32 24 16 12 8 10.6 16 31.6 50.6 79.2 122 174 237 328 451 610 769 964 1216 1428 1739 2104 2696 3681 4920 6234 9022 12295 14933 16871
+40 30 20 15 10 11.2 17 33.2 53.2 83 127 181 246 340 467 631 795 997 1258 1480 1805 2190 2812 3831 5120 6494 9362 12715 15473 17531
+48 36 24 18 12 11.8 18 34.8 55.8 86.8 132 188 255 352 483 651 821 1030 1300 1532 1871 2276 2928 3981 5320 6754 9702 13135 16013 18191
+56 42 28 21 14 12.4 19 36.4 58.4 90.6 137 195 264 365 499 672 847 1063 1342 1584 1937 2362 3044 4131 5520 7014 10042 13555 16553 18851
+64 48 32 24 16 13 	20 	38 	61 94.4 142 201 273 377 515 692 873 1096 1384 1636 2003 2448 3160 4281 5720 7274 10382 13975 17093 19511
+72 54 36 27 18 13.6 21 39.6 63.6 98.2 147 208 283 390 531 713 899 1129 1426 1688 2069 2534 3276 4431 5920 7534 10722 14395 17633 20171
+80 60 40 30 20 14.2 22 41.2 66.2 102 152 215 292 402 547 734 925 1162 1468 1740 2135 2620 3392 4581 6120 7794 11062 14815 18173 20831
+88 66 44 33 22 14.8 23 42.8 68.8 105.8 157 222 301 414 563 754 951 1195 1510 1792 2201 2706 3508 4731 6320 8054 11402 15235 18713 21491
+96 72 48 36 24 15.4 24 44.4 71.4 109.6 162 229 310 427 579 775 977 1228 1552 1844 2267 2792 3624 4881 6520 8314 11742 15655 19253 22151
+104 78 52 39 26 16 	25 	46 	74 113.4 167 235 319 439 595 795 1003 1261 1594 1896 2333 2878 3740 5031 6720 8574 12082 16075 19793 22811
+112 84 56 42 28 16.6 26 47.6 76.6 117.2 172 242 329 452 611 816 1029 1294 1636 1948 2399 2964 3856 5181 6920 8834 12422 16495 20333 23471
+120 90 60 45 30 17.2 27 49.2 79.2 121 177 249 338 464 627 837 1055 1327 1678 2000 2465 3050 3972 5331 7120 9094 12762 16915 20873 24131
+128 94 64 48 32 17.8 28 50.8 81.8 124.8 182 256 347 476 643 857 1081 1360 1720 2052 2531 3136 4088 5481 7320 9354 13102 17335 21413 24791
+136 102 68 51 34 18.4 29 52.4 84.4 128.6 187 263 356 489 659 878 1107 1393 1762 2104 2597 3222 4204 5631 7520 9614 13442 17755 21953 25451
+144 108 72 54 36 19 	30 	54 	87 132.4 192 269 365 501 675 898 1133 1426 1804 2156 2663 3308 4320 5781 7720 9874 13782 18175 22493 26111
+152 114 76 57 38 19.6 31 55.6 89.6 136.4 197 276 375 514 691 919 1159 1459 1846 2208 2729 3394 4436 5931 7920 10134 14122 18595 23033 26771
+160 120 80 60 40 20.2 32 57.2 92.2 140 202 283 384 526 707 940 1185 1492 1888 2260 2795 3480 4552 6081 8120 10394 14462 19015 23573 27431
+20.8 33 58.8 94.8 143.6 207 290 393 538 723 960 1211 1525 1930 2312 2861 3566 4668 6231 8320 10654 14802 19435 24113 28091
+21.4 34 60.4 97.4 147.6 212 297 402 551 739 981 1237 1558 1972 2364 2927 3652 4784 6381 8520 10914 15142 19855 24653 28751
+22 	35 	62 100 151.4 217 303 411 563 755 1002 1263 1591 2014 2416 2993 3738 4900 6531 8720 11174 15482 20275 25193 29411
+VS1 0.3 0.5 0.8 1.3 1.9 2.5 3.4 	4.6 6.2 	8 	10.3 13 16.5 21 	26 	33 	43 	58 	75 100 130 170 210 270 330
+VS2 0.2 0.33 0.53 0.86 1.26 1.66 2.26 3.06 4.13 5.33 6.86 8.66 11 	14 17.33 22 28.66 38.66 50 66.66 86.66 113.3 140 180 220
+VS3 0.15 0.25 0.4 0.65 0.95 1.25 1.7 	2.3 3.1 	4 	5.15 6.5 8.25 10.5 13 16.5 21.5 29 37.5 50 	65 	85 105 135 165
+VS4 0.1 0.166 0.266 0.43 0.63 0.83 1.13 1.53 2.06 2.66 3.43 4.33 5.5 	7 	8.66 11 14.33 19.33 25 33.33 43.33 56.66 70 	90 110
+VS5 0.075 0.125 0.2 0.325 0.475 0.625 0.85 1.15 1.55 	2 2.575 3.25 4.125 5.25 6.45 8.25 10.75 14.5 18.75 25 32.5 42.5 52.5 67.5 82.5
+0-60
+0-40
+SPRING RATE
+(kg/mm)
+VARIABLE SPRING HANGERS & SUPPORTS SELECTION TABLE
+SIZE
+LOAD (kg)
+TRAVEL
+0-160
+0-120
+0-80
+AAA SUPPORTS PVT. LTD.
+
+-- 8 of 68 --
+
+AAA Supports Pvt. Ltd.
+Product Catalogue
+7
+Page 7
+1 	2 	3 	4 	5 	6 	7 	8 	9 	10 	11 	12 	13 	14 	15 	16 	17 	18 	19 	20 	21 	22 	23 	24 	25
+69 	98 216 343 526 902 1313 1774 2479 3479 4763 6007 7507 9447 10937 13161 15562 19600 27254 36456 	45805 	68424 	95795 	114591 126528
+VS5 VS4 VS3 VS2 VS1 75 108 231 369 590 951 1372 1872 2607 3636 4969 6262 7830 9859 11446 13808 16405 20737 28724 38416 	48353 	71756 	99911 	119883 132996
+0 	0 	0 	0 	0 	80 118 247 394 627 1000 1441 1960 2724 3793 5174 6517 8154 10270 11956 14455 17248 21874 30194 40376 	50901 	75088 	104027 125175 139464
+8 	6 	4 	3 	2 	86 127 263 419 664 1049 1509 2048 2842 3949 5370 6772 8477 10682 12466 15102 18091 23010 31664 42336 	53449 	78420 	108143 130467 145932
+16 12 	8 	6 	4 	92 137 278 445 702 1098 1578 2136 2969 4106 5576 7027 8800 11094 12975 15749 18934 24147 33134 44296 	55997 	81752 	112259 135759 152400
+24 18 12 	9 	6 	98 147 294 470 739 1147 1646 2225 3087 4263 5772 7281 9124 11505 13485 16395 19776 25284 34604 46256 	58545 	85084 	116375 141051 158868
+32 24 16 12 	8 104 157 310 496 776 1196 1705 2323 3214 4420 5978 7536 9447 11917 13994 17042 20619 26421 36074 48216 	61093 	88416 	120491 146343 165336
+40 30 20 15 10 110 167 325 521 813 1245 1774 2411 3332 4577 6184 7791 9771 12328 14504 17689 21462 27558 37544 50176 	63641 	91748 	124607 151635 171804
+48 36 24 18 12 116 176 341 547 851 1294 1842 2499 3450 4733 6380 8045 10094 12740 15014 18336 22305 28694 39014 52136 	66189 	95080 	128723 156927 178272
+56 42 28 21 14 122 186 357 571 888 1343 1911 2587 3577 4890 6586 8301 10417 13152 15523 18983 23148 29831 40484 54096 	68737 	98412 	132839 162219 184740
+64 48 32 24 16 127 196 372 598 925 1392 1970 2675 3695 5047 6782 8555 10741 13563 16033 19629 23990 30968 41954 56056 	71285 101744 136955 167511 191208
+72 54 36 27 18 133 206 388 623 962 1441 2038 2773 3822 5204 6987 8810 11064 13975 16542 20276 24833 32105 43424 58016 	73833 105076 141071 172803 	19768
+80 60 40 30 20 139 216 404 649 1000 1490 2107 2862 3940 5361 7193 9065 11388 14386 17052 20923 25676 33242 44894 59976 	76381 108408 145187 178095 204144
+88 66 44 33 22 145 225 419 674 1037 1539 2176 2950 4057 5517 7389 9320 11711 14798 17562 21570 26519 34378 46364 61936 	78929 111740 149303 183387 210612
+96 72 48 36 24 151 235 435 700 1074 1588 2244 3038 4185 5674 7595 9575 12034 15210 18071 22217 27362 35515 47834 63896 	81477 115072 153419 188679 217080
+104 78 52 39 26 157 245 451 725 1111 1637 2303 3126 4302 5831 7791 9829 12358 15621 18581 22863 28204 36652 49304 65856 	84025 118404 157535 193971 223548
+112 84 56 42 28 163 255 467 751 1149 1686 2372 3224 4430 5988 7997 10084 12681 16033 19090 23510 29047 37789 50774 67816 	86573 121736 161651 199263 230016
+120 90 60 45 30 169 265 482 776 1186 1735 2440 3312 4547 6145 8203 10339 13005 16444 19600 24157 29890 38926 52244 69776 	89121 125068 165767 204555 236484
+128 96 64 48 32 174 274 498 802 1223 1784 2509 3401 4665 6301 8399 10594 13328 16856 20110 24804 30733 40062 53714 71736 	91669 128400 169883 209847 242952
+136 102 68 51 34 180 284 514 827 1260 1833 2577 3489 4792 6458 8604 10849 13651 17268 20619 25451 31576 41199 55184 73696 	94217 131732 173999 215139 249420
+144 108 72 54 36 186 294 529 853 1298 1882 2636 3577 4910 6615 8800 11103 13975 17679 21128 26097 32418 42336 56654 75656 	96765 135064 178115 220431 255888
+152 114 76 57 38 192 304 545 878 1337 1931 2705 3675 5037 6772 9006 11358 14298 18091 21638 26744 33261 43473 58124 77616 	99313 138396 182231 225723 262356
+160 120 80 60 40 198 314 561 904 1372 1980 2773 3763 5155 6929 9212 11613 14622 18502 22148 27391 34104 44610 59594 79576 101861 141728 186347 231015 268824
+204 323 576 929 1470 2029 2842 3851 5272 7085 9408 11868 14945 18914 22658 28038 34947 45746 61064 81536 104409 145060 190463 236307 275292
+210 333 592 955 1447 2078 2911 3940 5400 7242 9614 12123 15268 19326 23167 28685 35790 46883 62534 83496 106957 148392 194579 241599 281760
+216 343 608 980 1484 2127 2969 4028 5517 7399 9820 12377 15592 19737 23677 29331 36632 48020 64004 85456 109505 151724 198695 246891 288228
+VS1 2.9 4.9 7.8 12.7 18.6 24.5 33.3 45.1 61 	78 	101 	127 	162 	206 	255 	323 	421 	568 	735 	980 	1274 	1666 	2058 	2646 	324
+VS2 2.0 3.2 5.2 8.4 12.4 16.3 22.2 30.0 41 	52 	67 	85 	108 	137 	170 	216 	281 	379 	491 	654 	850 	1112 	1373 	1766 	2158
+VS3 1.5 2.5 3.9 6.4 9.3 12.3 16.7 22.5 30 	39 	50 	64 	81 	103 	127 	162 	211 	284 	368 	490 	637 	833 	1029 	1323 	1617
+VS4 1.0 1.6 2.6 4.2 6.2 	8.1 11.1 15.0 20 	26 	34 	42 	54 	69 	85 	108 	141 	190 	245 	327 	425 	556 	687 	883 	1079
+VS5 0.7 1.2 2.0 3.2 4.7 	6.1 8.3 11.3 15 	20 	25 	32 	40 	51 	63 	81 	105 	142 	184 	245 	319 	417 	515 	662 	809
+SPRING RATE
+N/mm
+VARIABLE SPRING HANGERS & SUPPORTS SELECTION TABLE
+SIZE
+LOAD 	IN 	NEWTONS
+TRAVEL
+0-160
+0-120
+0-80
+0-60
+0-40
+AAA SUPPORTS PVT. LTD.
+
+-- 9 of 68 --
+
+AAA Supports Pvt. Ltd.
+Product Catalogue
+8
+Page 8
+DIMENSION DETAILS: VSH TYPE “A”
+SIZE AØ B ØC L
+VS1 VS2 VS3 VS4 VS5 VS1 VS2 VS3 VS4 VS5
+1 M10 95 129 161 277 298 89 195 229 261 377 398
+2 M10 99 133 167 276 300 114 199 233 267 376 400
+3 M10 108 145 183 312 331 114 208 245 283 412 431
+4 M10 108 144 180 311 323 140 208 244 280 411 423
+5 M10 127 170 214 367 399 140 227 270 314 467 499
+6 M10 137 185 234 408 439 140 237 285 334 508 539
+7 M12 147 197 246 430 465 140 247 297 346 530 565
+8 M12 159 212 266 457 498 140 259 312 366 557 598
+9 M16 177 238 298 510 565 165 282 343 403 615 670
+10 M16 185 248 312 537 591 165 290 353 417 642 696
+11 M20 193 258 324 559 613 165 298 363 429 664 718
+12 M20 182 243 304 534 577 194 292 353 414 644 687
+13 M24 211 279 346 592 654 194 321 389 456 702 764
+14 M24 250 338 421 709 810 194 363 451 534 822 923
+15 M30 238 319 397 665 756 194 351 432 510 778 869
+16 M30 248 332 412 685 783 194 361 445 525 798 896
+17 M30 263 354 440 725 842 194 388 479 565 850 967
+18 M36 277 364 459 730 848 219 402 489 584 855 973
+19 M42 328 441 549 891 1137 219 453 566 674 1016 1262
+20 M48 347 458 567 911 1070 244 477 588 697 1041 1200
+21 M56 362 473 582 931 1091 273 497 608 717 1066 1226
+22 M64 428 569 702 1127 1343 273 573 714 847 1272 1488
+23 M64 454 597 730 1178 1386 324 604 747 880 1328 1536
+24 M72 492 651 796 1279 1527 324 642 801 946 1429 1677
+25 M72 521 690 830 1330 1605 324 671 840 980 1480 1755
+AAA SUPPORTS PVT. LTD.
+
+-- 10 of 68 --
+
+AAA Supports Pvt. Ltd.
+Product Catalogue
+9
+Page 9
+DIMENSION DETAILS: VSH TYPE “B”
+SIZE A B ØC H ØO R T L
+VS1 VS2 VS3 VS4 VS5 VS1 VS2 VS3 VS4 VS5
+1 M10 95 129 161 277 298 89 45 18 33 6 195 229 261 377 398
+2 M10 99 133 167 276 300 114 45 18 33 6 199 233 267 376 400
+3 M10 108 145 183 312 331 114 45 18 33 6 208 245 283 412 431
+4 M10 108 144 180 311 323 140 45 18 33 8 208 244 280 411 423
+5 M10 127 170 214 367 399 140 45 18 33 8 227 270 314 467 499
+6 M10 137 185 234 408 439 140 50 23 33 8 237 285 334 508 539
+7 M12 147 197 246 430 465 140 50 23 33 8 247 297 346 530 565
+8 M12 159 212 266 457 498 140 50 23 33 10 259 312 366 557 598
+9 M16 177 238 298 510 565 165 50 27 37 10 277 338 398 610 665
+10 M16 185 248 312 537 591 165 50 27 37 10 285 348 412 637 691
+11 M20 193 258 324 559 613 165 50 27 37 12 293 358 424 659 713
+12 M20 182 243 304 534 577 194 60 27 37 12 282 343 404 634 677
+13 M24 211 279 346 592 654 194 60 27 37 12 311 379 446 692 754
+14 M24 250 338 421 709 810 194 60 30 40 12 350 438 521 809 910
+15 M30 238 319 397 665 756 194 60 30 40 12 338 419 497 765 856
+16 M30 248 332 412 685 783 194 70 33 45 16 348 432 512 785 883
+17 M30 263 354 440 725 842 194 70 33 45 16 363 454 540 825 942
+18 M36 277 364 459 730 848 219 80 39 50 20 377 464 559 830 948
+19 M42 328 441 549 891 1137 219 85 45 55 20 428 541 649 991 1237
+20 M48 347 458 567 911 1070 244 90 51 63 25 447 558 667 1011 1170
+21 M56 362 473 582 931 1091 273 100 60 75 25 462 573 682 1031 1191
+22 M64 428 569 702 1127 1343 273 120 68 85 25 528 669 802 1227 1443
+23 M64 454 597 730 1178 1386 324 120 68 85 25 554 697 830 1278 1486
+24 M72 492 651 796 1279 1527 324 130 76 95 30 592 751 896 1379 1627
+25 M72 521 690 830 1330 1605 324 130 76 95 30 621 790 930 1430 1705
+AAA SUPPORTS PVT. LTD.
+
+-- 11 of 68 --
+
+AAA Supports Pvt. Ltd.
+Product Catalogue
+10
+Page 10
+DIMENSION DETAILS: VSH TYPE “C”
+SIZE A B ØC H ØO R S L
+VS1 VS2 VS3 VS4 VS5 VS1 VS2 VS3 VS4 VS5
+1 M10 95 129 161 277 298 89 45 18 33 20 195 229 261 377 398
+2 M10 99 133 167 276 300 114 45 18 33 25 199 233 267 376 400
+3 M10 108 145 183 312 331 114 45 18 33 25 208 245 283 412 431
+4 M10 108 144 180 311 323 140 45 18 33 25 208 244 280 411 423
+5 M10 127 170 214 367 399 140 45 18 33 25 227 270 314 467 499
+6 M10 137 185 234 408 439 140 50 23 33 30 237 285 334 508 539
+7 M12 147 197 246 430 465 140 50 23 33 30 247 297 346 530 565
+8 M12 159 212 266 457 498 140 50 23 33 30 259 312 366 557 598
+9 M16 177 238 298 510 565 168 50 27 37 35 277 338 398 610 665
+10 M16 185 248 312 537 591 168 50 27 37 35 285 348 412 637 691
+11 M20 193 258 324 559 613 168 50 27 37 35 293 358 424 659 713
+12 M20 182 243 304 534 577 194 60 27 37 40 282 343 404 634 677
+13 M24 211 279 346 592 654 194 60 27 37 40 311 379 446 692 754
+14 M24 250 338 421 709 810 194 60 30 40 45 350 438 521 809 910
+15 M30 238 319 397 665 756 194 60 30 40 45 338 419 497 765 856
+16 M30 248 332 412 685 783 194 70 33 45 45 348 432 512 785 883
+17 M30 263 354 440 725 842 194 70 33 45 45 363 454 540 825 942
+18 M36 277 364 459 730 848 219 80 39 50 50 377 464 559 830 948
+19 M42 328 441 549 891 1137 219 85 45 55 60 428 541 649 991 1237
+20 M48 347 458 567 911 1070 244 90 51 63 70 447 558 667 1011 1170
+21 M56 362 473 582 931 1091 273 100 60 75 75 462 573 682 1031 1191
+22 M64 428 569 702 1127 1343 273 120 68 85 80 528 669 802 1227 1443
+23 M64 454 597 730 1178 1386 324 120 68 85 80 554 697 830 1278 1486
+24 M72 492 651 796 1279 1527 324 130 76 95 90 592 751 896 1379 1627
+25 M72 521 690 830 1330 1605 324 130 76 95 90 621 790 930 1430 1705
+AAA SUPPORTS PVT. LTD.
+
+-- 12 of 68 --
+
+AAA Supports Pvt. Ltd.
+Product Catalogue
+11
+Page 11
+DIMENSION DETAILS: VSH TYPE “D”
+SIZE A B ØC M E
+VS1 VS2 VS3 VS4 VS5 VS1 VS2 VS3 VS4 VS5
+1 M10 95 129 161 277 298 89 40 50 60 70 80 150
+2 M10 99 133 167 276 300 114 40 50 60 70 80 150
+3 M10 108 145 183 312 331 114 40 50 60 70 80 150
+4 M10 108 144 180 311 323 140 40 50 60 70 80 150
+5 M10 127 170 214 367 399 140 40 50 60 70 80 150
+6 M10 137 185 234 408 439 140 40 50 60 70 80 150
+7 M12 147 197 246 430 465 140 40 50 60 70 80 150
+8 M12 159 212 266 457 498 140 40 50 60 70 80 150
+9 M16 177 238 298 510 565 168 50 60 70 80 90 150
+10 M16 185 248 312 537 591 168 50 60 70 80 90 150
+11 M20 193 258 324 559 613 168 50 60 70 80 90 150
+12 M20 182 243 304 534 577 194 50 60 70 80 90 150
+13 M24 211 279 346 592 654 194 50 60 70 80 90 150
+14 M24 250 338 421 709 810 194 50 60 70 80 90 150
+15 M30 238 319 397 665 756 194 50 60 70 80 90 150
+16 M30 248 332 412 685 783 194 50 60 70 80 90 200
+17 M30 263 354 440 725 842 194 50 60 70 80 90 200
+18 M36 277 364 459 730 848 219 60 70 80 90 100 200
+19 M42 328 441 549 891 1137 219 60 70 80 90 100 200
+20 M48 347 458 567 911 1070 244 60 70 80 90 100 200
+21 M56 362 473 582 931 1091 273 60 70 80 90 100 200
+22 M64 428 569 702 1127 1343 273 60 70 80 90 100 200
+23 M64 454 597 730 1178 1386 324 60 70 80 90 100 200
+24 M72 492 651 796 1279 1527 324 60 70 80 90 100 200
+25 M72 521 690 830 1330 1605 324 60 70 80 90 100 200
+AAA SUPPORTS PVT. LTD.
+
+-- 13 of 68 --
+
+AAA Supports Pvt. Ltd.
+Product Catalogue
+12
+Page 12
+DIMENSION DETAILS: VSH TYPE “E”
+SIZE A B ØC E
+VS1 VS2 VS3 VS4 VS5
+1 M10 95 129 161 277 298 89 150
+2 M10 99 133 167 276 300 114 150
+3 M10 108 145 183 312 331 114 150
+4 M10 108 144 180 311 323 140 150
+5 M10 127 170 214 367 399 140 150
+6 M10 137 185 234 408 439 140 150
+7 M12 147 197 246 430 465 140 150
+8 M12 159 212 266 457 498 140 150
+9 M16 177 238 298 510 565 168 150
+10 M16 185 248 312 537 591 168 150
+11 M20 193 258 324 559 613 168 150
+12 M20 182 243 304 534 577 194 150
+13 M24 211 279 346 592 654 194 150
+14 M24 250 338 421 709 810 194 150
+15 M30 238 319 397 665 756 194 150
+16 M30 248 332 412 685 783 194 200
+17 M30 263 354 440 725 842 194 200
+18 M36 277 364 459 730 848 219 200
+19 M42 328 441 549 891 1137 219 200
+20 M48 347 458 567 911 1070 244 200
+21 M56 362 473 582 931 1091 273 200
+22 M64 428 569 702 1127 1343 273 200
+23 M64 454 597 730 1178 1386 324 200
+24 M72 492 651 796 1279 1527 324 200
+25 M72 521 690 830 1330 1605 324 200
+AAA SUPPORTS PVT. LTD.
+
+-- 14 of 68 --
+
+AAA Supports Pvt. Ltd.
+Product Catalogue
+13
+Page 13
+DIMENSION DETAILS: VSH TYPE “F”
+SIZE B ØC D2 F2 G2 L T1 T2
+VS1 VS2 VS3 VS4 VS5 VS1 VS2 VS3 VS4 VS5
+1 95 129 161 277 298 89 125 140 100 170 224 276 427 478 8 6
+2 99 133 167 276 300 114 125 160 120 174 228 282 426 480 8 6
+3 108 145 183 312 331 114 125 160 120 183 240 298 462 511 8 6
+4 108 144 180 311 323 140 125 190 140 183 239 295 461 503 8 6
+5 127 170 214 367 399 140 125 190 140 202 265 329 517 579 8 6
+6 137 185 234 408 439 140 140 190 140 217 285 354 563 624 8 6
+7 147 197 246 430 465 140 140 190 140 227 297 366 585 650 8 6
+8 159 212 266 457 498 140 140 190 140 239 312 386 612 683 10 8
+9 177 238 298 510 565 165 140 210 160 257 343 423 670 755 10 8
+10 185 248 312 537 591 165 140 210 160 270 353 437 697 786 10 8
+11 193 258 324 559 613 165 140 210 160 278 363 449 719 808 10 8
+12 182 243 304 534 577 194 150 255 190 267 348 429 694 772 10 8
+13 211 279 346 592 654 194 150 255 190 296 384 471 752 849 10 8
+14 250 338 421 709 810 194 150 255 190 340 448 551 874 1010 12 10
+15 238 319 397 665 756 194 160 255 190 328 429 527 830 956 12 10
+16 248 332 412 685 783 194 160 255 190 338 442 542 850 983 12 10
+17 263 354 440 725 842 194 160 255 190 353 464 570 890 1042 12 10
+18 277 364 459 730 848 219 160 280 210 372 479 594 900 1053 12 10
+19 328 441 549 891 1137 219 180 280 210 423 556 684 1061 1342 16 12
+20 347 458 567 911 1070 244 180 300 230 442 573 702 1081 1275 16 12
+21 362 473 582 931 1091 273 180 340 260 462 593 717 1101 1296 16 12
+22 428 569 702 1127 1343 273 200 340 260 528 689 842 1302 1548 16 12
+23 454 597 730 1178 1386 324 200 390 300 559 772 875 1358 1596 20 16
+24 492 651 796 1279 1527 324 200 390 300 597 776 941 1459 1737 20 16
+25 521 690 830 1330 1605 324 200 390 300 626 815 975 1510 1815 20 20
+AAA SUPPORTS PVT. LTD.
+
+-- 15 of 68 --
+
+AAA Supports Pvt. Ltd.
+Product Catalogue
+14
+Page 14
+DIMENSION DETAILS: VSH TYPE “G”
+SIZE A B ØC L Z R CRS
+VS1 VS2 VS3 VS4 VS5 VS1 VS2 VS3 VS4 VS5
+1 M10 95 129 161 277 298 89 195 229 261 377 398 75 300
+2 M10 99 133 167 276 300 114 199 233 267 376 400 75 300
+3 M10 108 145 183 312 331 114 208 245 283 412 431 75 300
+4 M10 108 144 180 311 323 140 208 244 280 411 423 75 350
+5 M10 127 170 214 367 399 140 227 270 314 467 499 75 350
+6 M10 137 185 234 408 439 140 237 285 334 508 539 75 350
+7 M12 147 197 246 430 465 140 247 297 346 530 565 75 350
+8 M12 159 212 266 457 498 140 259 312 366 557 598 75 350
+9 M16 177 238 298 510 565 168 282 343 403 615 670 75 450
+10 M16 185 248 312 537 591 168 290 353 417 642 696 75 450
+11 M20 193 258 324 559 613 168 298 363 429 664 718 75 450
+12 M20 182 243 304 534 577 194 292 353 414 644 687 75 500
+13 M24 211 279 346 592 654 194 321 389 456 702 764 100 500
+14 M24 250 338 421 709 810 194 363 451 534 822 923 100 500
+15 M30 238 319 397 665 756 194 351 432 510 778 869 100 500
+16 M30 248 332 412 685 783 194 361 445 525 798 896 100 500
+17 M30 263 354 440 725 842 194 388 479 565 850 967 125 500
+18 M36 277 364 459 730 848 219 402 489 584 855 973 125 550
+19 M42 328 441 549 891 1137 219 453 566 674 1016 1262 125 550
+20 M48 347 458 567 911 1070 244 477 588 697 1041 1200 150 600
+21 M56 362 473 582 931 1091 273 497 608 717 1066 1226 150 650
+22 M64 428 569 702 1127 1343 273 573 714 847 1272 1488 175 650
+23 M64 454 597 730 1178 1386 324 604 747 880 1328 1536 175 700
+24 M72 492 651 796 1279 1527 324 642 801 946 1429 1677 200 700
+25 M72 521 690 830 1330 1605 324 671 840 980 1480 1755 200 700
+AAA SUPPORTS PVT. LTD.
+
+-- 16 of 68 --
+
+AAA Supports Pvt. Ltd.
+Product Catalogue
+15
+Page 15
+AAA SUPPORTS PVT. LTD.
+
+-- 17 of 68 --
+
+AAA Supports Pvt. Ltd.
+Product Catalogue
+16
+Page 16
+CONSTANT SPRING HANGERS & SUPPORTS
+Constant spring support is specially used to accommodate constant effort load, excessive movement of
+the pipeline due to high temperature and pressure of thermal movement. Constant load takes place
+through its range by a perfect counter balance crank lever where load and spring movements through the
+pivot ensure the minimum kinetic variation.
+CSH- TYPE A CSH- TYPE B CSH- TYPE C
+CSH- TYPE D CSH- TYPE E CSH- TYPE FAAA SUPPORTS PVT. LTD.
+
+-- 18 of 68 --
+
+AAA Supports Pvt. Ltd.
+Product Catalogue
+17
+Page 17
+RANGE
+We offer travel range from 40mm to 420 mm with the load range of 16kg to 22756 kg.
+SPECIAL RANGE/DESIGN
+Apart from our specified standard design and range of product, we undertake jobs specially designed by
+us to fulfill client’s requirement i.e. constant spring support can supply more load/travel than that
+provided in our standard selection table. Special type of fixing arrangement can be designed apart from
+our standard.
+LOAD ADJUSTMENT
+The load adjuster allows for an increase or decrease of load carrying capacity of ±10% of the mean load.
+Rotating the load adjuster nut in the appropriate direction will increase or decrease the load accordingly.
+PRE-SETTING
+Each and every Constant spring support is pre-set prior to dispatch. The Stopper Nut must be removed
+before the entire system comes into operation and following the erection instruction.
+INDICATOR & REFERENCE MARK
+Each Constant spring support is provided with a travel indicator, which indicates the position of
+movement of the pipeline. I.e. low, medium and high. An elaborate introductory plate is also provided on
+the surface of the support, which indicates client reference mark/tag no., operating load, total travel, our
+reference etc.
+ACCEPTANCE LIMIT
+Percentage deviation,	
+*100 ≤6%
+Where, L Max=Maximum load recorded (Kg.) and L Min=Minimum load recorded (Kg.)
+METHOD OF SELECTION
+Hot/operating load = 1250Kg.
+Actual Vertical Travel/Movement = 58mmUP
+Using Selection Table
+Total Travel/Movement = Actual Movement + 25mm
+= 58+25 = 83mm ~ 80 mm
+AAA SUPPORTS PVT. LTD.
+
+-- 19 of 68 --
+
+AAA Supports Pvt. Ltd.
+Product Catalogue
+18
+Page 18
+Enter table at travel range 80 mm and load range 1250kg. It located in Size 13.
+Selection/Support Designation = 80 CSX-X-13
+80 CS-X Y 13
+NOTES:
+LOAD RANGE
+TYPE
+CONSTANT SPRING (H/V)
+TRAVEL RANGE
+AAA SUPPORTS PVT. LTD.
+
+-- 20 of 68 --
+
+AAA Supports Pvt. Ltd.
+Product Catalogue
+19
+Page 19
+AAA SUPPORTS PVT. LTD.
+
+-- 21 of 68 --
+
+AAA Supports Pvt. Ltd.
+Product Catalogue
+20
+Page 20
+AAA SUPPORTS PVT. LTD.
+
+-- 22 of 68 --
+
+AAA Supports Pvt. Ltd.
+Product Catalogue
+21
+Page 21
+AAA SUPPORTS PVT. LTD.
+
+-- 23 of 68 --
+
+AAA Supports Pvt. Ltd.
+Product Catalogue
+22
+Page 22
+Rigid hanger supports are used to support pipe lines which are not subjected to any vertical movement
+(but may be subjected to Axial or lateral movement). Typically a rigid hanger will consist of a Tie rod
+assembly with or without a pipe clamp.
+EYE ROD/ HANGER ROD
+SIZE ØA ØB C SAFE LOAD (kg) TYPE
+M12 M12 20 200 600
+FORMED TYPE
+M16 M16 24 200 1050
+M20 M20 28 250 1750
+M24 M24 30 250 2500
+M27 M27 32 250 3300
+M30 M30 36 250 4500
+M36 M36 42 300 5600
+M42 M42 48 300 7500
+FABRICATED
+TYPE
+M48 M48 55 350 9700
+M56 M56 62 350 13500
+M64 M64 70 350 18000
+M72 M72 78 400 23000
+ALL DIMENSION ARE IN mm.
+RIGID HANGER
+THREADED HANGER
+ROD
+FORMED EYE
+ROD
+FABRICATED EYE
+ROD
+AAA SUPPORTS PVT. LTD.
+
+-- 24 of 68 --
+
+AAA Supports Pvt. Ltd.
+Product Catalogue
+23
+Page 23
+A Rigid Strut is a dynamic component designed to resist longitudinal compression and tensile forces.
+Struts provide outwards-facing support in their
+lengthwise direction, which can be used to keep two
+other components separate, while connected at same
+time.
+Some of the following features are here:
+1. 5° Co-Linear movement permissible
+2. Adjustment up-to ±75mm available.
+3. Standard Design Load up-to 20000 kg
+4. Apart from standard, special design to meet
+client’s requirement.
+RIGID STRUT ASSEMBLY
+SIZE A B C D
+Min.-Max.
+MAX
+LOAD
+(kg.)
+RS-1 M20 150 150 200-1500 300
+RS-2 M24 150 1150 200-2500 1000
+RS-3 M30 175 175 200-2750 2000
+RS-4 M30 175 175 275-2750 3500
+RS-5 M36 200 200 300-2750 5000
+RS-6 M42 225 225 325-2750 7000
+RS-7 M45 225 225 350-2750 10000
+RS-8 M48 250 250 350-2500 13000
+RS-9 M56 275 275 350-2500 16000
+RS-10 M64 300 300 350-2500 20000
+ALL DIMENSION ARE IN mm.
+RIGID STRUT ASSEMBLY
+AAA SUPPORTS PVT. LTD.
+
+-- 25 of 68 --
+
+AAA Supports Pvt. Ltd.
+Product Catalogue
+24
+Page 24
+AAA SUPPORTS PVT. LTD.
+
+-- 26 of 68 --
+
+AAA Supports Pvt. Ltd.
+Product Catalogue
+25
+Page 25
+Introduction
+Snubber is one kind if damping devices, by special inner valve, to control hydraulic cylinder piston
+movement, to decrease the response of pipeline and equipment affected by the periodic load and
+shock load.
+It performance can be summed up in “combination of hard & soft”.
+When the pipeline is in the normal working state, the snubbers enable the slow movements due to the
+thermal dilatation in both directions and oppose only the low resistance to such movements, this
+reflects its “soft”.
+When the pipeline is in the special conditions (such as the earthquake, water hammer, steam-hammer,
+safety valve exhaust steam, pipe breaking, etc.), the pipe movement speed leads to dynamic forces
+that are harmful to the pipeline, the snubbers are immediately locked at the desired speed and
+support the dynamic force by transferring it to the fixed structure, to reduce the impact of the pipeline
+response amplitude. This reflects its “hard”.
+The SNU series hydraulic snubbers are developed, and their performances have reached the state of
+art of similar products in the world. The products are widely used in nuclear power, thermal power,
+petrochemical, steel, Fertilizers, wind power, solar energy etc. also they are exported to worldwide
+regions. After recent year of development, our company has become the major, specialized, large
+scale-snubber producer in India and the leading snubber supplier.
+The application of hydraulic snubber
+Snubbers are widely used to resist vibration of pipeline, and major equipment •in domestic nuclear
+power, thermal power, petrochemical, military, steel, wind power, solar energy industry, etc. Snubbers
+can effectively protect the pipeline and equipment from the damage by the shock load.
+AAA SUPPORTS PVT. LTD.
+
+-- 27 of 68 --
+
+AAA Supports Pvt. Ltd.
+Product Catalogue
+26
+Page 26
+The Snubbers therefore prevent the damage due to:
+A. Inside of the pipe system
+ Water hammer, steam hammer
+ Safety valve exhaust steam
+ Shutdown the main throttle valve quickly
+ Boiler explosion
+ Pipe breaking etc.
+B. External of the system
+ The earthquake
+ Wind load
+Hydraulic snubber can protect the following equipment:
+ Piping system
+ Main pump
+ The important valves
+ The important pressure vessel
+ Steam generators
+ The main load-bearing beam, etc.
+The characteristics of the snubber:
+1. The clear displacement indication;
+2. The simple shape, symmetric structure, compact, easy to install in the limited space;
+3. The low friction, generally less than 1% ~ 2% of the rated load.
+4. Damping force is large, dynamic response time is short;
+5. Both ends of snubber are installed knuckle bearings, to be allowed ±6° angle of oscillation
+during the operation;
+6. Special damping valve, and high reliability;
+Silicon-oil are used as mediums, and it is stable and fire-resisting; Special rubber sealing is used, and
+the good tolerance in all kind of conditions
+AAA SUPPORTS PVT. LTD.
+
+-- 28 of 68 --
+
+AAA Supports Pvt. Ltd.
+Product Catalogue
+27
+Page 27
+Description method of Type:
+1. Constituent part of the marks:
+2. The contents of each part mark:
+No. Name Marking Definition
+I Type SNU Hydraulic Snubber
+II Function V Vibration resistance
+T Relief Valve Reaction forces of exhaust steam
+resistance
+III Cylinder
+Specifications 100 Nominal Cylinder diameter
+IV Stroke 150 Piston rod nominal stroke
+V End Type Without ‘W’ Fundamental type snubber without extension rod
+With ‘W’ Extended type snubber with extension rod
+As an example – SNUV100x150-W
+A snubber whose function is vibration absorption, with nominal cylinder diameter is 100mm, piston
+rod nominal stroke is 150mm and the end type of the snubber is with ‘W’
+Type Bore
+Size
+Normal
+Load Stroke Pin
+Size
+Lockup
+Velocity Bleed Rate Drag Force
+SNU
+(mm) (kN) (mm) (mm) (mm/min) (mm/min) (kN)
+25 5 100 10
+120 – 360
+Type V:
+12 – 120
+Type T:
+0
+≤0.02Fn	32 10 100/200 12
+40 16 150
+300
+15
+63 48 25
+≤0.015Fn
+80 80
+150
+300
+500
+35
+100 120 40
+125 200 50
+160 320 60
+≤0.01Fn	200 500 80
+250 1000 110
+AAA SUPPORTS PVT. LTD.
+
+-- 29 of 68 --
+
+AAA Supports Pvt. Ltd.
+Product Catalogue
+28
+Page 28
+The Installation Size
+Size A: If the installation space is small, please choose the below products. (SNU-Series 1)
+The drawing without extension rod: The drawing with extension rod:
+NOTES
+-----------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------
+AAA SUPPORTS PVT. LTD.
+
+-- 30 of 68 --
+
+AAA Supports Pvt. Ltd.
+Product Catalogue
+29
+Page 29
+Technical Parameters:
+CYLINDER	
+Rated Load
+(kN)
+Stroke (mm)
+H	
+B	
+S	
+R
+C (Median
+Value)
+Ød	
+ØD	
+ØD1
+E1 (Median
+Value)
+W (Median
+Value)
+E2	
+F
+Weight* (kg)
+C32 10 100 35 45 10.5 16 250 12 78 30 340 1500 1865 70 4.5
+C32 10 200 35 45 10.5 16 400 12 78 30 490 1500 2015 70 6
+C40 16 150 40 61 12.5 20 350 15 95 38 472 2050 2556 95 8.88
+C40 16 300 40 61 12.5 20 575 15 95 38 697 2050 2781 95 12.5
+C63 48 150 55 94 20.5 32 390 25 138 63.5 578 2240 2839 115 22.9
+C63 48 300 55 94 20.5 32 615 25 138 63.5 8803 2240 3065 115 30.3
+C63 48 400 55 94 20.5 32 765 25 138 63.5 953 2240 3214 115 35.6
+C80 80 150 70 125 25.5 41 415 35 160 76 665 2315 3000 145 36.4
+C80 80 300 70 125 25.5 41 640 35 160 76 890 2315 3225 145 46.7
+C80 80 400 70 125 25.5 41 790 35 160 76 1040 2315 3375 145 53.5
+C100 120 150 80 142 28.5 46 435 40 180 89 719 2660 3402 165 54.2
+C100 120 300 80 142 28.5 46 660 40 180 89 944 2660 3627 165 67.3
+C100 120 400 80 142 28.5 46 810 40 180 89 1094 2660 3777 165 75.6
+C125 200 150 100 160 36 62.5 465 50 205 108 785 3045 3870 200 85.8
+C125 200 300 100 160 36 62.5 690 50 205 108 1010 3045 4095 200 102
+C125 200 400 100 160 36 62.5 840 50 205 108 1160 3045 4245 200 114
+C160 320 150 125 175 45 75 505 60 260 140 855 3925 4835 230 148
+C160 320 300 125 175 45 75 730 60 260 140 1080 3925 5060 230 171
+C160 320 400 125 175 45 75 880 60 260 140 1230 3925 5210 230 188
+C200 500 150 145 230 56 97.5 545 80 345 152 1005 3935 4985 275 247
+C200 500 300 145 230 56 97.5 770 80 345 152 1230 3935 5210 275 280
+C200 500 400 145 230 56 97.5 920 80 345 152 1380 3935 5360 275 303
+AAA SUPPORTS PVT. LTD.
+
+-- 31 of 68 --
+
+AAA Supports Pvt. Ltd.
+Product Catalogue
+30
+Page 30
+The installation Size
+Size B: If the installation space is larger, please choose the below products. (SNU-
+Series 2)
+The drawing without extension rod: The drawing with extension rod (without flange):
+The drawing with extension rod (with flange):
+NOTES
+--------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------
+AAA SUPPORTS PVT. LTD.
+
+-- 32 of 68 --
+
+AAA Supports Pvt. Ltd.
+Product Catalogue
+31
+Page 31
+Technical Parameters:
+CYLINDER
+Rated Load (kN)
+Stroke (mm)
+H	
+B	
+S	
+R	
+Ød	
+ØD
+C1 (Median
+Value)
+C2 (Median
+Value)
+W (Median
+Value)
+W1 (Median
+Value)
+F
+E1 (Median
+Value)
+E2 (Median
+Value)
+E3 (Median
+Value)
+Weight* (kg)
+C63 48 150 55 94 20.5 32 25 91 396 537 2240 1500 115 695 2105 2899 21.4
+C63 48 300 55 94 20.5 32 25 91 621 9912 2240 1500 115 1070 2330 3199 29.6
+C80 80 150 70 125 25.5 41 35 110 425 569 2315 1400 140 770 2090 3064 35.3
+C80 80 300 70 125 25.5 41 35 110 650 944 2315 1400 140 1145 2315 3364 46.1
+C80 80 400 70 125 25.5 41 35 110 800 1194 2315 1400 140 1395 2465 3564 53.4
+C100 120 150 80 142 28.5 46 40 135 426 574 2660 1300 145 820 2013 3436 51.6
+C100 120 300 80 142 28.5 46 40 135 651 949 2660 1300 145 1195 2238 3736 66.5
+C100 120 400 80 142 28.5 46 40 135 801 1199 2660 1300 145 1445 2388 3936 77.1
+C125 200 150 100 160 36 62.5 50 160 456 1601 3045 1000 160 925 1776 3879 84.7
+C125 200 300 100 160 36 62.5 50 160 681 976 3045 1000 160 1300 2001 4179 105.2
+C125 200 400 100 160 36 62.5 50 160 831 1226 3045 1000 160 1550 2151 4379 117.4
+C160 320 150 125 175 45 75 60 202 488 635 3925 800 180 1010 1643 4826 140.2
+C160 320 300 125 175 45 75 60 202 713 1010 3925 800 180 1385 1865 5126 171.9
+C160 320 400 125 175 45 75 60 202 863 1260 3925 800 180 1635 2018 5326 191.6
+C200 500 150 145 230 56 90 80 253 548 695 3935 700 225 1175 1703 4988 250.3
+C200 500 300 145 230 56 90 80 253 773 1070 3935 700 225 1550 1928 5288 299.5
+C200 500 400 145 230 56 90 80 253 923 1320 3935 700 225 1800 2078 5488 325.2
+AAA SUPPORTS PVT. LTD.
+
+-- 33 of 68 --
+
+AAA Supports Pvt. Ltd.
+Product Catalogue
+32
+Page 32
+Welding Clevis
+Type
+Rated
+Load
+(kN)
+d H A B
+K Weight
+00≤ α ≤150 150≤ α
+≤300
+300≤ α
+≤900 (kg)
+XZ-12 10 12 30 40 35 3 3 4 0.35
+XZ-15 16 15 40 55 42 4 4 5 0.65
+XZ-25 48 25 55 80 61 7 8 9 1.77
+XZ-35 80 35 70 110 77 9 10 11 4.89
+XZ-40 120 40 80 125 93 10 12 14 6.22
+XZ-50 200 50 100 145 114 14 16 18 11.45
+XZ-60 320 60 125 165 144 16 19 22 20.56
+XZ-80 500 80 145 215 174 21 25 28 38.5
+Instruction
+Installation Instruction:
+1. To avoid accidentally bruised by adjacent equipment, structures or welding splash, the installation
+time of the Snubber should be chosen after its adjacent equipment, structures finish the
+installation.
+2. Snubber/Supports shall be installed when the pipeline is in cold operating load condition.
+Installation steps:
+Before installation, first, should check the lifting point location, the size of the installation, snubber
+type, etc. whether meet to the requirements of design drawings and documents.
+AAA SUPPORTS PVT. LTD.
+
+-- 34 of 68 --
+
+AAA Supports Pvt. Ltd.
+Product Catalogue
+33
+Page 33
+A. The installation of the welding clevis component
+1) According to the requirements of the installation drawing (or lifting point), the component of
+welding clevis is welded on the specified beam. The height "K" of the weld should be in
+accordance with the provisions of Table 4 (recommended value).
+2) To avoid the distortion of the welding clevis, choose the welding sequence of the welding seam
+as shown in the figure on the right.
+B. The installation of clamp
+C. The installation of the Snubber:
+1. To ensure that the hydraulic snubber can work normally, when the Pipeline line reaches the
+maximum thermal displacement snubber axis and pin seat assembly between the axes of the
+largest angle 13 should be not more than 6 degrees. The α can be adjusted according to the
+actual installation direction (horizontal, vertical or inclined}, and its range: 0 ~ 90°.
+2. On-site installation:
+If the actual pin - pin size of E between the welding clevis and clamp is not equal to the pin – pin
+size of E1 or E2 by snubber lifting point design, we can adjust in moderation according to the
+following method:
+a. For the snubber without extension rod, we can adjust the E1 by adjusting the length of
+piston rod out in moderation, to meet E size. After adjusting, the snubber still s hould be
+allowed at least 10 mm of travel allowance when the snubber piston should be in the
+cold and hot state.
+b. For the snubber with extension rod, we can adjust the E1 by adjusting F size, to meet E
+size.
+AAA SUPPORTS PVT. LTD.
+
+-- 35 of 68 --
+
+AAA Supports Pvt. Ltd.
+Product Catalogue
+34
+Page 34
+TYPICAL ARRANGEMENT OF HYDRAULIC SNUBBER ASSEMBLY
+AAA SUPPORTS PVT. LTD.
+
+-- 36 of 68 --
+
+AAA Supports Pvt. Ltd.
+Product Catalogue
+35
+Page 35
+AAA SUPPORTS PVT. LTD.
+
+-- 37 of 68 --
+
+AAA Supports Pvt. Ltd.
+Product Catalogue
+36
+Page 36
+Pipe Clamps, generally Three bolts and Two bolts pipe clamps are used to hold the horizontal hanging
+pipes, while the light duty or heavy duty Riser clamps are used to hold the vertical pipes.
+We, AAA Supports Pvt Ltd. offer a wide range from ½” pipe size to 42” size pipe clamps, from -150°C
+operating temperature to 550°C operating temperature range from our standard design.
+Apart from our standards, we also offer custom design for our client up to size 2400 NB.
+We offer different pipe sizes clamps with different material grade as per client’s requirement.
+Temperature Range Material Standards
+Upto 350°C IS 2062 or ASTM A36 or Equivalent
+from 351°C - 470°C ASTM SA387 P11 or Equivalent
+from 471°C - 550°C ASTM SA387 P22 or Equivalent
+from 551°C & Above ASTM A240 SS304/316 or Equivalent
+PIPE CLAMPS
+AAA SUPPORTS PVT. LTD.
+
+-- 38 of 68 --
+
+AAA Supports Pvt. Ltd.
+Product Catalogue
+37
+Page 37
+TWO BOLT PIPE CLAMP THREE BOLT PIPE CLAMP
+RISER CLAMP
+(FOR LIGHT LOAD)
+RISER CLAMP
+(FOR HEAVY LOAD)
+RISER CLAMP
+(FOR HEAVY LOAD)
+AAA SUPPORTS PVT. LTD.
+
+-- 39 of 68 --
+
+AAA Supports Pvt. Ltd.
+Product Catalogue
+38
+Page 38
+Material Selection: Carbon Steel or IS 2062, or Equivalent
+Alloy Steel or ASTM A182 F11/ A182 F22 or Equivalent
+Stainless Steel or ASTME A240 SS 304/316/321 or Equivalent
+Apart from standards, we offer by special design to meet required load and dimensions .
+U-BOLT
+PIPE
+NB PIPE OD A B C D SAFE
+LOAD (Kg)
+1/2" 21 M8 60 30 50 350
+3/4" 27 M8 60 35 50 350
+1" 34 M8 60 41 50 350
+1.1/4" 42 M10 60 52 50 550
+1.1/2" 48 M10 65 60 50 550
+2" 60 M10 70 71 50 550
+2.1/2" 76 M12 80 87 60 1000
+3" 89 M12 90 103 60 1000
+3.1/2" 102 M12 100 116 70 1000
+4' 114 M12 110 128 70 1000
+5" 140 M12 130 156 70 1000
+6" 168 M16 140 187 80 1600
+8" 219 M16 180 238 80 1600
+9" 244 M16 200 262 90 1600
+10" 273 M16 220 293 90 1600
+12" 324 M20 250 349 100 3350
+14" 356 M20 265 381 100 3350
+16" 406 M20 290 432 100 3350
+18" 457 M24 310 486 110 4500
+20" 508 M24 340 537 110 4500
+22" 559 M24 370 583 120 4500
+24" 610 M24 405 638 120 4500
+ALL DIMENSION ARE IN mm.
+U-BOLTS
+AAA SUPPORTS PVT. LTD.
+
+-- 40 of 68 --
+
+AAA Supports Pvt. Ltd.
+Product Catalogue
+39
+Page 39
+Material Selection: Carbon Steel or IS 2062, or Equivalent
+Alloy Steel or ASTM SA387 P11/ SA387 P22 or Equivalent
+Stainless Steel or ASTME A240 SS 304/316/321 or Equivalent
+Apart from standards, we offer by special design to meet required load and dimensions .
+CLEVIS HANGER
+PIPE SIZE
+(INCH) A B C SAFE LOAD
+(kg)
+1/2" M8 70 25 270
+3/4" M8 76 30 270
+1" M8 82 30 270
+1 1/4" M10 92 31 300
+1 1/2" M10 103 34 300
+2" M10 110 40 400
+2 1/2" M12 140 49 500
+3" M12 153 56 500
+4" M16 195 81 500
+5" M16 227 92 650
+6" M20 320 86 750
+8" M24 383 128 900
+10" M24 448 158 1300
+12" M24 490 180 1600
+14" M27 525 192 1800
+16" M27 575 215 1950
+18" M30 640 246 2000
+20" M30 685 272 2500
+22" M30 742 287 2500
+24" M30 800 322 2500
+CLEVIS HANGER
+AAA SUPPORTS PVT. LTD.
+
+-- 41 of 68 --
+
+AAA Supports Pvt. Ltd.
+Product Catalogue
+40
+Page 40
+Material Selection: Carbon Steel or IS 2062, or Equivalent
+Alloy Steel or ASTM SA387 P11/ SA387 P22 or Equivalent
+Stainless Steel or ASTME A240 SS 304/316/321 or Equivalent
+Apart from standards, we offer by special design to meet required load and dimensions .
+YOKE CLAMP
+PIPE
+SIZE
+(INCH)
+PIPE
+OD A B C ØD F SAFE
+LOAD (kg)
+4" 114 180 60 30 22 190 1600
+6" 168 220 70 35 26 270 2800
+8" 219 250 85 40 30 320 3500
+10" 273 300 85 40 33 390 4500
+12" 324 330 100 45 39 440 5850
+14" 356 360 100 45 39 475 5850
+16" 406 405 110 50 45 530 7500
+18" 457 460 110 55 52 600 8750
+20" 508 505 120 55 52 650 9500
+24" 610 575 130 60 56 800 12100
+ALL DIMENSION IN mm.
+YOKE CLAMP
+AAA SUPPORTS PVT. LTD.
+
+-- 42 of 68 --
+
+AAA Supports Pvt. Ltd.
+Product Catalogue
+41
+Page 41
+AAA SUPPORTS PVT. LTD.
+
+-- 43 of 68 --
+
+AAA Supports Pvt. Ltd.
+Product Catalogue
+42
+Page 42
+PIPE CLAMP SHOE (FOR LIGHT LOAD) PIPE CLAMP SHOE (FOR HEAVY LOAD)
+PIPE CLAMP SHOE
+PIPE
+SIZE
+(INCH)
+PIPE
+OD A B C D E BOLT/
+STUD
+SAFE WORKING LOAD (kg)
+UP T0
+350°C
+351°C-
+470°C
+471°C-
+550°C
+1" 34 100 100 40 80 60 M12 675 506 430
+2" 60 125 125 50 100 75 M12 752 564 480
+3" 89 125 125 60 110 75 M12 850 637 540
+4" 114 150 150 75 120 75 M12 1050 790 670
+150 150 75 130 100 M16 2195 1650 1402
+6" 168 200 200 90 160 100 M16 1565 1170 1001
+200 200 90 170 100 M20 3400 2550 2160
+8" 219
+200 200 110 190 125 M16 1675 1260 1080
+200 200 110 200 125 M16 3500 2650 2230
+200 200 110 200 125 M20 5500 4125 3506
+10" 273
+250 250 140 220 150 M16 3500 2625 2230
+250 250 140 220 150 M20 6300 4725 4016
+250 250 140 220 150 M20 7500 5625 4780
+12" 324
+250 250 150 250 200 M16 4100 3075 2600
+250 250 150 250 200 M20 6800 5100 4335
+250 250 150 250 200 M20 8520 6390 6326
+14" 356
+300 300 170 270 250 M20 4500 3375 2870
+300 300 170 270 250 M20 6700 5025 4270
+300 300 170 270 250 M24 8450 6337 5380
+16" 406
+300 300 190 290 250 M20 4500 3375 2860
+300 300 190 290 250 M20 6700 5025 4270
+300 300 190 290 250 M24 8450 6337 5386
+18" 457 350 350 200 320 250 M20 4450 3337 2825
+PIPE CLAMP SHOE
+AAA SUPPORTS PVT. LTD.
+
+-- 44 of 68 --
+
+AAA Supports Pvt. Ltd.
+Product Catalogue
+43
+Page 43
+350 350 200 320 250 M20 6650 4980 4230
+350 350 200 320 250 M24 8400 6300 5355
+20" 508
+350 350 220 340 250 M20 4400 3300 2805
+350 350 220 340 250 M20 6600 4950 4207
+350 350 220 340 250 M24 8400 6225 5290
+22" 550
+350 350 240 360 250 M20 4300 3225 2740
+350 350 240 360 250 M20 6500 4875 4140
+350 350 240 360 250 M24 8200 6150 5227
+24" 610
+350 350 260 400 300 M20 5000 3750 3180
+350 350 260 400 300 M24 7500 5625 4780
+350 350 260 400 300 M30 11000 8250 7050
+26" 660
+400 400 280 420 300 M20 4850 3630 3090
+400 400 280 420 300 M24 7350 5510 4685
+400 400 280 420 300 M30 10800 8100 6885
+30" 762
+400 400 320 470 300 M20 4700 3525 3000
+400 400 320 470 300 M24 7200 5400 4590
+400 400 320 470 300 M30 10500 7875 6680
+36" 914
+500 500 380 550 400 M20 4500 3375 2868
+500 500 380 550 400 M24 7000 5250 4460
+500 500 380 550 400 M30 10000 7500 6375
+40" 1016
+500 500 420 600 400 M20 4250 3190 2700
+500 500 420 600 400 M24 6500 4875 4140
+500 500 420 600 400 M30 9500 7125 6050
+42" 1066
+500 500 440 640 400 M20 4000 3000 2550
+500 500 440 640 400 M24 6300 4725 4010
+500 500 440 640 400 M30 9300 6975 5925
+ALL DIMENSION IN mm.
+PIPE CLAMP SHOE (FOR LIGHT LOAD) PIPE CLAMP SHOE (FOR HEAVY LOAD)AAA SUPPORTS PVT. LTD.
+
+-- 45 of 68 --
+
+AAA Supports Pvt. Ltd.
+Product Catalogue
+44
+Page 44
+Type I to III: Light Load requirement & Type IV to VI: Heavy load requirement
+Type I Type II Type III
+Type IV Type V Type VI
+SLIDING PIPE SHOE
+PIPE SIZE
+(INCH) I/D A B E G L W SAFE LOAD
+(kg)
+1" 34 50 75 50 15 150 35 350
+1.1/2" 48 55 80 50 15 150 35 350
+2' 60 60 85 60 20 150 35 350
+2.1/2" 76 70 95 60 20 200 35 650
+3" 89 80 110 60 20 200 40 700
+4" 114 90 120 75 25 200 40 650
+5" 140 110 140 75 25 200 40 875
+6" 168 125 155 75 25 200 40 1450
+8" 219 155 195 100 25 200 40 1900
+10" 273 190 230 100 30 200 40 1875
+SLIDING PIPE SHOE
+AAA SUPPORTS PVT. LTD.
+
+-- 46 of 68 --
+
+AAA Supports Pvt. Ltd.
+Product Catalogue
+45
+Page 45
+12" 324 210 255 100 30 250 50 3275
+14" 356 235 280 150 30 250 50 3325
+16" 406 260 305 150 30 250 65 6650
+18" 457 280 330 200 30 250 65 11375
+20" 508 315 365 200 30 300 65 11900
+22" 559 335 385 200 30 300 65 11100
+24" 610 365 415 250 30 300 75 12675
+26" 660 415 465 250 30 300 75 12100
+30" 762 460 510 250 30 300 75 11750
+Dimension 'H' = To suit 50 mm/ 100 mm. max. Insulation thickness.
+ALL DIMENSION ARE IN mm.
+AAA SUPPORTS PVT. LTD.
+
+-- 47 of 68 --
+
+AAA Supports Pvt. Ltd.
+Product Catalogue
+46
+Page 46
+DIFFERENT TYPE OF PIPE SHOE ASSEMBLY
+AAA SUPPORTS PVT. LTD.
+
+-- 48 of 68 --
+
+AAA Supports Pvt. Ltd.
+Product Catalogue
+47
+Page 47
+AAA SUPPORTS PVT. LTD.
+
+-- 49 of 68 --
+
+AAA Supports Pvt. Ltd.
+Product Catalogue
+48
+Page 48
+PIPE ROLLER ASSEMBLY
+PIPE SIZE
+(INCH) A B C D SAFE LOAD
+(kg)
+2" 125 80 125 70 500
+3" 125 80 125 80 600
+4" 150 100 125 90 850
+5" 150 100 125 100 1250
+6" 150 100 125 110 1600
+8" 175 120 150 110 1800
+10" 175 120 150 120 2350
+12" 200 140 150 120 2850
+14" 225 150 175 130 3500
+16" 250 170 175 130 4500
+18" 250 180 175 140 5700
+20". 275 200 175 150 6500
+24" 320 240 200 160 7300
+30" 380 300 200 170 8500
+ALL DIMENSION IN mm.
+PIPE ROLLER ASSEMBLY
+Notes:
+---------------------------------------------------------------
+---------------------------------------------------------------
+---------------------------------------------------------------
+---------------------------------------------------------------
+---------------------------------------------------------------
+---------------------------------------------------------------
+---------------------------------------------------------------
+---------------------------------------------------------------
+---------------------------------------------------------------
+---------------------------------------------------------------
+---------------------------------------------------------------
+--------------------------------------------------------------
+AAA SUPPORTS PVT. LTD.
+
+-- 50 of 68 --
+
+AAA Supports Pvt. Ltd.
+Product Catalogue
+49
+Page 49
+ADJUSTABLE PIPE SHOE
+PIPE
+SIZE
+(INCH)
+ØA C D SQ.
+E
+SQ.
+F ØO
+SAFE
+LOAD
+(kg)
+2" 60 200 125 100 140 15 700
+3" 60 200 150 100 140 15 700
+4" 89 200 165 100 140 15 2800
+5" 89 200 175 100 140 15 2800
+6" 114 250 200 140 190 19 4900
+7" 114 250 225 140 190 19 4900
+8" 114 250 250 140 190 19 4900
+10" 140 300 300 160 210 23 6850
+12" 140 300 350 160 210 23 6850
+14" 140 300 375 160 210 23 8100
+16" 140 300 400 160 210 23 8100
+18" 165 400 450 190 255 23 9500
+20" 165 400 500 190 255 23 9500
+22" 165 400 525 190 255 27 9500
+24" 219 400 550 190 255 27 10750
+26" 219 400 575 190 255 27 10750
+30" 273 500 625 260 340 30 13500
+36' 273 500 700 260 340 30 13500
+40" 273 500 750 260 340 30 13500
+42" 273 500 775 260 340 30 13500
+ALL DIMENSION IN mm.
+ADJUSTABLE PIPE SHOE
+AAA SUPPORTS PVT. LTD.
+
+-- 51 of 68 --
+
+AAA Supports Pvt. Ltd.
+Product Catalogue
+50
+Page 50
+Low-Friction Slide Supports are used for very cost effective way to provide the movement of
+mechanical systems.
+*It is used for verity of applications including pipe supports, heavy equipment such as pressure vessels
+and structural steel members.
+*Combination of PTFE pad and
+Polished Stainless Steel have very low
+friction coefficient then other solid
+material. It allows the object to move
+freely.
+* It is capable of operating dry, i.e. no
+requirement for lubrication. The
+operating temperature for PTFE
+sliding support is -200 to + 200°C.
+* No lubricant is required for
+operation.
+*Sliding arrangement may be
+designed to suite client’s requirement
+apart from our standard travel range
+& dimensions.
+*Dimension “B” may be change to
+suite load/ travel
+LOW FRICTION SLIDING SUPPORTS
+SAFE LOAD
+(Kg)
+SIZE A FOR TRAVEL SIZE B
+(mm)
+SIZE C
+(mm)	15 mm 30mm 50mm
+UP TO 500 100 120 140 22 77
+500-1500 125 145 165 30 100
+1500-4000 150 175 200 38 125
+4000-7000 175 200 225 45 150
+7000-15000 225 250 275 55 200
+15000-30000 275 300 325 58 250
+30000-50000 325 350 375 62 300
+ALL DIMENSION IN mm.
+LOW FRICTION SLIDING SUPPORT
+AAA SUPPORTS PVT. LTD.
+
+-- 52 of 68 --
+
+AAA Supports Pvt. Ltd.
+Product Catalogue
+51
+Page 51
+AAA SUPPORTS PVT. LTD.
+
+-- 53 of 68 --
+
+AAA Supports Pvt. Ltd.
+Product Catalogue
+52
+Page 52
+BEAM BRACKET WITH PIN
+SIZE A B G ØO BOLT/
+PIN
+SAFE
+LOAD (Kg) TYPE
+M12 25 45 30 18 M16 920
+FORMED TYPE
+M16 35 50 30 23 M20 1510
+M20 35 50 35 27 M24 1750
+M24 40 60 40 27 M24 2500
+M30 50 80 45 33 M30 4500
+M36 50 85 55 39 M36 6000
+M42 55 95 65 45 M42 7500
+M48 63 110 70 51 M48 9700
+WELDED TYPE
+M56 75 125 75 60 M56 13500
+M64 85 135 80 65 M64 18000
+M72 95 150 90 76 M72 23000
+ALL DIMENSION ARE IN mm.
+LUG
+SIZE A B C ØO L SAFE LOAD (Kg)
+M12 33 45 65 18 78 920
+M16 33 50 65 23 83 1510
+M20 37 50 75 27 87 1750
+M24 37 60 75 27 97 2500
+M27 40 60 80 30 100 3300
+M30 45 70 90 33 115 4500
+M36 50 80 100 39 130 6000
+M42 55 85 110 45 140 7500
+M48 63 90 125 51 153 9700
+M56 75 100 150 60 176 13500
+M64 85 120 170 68 205 18000
+M72 95 130 190 76 225 23000
+ALL DIMENSION ARE IN mm.
+AAA SUPPORTS PVT. LTD.
+
+-- 54 of 68 --
+
+AAA Supports Pvt. Ltd.
+Product Catalogue
+53
+Page 53
+BEAM ATTACHMENT
+SIZE A B G ØO SAFE LOAD
+(Kg) TYPE
+M12 12 75 40 18 920
+FORMED TYPE
+M16 16 85 45 23 1510
+M20 20 85 45 27 1750
+M24 24 100 50 27 2500
+M27 27 110 55 30 3300
+M30 30 120 61 33 4500
+M36 36 135 72 39 6000
+M42 42 155 85 45 7500
+M48 48 170 100 51 9700
+WELDED TYPE
+M56 56 190 110 60 13500
+M64 64 210 125 68 18000
+M72 72 230 135 76 23000
+ALL DIMENSION ARE IN mm.
+AAA SUPPORTS PVT. LTD.
+
+-- 55 of 68 --
+
+AAA Supports Pvt. Ltd.
+Product Catalogue
+54
+Page 54
+TURN BUCKLE
+SIZE A B C D E F
+SAFE
+LOAD
+(Kg)
+PROOF
+LOAD
+(kg)
+TYPE
+M12 M12 150 200 19 35 20 600 900
+FORGED TYPE
+M16 M16 150 200 24 50 30 1050 1575
+M20 M20 150 210 30 56 30 1750 2625
+M24 M24 150 220 36 67 35 2500 3750
+M27 M27 155 225 40 75 40 3300 4950
+M30 M30 155 225 45 82 42 4500 5750
+ALL DIMENSION ARE IN mm.
+TURN BUCKLE (MACHINED)
+SIZE A B C ØF ØO
+SAFE
+LOAD
+(Kg)
+PROO
+F
+LOAD
+(kg)
+TYPE
+M36 M36 160 250 40 22 5600 8400
+MACHINED
+M42 M42 160 250 48 22 7500 11250
+M48 M48 160 260 54 22 9700 14550
+M56 M56 160 270 62 28 13500 20250
+M64 M64 170 290 70 28 18000 27000
+M72 M72 170 300 78 28 23000 34500
+ALL DIMENSION ARE IN mm.
+TURNBUCKLE - MACHINED TURNBUCKLE- FORGED
+AAA SUPPORTS PVT. LTD.
+
+-- 56 of 68 --
+
+AAA Supports Pvt. Ltd.
+Product Catalogue
+55
+Page 55
+Note:
+1. Material: Carbon steel
+2. Apart from the standard table we undertake job by special design to meet required load and dimension
+STEEL CLEVIS
+SIZE A B C G ØO SAFE LOAD
+(Kg)
+M12 M12 130 100 25 18 600
+M16 M16 130 100 25 23 1050
+M20 M20 140 105 30 23 1750
+M24 M24 150 110 34 27 2500
+M27 M27 160 115 36 30 3300
+M30 M30 165 120 40 33 4500
+M36 M36 180 125 46 39 5600
+M42 M42 200 135 52 45 7500
+M48 M48 215 145 58 51 9700
+M56 M56 225 145 68 60 13500
+M64 M64 245 155 75 68 18000
+M72 M72 270 170 82 76 23000
+ALL DIMENSION ARE IN mm.
+AAA SUPPORTS PVT. LTD.
+
+-- 57 of 68 --
+
+AAA Supports Pvt. Ltd.
+Product Catalogue
+56
+Page 56
+PIPE SHOE ASSEMBLY
+SIZE A B C D E F G L ØO
+SAFE
+LOAD
+(kg)
+M12 80 80 25 50 50 55 16 100 18 920
+M16 80 100 30 50 50 70 20 100 22 1510
+M20 100 100 30 60 75 70 25 120 22 1750
+M24 120 110 35 70 90 75 30 140 26 2500
+M27 120 120 40 75 100 80 32 140 30 3300
+M30 130 120 45 80 120 75 35 150 33 4500
+M36 130 130 50 95 120 75 42 150 39 6000
+M42 150 140 60 110 120 67 48 170 45 7500
+M48 160 150 65 125 130 68 55 180 52 9700
+M56 180 170 75 150 130 65 63 200 60 13500
+M64 200 190 85 170 140 65 65 220 68 18000
+M72 220 210 95 190 140 65 65 240 76 23000
+ALL DIMENSION IN mm.
+Note:
+1. Material used Carbon steel/Alloy Steel/Stainless steel.
+2. Apart from the standard, we may undertake the job by special
+design to meet required load and dimensions.
+AAA SUPPORTS PVT. LTD.
+
+-- 58 of 68 --
+
+AAA Supports Pvt. Ltd.
+Product Catalogue
+57
+Page 57
+Erection & Maintenance
+Manual
+Variable Spring Support & Hangers
+AAA SUPPORTS PVT. LTD.
+
+-- 59 of 68 --
+
+AAA Supports Pvt. Ltd.
+Product Catalogue
+58
+Page 58
+Variable Hangers & Supports
+1. INTRODUCTION
+This manual covers the procedure for the erection, commissioning and maintenance of Variable Spring
+Hangers & Supports.
+Variable spring Hanger & supports are used where the load varies directly with the change in travel or vice-
+versa due to high temperature and pressure of thermal movement. The vertical expansion of the piping causes
+a corresponding extension or compression of the spring and cause in the actual supporting effect of the
+hanger. The variation in supporting force is equal to the product of the amount of the vertical expansion and
+the spring scale of the hanger.
+Variable spring hangers are recommended for general use on non-critical piping systems and where vertical
+movement is of small magnitude on critical systems. As per, MSS-SP-58 the load variation of Variable
+Spring Hanger and Supports is allowed up-to ± 25% for critical system applications on piping.
+VARIABILITY FACTOR (%) =
+AAA Supports Pvt Ltd., Variable Spring Hanger and Supports are designed to load range up-to 25,000 kg/
+250,000 N and travel range of 0-160 mm.
+AAA Support’s design team is also having experience of design the custom support Higher load range and
+Higher travel range as per project requirement.
+2. STORAGE
+ Supports should be handled with care and stores in dry and dust free environment.
+ Spring Hanger & supports are already locked at factory pre-set/ cold position in dispatch condition.
+ Do not change the load settings without consulting the engineer responsible for the system.
+ Kindly ensure that Pins/Bolt nuts in Structural and Pipe attachments are dismantled only during installation at
+site in order to avoid loss of such small parts.
+ Packaging should be reinstated after any Goods Inward Inspection at site until they are required for use.
+ Do not paint Name/Scale plates.
+ Refer to Support GA Drawings for the arrangement details.
+ Do not cut, drill or modify the support components without consulting the piping engineer responsible for the
+system and AAA Supports Pvt. Ltd.
+AAA SUPPORTS PVT. LTD.
+
+-- 60 of 68 --
+
+AAA Supports Pvt. Ltd.
+Product Catalogue
+59
+Page 59
+3. ERECTION
+1. Variable Spring Hanger and Support design is based directly load applied on the load, and compression/
+deflection of spring.Due to improper handling or storage and improper erection affect the efficiency and
+mechanism of movement of the Variable Spring Hanger & Support.
+2. Spring units should be lifted carefully from the lifting points.
+3. Variable Spring Hanger & Supports are supplied in pre-set or factory load setting through arrangement
+of side stud locking system.
+4. Side stud Locking arrangement should not be lose/ release till the final erection/ installation and thermal
+insulation of the pipe has been done only after the installation of the Spring Hangers & Supports.
+5. Standard Variable Spring Hanger & Supports and ancillaries are designed to sustain Hydrostatic Test
+(generally 2 times max. load on the supports).
+6. To check the Constant Spring Hanger & Support is in balance position, the lock-nut should be move (of
+both sides) from the piston plate/ spring load plate.
+7. If there is lot of effort or force is required to unlock/ loose the lock nut (either upper side of spring load
+plate or the lower side of spring load plate), Variable Spring hanger and Support is not in balance
+position and adjustment is require to balance the Spring Hanger and Support.
+8. For balancing the spring hanger and supports, it is necessary to increase or decrease the height of pipe/
+equipment to release the dead weight of the equipment/ pipe on spring units by rotating the turnbuckle or
+rod hanger (clockwise or anticlockwise up-to ± 75 mm).
+9. For base mounting spring supports, Load Column threaded pipe is used to adjustment of assembly
+height (± 25 mm) and can also be used at the time of balancing of pipe or equipment.
+10. All locking nuts should be loose till the Limit Stop marked position to operate/movement of the spring
+support accordingly.
+11. After the installation and Hydro test and before operating, the supports should be checked properly as
+follows:
+a. The lock nuts are loose up to Red marked position
+b. There is no any fastener/ foreign material or parts into the support.
+c. All the attachments are properly placed.
+d. Any temporary supports/ attachment should be removed before the operation.
+e. All the fixing bolts/ pins should be properly tightens/ place.
+f. There should be space availability to allow the rotation of the angular lever during the operational
+movement of the piping and equipment.
+4. MAINTENANCE
+Designing of the Spring Hangers and supports are to be maintenance free and long term operational
+services. Meanwhile some of the items like the threaded parts/ pivot pins require the rust prevention
+greasing/ oil from time to time.
+We, AAA Supports Pvt. Ltd. also recommend to the user/ contractor to inspect the spring supports. on
+intervals to observe any cracks/ damages/ malfunctions/ corrosion/ foreign materials in spring supports
+or the attachments. For the long time uses protective coating should be inspected time-to-time and
+repaired if necessary. Kindly insure the Support Tag details should be properly visible and readable.
+We, AAA Supports Pvt. Ltd. strongly recommend the user/ contractor to lock the spring units at its
+initial position/ cold position/ factory pre -set position during the shutdown/ maintenance and
+unlock the before the Operation (Hot Condition of pipe) .
+AAA SUPPORTS PVT. LTD.
+
+-- 61 of 68 --
+
+AAA Supports Pvt. Ltd.
+Product Catalogue
+60
+Page 60
+AAA SUPPORTS PVT. LTD.
+
+-- 62 of 68 --
+
+AAA Supports Pvt. Ltd.
+Product Catalogue
+61
+Page 61
+Erection & Maintenance
+Manual
+Constant Spring Supports & Hangers
+AAA SUPPORTS PVT. LTD.
+
+-- 63 of 68 --
+
+AAA Supports Pvt. Ltd.
+Product Catalogue
+62
+Page 62
+ERECTION AND MAINTENANCE MANUAL
+CONSTANT SPRING HANGER & SUPPORTS
+1. INTRODUCTION
+This manual covers the procedure for the erection, commissioning and maintenance of Constant Spring
+Hangers & Supports.
+Constant Spring Supports are used to accommodate constant effort load, excessive movement of the pipe
+line due to high temperature and pressure of thermal movement. Constant load takes place through its
+range by a perfect counter balance crank lever where load and spring movements through the pivot ensure
+the minimum kinetic variation.
+As per, MSS-SP-58 the load variation of the Constant Spring Hanger and Supports) is allowed only ±6 %
+from the set load/ required load.
+The supports should be erect in at correct node/ position, otherwise the load distribution of the pipework/
+equipment will be unequal and support will not work effectively.
+2. STORAGE
+ Supports should be handled with care and stores in dry and dust free environment.
+ Spring Hanger & supports are already locked at factory pre-set/ cold position in dispatch
+condition.
+ Do not change the load settings without consulting the engineer responsible for the system.
+ Kindly ensure that Pins/Bolt nuts in Structural and Pipe attachments are dismantled only during
+installation at site in order to avoid loss of such small parts.
+ Packaging should be reinstated after any Goods Inward Inspection at site until they are required
+for use.
+ Do not paint Name/Scale plates.
+ Refer to Support GA Drawings for the arrangement details.
+ Do not cut, drill or modify the support components without consulting the piping engineer
+responsible for the system and AAA Supports Pvt. Ltd.
+3. ERECTION
+1. Constant spring hanger and supports are designed on the ball crank mechanism and are perfectly
+balanced between and the load on the pipe/ equipment and spring force. Due to improper
+handling or storage and improper erection affect the efficiency and mechanism of movement of
+the Constant Spring Hanger & Support.
+2. Spring units should be lifted carefully from the lifting points.
+3. Constant Spring Hanger & Supports are supplied in pre-set or factory load setting through
+arrangement of side stud locking system
+AAA SUPPORTS PVT. LTD.
+
+-- 64 of 68 --
+
+AAA Supports Pvt. Ltd.
+Product Catalogue
+63
+Page 63
+4. In case of Hanger arrangement, the assembly length between Pipe & Spring unit can be correct/ adjust
+through turnbuckle or hanger rod (± 75 mm only).
+5. In case of Base mounted supports, the length adjustment (± 25mm only) can be done by rotating the
+load flange of the Base Mounted Support (Screw Mechanism).
+6. Side stud Locking arrangement should not be lose/ release till the final erection/ installation and
+thermal insulation of the pipe has been done only after the installation of the Spring Hangers &
+Supports.
+7. Standard Constant Spring Hanger & Supports and ancillaries are designed to sustain Hydrostatic Test
+(generally 2 times max. load on the supports).
+8. To check the Constant Spring Hanger & Support is in balance position, the lock-nut should be move
+(of both sides) from the piston plate/ spring load plate.
+9. If there is lot of effort or force is required to unlock/ loose the lock nut, support in not in balance
+position and adjustment is require to balance the constant spring support by rotating (clockwise or
+anticlockwise) the Load Adjustment Nut(increasing/ decreasing the distance between the distance
+between the pivot pin and the pin.
+10. All locking nuts should be loose till the Limit Stop marked position to operate/movement of the
+spring support accordingly.
+11. After the installation and Hydro test and before operating, the supports should be checked properly as
+follows:
+i. The lock nuts are loose up to Red marked position.
+ii. There is no any fastener/ foreign material or parts into the support.
+iii. All the attachments are properly placed.
+iv. Any temporary supports/ attachment should be removed before the operation.
+v. All the fixing bolts/ pins should be properly tightens/ place.
+vi. There should be space availability to allow the rotation of the angular lever during the operational
+movement of the piping and equipment.
+4. MAINTENANCE:
+Designing of the Spring Hangers and supports are to be maintenance free and long term operational
+services. Meanwhile some of the items like the threaded parts/ pivot pins require the rust prevention
+greasing/ oil from time to time.
+We, AAA Supports Pvt Ltd. also recommend to the user/ contractor to inspect the spring supports on
+intervals to observe any cracks/ damages/ malfunctions/ corrosion/ foreign materials in spring supports or
+the attachments. For the long time uses protective coating should be inspected time-to-time and repaired if
+necessary. Kindly insure the Support Tag details should be properly visible and readable.
+We, AAA Supports Pvt Ltd. strongly recommend the user/ contractor to lock the spring units at its
+initial position/ cold position/ factory pre -set position during the shutdown/ maintenance and
+unlock the before the Operation (Hot Condition of pipe) .AAA SUPPORTS PVT. LTD.
+
+-- 65 of 68 --
+
+AAA Supports Pvt. Ltd.
+Product Catalogue
+64
+Page 64
+AAA SUPPORTS PVT. LTD.
+
+-- 66 of 68 --
+
+AAA Supports Pvt. Ltd.
+Product Catalogue
+65
+Page 65
+VSH- A VSH- B VSH- C VSH- D VSH- E VSH- F
+AAA SUPPORTS PVT. LTD. ENQUIRY SHEET
+Name of the Company *
+Contact Person Name *
+Contact No *
+Project Details (if any) *
+Ref Doc./Dwg. No.(if any)*
+Enquiry Details
+Sr.
+No. Item Description UOM Please Insert Data Here
+1 Line No.(If any)
+2 Node No.(If any)
+3 Support Tag No.(If any)
+No. of Supports req.
+1) Hot Load/Operating Load * Kg or N
+2) Cold Load/Installation Load * Kg or N
+3) Movement/Travel direction :- Up= + ve Down= - ve
+Vertical (Y Direction) * mm
+Horizontal (X Direction) mm
+Lateral (Z Direction) mm
+4) Spring Rate (If any):- Kg/mm or
+N/mm
+5) Variability Factor (for variable only) %
+6) Hydro Test Load (If any) Kg or N
+7) Design Load (If any) Kg or N
+8) Type of Supports *
+Hanging Type Yes/No
+Cane/Bottom Type Yes/No
+9) Total Assembly Length (If any):- mm
+10) Operating Temp. * °C
+11) Pipe Size * mm or NB
+12) Pipe Material:-
+13) Ancillaries Items(if any):-
+Pipe Clamps Yes/No
+Pipe Shoe Yes/No
+Beam Attachments Yes/No
+Pipe Roller Shoe Yes/No
+Riser Clamps Yes/No
+Graphite Pad or PTFE Pad Yes/No
+Other ancillaries items (if any please mention)
+14) Surface Painting Specification (If any):-
+AAA SUPPORTS PVT. LTD.
+
+-- 67 of 68 --
+
+AAA Supports Pvt. Ltd.
+Product Catalogue 2015-16
+34
+Page 34
+SURVEY NO. 517/1, FOFALIYA VILLAGE ROAD, NANA FOFALIYA, TALUKA: DABHOI, DIST: VADODARA,
+GUJARAT, INDIA-391210 PH: +91 265 2830444/5 Email: sales@aaasupports.com web: www.aaasupports.com
+
+-- 68 of 68 --
+

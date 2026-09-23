@@ -167,9 +167,12 @@ export function Header({ isContact = false, onRequestQuote }) {
                   {activeProductCategory && <div className="products-mega-products">
                       <p>{activeProductCategory}</p>
                       <div>
-                        {productCategories.find((category) => category.name === activeProductCategory).products.map((product) => (
-                          <a href="#quote" key={product} onClick={closeNavigation}>{product}</a>
-                        ))}
+                        {productCategories.find((category) => category.name === activeProductCategory).products.map((product) => {
+                          const slug = product.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')
+                          return (
+                            <a href={`#product-${slug}`} key={product} onClick={closeNavigation}>{product}</a>
+                          )
+                        })}
                       </div>
                       <a className="products-mega-view-all" href="/products" onClick={(event) => navigateTo(event, '/products')}>View All Products <span>→</span></a>
                     </div>}

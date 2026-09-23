@@ -17,28 +17,31 @@ import { SiteSupervisionPage } from './SiteSupervisionPage.jsx'
 import { DesigningPipeSupportsPage } from './DesigningPipeSupportsPage.jsx'
 import { PipeStressAnalysisPage } from './PipeStressAnalysisPage.jsx'
 import { ProductsPage } from './ProductsPage.jsx'
+import { ProductDetailPage } from './ProductDetailPage.jsx'
 import { EnquiryModal } from './components/EnquiryModal.jsx'
 
 function currentPage() {
   const path = window.location.pathname.replace(/\/$/, '')
   const route = path.split('/').pop()
   const hash = window.location.hash
-  if (hash === '#home') return 'home'
-  if (hash === '#about' || hash === '#about-us') return 'about'
-  if (hash === '#gallery') return 'gallery'
-  if (hash === '#certificates') return 'certificates'
-  if (hash === '#clients') return 'clients'
-  if (hash === '#contact') return 'contact'
-  if (route === 'gallery') return 'gallery'
-  if (route === 'about') return 'about'
-  if (route === 'certificates') return 'certificates'
-  if (route === 'clients') return 'clients'
-  if (route === 'contact') return 'contact'
-  if (route === 'site-supervision') return 'site-supervision'
-  if (route === 'designing-of-pipe-supports' || route === 'custom-pipe-supports') return 'designing-pipe-supports'
-  if (route === 'pipe-stress-analysis' || route === 'pipe-stress-analysis-service') return 'pipe-stress-analysis'
-  if (route === 'products') return 'products'
-  return 'home'
+  if (hash.startsWith('#product-')) return { type: 'product-detail', slug: hash.replace('#product-', '') }
+  if (path.startsWith('/products/') && route && route !== 'products') return { type: 'product-detail', slug: route }
+  if (hash === '#home') return { type: 'home' }
+  if (hash === '#about' || hash === '#about-us') return { type: 'about' }
+  if (hash === '#gallery') return { type: 'gallery' }
+  if (hash === '#certificates') return { type: 'certificates' }
+  if (hash === '#clients') return { type: 'clients' }
+  if (hash === '#contact') return { type: 'contact' }
+  if (route === 'gallery') return { type: 'gallery' }
+  if (route === 'about') return { type: 'about' }
+  if (route === 'certificates') return { type: 'certificates' }
+  if (route === 'clients') return { type: 'clients' }
+  if (route === 'contact') return { type: 'contact' }
+  if (route === 'site-supervision') return { type: 'site-supervision' }
+  if (route === 'designing-of-pipe-supports' || route === 'custom-pipe-supports') return { type: 'designing-pipe-supports' }
+  if (route === 'pipe-stress-analysis' || route === 'pipe-stress-analysis-service') return { type: 'pipe-stress-analysis' }
+  if (route === 'products') return { type: 'products' }
+  return { type: 'home' }
 }
 
 function HomePage() {
@@ -140,7 +143,10 @@ function App() {
   const [isEnquiryOpen, setIsEnquiryOpen] = useState(false)
 
   useEffect(() => {
-    const syncPage = () => setPage(currentPage())
+    const syncPage = () => {
+      setPage(currentPage())
+      window.scrollTo({ top: 0, behavior: 'smooth' })
+    }
     window.addEventListener('hashchange', syncPage)
     window.addEventListener('popstate', syncPage)
     return () => {
@@ -161,9 +167,24 @@ function App() {
     return () => document.removeEventListener('click', openEnquiryFromLink)
   }, [])
 
+  const pageType = page?.type || 'home'
+  const isInnerPage = pageType !== 'home'
+
   return <>
-    <Header isContact={page === 'contact' || page === 'gallery' || page === 'certificates' || page === 'clients' || page === 'about' || page === 'site-supervision' || page === 'designing-pipe-supports' || page === 'pipe-stress-analysis' || page === 'products'} onRequestQuote={() => setIsEnquiryOpen(true)} />
-    <main>{page === 'gallery' ? <GalleryPage /> : page === 'certificates' ? <CertificationPage /> : page === 'clients' ? <ClientsPage /> : page === 'about' ? <AboutPage /> : page === 'contact' ? <ContactPage hideContactFooter /> : page === 'site-supervision' ? <SiteSupervisionPage /> : page === 'designing-pipe-supports' ? <DesigningPipeSupportsPage /> : page === 'pipe-stress-analysis' ? <PipeStressAnalysisPage /> : page === 'products' ? <ProductsPage /> : <HomePage />}</main>
+    <Header isContact={isInnerPage} onRequestQuote={() => setIsEnquiryOpen(true)} />
+    <main>
+      {pageType === 'gallery' ? <GalleryPage /> :
+       pageType === 'certificates' ? <CertificationPage /> :
+       pageType === 'clients' ? <ClientsPage /> :
+       pageType === 'about' ? <AboutPage /> :
+       pageType === 'contact' ? <ContactPage hideContactFooter /> :
+       pageType === 'site-supervision' ? <SiteSupervisionPage /> :
+       pageType === 'designing-pipe-supports' ? <DesigningPipeSupportsPage /> :
+       pageType === 'pipe-stress-analysis' ? <PipeStressAnalysisPage /> :
+       pageType === 'products' ? <ProductsPage /> :
+       pageType === 'product-detail' ? <ProductDetailPage productSlug={page.slug} onRequestQuote={() => setIsEnquiryOpen(true)} /> :
+       <HomePage />}
+    </main>
     <Footer />
     <EnquiryModal open={isEnquiryOpen} onClose={() => setIsEnquiryOpen(false)} />
   </>

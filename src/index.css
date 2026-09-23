@@ -1427,11 +1427,55 @@ button { cursor: pointer; }
   }
 }
 
-/* About page: slower, softer scroll reveals */
-.about-page > .about-reveal-section,
+/* About page: smooth directional entrance animations */
 .about-page .about-reveal-item {
-  opacity: 1;
-  transform: none;
+  opacity: 0;
+  transform: translate3d(0, 24px, 0);
+  transition: opacity 0.8s cubic-bezier(0.22, 0.61, 0.36, 1), transform 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+  transition-delay: calc(var(--about-item-order, 0) * 80ms);
+  will-change: opacity, transform;
+}
+
+.about-page .about-reveal-item.about-reveal-left {
+  opacity: 0;
+  transform: translate3d(-36px, 0, 0);
+}
+
+.about-page .about-reveal-item.about-reveal-right {
+  opacity: 0;
+  transform: translate3d(36px, 0, 0);
+}
+
+.about-page .about-reveal-item.about-reveal-up {
+  opacity: 0;
+  transform: translate3d(0, 28px, 0);
+}
+
+.about-page .about-reveal-item.is-about-visible {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+/* Staggered items inside highlights and standards when revealed */
+.about-page .about-values-highlights.is-about-visible .about-values-highlight {
+  animation: aboutHighlightFade 0.5s cubic-bezier(0.22, 0.61, 0.36, 1) both;
+}
+.about-page .about-values-highlight:nth-child(1) { animation-delay: 0.05s; }
+.about-page .about-values-highlight:nth-child(2) { animation-delay: 0.10s; }
+.about-page .about-values-highlight:nth-child(3) { animation-delay: 0.15s; }
+.about-page .about-values-highlight:nth-child(4) { animation-delay: 0.20s; }
+.about-page .about-values-highlight:nth-child(5) { animation-delay: 0.25s; }
+.about-page .about-values-highlight:nth-child(6) { animation-delay: 0.30s; }
+
+@keyframes aboutHighlightFade {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 16px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
 }
 
 /* Product category page: visible without animation glitch */
@@ -9106,7 +9150,6 @@ main,
   --clients-navy: #0a3153;
   background: #f6faff;
   color: var(--clients-navy);
-  overflow-x: hidden;
   width: 100%;
 }
 
@@ -15582,10 +15625,50 @@ body {
   box-sizing: border-box;
 }
 
+@media (max-width: 900px) {
+  html.mobile-nav-open,
+  body.mobile-nav-open {
+    overflow: hidden !important;
+    height: 100% !important;
+  }
+
+  .main-nav.main-nav--open {
+    overscroll-behavior: contain;
+  }
+
+  /* Let the main mobile menu own the only scrollbar. */
+  .main-nav.main-nav--open .products-mega-products > div {
+    max-height: none !important;
+    overflow-y: visible !important;
+  }
+}
+
+/* Ensure the active FAQ label stays readable on its navy header. */
+@media (max-width: 900px) {
+  .faq-clients-section .faq-item.is-open .faq-question,
+  .faq-clients-section .faq-item.is-open .faq-question > span {
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+  }
+}
+
 .home-page {
   width: 100%;
   max-width: 100%;
   overflow-x: hidden;
+}
+
+/* Keep the document on one vertical scroll container. */
+html {
+  overflow-x: hidden !important;
+  overflow-y: scroll !important;
+}
+
+body,
+#root,
+main {
+  overflow-x: hidden !important;
+  overflow-y: clip !important;
 }
 
 /* Tablet & Mobile reveal animation: prevent horizontal slide from creating overflow */
@@ -17771,20 +17854,6 @@ body {
     text-align: center !important;
     text-transform: uppercase;
   }
-}
-
-/* Prevent any horizontal overflow anywhere on mobile */
-html, body, #root, .app-root, .about-page {
-  overflow-x: clip !important;
-  max-width: 100vw !important;
-  width: 100% !important;
-}
-
-/* Prevent any horizontal overflow anywhere on mobile */
-html, body, #root, .app-root, .about-page {
-  overflow-x: clip !important;
-  max-width: 100vw !important;
-  width: 100% !important;
 }
 
 /* =========================================================
@@ -20007,6 +20076,14 @@ html, body, #root, .app-root, .about-page {
     box-shadow: none !important;
     clip-path: none !important;
   }
+}
+
+/* Active FAQ question must stay readable on its dark header. */
+.faq-clients-section .faq-item.is-open .faq-question,
+.faq-clients-section .faq-item.is-open .faq-question .faq-q-text,
+.faq-clients-section .faq-item.is-open .faq-question .faq-num {
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
 }
 
 

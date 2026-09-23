@@ -106,6 +106,18 @@ export function Header({ isContact = false, onRequestQuote }) {
     return () => document.removeEventListener('pointerdown', closeDropdownsOnOutsideClick)
   }, [])
 
+  useEffect(() => {
+    const isMobile = window.matchMedia('(max-width: 900px)').matches
+    const shouldLockPage = isOpen && isMobile
+    document.body.classList.toggle('mobile-nav-open', shouldLockPage)
+    document.documentElement.classList.toggle('mobile-nav-open', shouldLockPage)
+
+    return () => {
+      document.body.classList.remove('mobile-nav-open')
+      document.documentElement.classList.remove('mobile-nav-open')
+    }
+  }, [isOpen])
+
   return (
     <header className={`site-header ${isContact ? 'site-header--contact' : ''}`} id="home">
       <div className="container header-inner">

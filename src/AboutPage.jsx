@@ -86,7 +86,68 @@ function AboutValueIcon({ type }) {
 export function AboutPage() {
   const aboutRef = useRef(null)
 
+  useEffect(() => {
+    const page = aboutRef.current
+    if (!page) return undefined
 
+    const revealItems = [
+      page.querySelector('.contact-banner-copy'),
+      page.querySelector('.about-story-visual'),
+      page.querySelector('.about-story-copy'),
+      ...page.querySelectorAll('.about-story-stat'),
+      page.querySelector('.about-values-heading'),
+      page.querySelector('.about-values-highlights'),
+      ...page.querySelectorAll('.about-values-card'),
+      page.querySelector('.about-standards-heading'),
+      ...page.querySelectorAll('.about-standard-card'),
+      page.querySelector('.about-quality-visual'),
+      ...page.querySelectorAll('.about-quality-item'),
+      page.querySelector('.about-partnership-cta'),
+    ].filter(Boolean)
+
+    const leftSelectors = [
+      '.about-story-visual',
+      '.about-values-card:nth-child(1)',
+      '.about-standard-card:nth-child(odd)',
+      '.about-quality-visual',
+    ]
+
+    const rightSelectors = [
+      '.about-story-copy',
+      '.about-values-card:nth-child(3)',
+      '.about-standard-card:nth-child(even)',
+      '.about-quality-list',
+    ]
+
+    revealItems.forEach((item, index) => {
+      item.classList.add('about-reveal-item')
+      item.style.setProperty('--about-item-order', index % 6)
+      if (item.matches && leftSelectors.some((sel) => item.matches(sel))) {
+        item.classList.add('about-reveal-left')
+      } else if (item.matches && rightSelectors.some((sel) => item.matches(sel))) {
+        item.classList.add('about-reveal-right')
+      } else {
+        item.classList.add('about-reveal-up')
+      }
+    })
+
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)')
+    if (reducedMotion.matches || !('IntersectionObserver' in window)) {
+      revealItems.forEach((target) => target.classList.add('is-about-visible'))
+      return undefined
+    }
+
+    const observer = new IntersectionObserver((entries, currentObserver) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return
+        entry.target.classList.add('is-about-visible')
+        currentObserver.unobserve(entry.target)
+      })
+    }, { threshold: 0.08, rootMargin: '0px 0px -4% 0px' })
+
+    revealItems.forEach((item) => observer.observe(item))
+    return () => observer.disconnect()
+  }, [])
 
   return (
     <div className="about-page" ref={aboutRef}>

@@ -8675,7 +8675,6 @@ body,
   max-width: none;
 }
 
-body { overflow-x: hidden; }
 .site-header,
 main,
 .service-page,
@@ -15609,11 +15608,16 @@ main,
    ========================================================================== */
 
 /* Global container & box-sizing safeguard */
-html,
+html {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: clip;
+}
+
 body {
   width: 100%;
   max-width: 100%;
-  overflow-x: hidden;
+  overflow-x: clip;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -15652,23 +15656,11 @@ body {
   }
 }
 
-.home-page {
-  width: 100%;
-  max-width: 100%;
-  overflow-x: hidden;
-}
-
-/* Keep the document on one vertical scroll container. */
-html {
-  overflow-x: hidden !important;
-  overflow-y: scroll !important;
-}
-
-body,
+.home-page,
 #root,
 main {
-  overflow-x: hidden !important;
-  overflow-y: clip !important;
+  width: 100%;
+  max-width: 100%;
 }
 
 /* Tablet & Mobile reveal animation: prevent horizontal slide from creating overflow */

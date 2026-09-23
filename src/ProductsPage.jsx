@@ -71,6 +71,14 @@ const categoryGroups = [
   },
 ]
 
+const productPromises = [
+  { number: '01', title: 'Premium Materials', subtitle: 'Certified high-grade alloys & structural steel' },
+  { number: '02', title: 'Global Standards', subtitle: 'ANSI, ASME & MSS SP-58 certified compliance' },
+  { number: '03', title: 'Custom Solutions', subtitle: 'Engineered to exact project job specifications' },
+  { number: '04', title: 'On-Time Delivery', subtitle: 'Dependable manufacturing & supply timelines' },
+  { number: '05', title: 'Technical Support', subtitle: 'Expert pipe engineering & site supervision' },
+]
+
 function ArrowIcon() {
   return <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" /></svg>
 }
@@ -82,43 +90,35 @@ export function ProductsPage() {
     const page = productsRef.current
     if (!page) return undefined
 
-    const sections = [...page.querySelectorAll(':scope > section')]
-    const items = [...page.querySelectorAll([
-      '.products-page-hero-copy',
-      '.products-page-note',
-      '.products-page-heading',
-      '.products-page-brochure',
-      '.product-category-card',
-      '.product-category-product',
-      '.products-page-promise .container > div',
-      '.products-page-cta-inner > div',
-      '.products-page-cta-button',
-    ].join(','))]
-    const directionClasses = ['products-reveal-left', 'products-reveal-up', 'products-reveal-right', 'products-reveal-down']
+    const revealItems = [
+      page.querySelector('.products-page-hero-copy'),
+      page.querySelector('.products-page-heading'),
+      ...page.querySelectorAll('.product-category-card'),
+      page.querySelector('.products-promise-heading'),
+      ...page.querySelectorAll('.products-promise-card'),
+      page.querySelector('.products-page-cta-inner'),
+    ].filter(Boolean)
 
-    sections.forEach((section) => section.classList.add('products-reveal-section'))
-    items.forEach((item, index) => {
-      item.classList.add('products-reveal-item')
-      item.style.setProperty('--products-item-order', index % 6)
-      item.classList.add(directionClasses[index % directionClasses.length])
+    revealItems.forEach((item, index) => {
+      item.classList.add('product-reveal-item')
+      item.style.setProperty('--product-item-order', index % 6)
     })
 
-    const revealTargets = [...sections, ...items]
     const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)')
     if (reducedMotion.matches || !('IntersectionObserver' in window)) {
-      revealTargets.forEach((target) => target.classList.add('is-products-visible'))
+      revealItems.forEach((target) => target.classList.add('is-product-visible'))
       return undefined
     }
 
     const observer = new IntersectionObserver((entries, currentObserver) => {
       entries.forEach((entry) => {
         if (!entry.isIntersecting) return
-        entry.target.classList.add('is-products-visible')
+        entry.target.classList.add('is-product-visible')
         currentObserver.unobserve(entry.target)
       })
-    }, { threshold: 0.1, rootMargin: '0px 0px -8% 0px' })
+    }, { threshold: 0.08, rootMargin: '0px 0px -5% 0px' })
 
-    revealTargets.forEach((target) => observer.observe(target))
+    revealItems.forEach((item) => observer.observe(item))
     return () => observer.disconnect()
   }, [])
 
@@ -140,8 +140,9 @@ export function ProductsPage() {
     <section className="products-page-catalogue products-section products-section--catalogue">
       <div className="container">
         <div className="products-page-heading">
-          <div><p className="section-kicker"><span />Products</p><h2>Our <strong>Product Categories</strong></h2><p>Explore engineered pipe support systems for power, oil &amp; gas, marine, chemical and industrial applications.</p></div>
-          <a className="products-page-brochure" href="#quote"><b>PDF</b><span><strong>Request Product Details</strong><small>Get catalogue &amp; datasheets</small></span><em>→</em></a>
+          <p className="section-kicker"><span />Products</p>
+          <h2>Our <strong>Product Categories</strong></h2>
+          <p>Explore engineered pipe support systems for power, oil &amp; gas, marine, chemical and industrial applications.</p>
         </div>
         <div className="product-category-grid">
           {categoryGroups.map((category) => <article className={`product-category-card product-category-card--${category.number}`} key={category.name}>
@@ -162,7 +163,25 @@ export function ProductsPage() {
       </div>
     </section>
 
-    <section className="products-page-promise"><div className="container"><div><b>01</b><span>Premium<br />materials</span></div><div><b>02</b><span>International<br />standards</span></div><div><b>03</b><span>Customised<br />solutions</span></div><div><b>04</b><span>On-time<br />delivery</span></div><div><b>05</b><span>Technical<br />support</span></div></div></section>
+    <section className="products-page-promise">
+      <div className="container">
+        <div className="products-promise-heading">
+          <p className="products-promise-kicker"><span />The AAA Advantage</p>
+          <h3>Engineered with <strong>Uncompromising Quality</strong></h3>
+        </div>
+        <div className="products-promise-grid">
+          {productPromises.map((item) => (
+            <div className="products-promise-card" key={item.number}>
+              <span className="products-promise-num">{item.number}</span>
+              <div className="products-promise-info">
+                <strong>{item.title}</strong>
+                <small>{item.subtitle}</small>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
 
     <section className="products-page-cta" style={{ '--products-cta-image': `url(${heroImage})` }}><div className="products-page-cta-overlay" /><div className="container products-page-cta-inner"><div><p className="products-page-kicker">Let&apos;s build together</p><h2>Need the Right <strong>Piping Solution?</strong></h2><p>Share your requirement with our team for product details, custom support design or bulk enquiries.</p></div><a className="products-page-cta-button" href="#quote">Request a Quote <span>→</span></a></div></section>
   </div>

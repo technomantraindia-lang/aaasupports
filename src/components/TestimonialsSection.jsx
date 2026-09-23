@@ -62,11 +62,13 @@ function QuoteIcon() {
 function TestimonialCard({ testimonial }) {
   return (
     <article className="testimonial-card">
-      <span className="testimonial-quote">
-        <QuoteIcon />
-      </span>
-      <div className="testimonial-stars" aria-label="5 out of 5 stars">
-        &#9733;&#9733;&#9733;&#9733;&#9733;
+      <div className="testimonial-card-top">
+        <span className="testimonial-quote">
+          <QuoteIcon />
+        </span>
+        <div className="testimonial-stars" aria-label="5 out of 5 stars">
+          ★★★★★
+        </div>
       </div>
       <blockquote>
         <p>{testimonial.quote}</p>
@@ -75,7 +77,7 @@ function TestimonialCard({ testimonial }) {
         <div className="testimonial-avatar" aria-hidden="true">
           {testimonial.initials}
         </div>
-        <div>
+        <div className="testimonial-author-info">
           <strong>{testimonial.name}</strong>
           <span>{testimonial.role}</span>
         </div>
@@ -85,36 +87,25 @@ function TestimonialCard({ testimonial }) {
 }
 
 export function TestimonialsSection() {
+  const [isMobile, setIsMobile] = useState(
+    typeof window !== 'undefined' ? window.innerWidth <= 900 : false
+  )
   const [activeIndex, setActiveIndex] = useState(0)
-  const [isMobile, setIsMobile] = useState(false)
-  const [mobileStep, setMobileStep] = useState(0)
   const sectionRef = useRef(null)
   const sliderRef = useRef(null)
+  const touchStartX = useRef(0)
+  const touchEndX = useRef(0)
+  const isDragging = useRef(false)
   const cards = useMemo(() => slideGroups.flat(), [])
   const totalItems = isMobile ? cards.length : slideGroups.length
   const visibleIndex = activeIndex % totalItems
 
   useEffect(() => {
-    const media = window.matchMedia('(max-width: 640px)')
-    const update = () => setIsMobile(media.matches)
+    const update = () => setIsMobile(window.innerWidth <= 900)
     update()
-    media.addEventListener?.('change', update)
-    return () => media.removeEventListener?.('change', update)
+    window.addEventListener('resize', update)
+    return () => window.removeEventListener('resize', update)
   }, [])
-
-  useEffect(() => {
-    const measure = () => {
-      const card = sliderRef.current?.querySelector('.testimonial-card')
-      const track = sliderRef.current?.querySelector('.testimonial-track')
-      if (!card || !track) return
-      const gap = Number.parseFloat(window.getComputedStyle(track).gap) || 0
-      setMobileStep(card.getBoundingClientRect().width + gap)
-    }
-
-    measure()
-    window.addEventListener('resize', measure)
-    return () => window.removeEventListener('resize', measure)
-  }, [isMobile])
 
   useEffect(() => {
     setActiveIndex((current) => current % totalItems)
@@ -130,6 +121,30 @@ export function TestimonialsSection() {
 
     return () => window.clearInterval(timer)
   }, [totalItems])
+
+  const handleTouchStart = (e) => {
+    touchStartX.current = e.touches[0].clientX
+    touchEndX.current = e.touches[0].clientX
+    isDragging.current = true
+  }
+
+  const handleTouchMove = (e) => {
+    if (!isDragging.current) return
+    touchEndX.current = e.touches[0].clientX
+  }
+
+  const handleTouchEnd = () => {
+    if (!isDragging.current) return
+    isDragging.current = false
+    const diff = touchStartX.current - touchEndX.current
+    if (diff > 40) {
+      setActiveIndex((prev) => (prev + 1) % totalItems)
+    } else if (diff < -40) {
+      setActiveIndex((prev) => (prev - 1 + totalItems) % totalItems)
+    }
+    touchStartX.current = 0
+    touchEndX.current = 0
+  }
 
   useEffect(() => {
     const section = sectionRef.current
@@ -154,9 +169,7 @@ export function TestimonialsSection() {
     return () => observer.disconnect()
   }, [])
 
-  const trackTransform = isMobile
-    ? `translateX(-${visibleIndex * mobileStep}px)`
-    : `translateX(-${visibleIndex * 100}%)`
+  const currentMobileCard = cards[visibleIndex] || cards[0]
 
   return (
     <section
@@ -173,7 +186,7 @@ export function TestimonialsSection() {
             What Our <strong>Clients Say</strong>
           </h2>
           <p className="testimonials-sub">
-            Trusted by utilities, substations and engineering teams for reliable SF6 gas-handling solutions.
+            Trusted by refineries, power plants and engineering teams for reliable pipe support systems.
           </p>
         </div>
 
@@ -183,20 +196,36 @@ export function TestimonialsSection() {
             aria-roledescription="carousel"
             aria-label="Client testimonials"
             ref={sliderRef}
+            onTouchStart={handleTouchStart}
+            onTouchMove={handleTouchMove}
+            onTouchEnd={handleTouchEnd}
           >
-            <div className="testimonial-track" style={{ transform: trackTransform }}>
-              {isMobile
-                ? cards.map((testimonial) => (
-                    <TestimonialCard key={testimonial.name} testimonial={testimonial} />
-                  ))
-                : slideGroups.map((group, groupIndex) => (
-                    <div className="testimonial-slide" key={`testimonial-slide-${groupIndex}`}>
-                      {group.map((testimonial) => (
-                        <TestimonialCard key={testimonial.name} testimonial={testimonial} />
-                      ))}
-                    </div>
-                  ))}
-            </div>
+            {isMobile ? (
+              <div className="testimonial-mobile-container">
+                <div className="testimonial-mobile-view" key={`mobile-card-${visibleIndex}`}>
+                  <TestimonialCard testimonial={currentMobileCard} />
+                </div>
+              </div>
+            ) : (
+              <div
+                className="testimonial-track"
+                style={{ transform: `translateX(-${visibleIndex * 100}%)` }}
+              >
+                {slideGroups.map((group, groupIndex) => (
+                  <div
+                    className="testimonial-slide"
+                    key={`testimonial-slide-${groupIndex}`}
+                  >
+                    {group.map((testimonial) => (
+                      <TestimonialCard
+                        key={testimonial.name}
+                        testimonial={testimonial}
+                      />
+                    ))}
+                  </div>
+                ))}
+              </div>
+            )}
           </div>
 
           <div className="testimonial-dots" role="tablist" aria-label="Testimonial slides">

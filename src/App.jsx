@@ -101,7 +101,9 @@ function HomePage() {
     home.querySelectorAll(rightSelectors.join(',')).forEach((item) => item.classList.add('home-reveal-right'))
 
     const revealTargets = [...sections, ...items]
+    const isMobile = window.matchMedia('(max-width: 900px)').matches
     const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)')
+
     if (reducedMotion.matches || !('IntersectionObserver' in window)) {
       revealTargets.forEach((target) => target.classList.add('is-home-visible'))
       return undefined
@@ -113,7 +115,10 @@ function HomePage() {
         entry.target.classList.add('is-home-visible')
         currentObserver.unobserve(entry.target)
       })
-    }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' })
+    }, {
+      threshold: isMobile ? 0.01 : 0.08,
+      rootMargin: isMobile ? '120px 0px 50px 0px' : '0px 0px -4% 0px',
+    })
 
     revealTargets.forEach((target) => observer.observe(target))
     return () => observer.disconnect()

@@ -29,20 +29,21 @@ export function useServiceReveal(pageRef) {
 
     const sections = [
       page.querySelector('.service-banner'),
-      ...page.querySelectorAll(':scope > .service-page-content > section'),
+      ...page.querySelectorAll(':scope > .service-page-content > section, :scope > section'),
     ].filter(Boolean)
     const items = [...page.querySelectorAll(revealSelectors.join(','))]
-    const directions = ['service-reveal-left', 'service-reveal-up', 'service-reveal-right', 'service-reveal-down']
 
     sections.forEach((section) => section.classList.add('service-reveal-section'))
     items.forEach((item, index) => {
-      item.classList.add('service-reveal-item', directions[index % directions.length])
+      item.classList.add('service-reveal-item')
       item.style.setProperty('--service-item-order', index % 6)
     })
 
     const revealTargets = [...sections, ...items]
-    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)')
-    if (reducedMotion.matches || !('IntersectionObserver' in window)) {
+    const isMobile = typeof window !== 'undefined' && window.matchMedia('(max-width: 900px)').matches
+    const reducedMotion = typeof window !== 'undefined' && window.matchMedia('(prefers-reduced-motion: reduce)').matches
+
+    if (isMobile || reducedMotion || !('IntersectionObserver' in window)) {
       revealTargets.forEach((target) => target.classList.add('is-service-visible'))
       return undefined
     }
@@ -53,9 +54,10 @@ export function useServiceReveal(pageRef) {
         entry.target.classList.add('is-service-visible')
         currentObserver.unobserve(entry.target)
       })
-    }, { threshold: 0.1, rootMargin: '0px 0px -8% 0px' })
+    }, { threshold: 0.05, rootMargin: '60px 0px 60px 0px' })
 
     revealTargets.forEach((target) => observer.observe(target))
     return () => observer.disconnect()
   }, [pageRef])
 }
+

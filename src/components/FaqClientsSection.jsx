@@ -131,11 +131,13 @@ export function FaqClientsSection() {
                   onClick={() => setActiveFaq(isOpen ? -1 : index)}
                   type="button"
                 >
-                  <span>{index + 1}. {faq.question}</span>
-                  <i aria-hidden="true">{isOpen ? '\u2212' : '+'}</i>
+                  <span className="faq-q-text"><span className="faq-num">{index + 1}.</span> {faq.question}</span>
+                  <i aria-hidden="true" className="faq-toggle-icon">{isOpen ? '\u2212' : '+'}</i>
                 </button>
                 <div className="faq-answer">
-                  <p>{faq.answer}</p>
+                  <div className="faq-answer-inner">
+                    <p>{faq.answer}</p>
+                  </div>
                 </div>
               </article>
             )
@@ -160,9 +162,13 @@ export function FaqClientsSection() {
             <div className="clients-stats">
               {clientStats.map(([icon, value, label]) => (
                 <div className="client-stat" key={label}>
-                  <span><MiniIcon type={icon} /></span>
-                  <strong>{value}</strong>
-                  <small>{label}</small>
+                  <div className="client-stat-icon">
+                    <MiniIcon type={icon} />
+                  </div>
+                  <div className="client-stat-text">
+                    <strong>{value}</strong>
+                    <small>{label}</small>
+                  </div>
                 </div>
               ))}
             </div>

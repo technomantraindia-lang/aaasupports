@@ -110,7 +110,13 @@ export function Header({ isContact = false, onRequestQuote }) {
     <header className={`site-header ${isContact ? 'site-header--contact' : ''}`} id="home">
       <div className="container header-inner">
         <Logo />
-        <button className="menu-toggle" type="button" aria-label="Toggle navigation" onClick={() => setIsOpen(!isOpen)}>
+        <button
+          className={`menu-toggle ${isOpen ? 'menu-toggle--open' : ''}`}
+          type="button"
+          aria-label={isOpen ? 'Close navigation' : 'Toggle navigation'}
+          aria-expanded={isOpen}
+          onClick={() => setIsOpen(!isOpen)}
+        >
           <span /><span /><span />
         </button>
         <nav className={`main-nav ${isOpen ? 'main-nav--open' : ''}`} aria-label="Primary navigation">
@@ -177,6 +183,11 @@ export function Header({ isContact = false, onRequestQuote }) {
               </a>
             )
           ))}
+          <div className="main-nav-mobile-cta">
+            <button className="button button--orange button--full" type="button" onClick={() => { closeNavigation(); onRequestQuote?.() }}>
+              Request a Quote <span>→</span>
+            </button>
+          </div>
         </nav>
         <div className="header-actions">
           <button className="button button--orange button--small" type="button" onClick={onRequestQuote}>Request a Quote <span>→</span></button>

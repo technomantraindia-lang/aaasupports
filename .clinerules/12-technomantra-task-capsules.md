@@ -18,10 +18,10 @@ The extension refreshes this file automatically. Prefer its concise state over o
 - Workspace ID: tm-ws-64f75390f945e128f930b22d
 - Window ID: tm-win-ddd591790dbc8b6043e0941f
 - Project: AAA
-- Framework: 
+- Framework: react
 - Developer mode: smart
 - Model mode: eco
-- Active file: .gitignore
+- Active file: src/CertificationPage.jsx
 - Objective: Current developer prompt in this workspace/window only.
 - Blocker: none
 - Next action: Inspect current prompt and workspace evidence before editing.
@@ -31,8 +31,8 @@ The extension refreshes this file automatically. Prefer its concise state over o
 - .gitignore
 
 ## Recent files in this workspace/window
-- .gitignore
 - src/CertificationPage.jsx
+- .gitignore
 - src/components/Header.jsx
 - src/components/testimonials/testimonials.html
 

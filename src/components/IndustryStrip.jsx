@@ -67,10 +67,32 @@ export function IndustryStrip() {
   const dragRef = useRef({ active: false, startX: 0, startScroll: 0 })
   const [isDragging, setIsDragging] = useState(false)
 
+  const [activeIndex, setActiveIndex] = useState(0)
+
   const moveCards = (direction) => {
     const track = trackRef.current
     if (!track) return
-    track.scrollBy({ left: direction * (track.clientWidth * .82), behavior: 'smooth' })
+    const cardWidth = track.firstElementChild?.clientWidth || 280
+    track.scrollBy({ left: direction * (cardWidth + 16), behavior: 'smooth' })
+  }
+
+  const scrollToCard = (index) => {
+    const track = trackRef.current
+    if (!track) return
+    const card = track.children[index]
+    if (card) {
+      card.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' })
+      setActiveIndex(index)
+    }
+  }
+
+  const handleScroll = () => {
+    const track = trackRef.current
+    if (!track) return
+    const cardWidth = track.firstElementChild?.clientWidth || 280
+    const scrollLeft = track.scrollLeft
+    const index = Math.round(scrollLeft / (cardWidth + 16))
+    setActiveIndex(Math.min(Math.max(0, index), industryCards.length - 1))
   }
 
   const handlePointerDown = (event) => {
@@ -111,6 +133,7 @@ export function IndustryStrip() {
           <div
             className="industry-card-track"
             ref={trackRef}
+            onScroll={handleScroll}
             onPointerDown={handlePointerDown}
             onPointerMove={handlePointerMove}
             onPointerUp={stopDragging}
@@ -129,6 +152,18 @@ export function IndustryStrip() {
             ))}
           </div>
           <button className="industry-carousel-arrow industry-carousel-arrow--next" type="button" onClick={() => moveCards(1)} aria-label="Next industries">&#8594;</button>
+        </div>
+
+        <div className="industry-carousel-dots" aria-hidden="true">
+          {industryCards.map((_, i) => (
+            <button
+              key={i}
+              type="button"
+              className={`industry-carousel-dot ${activeIndex === i ? 'is-active' : ''}`}
+              onClick={() => scrollToCard(i)}
+              aria-label={`Go to slide ${i + 1}`}
+            />
+          ))}
         </div>
 
         <div className="industry-bottom-strip" style={{ '--industry-strip-image': `url(${heroImage})` }}>

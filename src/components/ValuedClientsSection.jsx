@@ -49,14 +49,18 @@ export function ValuedClientsSection() {
           <div>
             <h2 id="about-clients-title">Trusted by <strong>Industry Leaders</strong></h2>
             <p>We are proud to partner with leading companies across the globe, delivering reliable pipe support solutions that power critical projects and infrastructure.</p>
-            <a className="home-clients-view-all" href="#clients">View All Clients <span aria-hidden="true">-&gt;</span></a>
+            <a className="home-clients-view-all" href="#clients">View All Clients <span>→</span></a>
           </div>
           <div className="clients-stats">
             {clientStats.map(([icon, value, label]) => (
               <div className="client-stat" key={label}>
-                <span><MiniIcon type={icon} /></span>
-                <strong>{value}</strong>
-                <small>{label}</small>
+                <div className="client-stat-icon">
+                  <MiniIcon type={icon} />
+                </div>
+                <div className="client-stat-text">
+                  <strong>{value}</strong>
+                  <small>{label}</small>
+                </div>
               </div>
             ))}
           </div>

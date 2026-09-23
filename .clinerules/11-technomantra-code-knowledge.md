@@ -5,7 +5,7 @@
 - Indexed source files: 40
 - Structural edges: 61
 - Matched end-to-end flows: 0
-- Updated: 2026-09-22T05:10:01.160Z
+- Updated: 2026-09-23T03:59:36.920Z
 
 ## Dependency edges
 - IMPORT index.html -> src/main.jsx
@@ -81,7 +81,7 @@
 - SYMBOL src/components/EnquiryModal.jsx: FieldIcon, EnquiryModal, handleSubmit, handleKeyDown
 - SYMBOL src/components/FaqClientsSection.jsx: MiniIcon, FaqClientsSection
 - SYMBOL src/components/Footer.jsx: FooterIcon, Footer
-- SYMBOL src/components/Header.jsx: currentPageHash, Header, isActive, closeNavigation, navigateTo, syncHash, closeDropdownsOnOutsideClick
+- SYMBOL src/components/Header.jsx: currentPageHash, Header, isActive, closeNavigation, navigateTo, navigateToHomeSection, syncHash, closeDropdownsOnOutsideClick
 - SYMBOL src/components/HeroSection.jsx: HeroSection
 - SYMBOL src/components/Icon.jsx: Icon
 - SYMBOL src/components/IndustryStrip.jsx: IndustryIcon, IndustryStrip, moveCards, handlePointerDown, handlePointerMove, stopDragging

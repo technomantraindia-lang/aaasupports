@@ -15,7 +15,15 @@ export function HeroSection() {
       <div className="container hero-content">
         <div className="hero-copy">
           <p className="section-kicker section-kicker--light"><span /> ISO 9001: 2015 Accredited Organization</p>
-          <h1>Design &amp; Manufacturing of <strong>Hanger &amp; Support Systems</strong></h1>
+          <h1>
+            <span className="hero-heading-desktop">Design &amp; Manufacturing of <strong>Hanger &amp; Support Systems</strong></span>
+            <span className="hero-heading-mobile">
+              Design &amp;<br />
+              Manufacturing of<br />
+              <strong>Hanger &amp;</strong><br />
+              <strong>Support Systems</strong>
+            </span>
+          </h1>
           <p className="hero-description">Complying with ANSI/ASME codes for pressure piping and MSS SP-58 standards. Delivering precision-engineered pipe hangers and support systems for critical industrial, marine, oil &amp; gas and power infrastructure projects worldwide.</p>
           <div className="hero-buttons">
             <a className="button button--orange" href="#products">Explore Our Products <span>→</span></a>

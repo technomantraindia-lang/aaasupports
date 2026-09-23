@@ -38,7 +38,7 @@ export function GalleryPage() {
     if (!page) return undefined
 
     const sections = [page.querySelector('.gallery-banner'), page.querySelector('.gallery-cta')].filter(Boolean)
-    const items = [...page.querySelectorAll('.gallery-banner-copy, .gallery-card, .gallery-cta > div, .gallery-cta > a')]
+    const items = [...page.querySelectorAll('.gallery-banner .contact-banner-copy, .gallery-card, .gallery-cta > div, .gallery-cta > a')]
     const directions = ['gallery-reveal-left', 'gallery-reveal-up', 'gallery-reveal-right', 'gallery-reveal-down']
 
     sections.forEach((section) => section.classList.add('gallery-reveal-section'))

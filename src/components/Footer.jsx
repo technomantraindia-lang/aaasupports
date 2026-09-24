@@ -1,7 +1,7 @@
 import { Logo } from './Logo.jsx'
 import { images } from '../data/homeData.js'
 
-const officeMapUrl = 'https://maps.app.goo.gl/2Y6i7Bhrg9CFADeR6'
+const officeMapUrl = 'https://www.google.com/maps?q=22.0840098,73.1977084&z=17&hl=en'
 
 const footerGroups = [
   {

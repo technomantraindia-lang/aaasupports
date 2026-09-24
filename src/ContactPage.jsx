@@ -6,7 +6,8 @@ import companyProfilePdf from '../assets/pdf/AAA Supports - Company Profile.pdf'
 import productCataloguePdf from '../assets/pdf/AAA Supports - Product_Catalouge.pdf'
 import serviceGuidePdf from '../assets/pdf/AAA Supports - Service Guide.pdf'
 
-const officeMapUrl = 'https://maps.app.goo.gl/2Y6i7Bhrg9CFADeR6'
+const officeMapUrl = 'https://www.google.com/maps?q=22.0840098,73.1977084&z=17&hl=en'
+const officeMapEmbedUrl = 'https://www.google.com/maps?q=22.0840098,73.1977084&z=17&hl=en&output=embed'
 
 const downloadablePdfs = [
   ['Company Profile', companyProfilePdf, 'AAA Supports - Company Profile.pdf'],
@@ -137,7 +138,7 @@ export function ContactPage({ hideContactFooter = false }) {
           <ContactCard icon="phone" title="Contact Number"><a href="tel:+912652830444">+91-265 2830 444/5</a><span className="card-separator" /> <a href="tel:+918460722294">084607 22294</a></ContactCard>
           <ContactCard icon="mail" title="Contact E-Mail"><a href="mailto:sales@aaasupports.com">sales@aaasupports.com</a></ContactCard>
           <div className="map-frame">
-            <iframe title="AAA Supports location map" src="https://www.openstreetmap.org/export/embed.html?bbox=73.1700%2C22.2300%2C73.2700%2C22.3300&layer=mapnik&marker=22.2705%2C73.2149" />
+            <iframe title="AAA Supports location map" src={officeMapEmbedUrl} loading="lazy" allowFullScreen />
             <div className="map-label"><strong>AAA SUPPORTS PRIVATE LIMITED</strong><a href={officeMapUrl} target="_blank" rel="noreferrer">Open in Google Maps</a></div>
           </div>
         </div>

@@ -8,18 +8,17 @@ const certificateFiles = import.meta.glob('../assets/certification/*.{jpg,jpeg,p
 })
 
 const certificateTitles = {
-  '01.-Factory_License_AAA_page-0001.jpg': 'Factory License',
-  '02.-ISO-Certificate_page-0001.jpg': 'ISO 9001:2015 Certification',
-  '1.-DUNS-Certificate_page-0001.jpg': 'D-U-N-S Registration',
-  '2.-ZED-Certificate.jpg': 'ZED Bronze Certification',
-  '3.-Award_1.jpg': 'International Achievers Award',
-  '4.-Award_2_page-0001-1.jpg': 'Business Excellence Award',
-  '5.-Award_3.jpg': 'Industry Recognition Award',
-  'Award_4-683x1024.png': 'Achievement Award',
-  'Award_5-683x1024.png': 'Leadership Award',
-  'Udyam Registration Certificate_page-0001.jpg': 'Udyam Registration',
-  'IMG20260921170412.jpg.jpeg': 'Bharat SME Excellence Award',
-  'WhatsApp Image 2026-09-21 at 5.20.51 PM.jpeg': 'EEPC India Export Excellence Award',
+  '1.png': 'International Achievers Conference Award',
+  '2.png': 'Fastest Growing Indian Company Excellence Award',
+  '3.png': 'EEPC India Award for Export Excellence',
+  '4.png': 'International Achievers Conference Trophy Award',
+  '5.png': 'FGI Unity Award',
+  '6.png': 'Bharat SME Excellence Award',
+  '7.png': 'D-U-N-S Registration Certificate',
+  '8.png': 'ISO 9001:2015 Certification',
+  '9.png': 'ZED Bronze Certification',
+  '10.png': 'Udyam Registration Certificate',
+  '11.png': 'Factory License to Work a Factory',
 }
 
 const getCertificateNumber = (filename) => {

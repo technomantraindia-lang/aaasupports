@@ -22,11 +22,25 @@ const certificateTitles = {
   'WhatsApp Image 2026-09-21 at 5.20.51 PM.jpeg': 'EEPC India Export Excellence Award',
 }
 
+const getCertificateNumber = (filename) => {
+  const match = filename.match(/^(\d+)/)
+  return match ? Number(match[1]) : Number.MAX_SAFE_INTEGER
+}
+
 const certificates = Object.entries(certificateFiles)
-  .sort(([a], [b]) => a.localeCompare(b, undefined, { numeric: true }))
-  .map(([file, image]) => {
+  .sort(([a], [b]) => {
+    const aNumber = getCertificateNumber(a.split('/').pop())
+    const bNumber = getCertificateNumber(b.split('/').pop())
+    return aNumber - bNumber || a.localeCompare(b)
+  })
+  .map(([file, image], index) => {
     const filename = file.split('/').pop()
-    return { image, title: certificateTitles[filename] || 'Certificate & Award', alt: filename }
+    const number = getCertificateNumber(filename)
+    return {
+      image,
+      title: certificateTitles[filename] || `Certificate ${Number.isFinite(number) ? number : index + 1}`,
+      alt: filename,
+    }
   })
 
 const featuredCertificate = certificates.find(({ title }) => title.includes('ISO')) || certificates[0]

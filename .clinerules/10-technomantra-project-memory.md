@@ -6,7 +6,7 @@
 - Technology: React, Vite, Node.js/npm
 - Active file at refresh: None
 - Local code graph: 42 files · 64 edges · 0 matched flows
-- Refreshed: 2026-09-24T08:23:13.566Z
+- Refreshed: 2026-09-24T10:12:40.246Z
 
 ## Framework Intelligence (V4.7.8)
 - Profiles: react
@@ -202,6 +202,7 @@
 - .clinerules/14-technomantra-adaptive-cost-optimizer.md
 - .clinerules/15-technomantra-fast-coding-engine.md
 - .clinerules/90-technomantra-selected-agent.md
+- .vscode/technomantra-project.json
 - package-lock.json
 - scripts/remove-bg-precise.js
 - scripts/remove-bg.js

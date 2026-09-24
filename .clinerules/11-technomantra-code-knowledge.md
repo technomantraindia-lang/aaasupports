@@ -5,7 +5,7 @@
 - Indexed source files: 42
 - Structural edges: 64
 - Matched end-to-end flows: 0
-- Updated: 2026-09-24T08:23:13.557Z
+- Updated: 2026-09-24T10:12:40.243Z
 
 ## Dependency edges
 - IMPORT index.html -> src/main.jsx
@@ -79,7 +79,7 @@
 - SYMBOL src/CertificationPage.jsx: CertificationPage, handleKeyDown
 - SYMBOL src/AboutPage.jsx: StatIcon, StandardIcon, QualityIcon, AboutValueIcon, AboutPage
 - SYMBOL src/App.jsx: currentPage, HomePage, App, syncPage, openEnquiryFromLink
-- SYMBOL src/ClientsPage.jsx: ClientsPage
+- SYMBOL src/ClientsPage.jsx: ClientsPage, normalizeClientName, orderClientEntries
 - SYMBOL src/components/AboutSection.jsx: AboutSection
 - SYMBOL src/components/EnquiryModal.jsx: FieldIcon, EnquiryModal, handleSubmit, handleKeyDown
 - SYMBOL src/components/FaqClientsSection.jsx: MiniIcon, FaqClientsSection

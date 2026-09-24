@@ -47,13 +47,13 @@ const clientCategories = [
     names: [
       'Tata Chemicals Limited', 'Gujarat State Fertilizers & Chemicals Limited', 'Gujarat Narmada Valley Fertilizers & Chemicals', 'Indian Farmers Fertiliser Cooperative Limited', 'India Glycols Limited',
       'IOL Chemicals and Pharmaceuticals Ltd', 'DCM Shriram Limited', 'Grasim Industries Limited', 'Epigral Limited', 'Deepak Chem Tech Limited',
-      'Athani Sugars Limited', 'Melbro Sugars Private Limited', 'Bapuna Alcobrew Private Limited', 'Rashtriya Chemicals & Fertilizers Ltd.', 'Atul Limited',
+      'Athani Sugars Limited', 'Mellbro Sugars Private Limited', 'Bapuna Alcobrew Private Limited', 'Rashtriya Chemicals & Fertilizers Ltd.', 'Atul Limited',
       'Middle East Paper Company', 'Jubilant Industries Limited', 'Gujarat Alkalies and Chemicals Limited', 'TCI Sanmar Chemicals S.A.E', 'Etihad Food Industries Company Limited',
     ],
   },
   {
     title: 'Steel Sector',
-    names: ['Tata Steel', 'Jindal Steel & Power', 'JSW Steel Limited', 'Mono Steel (India) Limited'],
+    names: ['Tata Steel', 'Jindal Steel Odisha Limited', 'JSW Steel Limited', 'Mono Steel (India) Limited'],
   },
   {
     title: 'OEM / EPC',
@@ -69,11 +69,36 @@ const clientFolders = [
   ['OEM / EPC', 'OEM  EPC'],
 ]
 
+const clientOrderByTitle = new Map(clientCategories.map(({ title, names }) => [title, names]))
+
+const normalizeClientName = (value) => value
+  .toLowerCase()
+  .replace(/\.[^.]+$/, '')
+  .replace(/[^a-z0-9]+/g, '')
+
+const orderClientEntries = (entries, preferredNames = []) => {
+  const remaining = [...entries]
+  const ordered = preferredNames.flatMap((preferredName) => {
+    const preferred = normalizeClientName(preferredName)
+    const matchIndex = remaining.findIndex(([path]) => {
+      const filename = path.split('/').pop()
+      const actual = normalizeClientName(filename)
+      return actual === preferred || actual.startsWith(preferred) || preferred.startsWith(actual)
+    })
+
+    if (matchIndex === -1) return []
+    return remaining.splice(matchIndex, 1)
+  })
+
+  return [...ordered, ...remaining]
+}
+
 const clientGroups = clientFolders.map(([title, folder]) => ({
   title,
-  clients: Object.entries(clientModules)
-    .filter(([path]) => path.split('/').slice(-2, -1)[0] === folder)
-    .sort(([first], [second]) => first.localeCompare(second, undefined, { numeric: true }))
+  clients: orderClientEntries(
+    Object.entries(clientModules).filter(([path]) => path.split('/').slice(-2, -1)[0] === folder),
+    clientOrderByTitle.get(title),
+  )
     .map(([path, image]) => ({
       image,
       name: path.split('/').pop().replace(/\.[^.]+$/, ''),

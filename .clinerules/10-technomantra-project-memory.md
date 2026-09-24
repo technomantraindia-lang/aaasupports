@@ -5,8 +5,8 @@
 - Workspace: AAA
 - Technology: React, Vite, Node.js/npm
 - Active file at refresh: None
-- Local code graph: 40 files · 61 edges · 0 matched flows
-- Refreshed: 2026-09-23T03:59:36.931Z
+- Local code graph: 42 files · 64 edges · 0 matched flows
+- Refreshed: 2026-09-24T08:23:13.566Z
 
 ## Framework Intelligence (V4.7.8)
 - Profiles: react
@@ -63,6 +63,7 @@
 - src/DesigningPipeSupportsPage.jsx: DesigningPipeSupportsPage, CheckIcon, ServiceKicker, ServiceVisual
 - src/GalleryPage.jsx: GalleryPage
 - src/PipeStressAnalysisPage.jsx: PipeStressAnalysisPage, CheckIcon, ServiceKicker, ServiceVisual
+- src/ProductDetailPage.jsx: ProductDetailPage, ShieldIcon, GearIcon, LayersIcon, VerifiedIcon
 - src/ProductsPage.jsx: ProductsPage, ArrowIcon
 - src/SiteSupervisionPage.jsx: SiteSupervisionPage, CheckIcon, ServiceKicker, ServiceVisual
 
@@ -116,6 +117,7 @@
 - src/components/WhyChooseUs.jsx -> src/components/SectionHeading.jsx, src/data/homeData.js
 - src/DesigningPipeSupportsPage.jsx -> src/hooks/useServiceReveal.js
 - src/main.jsx -> src/App.jsx, src/index.css
+- src/ProductDetailPage.jsx -> src/data/productsData.js
 - src/SiteSupervisionPage.jsx -> src/hooks/useServiceReveal.js
 
 ### Reverse dependency hints
@@ -178,12 +180,14 @@
 - src/components/WhyChooseUs.jsx
 - src/ContactPage.jsx
 - src/data/homeData.js
+- src/data/productsData.js
 - src/DesigningPipeSupportsPage.jsx
 - src/GalleryPage.jsx
 - src/hooks/useServiceReveal.js
 - src/index.css
 - src/main.jsx
 - src/PipeStressAnalysisPage.jsx
+- src/ProductDetailPage.jsx
 - src/ProductsPage.jsx
 - src/SiteSupervisionPage.jsx
 - .clinerules/05-technomantra-execution-mode.md

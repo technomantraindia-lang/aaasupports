@@ -18,7 +18,7 @@ The extension refreshes this file automatically. Prefer its concise state over o
 - Workspace ID: tm-ws-64f75390f945e128f930b22d
 - Window ID: tm-win-ddd591790dbc8b6043e0941f
 - Project: AAA
-- Framework: react
+- Framework: 
 - Developer mode: smart
 - Model mode: eco
 - Active file: src/CertificationPage.jsx

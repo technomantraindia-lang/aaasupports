@@ -2,10 +2,10 @@
 
 > Structural local index. Read current source before editing. Secrets are intentionally excluded.
 
-- Indexed source files: 40
-- Structural edges: 61
+- Indexed source files: 42
+- Structural edges: 64
 - Matched end-to-end flows: 0
-- Updated: 2026-09-23T03:59:36.920Z
+- Updated: 2026-09-24T08:23:13.557Z
 
 ## Dependency edges
 - IMPORT index.html -> src/main.jsx
@@ -24,6 +24,7 @@
 - IMPORT src/DesigningPipeSupportsPage.jsx -> src/hooks/useServiceReveal.js
 - IMPORT src/main.jsx -> src/App.jsx, src/index.css
 - IMPORT src/PipeStressAnalysisPage.jsx -> src/hooks/useServiceReveal.js
+- IMPORT src/ProductDetailPage.jsx -> src/data/productsData.js
 - IMPORT src/SiteSupervisionPage.jsx -> src/hooks/useServiceReveal.js
 - REACT src/AboutPage.jsx: depends on src/components/ValuedClientsSection.jsx
 - REACT src/App.jsx: used by src/main.jsx · depends on src/components/Header.jsx, src/components/HeroSection.jsx, src/components/IndustryStrip.jsx, src/components/TestimonialsSection.jsx, src/components/FaqClientsSection.jsx, src/components/AboutSection.jsx
@@ -62,11 +63,13 @@
 - DB src/components/IndustryStrip.jsx -> react
 - DB src/components/TestimonialsSection.jsx -> react, design
 - DB src/ContactPage.jsx -> react, You
+- DB src/data/productsData.js -> cryogenic, overstress, atmospheric, a, structural, galvanic, concrete, underground, independent, excessive, expansion, certified, seamless, ASTM
 - DB src/DesigningPipeSupportsPage.jsx -> react, the, Calculation, Brief, Design
 - DB src/GalleryPage.jsx -> react
 - DB src/hooks/useServiceReveal.js -> react
 - DB src/main.jsx -> react
 - DB src/PipeStressAnalysisPage.jsx -> react, practical, the, Analysis, Input, design
+- DB src/ProductDetailPage.jsx -> react
 - DB src/ProductsPage.jsx -> react, spring
 - DB src/SiteSupervisionPage.jsx -> react, us, designing
 - DB scripts/remove-bg-precise.js -> sharp, fs, path, all
@@ -84,7 +87,7 @@
 - SYMBOL src/components/Header.jsx: currentPageHash, Header, isActive, closeNavigation, navigateTo, navigateToHomeSection, syncHash, closeDropdownsOnOutsideClick
 - SYMBOL src/components/HeroSection.jsx: HeroSection
 - SYMBOL src/components/Icon.jsx: Icon
-- SYMBOL src/components/IndustryStrip.jsx: IndustryIcon, IndustryStrip, moveCards, handlePointerDown, handlePointerMove, stopDragging
+- SYMBOL src/components/IndustryStrip.jsx: IndustryIcon, IndustryStrip, moveCards, scrollToCard, handleScroll, handlePointerDown, handlePointerMove, stopDragging
 - SYMBOL src/components/Logo.jsx: Logo
 - SYMBOL src/components/MetricsBar.jsx: MetricIcon, MetricsBar
 - SYMBOL src/components/PartnersStrip.jsx: PartnersStrip
@@ -94,14 +97,16 @@
 - SYMBOL src/components/SectionHeading.jsx: SectionHeading
 - SYMBOL src/components/ServicesSection.jsx: ServiceIcon, ServicesSection
 - SYMBOL src/components/testimonials/testimonials.js: isMobile, totalItems, mobileStep, updateDots, move, goTo, renderDots, startAutoSlide, setup
-- SYMBOL src/components/TestimonialsSection.jsx: QuoteIcon, TestimonialCard, TestimonialsSection, update, measure
+- SYMBOL src/components/TestimonialsSection.jsx: QuoteIcon, TestimonialCard, TestimonialsSection, update, handleTouchStart, handleTouchMove, handleTouchEnd
 - SYMBOL src/components/ValuedClientsSection.jsx: MiniIcon, ValuedClientsSection
 - SYMBOL src/components/WhyChooseUs.jsx: WhyChooseUs
 - SYMBOL src/ContactPage.jsx: Icon, Label, ContactCard, ContactPage, handleSubmit
+- SYMBOL src/data/productsData.js: getProductBySlug
 - SYMBOL src/DesigningPipeSupportsPage.jsx: CheckIcon, ServiceKicker, ServiceVisual, DesigningPipeSupportsPage
 - SYMBOL src/GalleryPage.jsx: GalleryPage, handleKeyDown
 - SYMBOL src/hooks/useServiceReveal.js: useServiceReveal
 - SYMBOL src/PipeStressAnalysisPage.jsx: CheckIcon, ServiceKicker, ServiceVisual, PipeStressAnalysisPage
+- SYMBOL src/ProductDetailPage.jsx: ShieldIcon, GearIcon, LayersIcon, VerifiedIcon, PdfIcon, HeadsetIcon, QuickFeatureIcon, TechnicalDrawingSVG, ProductDetailPage, handlePrevThumb
 - SYMBOL src/ProductsPage.jsx: ArrowIcon, ProductsPage
 - SYMBOL src/SiteSupervisionPage.jsx: CheckIcon, ServiceKicker, ServiceVisual, SiteSupervisionPage
 - SYMBOL scripts/remove-bg-precise.js: removeBackgroundPrecise, isPixelBgColor, checkNeighbor, run
@@ -109,5 +114,5 @@
 
 ## UI/style selectors
 - UI index.html: #root
-- UI src/components/testimonials/testimonials.css: .testimonials, #ff6a21, #fff, .container, .testimonials-bg, .testimonials-heading, .section-label, .testimonials-sub, .testimonial-trust, .testimonial-slider-wrap, .testimonial-slider, .testimonial-track, .testimonial-slide, .testimonial-card
+- UI src/components/testimonials/testimonials.css: .testimonials, #ff6419, #fff, .container, .testimonials-bg, .testimonials-heading, .section-label, #ffffff, .testimonials-sub, #b0cbe2, .testimonial-trust, .testimonial-slider-wrap, .testimonial-slider, .testimonial-track
 - UI src/components/testimonials/testimonials.html: #testimonials-heading, .testimonials, .testimonials-bg, .container, .section-heading, .testimonials-heading, .section-label, .testimonials-sub, .testimonial-slider-wrap, .testimonial-slider, .testimonial-track, .testimonial-slide, .testimonial-card, .testimonial-quote

@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import productImage from '../../assets/product-constant-spring-hangers.png'
 import logoImage from '../../assets/logo.png'
+import { submitForm } from '../data/formSubmit.js'
 
 const services = [
   'Pipe Supports',
@@ -36,6 +37,8 @@ function FieldIcon({ type }) {
 
 export function EnquiryModal({ open, onClose }) {
   const [sent, setSent] = useState(false)
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [submitError, setSubmitError] = useState('')
 
   useEffect(() => {
     if (!open) return undefined
@@ -54,14 +57,30 @@ export function EnquiryModal({ open, onClose }) {
   }, [open, onClose])
 
   useEffect(() => {
-    if (!open) setSent(false)
+    if (!open) {
+      setSent(false)
+      setSubmitError('')
+      setIsSubmitting(false)
+    }
   }, [open])
 
   if (!open) return null
 
-  function handleSubmit(event) {
+  async function handleSubmit(event) {
     event.preventDefault()
-    setSent(true)
+    const form = event.currentTarget
+    setIsSubmitting(true)
+    setSubmitError('')
+
+    try {
+      await submitForm(form, 'New Product Enquiry | AAA Supports')
+      form.reset()
+      setSent(true)
+    } catch (error) {
+      setSubmitError(error.message)
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   return (
@@ -126,10 +145,10 @@ export function EnquiryModal({ open, onClose }) {
               <FieldIcon type="message" />
               <textarea name="message" placeholder="Tell us about your requirement" required />
             </label>
-            <button className="enquiry-submit" type="submit">
-              {sent ? 'Enquiry Sent' : 'Send Enquiry'} <span aria-hidden="true">-&gt;</span>
+            <button className="enquiry-submit" type="submit" disabled={isSubmitting}>
+              {isSubmitting ? 'Sending...' : sent ? 'Enquiry Sent' : 'Send Enquiry'} <span aria-hidden="true">-&gt;</span>
             </button>
-            {sent ? <p className="enquiry-success" role="status">Thank you. Our team will contact you shortly.</p> : <p className="enquiry-note">We&apos;ll respond within 24 hours.</p>}
+            {submitError ? <p className="enquiry-error" role="alert">{submitError}</p> : sent ? <p className="enquiry-success" role="status">Thank you. Our team will contact you shortly.</p> : <p className="enquiry-note">We&apos;ll respond within 24 hours.</p>}
           </form>
         </div>
       </section>

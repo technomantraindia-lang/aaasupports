@@ -5,8 +5,8 @@
 - Workspace: AAA
 - Technology: React, Vite, Node.js/npm
 - Active file at refresh: None
-- Local code graph: 42 files · 64 edges · 0 matched flows
-- Refreshed: 2026-09-24T10:12:40.246Z
+- Local code graph: 43 files · 67 edges · 0 matched flows
+- Refreshed: 2026-09-25T03:34:23.412Z
 
 ## Framework Intelligence (V4.7.8)
 - Profiles: react
@@ -89,6 +89,7 @@
 - src/components/ValuedClientsSection.jsx: used by src/AboutPage.jsx
 - src/components/WhyChooseUs.jsx: depends on src/components/SectionHeading.jsx
 - src/data/homeData.js: used by src/components/AboutSection.jsx, src/components/Footer.jsx, src/components/Header.jsx, src/components/HeroSection.jsx
+- src/data/web3forms.js: used by src/components/EnquiryModal.jsx, src/ContactPage.jsx
 - src/DesigningPipeSupportsPage.jsx: depends on src/hooks/useServiceReveal.js
 - src/hooks/useServiceReveal.js: used by src/DesigningPipeSupportsPage.jsx, src/SiteSupervisionPage.jsx
 - src/SiteSupervisionPage.jsx: depends on src/hooks/useServiceReveal.js
@@ -106,6 +107,7 @@
 - src/AboutPage.jsx -> src/components/ValuedClientsSection.jsx
 - src/App.jsx -> src/components/Header.jsx, src/components/HeroSection.jsx, src/components/IndustryStrip.jsx, src/components/TestimonialsSection.jsx, src/components/FaqClientsSection.jsx, src/components/AboutSection.jsx, src/components/ProductRange.jsx, src/components/ServicesSection.jsx
 - src/components/AboutSection.jsx -> src/data/homeData.js
+- src/components/EnquiryModal.jsx -> src/data/web3forms.js
 - src/components/Footer.jsx -> src/components/Logo.jsx, src/data/homeData.js
 - src/components/Header.jsx -> src/data/homeData.js, src/components/Logo.jsx
 - src/components/HeroSection.jsx -> src/data/homeData.js, src/components/Icon.jsx
@@ -115,6 +117,7 @@
 - src/components/ProjectsSection.jsx -> src/data/homeData.js, src/components/SectionHeading.jsx
 - src/components/TestimonialsSection.jsx -> src/components/testimonials/testimonials.css
 - src/components/WhyChooseUs.jsx -> src/components/SectionHeading.jsx, src/data/homeData.js
+- src/ContactPage.jsx -> src/data/web3forms.js
 - src/DesigningPipeSupportsPage.jsx -> src/hooks/useServiceReveal.js
 - src/main.jsx -> src/App.jsx, src/index.css
 - src/ProductDetailPage.jsx -> src/data/productsData.js
@@ -131,6 +134,7 @@
 - src/components/ProductRange.jsx <- src/App.jsx, src/components/index.js
 - src/components/ServicesSection.jsx <- src/App.jsx
 - src/data/homeData.js <- src/components/AboutSection.jsx, src/components/Footer.jsx, src/components/Header.jsx, src/components/HeroSection.jsx, src/components/MetricsBar.jsx, src/components/PartnersStrip.jsx, src/components/ProjectsSection.jsx, src/components/WhyChooseUs.jsx
+- src/data/web3forms.js <- src/components/EnquiryModal.jsx, src/ContactPage.jsx
 - src/components/Logo.jsx <- src/components/Footer.jsx, src/components/Header.jsx
 - src/components/Icon.jsx <- src/components/HeroSection.jsx
 - src/components/Footer.jsx <- src/components/index.js
@@ -140,7 +144,6 @@
 - src/components/testimonials/testimonials.css <- src/components/TestimonialsSection.jsx
 - src/hooks/useServiceReveal.js <- src/DesigningPipeSupportsPage.jsx, src/SiteSupervisionPage.jsx
 - src/App.jsx <- src/main.jsx
-- src/index.css <- src/main.jsx
 
 ## Recently edited files
 - src/CertificationPage.jsx
@@ -181,6 +184,7 @@
 - src/ContactPage.jsx
 - src/data/homeData.js
 - src/data/productsData.js
+- src/data/web3forms.js
 - src/DesigningPipeSupportsPage.jsx
 - src/GalleryPage.jsx
 - src/hooks/useServiceReveal.js

@@ -2,18 +2,12 @@ import { useEffect, useRef, useState } from 'react'
 import contactImage from '../assets/contact.png'
 import footerImage from '../assets/pipe-support-hero.png'
 import logo from '../assets/logo.png'
-import companyProfilePdf from '../assets/pdf/AAA Supports - Company Profile.pdf'
-import productCataloguePdf from '../assets/pdf/AAA Supports - Product_Catalouge.pdf'
-import serviceGuidePdf from '../assets/pdf/AAA Supports - Service Guide.pdf'
+import { FORM_SUBMIT_ENDPOINT } from './data/formSubmit.js'
 
 const officeMapUrl = 'https://www.google.com/maps?q=22.0840098,73.1977084&z=17&hl=en'
 const officeMapEmbedUrl = 'https://www.google.com/maps?q=22.0840098,73.1977084&z=17&hl=en&output=embed'
 
-const downloadablePdfs = [
-  ['Company Profile', companyProfilePdf, 'AAA Supports - Company Profile.pdf'],
-  ['Product Catalogue', productCataloguePdf, 'AAA Supports - Product Catalogue.pdf'],
-  ['Service Guide', serviceGuidePdf, 'AAA Supports - Service Guide.pdf'],
-]
+const requirementOptions = ['Company Profile', 'Product Catalogue', 'Service Guide']
 
 function Icon({ name, size = 28 }) {
   const common = { width: size, height: size, viewBox: '0 0 24 24', fill: 'none', stroke: 'currentColor', strokeWidth: 1.8, strokeLinecap: 'round', strokeLinejoin: 'round', 'aria-hidden': true }
@@ -63,7 +57,12 @@ function ContactCard({ icon, title, children }) {
 
 export function ContactPage({ hideContactFooter = false }) {
   const [sent, setSent] = useState(false)
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [submitError, setSubmitError] = useState('')
+  const [attachmentName, setAttachmentName] = useState('')
   const contactRef = useRef(null)
+  const contactFormRef = useRef(null)
+  const hasPendingSubmit = useRef(false)
 
   useEffect(() => {
     const page = contactRef.current
@@ -112,9 +111,27 @@ export function ContactPage({ hideContactFooter = false }) {
   }, [])
 
   function handleSubmit(event) {
-    event.preventDefault()
-    event.currentTarget.reset()
-    setSent(true)
+    const file = event.currentTarget.elements.attachment.files?.[0]
+    if (file && file.size > 10 * 1024 * 1024) {
+      event.preventDefault()
+      setSubmitError('Please select a file smaller than 10 MB.')
+      return
+    }
+
+    hasPendingSubmit.current = true
+    setIsSubmitting(true)
+    setSubmitError('')
+    setSent(false)
+  }
+
+  function handleSubmitFrameLoad() {
+    if (hasPendingSubmit.current) {
+      hasPendingSubmit.current = false
+      setIsSubmitting(false)
+      setSent(true)
+      contactFormRef.current?.reset()
+      setAttachmentName('')
+    }
   }
 
   return <div className="contact-page" ref={contactRef}>
@@ -147,24 +164,22 @@ export function ContactPage({ hideContactFooter = false }) {
           <Label>Get In Touch</Label>
           <h2>We’d Love to <strong>Hear From You</strong></h2>
           <p className="form-intro">Tell us what you need in design, engineering, or manufacturing of hanger and support systems. Share your requirement and our team will get back to you shortly.</p>
-          <form id="contact-form" className="contact-form" onSubmit={handleSubmit}>
+          <form id="contact-form" ref={contactFormRef} className="contact-form" action={FORM_SUBMIT_ENDPOINT} method="POST" encType="multipart/form-data" target="contact-submit-frame" onSubmit={handleSubmit}>
+            <input type="hidden" name="_subject" value="New Website Enquiry | AAA Supports" />
+            <input type="hidden" name="_template" value="table" />
+            <input type="hidden" name="_captcha" value="false" />
             <label><span>Your Name <em>*</em></span><input required name="name" placeholder="Enter your name" /></label>
-            <label><span>Your Company</span><input name="company" placeholder="Enter company name" /></label>
+            <label><span>Your Company <em>*</em></span><input required name="company" placeholder="Enter company name" /></label>
             <label><span>Your Email <em>*</em></span><input required type="email" name="email" placeholder="Enter your email" /></label>
             <label><span>Your Phone <em>*</em></span><input required type="tel" name="phone" placeholder="Enter your phone number" /></label>
+            <label className="form-full"><span>What do you need? <em>*</em></span><select required name="requirement" defaultValue=""><option value="" disabled>Select your requirement</option>{requirementOptions.map((option) => <option key={option} value={option}>{option}</option>)}</select></label>
+            <label className="form-full contact-attachment-field"><span>Attach Image or PDF</span><span className="contact-file-picker"><input type="file" name="attachment" accept="image/*,.pdf,application/pdf" onChange={(event) => { setAttachmentName(event.target.files?.[0]?.name || ''); setSubmitError('') }} /><span className="contact-file-icon" aria-hidden="true">↑</span><span className="contact-file-copy"><strong>{attachmentName || 'Choose a file'}</strong><small>JPG, PNG or PDF · maximum 10 MB</small></span></span></label>
             <label className="form-full"><span>Message <em>*</em></span><textarea required name="message" placeholder="Tell us about your requirement..." /></label>
-            <button className="contact-submit" type="submit">{sent ? 'Message Sent' : 'Send Message'}<Icon name="arrow" size={20} /></button>
+            <button className="contact-submit" type="submit" disabled={isSubmitting}>{isSubmitting ? 'Sending...' : sent ? 'Message Sent' : 'Send Message'}<Icon name="arrow" size={20} /></button>
             {sent ? <p className="form-success" role="status">Thank you — our team will get back to you shortly.</p> : null}
-            {sent ? <div className="contact-downloads" aria-label="Download company PDFs">
-              <div className="contact-downloads-heading"><strong>Download Our PDFs</strong><span>Explore our company, products and services.</span></div>
-              <div className="contact-download-grid">
-                {downloadablePdfs.map(([label, file, filename]) => <a className="contact-download-card" href={file} download={filename} key={label}>
-                  <span className="contact-download-icon" aria-hidden="true">PDF</span>
-                  <span><strong>{label}</strong><small>Download PDF <b>↓</b></small></span>
-                </a>)}
-              </div>
-            </div> : null}
+            {submitError ? <p className="form-error" role="alert">{submitError}</p> : null}
           </form>
+          <iframe name="contact-submit-frame" title="Contact form submission" className="contact-submit-frame" onLoad={handleSubmitFrameLoad} />
         </section>
       </div>
 

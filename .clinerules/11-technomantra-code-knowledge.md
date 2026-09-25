@@ -2,16 +2,17 @@
 
 > Structural local index. Read current source before editing. Secrets are intentionally excluded.
 
-- Indexed source files: 42
-- Structural edges: 64
+- Indexed source files: 43
+- Structural edges: 67
 - Matched end-to-end flows: 0
-- Updated: 2026-09-24T10:12:40.243Z
+- Updated: 2026-09-25T03:34:23.398Z
 
 ## Dependency edges
 - IMPORT index.html -> src/main.jsx
 - IMPORT src/AboutPage.jsx -> src/components/ValuedClientsSection.jsx
 - IMPORT src/App.jsx -> src/components/Header.jsx, src/components/HeroSection.jsx, src/components/IndustryStrip.jsx, src/components/TestimonialsSection.jsx, src/components/FaqClientsSection.jsx, src/components/AboutSection.jsx, src/components/ProductRange.jsx, src/components/ServicesSection.jsx
 - IMPORT src/components/AboutSection.jsx -> src/data/homeData.js
+- IMPORT src/components/EnquiryModal.jsx -> src/data/web3forms.js
 - IMPORT src/components/Footer.jsx -> src/components/Logo.jsx, src/data/homeData.js
 - IMPORT src/components/Header.jsx -> src/data/homeData.js, src/components/Logo.jsx
 - IMPORT src/components/HeroSection.jsx -> src/data/homeData.js, src/components/Icon.jsx
@@ -21,6 +22,7 @@
 - IMPORT src/components/ProjectsSection.jsx -> src/data/homeData.js, src/components/SectionHeading.jsx
 - IMPORT src/components/TestimonialsSection.jsx -> src/components/testimonials/testimonials.css
 - IMPORT src/components/WhyChooseUs.jsx -> src/components/SectionHeading.jsx, src/data/homeData.js
+- IMPORT src/ContactPage.jsx -> src/data/web3forms.js
 - IMPORT src/DesigningPipeSupportsPage.jsx -> src/hooks/useServiceReveal.js
 - IMPORT src/main.jsx -> src/App.jsx, src/index.css
 - IMPORT src/PipeStressAnalysisPage.jsx -> src/hooks/useServiceReveal.js
@@ -47,9 +49,7 @@
 - REACT src/components/ValuedClientsSection.jsx: used by src/AboutPage.jsx
 - REACT src/components/WhyChooseUs.jsx: depends on src/components/SectionHeading.jsx
 - REACT src/data/homeData.js: used by src/components/AboutSection.jsx, src/components/Footer.jsx, src/components/Header.jsx, src/components/HeroSection.jsx
-- REACT src/DesigningPipeSupportsPage.jsx: depends on src/hooks/useServiceReveal.js
-- REACT src/hooks/useServiceReveal.js: used by src/DesigningPipeSupportsPage.jsx, src/SiteSupervisionPage.jsx
-- REACT src/SiteSupervisionPage.jsx: depends on src/hooks/useServiceReveal.js
+- REACT src/data/web3forms.js: used by src/components/EnquiryModal.jsx, src/ContactPage.jsx
 
 ## Database references
 - DB src/CertificationPage.jsx -> react, quality
@@ -76,7 +76,7 @@
 - DB scripts/remove-bg.js -> sharp, fs, path, light, pure
 
 ## Symbols
-- SYMBOL src/CertificationPage.jsx: CertificationPage, handleKeyDown
+- SYMBOL src/CertificationPage.jsx: CertificationPage, getCertificateNumber, handleKeyDown
 - SYMBOL src/AboutPage.jsx: StatIcon, StandardIcon, QualityIcon, AboutValueIcon, AboutPage
 - SYMBOL src/App.jsx: currentPage, HomePage, App, syncPage, openEnquiryFromLink
 - SYMBOL src/ClientsPage.jsx: ClientsPage, normalizeClientName, orderClientEntries
@@ -102,6 +102,7 @@
 - SYMBOL src/components/WhyChooseUs.jsx: WhyChooseUs
 - SYMBOL src/ContactPage.jsx: Icon, Label, ContactCard, ContactPage, handleSubmit
 - SYMBOL src/data/productsData.js: getProductBySlug
+- SYMBOL src/data/web3forms.js: submitWeb3Form
 - SYMBOL src/DesigningPipeSupportsPage.jsx: CheckIcon, ServiceKicker, ServiceVisual, DesigningPipeSupportsPage
 - SYMBOL src/GalleryPage.jsx: GalleryPage, handleKeyDown
 - SYMBOL src/hooks/useServiceReveal.js: useServiceReveal

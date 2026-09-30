@@ -19,6 +19,7 @@ import fixSupportImage1 from '../assets/Primary Supports/Fix Supports/fix-suppor
 import anchorSupportImage1 from '../assets/Primary Supports/Anchor Supports/1.png'
 import uClampImage1 from '../assets/Primary Supports/U Clamps - U Bolts/1.png'
 import generatedSlideSupportsImage from '../assets/Primary Supports/Slide Supports/generated-slide-supports.png'
+import ptfeSlideImage1 from '../assets/Primary Supports/PTFE Slide Supports/1.png'
 import rollerSupportsImage1 from '../assets/Primary Supports/Roller Supports/1.png'
 import variableSpringImage1 from '../assets/Primary Supports/Variable Spring Hangers & Supports/1.png'
 import constantSpringImage1 from '../assets/Primary Supports/Constant Spring Hangers & Supports/1.png'
@@ -49,7 +50,7 @@ const productImageSet = {
   slides: slidesGuides,
   guide: guideSupport1,
   slide: generatedSlideSupportsImage,
-  ptfe: slidesGuides,
+  ptfe: ptfeSlideImage1,
   puff: pufSupportPhoto1,
   pipeShoe: pipeShoeImage1,
   structure: customFabrication,

@@ -46,6 +46,8 @@ import uClampImage1 from '../../assets/Primary Supports/U Clamps - U Bolts/1.png
 import uClampImage2 from '../../assets/Primary Supports/U Clamps - U Bolts/2.png'
 import uClampImage3 from '../../assets/Primary Supports/U Clamps - U Bolts/3.png'
 import generatedSlideSupportsImage from '../../assets/Primary Supports/Slide Supports/generated-slide-supports.png'
+import ptfeSlideImage1 from '../../assets/Primary Supports/PTFE Slide Supports/1.png'
+import ptfeSlideImage2 from '../../assets/Primary Supports/PTFE Slide Supports/2.png'
 import rollerSupportsImage1 from '../../assets/Primary Supports/Roller Supports/1.png'
 import rollerSupportsImage2 from '../../assets/Primary Supports/Roller Supports/2.png'
 import variableSpringImage1 from '../../assets/Primary Supports/Variable Spring Hangers & Supports/1.png'
@@ -638,7 +640,8 @@ export const productsData = {
       { label: 'Up to 250°C', icon: 'check' },
     ],
     galleryImages: [
-      slidesGuides,
+      ptfeSlideImage1,
+      ptfeSlideImage2,
     ],
     overviewText:
       'AAA Supports PTFE Slide Plates feature virgin or reinforced PTFE bonded to heavy carbon steel backing plates, paired with 2B mirror-polished AISI 304/316 stainless steel upper slider sheets. Designed to absorb vertical loads while providing exceptionally low coefficient of friction for critical refinery piping.',
@@ -971,11 +974,6 @@ export const productsData = {
     ],
     galleryImages: [
       fixSupportImage1,
-      genSteel,
-      customFabrication,
-      genRefinery,
-      slidesGuides,
-      genClamp,
     ],
     overviewText:
       'AAA Supports Fix Supports are structural anchor assemblies engineered to absorb massive axial thrusts, lateral forces, and overturning moments. Used at battery limits, pump connections, and expansion loop transitions to divide pipeline systems into independent thermal expansion segments.',
@@ -1195,11 +1193,10 @@ export const productsData = {
       { label: 'Quick Install', icon: 'check' },
     ],
     galleryImages: [
-      slidesGuides,
-      genSteel,
-      genHardware,
-      customFabrication,
-      genClamp,
+      restSupportImage1,
+      restSupportImage2,
+      restSupportImage3,
+      restSupportImage4,
     ],
     overviewText:
       'AAA Supports Rest Supports provide simple, rugged deadweight load carrying for horizontal piping lines. Built in base-mounted stanchion, cantilever bracket, and beam resting pad styles to support standard pipelines across industrial process plants.',

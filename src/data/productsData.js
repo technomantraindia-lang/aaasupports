@@ -12,6 +12,96 @@ import pufCryogenicSupport from '../assets/products/puf-cryogenic-support.jpg'
 import hydraulicSnubber from '../assets/products/hydraulic-snubber.jpg'
 import pipeRollerSupport from '../assets/products/pipe-roller-support.jpg'
 
+import pufSupportPhoto1 from '../../assets/Primary Supports/puff-supports/WhatsApp Image 2026-09-25 at 16.06.55565.jpeg'
+import pufSupportPhoto2 from '../../assets/Primary Supports/puff-supports/WhatsApp Image 2026-09-25 at 16.06.58464.jpeg'
+import pufSupportPhoto3 from '../../assets/Primary Supports/puff-supports/WhatsApp Image 2026-09-25 at 16.06.5864548.jpeg'
+import pufSupportPhoto4 from '../../assets/Primary Supports/puff-supports/WhatsApp Image 2026-09-25 at 16.06.59.jpeg'
+import guideSupport1 from '../../assets/Primary Supports/5. Guide Shoe/Guide support 300 NB-1.png'
+import guideSupport2 from '../../assets/Primary Supports/5. Guide Shoe/Guide support 300 NB-2.png'
+import slideSupport1 from '../../assets/Primary Supports/5. Guide Shoe/Slide support 300 NB-1.png'
+import slideSupport2 from '../../assets/Primary Supports/5. Guide Shoe/Slide support 300 NB-2.png'
+import pipeShoeImage1 from '../../assets/Primary Supports/1. Pipe Shoe  Saddles/1.png'
+import pipeShoeImage2 from '../../assets/Primary Supports/1. Pipe Shoe  Saddles/2.png'
+import pipeShoeImage3 from '../../assets/Primary Supports/1. Pipe Shoe  Saddles/3.png'
+import pipeShoeImage4 from '../../assets/Primary Supports/1. Pipe Shoe  Saddles/Pipe shoe-3.png'
+import pipeShoeImage5 from '../../assets/Primary Supports/1. Pipe Shoe  Saddles/Pipe shoe-4.png'
+import pipeShoeImage6 from '../../assets/Primary Supports/1. Pipe Shoe  Saddles/Pipe shoe-6.png'
+import pipeShoeImage7 from '../../assets/Primary Supports/1. Pipe Shoe  Saddles/Pipe shoe-8.png'
+import pipeClampImage1 from '../../assets/Primary Supports/pipe clamps/1.png'
+import pipeClampImage2 from '../../assets/Primary Supports/pipe clamps/2.png'
+import pipeClampImage3 from '../../assets/Primary Supports/pipe clamps/3.png'
+import pipeClampImage4 from '../../assets/Primary Supports/pipe clamps/4.png'
+import trunnionImage1 from '../../assets/Primary Supports/Trunnions/1.png'
+import trunnionImage2 from '../../assets/Primary Supports/Trunnions/2.png'
+import trunnionImage3 from '../../assets/Primary Supports/Trunnions/3.png'
+import trunnionImage4 from '../../assets/Primary Supports/Trunnions/4.png'
+import restSupportImage1 from '../../assets/Primary Supports/Rest Supports/1.png'
+import restSupportImage2 from '../../assets/Primary Supports/Rest Supports/2.png'
+import restSupportImage3 from '../../assets/Primary Supports/Rest Supports/3.png'
+import restSupportImage4 from '../../assets/Primary Supports/Rest Supports/4.png'
+import fixSupportImage1 from '../../assets/Primary Supports/Fix Supports/fix-support.png'
+import anchorSupportImage1 from '../../assets/Primary Supports/Anchor Supports/1.png'
+import anchorSupportImage2 from '../../assets/Primary Supports/Anchor Supports/2.png'
+import uClampImage1 from '../../assets/Primary Supports/U Clamps - U Bolts/1.png'
+import uClampImage2 from '../../assets/Primary Supports/U Clamps - U Bolts/2.png'
+import uClampImage3 from '../../assets/Primary Supports/U Clamps - U Bolts/3.png'
+import generatedSlideSupportsImage from '../../assets/Primary Supports/Slide Supports/generated-slide-supports.png'
+import rollerSupportsImage1 from '../../assets/Primary Supports/Roller Supports/1.png'
+import rollerSupportsImage2 from '../../assets/Primary Supports/Roller Supports/2.png'
+import variableSpringImage1 from '../../assets/Primary Supports/Variable Spring Hangers & Supports/1.png'
+import variableSpringImage2 from '../../assets/Primary Supports/Variable Spring Hangers & Supports/2.png'
+import variableSpringImage3 from '../../assets/Primary Supports/Variable Spring Hangers & Supports/3.png'
+import variableSpringDrawing1 from '../../assets/Primary Supports/Variable Spring Hangers & Supports/darowing1.png'
+import variableSpringDrawing2 from '../../assets/Primary Supports/Variable Spring Hangers & Supports/darowing2.png'
+import constantSpringImage1 from '../../assets/Primary Supports/Constant Spring Hangers & Supports/1.png'
+import constantSpringImage2 from '../../assets/Primary Supports/Constant Spring Hangers & Supports/2.png'
+import rigidHangerImage1 from '../../assets/Primary Supports/Rigid Hangers/1.png'
+import rigidHangerImage2 from '../../assets/Primary Supports/Rigid Hangers/2.png'
+import rigidStrutImage1 from '../../assets/Primary Supports/Rigid Struts/rigid strut_1.jpg'
+import rigidStrutImage2 from '../../assets/Primary Supports/Rigid Struts/Strut Assembly.jpg'
+import rigidStrutImage3 from '../../assets/Primary Supports/Rigid Struts/WhatsApp Image 2026-09-25 at 16.06.47778.jpeg'
+import flangeImage1 from '../../assets/Primary Supports/Flanges/1.png'
+import flangeImage2 from '../../assets/Primary Supports/Flanges/2.png'
+import foundationBoltImage1 from '../../assets/Primary Supports/Foundation Bolts/1.png'
+import generatedLineStopsImage from '../../assets/Primary Supports/Line Stops/generated-line-stops.png'
+import hydraulicSnubberImage1 from '../../assets/Primary Supports/Hydraulic Snubbers/1.png'
+import structuralBeamImage1 from '../../assets/Primary Supports/Structural Beams/1.png'
+import structuralBeamImage2 from '../../assets/Primary Supports/Structural Beams/2.png'
+import structuralColumnImage1 from '../../assets/Primary Supports/Structural Columns/1.png'
+import structuralColumnImage2 from '../../assets/Primary Supports/Structural Columns/2.png'
+import structuralFrameImage1 from '../../assets/Primary Supports/Structural Frames/1.png'
+import structuralFrameImage2 from '../../assets/Primary Supports/Structural Frames/2.png'
+import structuralMembersImage from '../../assets/Primary Supports/Structural Members/generated-structural-members.png'
+import bracketImage1 from '../../assets/Primary Supports/Brackets/1.png'
+import pipeFittingImage1 from '../../assets/Primary Supports/Pipe Fittings/1.png'
+import pipingSpoolImage1 from '../../assets/Primary Supports/Piping Spools/1.png'
+import pipeShoeDrawing from '../../assets/Primary Supports/1. Pipe Shoe  Saddles/drawing-generated.png'
+import pipeClampDrawing from '../../assets/Primary Supports/pipe clamps/drawing-generated.png'
+import constantSpringDrawing from '../../assets/Primary Supports/Constant Spring Hangers & Supports/drawing-generated.png'
+import pufSupportDrawing from '../../assets/Primary Supports/puff-supports/drawing-generated.png'
+import hydraulicSnubberDrawing from '../../assets/Primary Supports/Hydraulic Snubbers/drawing-generated.png'
+import rollerSupportDrawing from '../../assets/Primary Supports/Roller Supports/drawing-generated.png'
+import slideSupportDrawing from '../../assets/Primary Supports/Slide Supports/drawing-generated.png'
+import ptfeSlideDrawing from '../../assets/Primary Supports/PTFE Slide Supports/drawing-generated.png'
+import guideShoeDrawing from '../../assets/Primary Supports/5. Guide Shoe/drawing-generated.png'
+import rigidStrutDrawing from '../../assets/Primary Supports/Rigid Struts/drawing-generated.png'
+import rigidHangerDrawing from '../../assets/Primary Supports/Rigid Hangers/drawing-generated.png'
+import uClampDrawing from '../../assets/Primary Supports/U Clamps - U Bolts/drawing-generated.png'
+import foundationBoltDrawing from '../../assets/Primary Supports/Foundation Bolts/drawing-generated.png'
+import fixSupportDrawing from '../../assets/Primary Supports/Fix Supports/drawing-generated.png'
+import lineStopDrawing from '../../assets/Primary Supports/Line Stops/drawing-generated.png'
+import anchorSupportDrawing from '../../assets/Primary Supports/Anchor Supports/drawing-generated.png'
+import trunnionDrawing from '../../assets/Primary Supports/Trunnions/drawing-generated.png'
+import restSupportDrawing from '../../assets/Primary Supports/Rest Supports/drawing-generated.png'
+import structuralBeamDrawing from '../../assets/Primary Supports/Structural Beams/drawing-generated.png'
+import structuralColumnDrawing from '../../assets/Primary Supports/Structural Columns/drawing-generated.png'
+import structuralFrameDrawing from '../../assets/Primary Supports/Structural Frames/drawing-generated.png'
+import structuralMemberDrawing from '../../assets/Primary Supports/Structural Members/drawing-generated.png'
+import bracketDrawing from '../../assets/Primary Supports/Brackets/drawing-generated.png'
+import pipeFittingDrawing from '../../assets/Primary Supports/Pipe Fittings/drawing-generated.png'
+import flangeDrawing from '../../assets/Primary Supports/Flanges/drawing-generated.png'
+import pipingSpoolDrawing from '../../assets/Primary Supports/Piping Spools/drawing-generated.png'
+
 import industryOilGas from '../../assets/industry-oil-gas.png'
 import industryPower from '../../assets/industry-power.png'
 import industryIndustrial from '../../assets/industry-industrial.png'
@@ -100,11 +190,13 @@ export const productsData = {
       { label: 'Standard Compliant', icon: 'check' },
     ],
     galleryImages: [
-      genClamp,
-      genHardware,
-      genRefinery,
-      slidesGuides,
-      genSteel,
+      pipeShoeImage1,
+      pipeShoeImage2,
+      pipeShoeImage3,
+      pipeShoeImage4,
+      pipeShoeImage5,
+      pipeShoeImage6,
+      pipeShoeImage7,
     ],
     overviewText:
       'Pipe shoes are designed to support horizontal pipes and transfer the load to the supporting structure. They are manufactured in accordance with ASME B31.1, ASME B31.3, MSS SP-58, MSS SP-69 and other international standards. Available in welded and fabricated construction with or without insulation, our pipe shoes are suitable for a wide range of industrial applications including Oil & Gas, Petrochemicals, Power Plants, Fertilizers and more.',
@@ -125,7 +217,7 @@ export const productsData = {
       { label: 'Surface Finish', value: 'Primer (IS:2074), Hot Dip Galvanized, Epoxy Coating (on request)' },
     ],
     drawings: [
-      { type: 'TYPE PS-1', title: '(Welded Pipe Shoe)', diagramType: 'welded-shoe' },
+      { type: 'TYPE PS-1', title: '(Welded Pipe Shoe)', image: pipeShoeDrawing },
       { type: 'TYPE PS-2', title: '(With Insulation Clamping)', diagramType: 'clamped-shoe' },
     ],
     keyFeatures: [
@@ -158,11 +250,10 @@ export const productsData = {
       { label: 'ASME Certified', icon: 'check' },
     ],
     galleryImages: [
-      genClamp,
-      pipeClampsUBolts,
-      genHardware,
-      customFabrication,
-      genRefinery,
+      pipeClampImage1,
+      pipeClampImage2,
+      pipeClampImage3,
+      pipeClampImage4,
     ],
     overviewText:
       'AAA Supports precision pipe clamps provide secure grip and vibration damping for horizontal and vertical piping runs. Available in 2-bolt, 3-bolt, and riser configurations manufactured to ASME B31.1 and MSS SP-58 standard specifications from -150°C to +550°C operating conditions.',
@@ -183,7 +274,7 @@ export const productsData = {
       { label: 'Surface Finish', value: 'Zinc Chromate Primer, Hot Dip Galvanized to IS:2629' },
     ],
     drawings: [
-      { type: 'TYPE PC-1', title: '(Two-Bolt Pipe Clamp)', diagramType: 'clamped-shoe' },
+      { type: 'TYPE PC-1', title: '(Two-Bolt Pipe Clamp)', image: pipeClampDrawing },
       { type: 'TYPE PC-2', title: '(Three-Bolt High Temp Clamp)', diagramType: 'clamped-shoe' },
     ],
     keyFeatures: [
@@ -216,11 +307,9 @@ export const productsData = {
       { label: 'Models A to G', icon: 'check' },
     ],
     galleryImages: [
-      variableSpringSupports,
-      constantSpringSupports,
-      constantSpringHangers,
-      genHardware,
-      customFabrication,
+      variableSpringImage1,
+      variableSpringImage2,
+      variableSpringImage3,
     ],
     overviewText:
       'AAA Supports Variable Spring Hangers & Supports are engineered in three standard series (VS1, VS2, VS3) across twenty-five spring sizes covering loads from 8.2 kg up to 27.43 metric tons. They provide travel ranges of 40mm, 80mm, and 160mm with ±5° collinear displacement capability. Built in models A, B, C, D, E, F, and G to fit every hanging or base-mounted configuration.',
@@ -241,8 +330,8 @@ export const productsData = {
       { label: 'Testing & Quality', value: 'Individual load calibration and certified test reports' },
     ],
     drawings: [
-      { type: 'MODEL VSH-A', title: '(Single Upper Threaded Eye)', diagramType: 'welded-shoe' },
-      { type: 'MODEL VSH-F', title: '(Base Mounted Floor Support)', diagramType: 'clamped-shoe' },
+      { type: 'MODEL VSH-A', title: '(Single Upper Threaded Eye)', image: variableSpringDrawing1 },
+      { type: 'MODEL VSH-F', title: '(Base Mounted Floor Support)', image: variableSpringDrawing2 },
     ],
     keyFeatures: [
       'Calibrated spring coils manufactured to ASTM A125 and BS 1726',
@@ -274,11 +363,8 @@ export const productsData = {
       { label: 'ASME B31.1', icon: 'check' },
     ],
     galleryImages: [
-      constantSpringSupports,
-      constantSpringHangers,
-      variableSpringSupports,
-      customFabrication,
-      genRefinery,
+      constantSpringImage1,
+      constantSpringImage2,
     ],
     overviewText:
       'AAA Supports Constant Spring Hangers & Supports provide uniform load support throughout the entire thermal travel range. Utilizing a precision mechanical cam-and-lever mechanism, these supports maintain constant support effort with variability under 5%. Available in horizontal (AH to FH) and vertical (AV to FV) models for loads up to 50,000 kg and travel lengths up to 400mm.',
@@ -299,7 +385,7 @@ export const productsData = {
       { label: 'Corrosion Protection', value: 'Epoxy Zinc Phosphate Primer, HDG Casing' },
     ],
     drawings: [
-      { type: 'TYPE CH-1', title: '(Horizontal Constant Hanger)', diagramType: 'welded-shoe' },
+      { type: 'TYPE CH-1', title: '(Horizontal Constant Hanger)', image: constantSpringDrawing },
       { type: 'TYPE CV-1', title: '(Vertical Constant Hanger)', diagramType: 'clamped-shoe' },
     ],
     keyFeatures: [
@@ -332,11 +418,10 @@ export const productsData = {
       { label: 'Energy Efficient', icon: 'check' },
     ],
     galleryImages: [
-      pufCryogenicSupport,
-      genClamp,
-      slidesGuides,
-      genSteel,
-      customFabrication,
+      pufSupportPhoto1,
+      pufSupportPhoto2,
+      pufSupportPhoto3,
+      pufSupportPhoto4,
     ],
     overviewText:
       'AAA Supports PUF / Cryogenic Pipe Supports provide complete thermal isolation between low-temperature fluid pipelines and structural steelwork. Manufactured with high-density polyurethane foam (160 to 320 kg/m³) with factory-applied moisture vapor barriers and heavy-duty galvanized clamping cradles, eliminating condensation, icing, and thermal energy loss.',
@@ -357,7 +442,7 @@ export const productsData = {
       { label: 'Cradle Finish', value: 'Hot Dip Galvanized (HDG) / Stainless Steel 304/316' },
     ],
     drawings: [
-      { type: 'TYPE PUF-1', title: '(Cryogenic Clamped Shoe)', diagramType: 'clamped-shoe' },
+      { type: 'TYPE PUF-1', title: '(Cryogenic Clamped Shoe)', image: pufSupportDrawing },
       { type: 'TYPE PUF-2', title: '(Cold Insulated Guide Shoe)', diagramType: 'welded-shoe' },
     ],
     keyFeatures: [
@@ -390,11 +475,7 @@ export const productsData = {
       { label: 'Self-Bleeding', icon: 'check' },
     ],
     galleryImages: [
-      hydraulicSnubber,
-      constantSpringHangers,
-      genHardware,
-      customFabrication,
-      genSteel,
+      hydraulicSnubberImage1,
     ],
     overviewText:
       'AAA Supports SNU Series Hydraulic Snubbers are velocity-sensitive dynamic restraints. During normal plant heating and cooling cycles, the internal fluid flows freely through a precision valve orifice. Under rapid shock events (earthquake, turbine trip, water hammer), the valve instantly closes to convert the snubber into a rigid high-capacity structural strut.',
@@ -415,7 +496,7 @@ export const productsData = {
       { label: 'Testing Protocol', value: '100% dynamic load tested with velocity-load validation curve' },
     ],
     drawings: [
-      { type: 'TYPE SNU-1', title: '(Direct Eye-Clevis Mounted)', diagramType: 'welded-shoe' },
+      { type: 'TYPE SNU-1', title: '(Direct Eye-Clevis Mounted)', image: hydraulicSnubberDrawing },
       { type: 'TYPE SNU-2', title: '(With Extension Rod Assembly)', diagramType: 'clamped-shoe' },
     ],
     keyFeatures: [
@@ -448,11 +529,8 @@ export const productsData = {
       { label: 'MSS SP-58', icon: 'check' },
     ],
     galleryImages: [
-      pipeRollerSupport,
-      slidesGuides,
-      genSteel,
-      customFabrication,
-      genClamp,
+      rollerSupportsImage1,
+      rollerSupportsImage2,
     ],
     overviewText:
       'AAA Supports Pipe Roller Support Assemblies provide reliable support for pipelines subjected to substantial longitudinal thermal expansion. Designed with heavy cast or forged steel roller wheels mounted on precision axles and dual self-aligning bearing blocks, these units reduce friction coefficients below 0.05 for pipes from 2" up to 30" NB.',
@@ -473,7 +551,7 @@ export const productsData = {
       { label: 'Surface Finish', value: 'Red Oxide Zinc Chromate Primer / Hot Dip Galvanized' },
     ],
     drawings: [
-      { type: 'TYPE RS-1', title: '(Standard Pipe Roller Assembly)', diagramType: 'welded-shoe' },
+      { type: 'TYPE RS-1', title: '(Standard Pipe Roller Assembly)', image: rollerSupportDrawing },
       { type: 'TYPE RS-2', title: '(Roller Chair with Guide Lugs)', diagramType: 'clamped-shoe' },
     ],
     keyFeatures: [
@@ -506,11 +584,7 @@ export const productsData = {
       { label: 'Custom Travel', icon: 'check' },
     ],
     galleryImages: [
-      slidesGuides,
-      genSteel,
-      genHardware,
-      customFabrication,
-      genClamp,
+      generatedSlideSupportsImage,
     ],
     overviewText:
       'AAA Supports Slide Supports are designed for pipe assemblies requiring low resistance planar movements. Built in six standard configurations (Type I to Type VI) covering light, medium, and heavy structural load conditions. Available with polished stainless steel and virgin PTFE sliding interfaces to minimize structural stress transfer.',
@@ -531,7 +605,7 @@ export const productsData = {
       { label: 'Surface Finish', value: 'Hot Dip Galvanized / High Build Epoxy Coating' },
     ],
     drawings: [
-      { type: 'TYPE SS-1', title: '(Planar Slide Base)', diagramType: 'welded-shoe' },
+      { type: 'TYPE SS-1', title: '(Planar Slide Base)', image: slideSupportDrawing },
       { type: 'TYPE SS-2', title: '(Guided Slide Assembly)', diagramType: 'clamped-shoe' },
     ],
     keyFeatures: [
@@ -565,10 +639,6 @@ export const productsData = {
     ],
     galleryImages: [
       slidesGuides,
-      genSteel,
-      genHardware,
-      customFabrication,
-      genClamp,
     ],
     overviewText:
       'AAA Supports PTFE Slide Plates feature virgin or reinforced PTFE bonded to heavy carbon steel backing plates, paired with 2B mirror-polished AISI 304/316 stainless steel upper slider sheets. Designed to absorb vertical loads while providing exceptionally low coefficient of friction for critical refinery piping.',
@@ -589,7 +659,7 @@ export const productsData = {
       { label: 'Mounting', value: 'Welded, Bolted or Recessed into structural steel' },
     ],
     drawings: [
-      { type: 'TYPE PTFE-1', title: '(Standard Slide Plate)', diagramType: 'welded-shoe' },
+      { type: 'TYPE PTFE-1', title: '(Standard Slide Plate)', image: ptfeSlideDrawing },
       { type: 'TYPE PTFE-2', title: '(Confined Slide Pad Assembly)', diagramType: 'clamped-shoe' },
     ],
     keyFeatures: [
@@ -622,11 +692,10 @@ export const productsData = {
       { label: 'Heavy Duty', icon: 'check' },
     ],
     galleryImages: [
-      slidesGuides,
-      genSteel,
-      genHardware,
-      customFabrication,
-      genClamp,
+      guideSupport1,
+      guideSupport2,
+      slideSupport1,
+      slideSupport2,
     ],
     overviewText:
       'AAA Supports Guide Shoes combine vertical pipe support cradles with structural lateral guide brackets. Designed to guide expanding pipework along straight pipe-rack runs while absorbing side wind, earthquake, and centrifugal bend forces. Available in welded, bolted, and low-friction slide configurations.',
@@ -647,7 +716,7 @@ export const productsData = {
       { label: 'Surface Finish', value: 'Hot Dip Galvanized / Epoxy Marine Coating' },
     ],
     drawings: [
-      { type: 'TYPE GS-1', title: '(Channel Guided Shoe)', diagramType: 'welded-shoe' },
+      { type: 'TYPE GS-1', title: '(Channel Guided Shoe)', image: guideShoeDrawing },
       { type: 'TYPE GS-2', title: '(Bolted Lateral Guide)', diagramType: 'clamped-shoe' },
     ],
     keyFeatures: [
@@ -680,11 +749,9 @@ export const productsData = {
       { label: 'Heavy Dynamic', icon: 'check' },
     ],
     galleryImages: [
-      customFabrication,
-      genHardware,
-      genSteel,
-      constantSpringHangers,
-      genRefinery,
+      rigidStrutImage1,
+      rigidStrutImage2,
+      rigidStrutImage3,
     ],
     overviewText:
       'AAA Supports Rigid Struts are dynamic piping restraints designed to absorb bidirectional axial forces (tension and compression). Featuring spherical bearing rod ends at both extremes and a central turnbuckle body with left-and-right threading for fine field length adjustment up to ±75mm.',
@@ -705,7 +772,7 @@ export const productsData = {
       { label: 'Surface Finish', value: 'Zinc Electroplated / HDG / Epoxy Painted' },
     ],
     drawings: [
-      { type: 'TYPE RS-1', title: '(Standard Rigid Strut)', diagramType: 'welded-shoe' },
+      { type: 'TYPE RS-1', title: '(Standard Rigid Strut)', image: rigidStrutDrawing },
       { type: 'TYPE RS-2', title: '(Heavy Duty Dynamic Strut)', diagramType: 'clamped-shoe' },
     ],
     keyFeatures: [
@@ -738,11 +805,8 @@ export const productsData = {
       { label: 'MSS SP-58', icon: 'check' },
     ],
     galleryImages: [
-      constantSpringHangers,
-      genHardware,
-      customFabrication,
-      genSteel,
-      genClamp,
+      rigidHangerImage1,
+      rigidHangerImage2,
     ],
     overviewText:
       'AAA Supports Rigid Hanger Assemblies provide rigid vertical suspension for pipelines with minimal vertical thermal movement. Consisting of beam attachments, high-tensile threaded hanger rods, forged turnbuckles, forged weldless eye nuts, and heavy-duty pipe clamps built to ASME B31.1 and MSS SP-58.',
@@ -763,7 +827,7 @@ export const productsData = {
       { label: 'Finish', value: 'Hot Dip Galvanized / Electro Zinc Plated' },
     ],
     drawings: [
-      { type: 'TYPE RH-1', title: '(Clevis Rod Hanger)', diagramType: 'welded-shoe' },
+      { type: 'TYPE RH-1', title: '(Clevis Rod Hanger)', image: rigidHangerDrawing },
       { type: 'TYPE RH-2', title: '(Turnbuckle Eye Hanger)', diagramType: 'clamped-shoe' },
     ],
     keyFeatures: [
@@ -796,11 +860,9 @@ export const productsData = {
       { label: '4 Heavy Nuts', icon: 'check' },
     ],
     galleryImages: [
-      pipeClampsUBolts,
-      genClamp,
-      genHardware,
-      customFabrication,
-      genSteel,
+      uClampImage1,
+      uClampImage2,
+      uClampImage3,
     ],
     overviewText:
       'AAA Supports U-Bolts and U-Clamps are manufactured in accordance with MSS SP-58 Type 24 and DIN 3570 standard specifications. Designed for clamping piping to structural steel beams, concrete sleepers, and brackets. Supplied with four heavy hex nuts (two lock nuts) and optional neoprene or PTFE coating to prevent galvanic corrosion.',
@@ -821,7 +883,7 @@ export const productsData = {
       { label: 'Hardware', value: 'Supplied with 4 Hex Nuts + Flat Washers' },
     ],
     drawings: [
-      { type: 'TYPE UB-1', title: '(Standard Grip U-Bolt)', diagramType: 'welded-shoe' },
+      { type: 'TYPE UB-1', title: '(Standard Grip U-Bolt)', image: uClampDrawing },
       { type: 'TYPE UB-2', title: '(Non-Grip Guide U-Bolt with Cushion)', diagramType: 'clamped-shoe' },
     ],
     keyFeatures: [
@@ -854,11 +916,7 @@ export const productsData = {
       { label: 'IS:5624 / ASTM', icon: 'check' },
     ],
     galleryImages: [
-      genHardware,
-      customFabrication,
-      genSteel,
-      pipeClampsUBolts,
-      genClamp,
+      foundationBoltImage1,
     ],
     overviewText:
       'AAA Supports Foundation Anchor Bolts provide maximum pullout resistance and shear strength for securing structural stanchions, pipe rack footings, and heavy machinery to civil foundations. Fabricated in J-Type, L-Type, and Bottom-Plate Anchor configurations to IS:5624 and ASTM F1554 standards.',
@@ -879,7 +937,7 @@ export const productsData = {
       { label: 'Surface Finish', value: 'Black, Hot Dip Galvanized to ASTM A153, Zinc Plated' },
     ],
     drawings: [
-      { type: 'TYPE FB-J', title: '(J-Type Foundation Bolt)', diagramType: 'welded-shoe' },
+      { type: 'TYPE FB-J', title: '(J-Type Foundation Bolt)', image: foundationBoltDrawing },
       { type: 'TYPE FB-PL', title: '(Plate-Type Heavy Anchor Bolt)', diagramType: 'clamped-shoe' },
     ],
     keyFeatures: [
@@ -912,6 +970,7 @@ export const productsData = {
       { label: 'ASME B31.3', icon: 'check' },
     ],
     galleryImages: [
+      fixSupportImage1,
       genSteel,
       customFabrication,
       genRefinery,
@@ -937,7 +996,7 @@ export const productsData = {
       { label: 'Surface Finish', value: 'Shop Primer, Hot Dip Galvanized, Multi-coat Epoxy' },
     ],
     drawings: [
-      { type: 'TYPE FA-1', title: '(Heavy Welded Box Anchor)', diagramType: 'welded-shoe' },
+      { type: 'TYPE FA-1', title: '(Heavy Welded Box Anchor)', image: fixSupportDrawing },
       { type: 'TYPE FA-2', title: '(Clamped Heavy Riser Anchor)', diagramType: 'clamped-shoe' },
     ],
     keyFeatures: [
@@ -970,11 +1029,7 @@ export const productsData = {
       { label: 'ASME B31.1', icon: 'check' },
     ],
     galleryImages: [
-      genSteel,
-      slidesGuides,
-      customFabrication,
-      genHardware,
-      genRefinery,
+      generatedLineStopsImage,
     ],
     overviewText:
       'AAA Supports Line Stops are directional pipe restraints engineered to stop longitudinal pipe translation while permitting transverse and vertical displacement. Essential for controlling expansion loops and directing thermal growth toward designated compensators and spring supports.',
@@ -995,7 +1050,7 @@ export const productsData = {
       { label: 'Surface Finish', value: 'HDG, Zinc Phosphate Primer, Epoxy Topcoat' },
     ],
     drawings: [
-      { type: 'TYPE LS-1', title: '(Structural Beam Line Stop)', diagramType: 'welded-shoe' },
+      { type: 'TYPE LS-1', title: '(Structural Beam Line Stop)', image: lineStopDrawing },
       { type: 'TYPE LS-2', title: '(Clamped Bi-Directional Line Stop)', diagramType: 'clamped-shoe' },
     ],
     keyFeatures: [
@@ -1028,11 +1083,8 @@ export const productsData = {
       { label: 'ASME Certified', icon: 'check' },
     ],
     galleryImages: [
-      genSteel,
-      customFabrication,
-      genRefinery,
-      genHardware,
-      slidesGuides,
+      anchorSupportImage1,
+      anchorSupportImage2,
     ],
     overviewText:
       'AAA Supports Heavy Pipeline Anchors provide positive structural immobilization for large-bore pipelines. Built with thick carbon steel saddles, heavy gusset plates, and welded internal shear collars designed to anchor pipelines to concrete piers and steel structures.',
@@ -1053,7 +1105,7 @@ export const productsData = {
       { label: 'Inspection', value: '100% DP/MPI weld inspection, UT tested plates' },
     ],
     drawings: [
-      { type: 'TYPE ANC-1', title: '(Heavy Saddle Box Anchor)', diagramType: 'welded-shoe' },
+      { type: 'TYPE ANC-1', title: '(Heavy Saddle Box Anchor)', image: anchorSupportDrawing },
       { type: 'TYPE ANC-2', title: '(Pier Mounted Anchor Block)', diagramType: 'clamped-shoe' },
     ],
     keyFeatures: [
@@ -1086,11 +1138,10 @@ export const productsData = {
       { label: 'Full Size Range', icon: 'check' },
     ],
     galleryImages: [
-      genSteel,
-      genClamp,
-      customFabrication,
-      genRefinery,
-      slidesGuides,
+      trunnionImage1,
+      trunnionImage2,
+      trunnionImage3,
+      trunnionImage4,
     ],
     overviewText:
       'AAA Supports Trunnions are engineered pipe stanchion arms fabricated from seamless or welded pipe sections with circular reinforced base plates. Welded directly to parent pipe elbows or straight runs to transfer vertical gravity loads and lateral guide forces to adjacent structural frames.',
@@ -1111,7 +1162,7 @@ export const productsData = {
       { label: 'Surface Finish', value: 'Shop Primer, Hot Dip Galvanized, High Build Epoxy' },
     ],
     drawings: [
-      { type: 'TYPE TR-1', title: '(Straight Pipe Trunnion)', diagramType: 'welded-shoe' },
+      { type: 'TYPE TR-1', title: '(Straight Pipe Trunnion)', image: trunnionDrawing },
       { type: 'TYPE TR-2', title: '(Base Elbow Trunnion with Repad)', diagramType: 'clamped-shoe' },
     ],
     keyFeatures: [
@@ -1169,7 +1220,7 @@ export const productsData = {
       { label: 'Surface Finish', value: 'Hot Dip Galvanized / Primer / Epoxy' },
     ],
     drawings: [
-      { type: 'TYPE RST-1', title: '(Base Stanchion Rest)', diagramType: 'welded-shoe' },
+      { type: 'TYPE RST-1', title: '(Base Stanchion Rest)', image: restSupportDrawing },
       { type: 'TYPE RST-2', title: '(Beam Mounted Saddle Rest)', diagramType: 'clamped-shoe' },
     ],
     keyFeatures: [
@@ -1202,11 +1253,8 @@ export const productsData = {
       { label: 'Custom Spans', icon: 'check' },
     ],
     galleryImages: [
-      customFabrication,
-      genSteel,
-      genRefinery,
-      genOverhead,
-      slidesGuides,
+      structuralBeamImage1,
+      structuralBeamImage2,
     ],
     overviewText:
       'AAA Supports Structural Beams are engineered secondary support members fabricated from hot-rolled universal beams (ISMB / ISMC / HEB / UC) and built-up plate girders. Designed to carry multiple piping runs across wide pipe rack spans with high structural deflection resistance.',
@@ -1227,7 +1275,7 @@ export const productsData = {
       { label: 'Surface Finish', value: 'Hot Dip Galvanized (minimum 86 microns) / Epoxy Paint' },
     ],
     drawings: [
-      { type: 'TYPE SB-1', title: '(Cantilever Cross Beam)', diagramType: 'welded-shoe' },
+      { type: 'TYPE SB-1', title: '(Cantilever Cross Beam)', image: structuralBeamDrawing },
       { type: 'TYPE SB-2', title: '(Multi-Tier Rack Beam)', diagramType: 'clamped-shoe' },
     ],
     keyFeatures: [
@@ -1260,11 +1308,8 @@ export const productsData = {
       { label: 'AISC / IS 800', icon: 'check' },
     ],
     galleryImages: [
-      customFabrication,
-      genSteel,
-      genRefinery,
-      genHardware,
-      genOverhead,
+      structuralColumnImage1,
+      structuralColumnImage2,
     ],
     overviewText:
       'AAA Supports Structural Columns are fabricated from heavy structural tubular pipes (ASTM A106/A53), universal column sections (UC/ISHB), and boxed plate sections. Fitted with heavy gusseted base plates and anchor bolt holes designed to anchor pipe racks and equipment support structures.',
@@ -1285,7 +1330,7 @@ export const productsData = {
       { label: 'Surface Finish', value: 'Hot Dip Galvanized (IS:2629) / Polyurethane Paint' },
     ],
     drawings: [
-      { type: 'TYPE SC-1', title: '(Pipe Stanchion Column)', diagramType: 'welded-shoe' },
+      { type: 'TYPE SC-1', title: '(Pipe Stanchion Column)', image: structuralColumnDrawing },
       { type: 'TYPE SC-2', title: '(Gusseted Base H-Column)', diagramType: 'clamped-shoe' },
     ],
     keyFeatures: [
@@ -1318,11 +1363,8 @@ export const productsData = {
       { label: 'Bolt-Up Design', icon: 'check' },
     ],
     galleryImages: [
-      customFabrication,
-      genSteel,
-      genOverhead,
-      genRefinery,
-      slidesGuides,
+      structuralFrameImage1,
+      structuralFrameImage2,
     ],
     overviewText:
       'AAA Supports Structural Frames encompass complete pipe rack bents, T-Post sleeper supports, and goal-post portal frames. Designed as pre-fabricated modular assemblies that bolt together swiftly on site, minimizing costly field welding and accelerating project commissioning schedules.',
@@ -1343,7 +1385,7 @@ export const productsData = {
       { label: 'Surface Finish', value: 'Hot Dip Galvanized / Industrial Epoxy Polyurethane' },
     ],
     drawings: [
-      { type: 'TYPE SF-1', title: '(T-Post Sleeper Frame)', diagramType: 'welded-shoe' },
+      { type: 'TYPE SF-1', title: '(T-Post Sleeper Frame)', image: structuralFrameDrawing },
       { type: 'TYPE SF-2', title: '(Portal Pipe Rack Bent)', diagramType: 'clamped-shoe' },
     ],
     keyFeatures: [
@@ -1376,11 +1418,7 @@ export const productsData = {
       { label: 'IS:2062 Certified', icon: 'check' },
     ],
     galleryImages: [
-      genSteel,
-      customFabrication,
-      genHardware,
-      genRefinery,
-      slidesGuides,
+      structuralMembersImage,
     ],
     overviewText:
       'AAA Supports Structural Members include equal/unequal structural angles (ISA), parallel flange channels (ISMC/PFC), and diagonal wind bracing assemblies. Used to brace pipe rack bents, form auxiliary support bridges, and secure secondary attachments.',
@@ -1401,7 +1439,7 @@ export const productsData = {
       { label: 'Surface Finish', value: 'Hot Dip Galvanized / Red Oxide Primer' },
     ],
     drawings: [
-      { type: 'TYPE SM-1', title: '(Channel Secondary Member)', diagramType: 'welded-shoe' },
+      { type: 'TYPE SM-1', title: '(Channel Secondary Member)', image: structuralMemberDrawing },
       { type: 'TYPE SM-2', title: '(Diagonal Cross Bracing)', diagramType: 'clamped-shoe' },
     ],
     keyFeatures: [
@@ -1434,11 +1472,7 @@ export const productsData = {
       { label: 'MSS SP-58', icon: 'check' },
     ],
     galleryImages: [
-      customFabrication,
-      genSteel,
-      genHardware,
-      slidesGuides,
-      genClamp,
+      bracketImage1,
     ],
     overviewText:
       'AAA Supports Cantilever Brackets are designed to support piping where overhead steelwork is unavailable. Fabricated in light, medium, and heavy-duty configurations (MSS SP-58 Types 31, 32, 33) with thick mounting back-plates and triangular gusset stiffeners for wall or column bolting.',
@@ -1459,7 +1493,7 @@ export const productsData = {
       { label: 'Surface Finish', value: 'Hot Dip Galvanized to IS:2629 / Epoxy Paint' },
     ],
     drawings: [
-      { type: 'TYPE BR-1', title: '(Medium Duty Cantilever Bracket)', diagramType: 'welded-shoe' },
+      { type: 'TYPE BR-1', title: '(Medium Duty Cantilever Bracket)', image: bracketDrawing },
       { type: 'TYPE BR-2', title: '(Heavy Duty Gusseted Bracket)', diagramType: 'clamped-shoe' },
     ],
     keyFeatures: [
@@ -1492,11 +1526,7 @@ export const productsData = {
       { label: 'IBR Certified', icon: 'check' },
     ],
     galleryImages: [
-      oilGasSolutions,
-      genClamp,
-      genHardware,
-      customFabrication,
-      genRefinery,
+      pipeFittingImage1,
     ],
     overviewText:
       'AAA Supports supplies an extensive line of butt weld and forged pipe fittings including 45°/90° long & short radius elbows, equal & reducing tees, concentric & eccentric reducers, caps, and stub ends. Manufactured in accordance with ASME B16.9, MSS SP-75, and IBR regulations.',
@@ -1517,7 +1547,7 @@ export const productsData = {
       { label: 'Testing & QA', value: '100% Radiography / UT, Hydrostatic tested, Positive Material Identification (PMI)' },
     ],
     drawings: [
-      { type: 'TYPE PF-1', title: '(90° Long Radius Elbow)', diagramType: 'welded-shoe' },
+      { type: 'TYPE PF-1', title: '(90° Long Radius Elbow)', image: pipeFittingDrawing },
       { type: 'TYPE PF-2', title: '(Equal / Reducing Tee)', diagramType: 'clamped-shoe' },
     ],
     keyFeatures: [
@@ -1550,11 +1580,8 @@ export const productsData = {
       { label: 'Serrated Face', icon: 'check' },
     ],
     galleryImages: [
-      oilGasSolutions,
-      customFabrication,
-      genHardware,
-      genClamp,
-      genRefinery,
+      flangeImage1,
+      flangeImage2,
     ],
     overviewText:
       'AAA Supports supplies high-integrity forged flanges in Weld Neck (WN), Slip-On (SO), Blind (BL), Socket Weld (SW), Threaded, and Lap Joint configurations. Manufactured from normalized forgings in carbon steel (A105), low-temp steel (A350 LF2), alloy steel (A182 F11/F22), and stainless steel (A182 F304L/F316L).',
@@ -1575,7 +1602,7 @@ export const productsData = {
       { label: 'Surface Finish', value: 'Anti-rust oiled / Yellow Varnish / Hot Dip Galvanized' },
     ],
     drawings: [
-      { type: 'TYPE FLG-WN', title: '(Weld Neck Flange)', diagramType: 'welded-shoe' },
+      { type: 'TYPE FLG-WN', title: '(Weld Neck Flange)', image: flangeDrawing },
       { type: 'TYPE FLG-BL', title: '(Blind / Slip-On Flange)', diagramType: 'clamped-shoe' },
     ],
     keyFeatures: [
@@ -1608,11 +1635,7 @@ export const productsData = {
       { label: 'Plug & Play', icon: 'check' },
     ],
     galleryImages: [
-      oilGasSolutions,
-      genOverhead,
-      genRefinery,
-      customFabrication,
-      genSteel,
+      pipingSpoolImage1,
     ],
     overviewText:
       'AAA Supports provides turnkey fabrication of prefabricated piping spools built strictly to client isometric drawings. Utilizing automatic orbital welding, submerged arc welding (SAW), and TIG processes in controlled factory bays. Every spool undergoes 100% dimensional QA, complete non-destructive examination (RT/UT/MPI), hydrostatic pressure testing, and multi-coat protective painting.',
@@ -1633,7 +1656,7 @@ export const productsData = {
       { label: 'Documentation', value: 'Complete Manufacturing Data Dossier (MDR) with As-Built isometrics' },
     ],
     drawings: [
-      { type: 'TYPE SPL-1', title: '(Isometric Flanged Piping Spool)', diagramType: 'welded-shoe' },
+      { type: 'TYPE SPL-1', title: '(Isometric Flanged Piping Spool)', image: pipingSpoolDrawing },
       { type: 'TYPE SPL-2', title: '(Header Branch Spool Assembly)', diagramType: 'clamped-shoe' },
     ],
     keyFeatures: [

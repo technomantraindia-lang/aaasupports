@@ -15031,6 +15031,64 @@ main,
   transform: scale(1.06) translateY(-3px);
 }
 
+/* Keep the supplied PUF product photo fully visible in its category card. */
+.product-category-product--puff .product-category-product-art img {
+  width: auto;
+  height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+  mix-blend-mode: normal;
+}
+
+.product-category-product--puff:hover .product-category-product-art img {
+  transform: none;
+}
+
+/* Guide Shoe card: keep the supplied square artwork cleanly framed. */
+.product-category-product--guide .product-category-product-art {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+.product-category-product--guide .product-category-product-art img {
+  width: auto !important;
+  height: auto !important;
+  max-width: 100% !important;
+  max-height: 100% !important;
+  object-fit: contain !important;
+  mix-blend-mode: normal !important;
+  filter: drop-shadow(0 10px 16px rgb(10 45 80 / 13%));
+  transform: none !important;
+}
+
+/* Keep the supplied PTFE slide plate artwork visible in the catalogue card. */
+.product-category-product--ptfe .product-category-product-art {
+  background: #ffffff;
+  overflow: hidden;
+}
+
+.product-category-product--ptfe .product-category-product-art img {
+  width: auto !important;
+  height: auto !important;
+  max-width: 100% !important;
+  max-height: 100% !important;
+  object-fit: contain !important;
+  mix-blend-mode: normal !important;
+  display: block !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  filter: drop-shadow(0 10px 16px rgb(10 45 80 / 13%));
+}
+
+.product-category-product--guide .product-category-product-info {
+  position: relative;
+  z-index: 2;
+  background: #ffffff;
+}
+
 .product-category-product-info {
   min-height: 136px;
   flex: 1;
@@ -20249,7 +20307,7 @@ main {
 .product-detail-main-grid {
   display: grid;
   grid-template-columns: 1fr 1.05fr;
-  gap: 40px;
+  gap: 28px;
   align-items: start;
   width: min(100% - 64px, 1260px);
   margin-inline: auto;
@@ -20261,10 +20319,10 @@ main {
   border-radius: 18px;
   border: 1px solid #e2ecf5;
   box-shadow: 0 10px 30px rgba(6, 36, 64, 0.05);
-  padding: 18px;
+  padding: 14px;
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 10px;
 }
 
 .product-gallery-stage {
@@ -20272,27 +20330,30 @@ main {
   background: #f8fafc;
   border: 1px solid #edf2f7;
   border-radius: 14px;
-  padding: 24px 20px;
+  padding: 16px 14px;
   display: grid;
   place-items: center;
-  min-height: 330px;
+  min-height: 290px;
 }
 
 .pdp-stage-badge {
   position: absolute;
   top: 12px;
   left: 12px;
+  z-index: 8;
   display: inline-flex;
   align-items: center;
   gap: 6px;
   padding: 4px 10px;
   border-radius: 999px;
-  background: rgba(2, 23, 42, 0.05);
-  border: 1px solid rgba(2, 23, 42, 0.08);
+  background: rgba(255, 255, 255, 0.96);
+  border: 1px solid rgba(2, 23, 42, 0.14);
   color: #0b3459;
   font-size: 10.5px;
   font-weight: 700;
   letter-spacing: 0.04em;
+  box-shadow: 0 3px 10px rgba(6, 36, 64, 0.14);
+  pointer-events: none;
 }
 
 .pdp-stage-dot {
@@ -20306,7 +20367,7 @@ main {
   position: absolute;
   top: 12px;
   right: 12px;
-  z-index: 4;
+  z-index: 8;
   background: rgba(2, 23, 42, 0.65);
   backdrop-filter: blur(6px);
   color: #ffffff;
@@ -20356,21 +20417,22 @@ main {
 
 .product-gallery-main-view {
   width: 100%;
-  height: 270px;
-  display: grid;
-  place-items: center;
-  overflow: hidden;
+  min-height: 230px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: visible;
 }
 
 .product-gallery-main-view img {
+  display: block;
+  width: auto;
+  height: auto;
   max-width: 100%;
-  max-height: 100%;
+  max-height: min(55vh, 430px);
   object-fit: contain;
-  transition: transform 0.35s ease;
-}
-
-.product-gallery-main-view:hover img {
-  transform: scale(1.04);
+  object-position: center;
 }
 
 /* Thumbnail Carousel Strip */
@@ -20436,9 +20498,13 @@ main {
 }
 
 .pdp-thumb-btn img {
+  display: block;
+  width: 100%;
+  height: 100%;
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
+  object-position: center;
 }
 
 .pdp-thumb-btn.is-active,
@@ -20675,9 +20741,7 @@ main {
 }
 
 .pdp-drawings-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 16px;
+  display: block;
   margin-top: 14px;
 }
 
@@ -20687,6 +20751,10 @@ main {
   border-radius: 12px;
   padding: 14px 10px;
   text-align: center;
+}
+
+.pdp-drawing-item--single {
+  padding: 16px;
 }
 
 .pdp-drawing-header strong {
@@ -20707,15 +20775,44 @@ main {
 .pdp-drawing-canvas {
   width: 100%;
   height: 200px;
+  min-height: 0;
   display: grid;
   place-items: center;
   margin-top: 10px;
+  overflow: hidden;
+}
+
+.pdp-drawing-canvas--single {
+  height: 430px;
+  margin-top: 0;
+}
+
+.pdp-drawing-canvas--image {
+  height: 260px;
+}
+
+.pdp-drawing-canvas--single.pdp-drawing-canvas--image {
+  height: 430px;
 }
 
 .technical-drawing-svg {
   width: 100%;
   height: 100%;
   max-width: 250px;
+}
+
+.pdp-drawing-image {
+  width: auto;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.pdp-drawing-image--single {
+  width: 100%;
+  max-width: none;
 }
 
 .pdp-drawing-disclaimer {
@@ -20983,6 +21080,12 @@ main {
   display: flex;
   align-items: center;
   gap: 10px;
+}
+
+.pdp-related-nav-arrows .pdp-thumb-arrow:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+  pointer-events: none;
 }
 
 /* 6. Related Products Section (SOFT PALE SLATE BLUE BACKGROUND) */
@@ -21299,8 +21402,6 @@ main {
   }
 
   .pdp-drawings-container {
-    grid-template-columns: 1fr !important;
-    gap: 14px !important;
     width: 100% !important;
     box-sizing: border-box !important;
   }
@@ -21314,6 +21415,18 @@ main {
   .pdp-drawing-canvas {
     height: 180px !important;
     width: 100% !important;
+  }
+
+  .pdp-drawing-canvas--single {
+    height: 340px !important;
+  }
+
+  .pdp-drawing-canvas--image {
+    height: 230px !important;
+  }
+
+  .pdp-drawing-canvas--single.pdp-drawing-canvas--image {
+    height: 340px !important;
   }
 
   .product-overview-content {
@@ -21342,8 +21455,13 @@ main {
   }
 
   .product-gallery-main-view {
-    height: 200px;
+    min-height: 200px;
+    height: auto;
     width: 100%;
+  }
+
+  .product-gallery-main-view img {
+    max-height: min(60vh, 420px);
   }
 
   .pdp-stage-arrow {
@@ -21623,7 +21741,10 @@ main {
   }
 
   .pdp-related-nav-arrows {
-    display: none !important;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+    gap: 8px !important;
   }
 
   .pdp-related-track {
@@ -21719,6 +21840,47 @@ main {
     width: 100% !important;
     max-width: 270px !important;
     justify-content: center !important;
+  }
+}
+
+/* Keep catalogue product artwork inside its frame. Some source images are
+   transparent cut-outs while others are portrait photos, so letting the
+   image size itself can make it bleed into the title strip. */
+.products-page .product-category-product-art {
+  flex: 0 0 230px;
+  height: 230px;
+  min-height: 0;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.products-page .product-category-product-art img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.products-page .product-category-product-info {
+  position: relative;
+  z-index: 1;
+  flex: 0 0 76px;
+  min-height: 76px;
+  box-sizing: border-box;
+  align-items: center;
+  background: #fff;
+}
+
+@media (max-width: 768px) {
+  .products-page .product-category-product-art {
+    flex-basis: 180px;
+    height: 180px !important;
+  }
+
+  .products-page .product-category-product-info {
+    flex-basis: 64px;
+    min-height: 64px;
   }
 }
 

@@ -5,14 +5,14 @@
 - Indexed source files: 43
 - Structural edges: 67
 - Matched end-to-end flows: 0
-- Updated: 2026-09-25T03:34:23.398Z
+- Updated: 2026-09-30T08:59:14.289Z
 
 ## Dependency edges
 - IMPORT index.html -> src/main.jsx
 - IMPORT src/AboutPage.jsx -> src/components/ValuedClientsSection.jsx
 - IMPORT src/App.jsx -> src/components/Header.jsx, src/components/HeroSection.jsx, src/components/IndustryStrip.jsx, src/components/TestimonialsSection.jsx, src/components/FaqClientsSection.jsx, src/components/AboutSection.jsx, src/components/ProductRange.jsx, src/components/ServicesSection.jsx
 - IMPORT src/components/AboutSection.jsx -> src/data/homeData.js
-- IMPORT src/components/EnquiryModal.jsx -> src/data/web3forms.js
+- IMPORT src/components/EnquiryModal.jsx -> src/data/formSubmit.js
 - IMPORT src/components/Footer.jsx -> src/components/Logo.jsx, src/data/homeData.js
 - IMPORT src/components/Header.jsx -> src/data/homeData.js, src/components/Logo.jsx
 - IMPORT src/components/HeroSection.jsx -> src/data/homeData.js, src/components/Icon.jsx
@@ -22,7 +22,7 @@
 - IMPORT src/components/ProjectsSection.jsx -> src/data/homeData.js, src/components/SectionHeading.jsx
 - IMPORT src/components/TestimonialsSection.jsx -> src/components/testimonials/testimonials.css
 - IMPORT src/components/WhyChooseUs.jsx -> src/components/SectionHeading.jsx, src/data/homeData.js
-- IMPORT src/ContactPage.jsx -> src/data/web3forms.js
+- IMPORT src/ContactPage.jsx -> src/data/formSubmit.js
 - IMPORT src/DesigningPipeSupportsPage.jsx -> src/hooks/useServiceReveal.js
 - IMPORT src/main.jsx -> src/App.jsx, src/index.css
 - IMPORT src/PipeStressAnalysisPage.jsx -> src/hooks/useServiceReveal.js
@@ -48,8 +48,8 @@
 - REACT src/components/TestimonialsSection.jsx: used by src/App.jsx · depends on src/components/testimonials/testimonials.css
 - REACT src/components/ValuedClientsSection.jsx: used by src/AboutPage.jsx
 - REACT src/components/WhyChooseUs.jsx: depends on src/components/SectionHeading.jsx
+- REACT src/data/formSubmit.js: used by src/components/EnquiryModal.jsx, src/ContactPage.jsx
 - REACT src/data/homeData.js: used by src/components/AboutSection.jsx, src/components/Footer.jsx, src/components/Header.jsx, src/components/HeroSection.jsx
-- REACT src/data/web3forms.js: used by src/components/EnquiryModal.jsx, src/ContactPage.jsx
 
 ## Database references
 - DB src/CertificationPage.jsx -> react, quality
@@ -100,9 +100,9 @@
 - SYMBOL src/components/TestimonialsSection.jsx: QuoteIcon, TestimonialCard, TestimonialsSection, update, handleTouchStart, handleTouchMove, handleTouchEnd
 - SYMBOL src/components/ValuedClientsSection.jsx: MiniIcon, ValuedClientsSection
 - SYMBOL src/components/WhyChooseUs.jsx: WhyChooseUs
-- SYMBOL src/ContactPage.jsx: Icon, Label, ContactCard, ContactPage, handleSubmit
+- SYMBOL src/ContactPage.jsx: Icon, Label, ContactCard, ContactPage, handleSubmit, handleSubmitFrameLoad
+- SYMBOL src/data/formSubmit.js: submitForm
 - SYMBOL src/data/productsData.js: getProductBySlug
-- SYMBOL src/data/web3forms.js: submitWeb3Form
 - SYMBOL src/DesigningPipeSupportsPage.jsx: CheckIcon, ServiceKicker, ServiceVisual, DesigningPipeSupportsPage
 - SYMBOL src/GalleryPage.jsx: GalleryPage, handleKeyDown
 - SYMBOL src/hooks/useServiceReveal.js: useServiceReveal

@@ -1,11 +1,11 @@
-import variableSpringSupports from '../../assets/product-variable-spring-supports.png'
-import constantSpringSupports from '../../assets/product-constant-spring-supports.png'
-import pipeClampsUBolts from '../../assets/product-pipe-clamps-u-bolts.png'
+import primarySupportsCategory from '../../assets/category-primary-supports.png'
+import secondarySupportsCategory from '../../assets/category-secondary-supports.png'
+import pipeFittingsCategory from '../../assets/category-pipe-fittings.png'
 
 const productImages = [
-  variableSpringSupports,
-  constantSpringSupports,
-  pipeClampsUBolts,
+  primarySupportsCategory,
+  secondarySupportsCategory,
+  pipeFittingsCategory,
 ]
 
 const catalogueProducts = [

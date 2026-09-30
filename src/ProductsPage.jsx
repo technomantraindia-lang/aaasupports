@@ -8,15 +8,64 @@ import pipeClampsUBolts from '../assets/product-pipe-clamps-u-bolts.png'
 import oilGasSolutions from '../assets/product-oil-gas-solutions.png'
 import slidesGuides from '../assets/product-slides-guides.png'
 import variableSpringSupports from '../assets/product-variable-spring-supports.png'
+import pufSupportPhoto1 from '../assets/Primary Supports/puff-supports/WhatsApp Image 2026-09-25 at 16.06.55565.jpeg'
+import guideSupport1 from '../assets/Primary Supports/5. Guide Shoe/Guide support 300 NB-1.png'
+import slideSupport1 from '../assets/Primary Supports/5. Guide Shoe/Slide support 300 NB-1.png'
+import pipeShoeImage1 from '../assets/Primary Supports/1. Pipe Shoe  Saddles/1.png'
+import pipeClampImage1 from '../assets/Primary Supports/pipe clamps/1.png'
+import trunnionImage1 from '../assets/Primary Supports/Trunnions/1.png'
+import restSupportImage1 from '../assets/Primary Supports/Rest Supports/1.png'
+import fixSupportImage1 from '../assets/Primary Supports/Fix Supports/fix-support.png'
+import anchorSupportImage1 from '../assets/Primary Supports/Anchor Supports/1.png'
+import uClampImage1 from '../assets/Primary Supports/U Clamps - U Bolts/1.png'
+import generatedSlideSupportsImage from '../assets/Primary Supports/Slide Supports/generated-slide-supports.png'
+import rollerSupportsImage1 from '../assets/Primary Supports/Roller Supports/1.png'
+import variableSpringImage1 from '../assets/Primary Supports/Variable Spring Hangers & Supports/1.png'
+import constantSpringImage1 from '../assets/Primary Supports/Constant Spring Hangers & Supports/1.png'
+import rigidHangerImage1 from '../assets/Primary Supports/Rigid Hangers/1.png'
+import rigidStrutImage1 from '../assets/Primary Supports/Rigid Struts/rigid strut_1.jpg'
+import flangeImage1 from '../assets/Primary Supports/Flanges/1.png'
+import foundationBoltImage1 from '../assets/Primary Supports/Foundation Bolts/1.png'
+import generatedLineStopsImage from '../assets/Primary Supports/Line Stops/generated-line-stops.png'
+import hydraulicSnubberImage1 from '../assets/Primary Supports/Hydraulic Snubbers/1.png'
+import structuralBeamImage1 from '../assets/Primary Supports/Structural Beams/1.png'
+import structuralColumnImage1 from '../assets/Primary Supports/Structural Columns/1.png'
+import structuralFrameImage1 from '../assets/Primary Supports/Structural Frames/1.png'
+import structuralMembersImage from '../assets/Primary Supports/Structural Members/generated-structural-members.png'
+import bracketImage1 from '../assets/Primary Supports/Brackets/1.png'
+import pipeFittingImage1 from '../assets/Primary Supports/Pipe Fittings/1.png'
+import pipingSpoolImage1 from '../assets/Primary Supports/Piping Spools/1.png'
 
 const productImageSet = {
-  clamps: pipeClampsUBolts,
-  spring: variableSpringSupports,
-  constant: constantSpringSupports,
-  hanger: constantSpringHangers,
+  clamps: uClampImage1,
+  pipeClamps: pipeClampImage1,
+  trunnions: trunnionImage1,
+  restSupports: restSupportImage1,
+  fixSupports: fixSupportImage1,
+  anchorSupports: anchorSupportImage1,
+  spring: variableSpringImage1,
+  constant: constantSpringImage1,
+  hanger: rigidHangerImage1,
   slides: slidesGuides,
+  guide: guideSupport1,
+  slide: generatedSlideSupportsImage,
+  ptfe: slidesGuides,
+  puff: pufSupportPhoto1,
+  pipeShoe: pipeShoeImage1,
   structure: customFabrication,
-  support: marinePipeSupports,
+  rigidStrut: rigidStrutImage1,
+  flanges: flangeImage1,
+  foundationBolts: foundationBoltImage1,
+  lineStops: generatedLineStopsImage,
+  hydraulicSnubbers: hydraulicSnubberImage1,
+  structuralBeams: structuralBeamImage1,
+  structuralColumns: structuralColumnImage1,
+  structuralFrames: structuralFrameImage1,
+  structuralMembers: structuralMembersImage,
+  brackets: bracketImage1,
+  pipeFittings: pipeFittingImage1,
+  pipingSpools: pipingSpoolImage1,
+  support: rollerSupportsImage1,
   spools: oilGasSolutions,
 }
 
@@ -26,25 +75,25 @@ const categoryGroups = [
     name: 'Primary Supports',
     description: 'Load-bearing and movement-control components engineered for dependable primary pipe support.',
     products: [
-      ['Pipe Shoe / Saddles', 'support'],
-      ['Pipe Clamps', 'clamps'],
-      ['Trunnions', 'clamps'],
-      ['Rest Supports', 'support'],
-      ['Guide Shoe', 'slides'],
-      ['Puff Supports', 'spring'],
-      ['Fix Supports', 'support'],
-      ['Line Stops', 'slides'],
-      ['Anchor', 'structure'],
+      ['Pipe Shoe / Saddles', 'pipeShoe', 'pipe-shoe-saddles'],
+      ['Pipe Clamps', 'pipeClamps', 'pipe-clamps'],
+      ['Trunnions', 'trunnions', 'trunnions'],
+      ['Rest Supports', 'restSupports', 'rest-supports'],
+      ['Guide Shoe', 'guide', 'guide-shoe'],
+      ['Puff Supports', 'puff', 'puff-supports'],
+      ['Fix Supports', 'fixSupports'],
+      ['Line Stops', 'lineStops'],
+      ['Anchor', 'anchorSupports'],
       ['U Clamps / U Bolts', 'clamps'],
-      ['Foundation Bolts', 'structure'],
-      ['Slide Supports', 'slides'],
-      ['PTFE Slide Supports', 'slides'],
+      ['Foundation Bolts', 'foundationBolts'],
+      ['Slide Supports', 'slide'],
+      ['PTFE Slide Supports', 'ptfe'],
       ['Roller Supports', 'support'],
       ['Variable Spring Hangers & Supports', 'spring'],
       ['Constant Spring Hangers & Supports', 'constant'],
       ['Rigid Hangers', 'hanger'],
-      ['Rigid Struts', 'structure'],
-      ['Hydraulic Snubbers', 'hanger'],
+      ['Rigid Struts', 'rigidStrut'],
+      ['Hydraulic Snubbers', 'hydraulicSnubbers'],
     ],
   },
   {
@@ -52,11 +101,11 @@ const categoryGroups = [
     name: 'Secondary Supports',
     description: 'Structural support members and framing systems that provide stable load transfer and installation flexibility.',
     products: [
-      ['Structural Beams', 'structure'],
-      ['Structural Columns', 'structure'],
-      ['Structural Frames', 'structure'],
-      ['Structural Members', 'support'],
-      ['Brackets', 'structure'],
+      ['Structural Beams', 'structuralBeams'],
+      ['Structural Columns', 'structuralColumns'],
+      ['Structural Frames', 'structuralFrames'],
+      ['Structural Members', 'structuralMembers'],
+      ['Brackets', 'brackets'],
     ],
   },
   {
@@ -64,9 +113,9 @@ const categoryGroups = [
     name: 'Pipe Fittings, Flanges & Piping Spools',
     description: 'Precision-fabricated components for complete piping systems, engineered for dependable fit-up and installation.',
     products: [
-      ['Pipe Fittings', 'clamps'],
-      ['Flanges', 'structure'],
-      ['Piping Spools', 'spools'],
+      ['Pipe Fittings', 'pipeFittings'],
+      ['Flanges', 'flanges'],
+      ['Piping Spools', 'pipingSpools'],
     ],
   },
 ]
@@ -152,10 +201,10 @@ export function ProductsPage() {
             </div>
             <div className="product-category-body">
               <div className="product-category-products">
-                {category.products.map(([product, imageKey]) => {
-                  const slug = product.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')
+                {category.products.map(([product, imageKey, fixedSlug]) => {
+                  const slug = fixedSlug || product.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')
                   return (
-                    <a href={`#product-${slug}`} className="product-category-product" key={product}>
+                    <a href={`/products/${slug}`} className={`product-category-product product-category-product--${imageKey}`} key={product}>
                       <span className="product-category-product-art"><img src={productImageSet[imageKey]} alt="" /></span>
                       <span className="product-category-product-info"><span className="product-category-product-name">{product}</span><span className="product-category-product-arrow"><ArrowIcon /></span></span>
                     </a>

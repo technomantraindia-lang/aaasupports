@@ -193,10 +193,12 @@ export function ProductDetailPage({ productSlug = 'pipe-shoe-saddles', onRequest
   const pageRef = useRef(null)
   const product = getProductBySlug(productSlug)
   const [activeImageIndex, setActiveImageIndex] = useState(0)
+  const [relatedPage, setRelatedPage] = useState(0)
 
   // Scroll to top when product changes
   useEffect(() => {
     setActiveImageIndex(0)
+    setRelatedPage(0)
     window.scrollTo({ top: 0, behavior: 'smooth' })
   }, [productSlug])
 
@@ -247,6 +249,11 @@ export function ProductDetailPage({ productSlug = 'pipe-shoe-saddles', onRequest
   const currentImage = galleryImages[activeImageIndex] || galleryImages[0]
   const sideImage1 = galleryImages[(activeImageIndex + 1) % galleryImages.length] || galleryImages[0]
   const sideImage2 = galleryImages[(activeImageIndex + 2) % galleryImages.length] || galleryImages[0]
+  const primaryDrawing = product.drawings?.find((draw) => draw.image) || product.drawings?.[0]
+  const relatedPageSize = 4
+  const relatedSlugs = product.relatedSlugs || []
+  const relatedPageCount = Math.max(1, Math.ceil(relatedSlugs.length / relatedPageSize))
+  const visibleRelatedSlugs = relatedSlugs.slice(relatedPage * relatedPageSize, (relatedPage + 1) * relatedPageSize)
 
   const handlePrevThumb = () => {
     setActiveImageIndex((prev) => (prev - 1 + galleryImages.length) % galleryImages.length)
@@ -434,21 +441,14 @@ export function ProductDetailPage({ productSlug = 'pipe-shoe-saddles', onRequest
               <b className="pdp-kicker-dash" />Dimensional Drawing
             </span>
             <div className="pdp-drawings-container">
-              {product.drawings.map((draw) => (
-                <div className="pdp-drawing-item" key={draw.type}>
-                  <div className="pdp-drawing-header">
-                    <strong>{draw.type}</strong>
-                    <span>{draw.title}</span>
-                  </div>
-                  <div className="pdp-drawing-canvas">
-                    <TechnicalDrawingSVG type={draw.diagramType} />
+              {primaryDrawing && (
+                <div className="pdp-drawing-item pdp-drawing-item--single">
+                  <div className={`pdp-drawing-canvas pdp-drawing-canvas--single ${primaryDrawing.image ? 'pdp-drawing-canvas--image' : ''}`}>
+                    {primaryDrawing.image ? <img className="pdp-drawing-image pdp-drawing-image--single" src={primaryDrawing.image} alt="" aria-hidden="true" /> : <TechnicalDrawingSVG type={primaryDrawing.diagramType} />}
                   </div>
                 </div>
-              ))}
+              )}
             </div>
-            <p className="pdp-drawing-disclaimer">
-              Note: Dimensions are indicative. Detailed drawings will be provided for specific projects.
-            </p>
           </div>
         </div>
       </section>
@@ -530,10 +530,8 @@ export function ProductDetailPage({ productSlug = 'pipe-shoe-saddles', onRequest
               <button
                 className="pdp-thumb-arrow"
                 type="button"
-                onClick={() => {
-                  const el = document.getElementById('pdp-related-track')
-                  if (el) el.scrollBy({ left: -300, behavior: 'smooth' })
-                }}
+                onClick={() => setRelatedPage((page) => (page - 1 + relatedPageCount) % relatedPageCount)}
+                disabled={relatedPageCount <= 1}
                 aria-label="Previous related products"
               >
                 &lsaquo;
@@ -541,10 +539,8 @@ export function ProductDetailPage({ productSlug = 'pipe-shoe-saddles', onRequest
               <button
                 className="pdp-thumb-arrow"
                 type="button"
-                onClick={() => {
-                  const el = document.getElementById('pdp-related-track')
-                  if (el) el.scrollBy({ left: 300, behavior: 'smooth' })
-                }}
+                onClick={() => setRelatedPage((page) => (page + 1) % relatedPageCount)}
+                disabled={relatedPageCount <= 1}
                 aria-label="Next related products"
               >
                 &rsaquo;
@@ -553,7 +549,7 @@ export function ProductDetailPage({ productSlug = 'pipe-shoe-saddles', onRequest
           </div>
 
           <div className="pdp-related-track" id="pdp-related-track">
-            {product.relatedSlugs.map((relSlug) => {
+            {visibleRelatedSlugs.map((relSlug) => {
               const relProd = getProductBySlug(relSlug)
               const relImg = relProd.galleryImages?.[0] || heroImage
               return (

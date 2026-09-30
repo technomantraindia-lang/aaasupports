@@ -23,6 +23,11 @@ const productCategories = [
   },
 ]
 
+const productSlugOverrides = {
+  'Guide Shoe': 'guide-shoe',
+  'Puff Supports': 'puff-supports',
+}
+
 function currentPageHash() {
   const path = window.location.pathname.replace(/\/$/, '')
   const route = path.split('/').pop()
@@ -168,7 +173,7 @@ export function Header({ isContact = false, onRequestQuote }) {
                       <p>{activeProductCategory}</p>
                       <div>
                         {productCategories.find((category) => category.name === activeProductCategory).products.map((product) => {
-                          const slug = product.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')
+                          const slug = productSlugOverrides[product] || product.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')
                           return (
                             <a href={`#product-${slug}`} key={product} onClick={closeNavigation}>{product}</a>
                           )

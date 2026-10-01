@@ -5,7 +5,7 @@
 - Indexed source files: 43
 - Structural edges: 67
 - Matched end-to-end flows: 0
-- Updated: 2026-09-30T08:59:14.289Z
+- Updated: 2026-10-01T09:40:24.698Z
 
 ## Dependency edges
 - IMPORT index.html -> src/main.jsx
@@ -115,5 +115,5 @@
 
 ## UI/style selectors
 - UI index.html: #root
-- UI src/components/testimonials/testimonials.css: .testimonials, #ff6419, #fff, .container, .testimonials-bg, .testimonials-heading, .section-label, #ffffff, .testimonials-sub, #b0cbe2, .testimonial-trust, .testimonial-slider-wrap, .testimonial-slider, .testimonial-track
+- UI src/components/testimonials/testimonials.css: .testimonials, #ff6419, #fff, .container, .testimonials-bg, .testimonials-heading, .testimonials-sub, .section-label, #ffffff, #b0cbe2, .testimonial-trust, .testimonial-slider-wrap, .testimonial-slider, .testimonial-track
 - UI src/components/testimonials/testimonials.html: #testimonials-heading, .testimonials, .testimonials-bg, .container, .section-heading, .testimonials-heading, .section-label, .testimonials-sub, .testimonial-slider-wrap, .testimonial-slider, .testimonial-track, .testimonial-slide, .testimonial-card, .testimonial-quote

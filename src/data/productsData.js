@@ -64,6 +64,13 @@ import rigidStrutImage2 from '../../assets/Primary Supports/Rigid Struts/Strut A
 import rigidStrutImage3 from '../../assets/Primary Supports/Rigid Struts/WhatsApp Image 2026-09-25 at 16.06.47778.jpeg'
 import flangeImage1 from '../../assets/Primary Supports/Flanges/1.png'
 import flangeImage2 from '../../assets/Primary Supports/Flanges/2.png'
+import flangeImage3 from '../../assets/Primary Supports/Flanges/3.png'
+import flangeImage4 from '../../assets/Primary Supports/Flanges/4.png'
+import flangeImage5 from '../../assets/Primary Supports/Flanges/5.png'
+import flangeImage6 from '../../assets/Primary Supports/Flanges/6.png'
+import flangeImage7 from '../../assets/Primary Supports/Flanges/7.png'
+import flangeImage8 from '../../assets/Primary Supports/Flanges/8.png'
+import flangeImage9 from '../../assets/Primary Supports/Flanges/9.png'
 import foundationBoltImage1 from '../../assets/Primary Supports/Foundation Bolts/1.png'
 import generatedLineStopsImage from '../../assets/Primary Supports/Line Stops/generated-line-stops.png'
 import hydraulicSnubberImage1 from '../../assets/Primary Supports/Hydraulic Snubbers/1.png'
@@ -1579,6 +1586,13 @@ export const productsData = {
     galleryImages: [
       flangeImage1,
       flangeImage2,
+      flangeImage3,
+      flangeImage4,
+      flangeImage5,
+      flangeImage6,
+      flangeImage7,
+      flangeImage8,
+      flangeImage9,
     ],
     overviewText:
       'AAA Supports supplies high-integrity forged flanges in Weld Neck (WN), Slip-On (SO), Blind (BL), Socket Weld (SW), Threaded, and Lap Joint configurations. Manufactured from normalized forgings in carbon steel (A105), low-temp steel (A350 LF2), alloy steel (A182 F11/F22), and stainless steel (A182 F304L/F316L).',
@@ -1587,6 +1601,16 @@ export const productsData = {
       { title: 'Pressure Classes 150 to 2500', subtitle: 'Class 150, 300, 600, 900, 1500, 2500', icon: 'insulated' },
       { title: 'Raised & Ring Type Joint', subtitle: 'RF (125-250 AARH serration) and RTJ grooves', icon: 'custom' },
       { title: 'Normalized Forgings', subtitle: 'Tested for grain size, impact & hardness', icon: 'material' },
+    ],
+    flangeTypes: [
+      { name: 'Weld Neck Flange', shortName: 'WN', description: 'Tapered hub flange for butt-welded, high-integrity piping connections.', use: 'High pressure, high temperature & cyclic service' },
+      { name: 'Slip-On Flange', shortName: 'SO', description: 'Slides over the pipe and is fillet-welded on the hub and bore.', use: 'General process and utility piping' },
+      { name: 'Blind Flange', shortName: 'BL', description: 'Solid flange used to blank off a line, nozzle or vessel opening.', use: 'Isolation, pressure testing & future expansion' },
+      { name: 'Socket Weld Flange', shortName: 'SW', description: 'Socket bore locates small-bore pipe before the fillet weld is applied.', use: 'Small-bore, instrument and branch connections' },
+      { name: 'Threaded Flange', shortName: 'TH', description: 'Internally threaded bore connects to matching threaded pipe without welding.', use: 'Low-risk services and maintenance-friendly installations' },
+      { name: 'Lap Joint Flange', shortName: 'LJ', description: 'Loose backing flange used with a compatible lap-joint stub end.', use: 'Frequent dismantling and corrosion-resistant piping' },
+      { name: 'Long Weld Neck Flange', shortName: 'LWN', description: 'Extended neck provides a longer transition into the pipe or vessel.', use: 'Vessel nozzles, high-temperature & specialized service' },
+      { name: 'Orifice Flange', shortName: 'ORF', description: 'Machined tapping points accommodate differential-pressure flow measurement.', use: 'Flow metering and instrumentation assemblies' },
     ],
     specs: [
       { label: 'Product Name', value: 'Industrial Forged Flange' },

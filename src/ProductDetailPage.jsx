@@ -214,6 +214,7 @@ export function ProductDetailPage({ productSlug = 'pipe-shoe-saddles', onRequest
       page.querySelector('.product-overview-content'),
       page.querySelector('.product-specs-card'),
       page.querySelector('.product-drawing-card'),
+      page.querySelector('.product-flange-types-section'),
       page.querySelector('.product-features-navy-section'),
       page.querySelector('.product-related-section'),
       page.querySelector('.product-cta-bottom-banner'),
@@ -452,6 +453,38 @@ export function ProductDetailPage({ productSlug = 'pipe-shoe-saddles', onRequest
           </div>
         </div>
       </section>
+
+      {/* 3A. Flange Types (Flanges product only) */}
+      {product.flangeTypes?.length > 0 && (
+        <section className="product-flange-types-section" aria-labelledby="flange-types-heading">
+          <div className="container">
+            <div className="pdp-section-heading">
+              <span className="pdp-section-kicker">
+                <b className="pdp-kicker-dash" />Flange Range
+              </span>
+              <h2 id="flange-types-heading">Common <strong>Flange Types</strong></h2>
+              <p>Choose the connection style that matches your piping layout, pressure class, service conditions and maintenance requirements.</p>
+            </div>
+
+            <div className="pdp-flange-types-grid">
+              {product.flangeTypes.map((flange, index) => (
+                <article className="pdp-flange-type-card" key={flange.shortName}>
+                  <div className="pdp-flange-type-card-top">
+                    <span className="pdp-flange-type-number">0{index + 1}</span>
+                    <span className="pdp-flange-type-code">{flange.shortName}</span>
+                  </div>
+                  <h3>{flange.name}</h3>
+                  <p>{flange.description}</p>
+                  <div className="pdp-flange-type-use">
+                    <span>Typical use</span>
+                    <strong>{flange.use}</strong>
+                  </div>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* 4. Key Features (Dedicated Full-Width Section) */}
       <section className="product-features-navy-section">

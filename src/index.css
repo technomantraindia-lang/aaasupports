@@ -22155,4 +22155,10 @@ main {
   }
 }
 
+/* Discourage casual image saving and dragging. This is not a security barrier. */
+img {
+  -webkit-user-drag: none;
+  user-select: none;
+}
+
 

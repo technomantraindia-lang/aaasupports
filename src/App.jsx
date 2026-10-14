@@ -146,6 +146,9 @@ function App() {
   // browser developer tools from being opened by a determined visitor.
   useEffect(() => {
     const preventContextMenu = (event) => event.preventDefault()
+    const preventImageDrag = (event) => {
+      if (event.target.closest?.('img')) event.preventDefault()
+    }
     const preventInspectShortcuts = (event) => {
       const key = event.key.toLowerCase()
       const isFunctionInspect = event.key === 'F12'
@@ -159,10 +162,12 @@ function App() {
     }
 
     document.addEventListener('contextmenu', preventContextMenu)
+    document.addEventListener('dragstart', preventImageDrag)
     document.addEventListener('keydown', preventInspectShortcuts, true)
 
     return () => {
       document.removeEventListener('contextmenu', preventContextMenu)
+      document.removeEventListener('dragstart', preventImageDrag)
       document.removeEventListener('keydown', preventInspectShortcuts, true)
     }
   }, [])

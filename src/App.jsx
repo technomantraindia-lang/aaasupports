@@ -142,6 +142,31 @@ function App() {
   const [page, setPage] = useState(currentPage)
   const [isEnquiryOpen, setIsEnquiryOpen] = useState(false)
 
+  // Discourage casual inspection of the page. This cannot securely prevent
+  // browser developer tools from being opened by a determined visitor.
+  useEffect(() => {
+    const preventContextMenu = (event) => event.preventDefault()
+    const preventInspectShortcuts = (event) => {
+      const key = event.key.toLowerCase()
+      const isFunctionInspect = event.key === 'F12'
+      const isDevToolsShortcut = event.ctrlKey && event.shiftKey && ['i', 'j', 'c'].includes(key)
+      const isViewSourceShortcut = event.ctrlKey && key === 'u'
+
+      if (isFunctionInspect || isDevToolsShortcut || isViewSourceShortcut) {
+        event.preventDefault()
+        event.stopPropagation()
+      }
+    }
+
+    document.addEventListener('contextmenu', preventContextMenu)
+    document.addEventListener('keydown', preventInspectShortcuts, true)
+
+    return () => {
+      document.removeEventListener('contextmenu', preventContextMenu)
+      document.removeEventListener('keydown', preventInspectShortcuts, true)
+    }
+  }, [])
+
   useEffect(() => {
     const syncPage = () => {
       setPage(currentPage())
